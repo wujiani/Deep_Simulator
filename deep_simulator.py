@@ -46,8 +46,10 @@ class DeepSimulator():
         exec_times = dict()
         self.is_safe = self._read_inputs(
             log_time=exec_times, is_safe=self.is_safe)
+        # print("ccc", self.log_train)
         # modify number of instances in the model
-        num_inst = len(self.log_test.caseid.unique())
+        # num_inst = len(self.log_test.caseid.unique())
+        num_inst = self.parms['gl']['num_inst']
         # get minimum date
         start_time = (self.log_test.start_timestamp.min().strftime("%Y-%m-%dT%H:%M:%S.%f+00:00"))
         print('############ Structure optimization ############')
@@ -81,11 +83,11 @@ class DeepSimulator():
             # Export log
             self._export_log(event_log, output_path, rep_num)
             # Evaluate log
-            if self.parms['gl']['evaluate']:
-                self.sim_values.extend(
-                    self._evaluate_logs(self.parms, self.log_test,
-                                        event_log, rep_num))
-        self._export_results(output_path)
+            # if self.parms['gl']['evaluate']:
+            #     self.sim_values.extend(
+            #         self._evaluate_logs(self.parms, self.log_test,
+            #                             event_log, rep_num))
+        # self._export_results(output_path)
         print("-- End of trial --")
 
     @timeit
@@ -381,12 +383,14 @@ class DeepSimulator():
         # Split log data
         splitter = ls.LogSplitter(self.log.data)
         train, test = splitter.split_log('timeline_contained', size, one_ts)
+        print(len(train))
         total_events = len(self.log.data)
         # Check size and change time splitting method if necesary
         if len(test) < int(total_events * 0.1):
             train, test = splitter.split_log('timeline_trace', size, one_ts)
         # Set splits
-        key = 'end_timestamp' if one_ts else 'start_timestamp'
+        # key = 'end_timestamp' if one_ts else 'start_timestamp'
+        key = 'start_timestamp'
         test = pd.DataFrame(test)
         train = pd.DataFrame(train)
         self.log_test = (test.sort_values(key, ascending=True)

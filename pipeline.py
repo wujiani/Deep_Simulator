@@ -27,8 +27,12 @@ import deep_simulator as ds
 @click.option('--s_gen_max_eval', default=30, required=False, type=int)
 @click.option('--t_gen_epochs', default=100, required=False, type=int)
 @click.option('--t_gen_max_eval', default=6, required=False, type=int)
+
+@click.option('--num_inst', default=100, required=False, type=int)
+@click.option('--one_timestamp', default=False, required=False, type=bool)
+
 def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, save_models, evaluate, mining_alg,
-         s_gen_repetitions, s_gen_max_eval, t_gen_epochs, t_gen_max_eval):
+         s_gen_repetitions, s_gen_max_eval, t_gen_epochs, t_gen_max_eval, num_inst, one_timestamp):
     params = dict()
     params['gl'] = dict()
     params['gl']['file'] = file
@@ -77,8 +81,12 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params['t_gen']['all_r_pool'] = True  # only intercase features
     params['t_gen']['reschedule'] = False  # reschedule according resource pool ocupation
     params['t_gen']['rp_similarity'] = 0.80  # Train models
+
+    params['gl']['num_inst'] = num_inst
+    params['gl']['read_options']['one_timestamp'] = one_timestamp
     print(params['gl']['file'])
-    print(params)
+    print(params['gl']['event_logs_path'])
+
     simulator = ds.DeepSimulator(params)
     simulator.execute_pipeline()
 
