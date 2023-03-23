@@ -53,7 +53,7 @@ class LogReplayer():
                  self.start_tasks_list,
                  self.end_tasks_list,
                  self.parallel_gt_exec,
-                 self.subsec_set, st) for i, trace in enumerate(self.traces)]
+                 self.subsec_set, st, self.one_timestamp) for i, trace in enumerate(self.traces)]
         size = len(args)
         if (mode == 'multi') and self.verbose:
             cpu_count = multiprocessing.cpu_count()
@@ -138,7 +138,7 @@ class LogReplayer():
             cursor = list(OrderedDict.fromkeys(ap_list))
             return cursor, pnode
         
-        def save_record(model, t_times: list, trace: list, i: int, node=None) -> list:
+        def save_record(model, t_times: list, trace: list, i: int, node=None, one_ts=False) -> list:
             """
             Saves the execution times of the trace in the t_times list
             """
@@ -149,7 +149,7 @@ class LogReplayer():
                     if task == x['task']:
                         prev_rec = x
                         break
-            record = create_record(trace, i, False, prev_rec)
+            record = create_record(trace, i, one_ts, prev_rec)
             if record['resource'] != 'AUTO':
                 t_times.append(record)
             return t_times
@@ -170,7 +170,7 @@ class LogReplayer():
 
 
         def replay(index, trace, model, start_tasks, end_tasks, 
-                   parallel_gt_exec, subsec_set, st):
+                   parallel_gt_exec, subsec_set, st, one_ts):
             t_times = list()
             # trace = traces[index][1:-1]  # remove start and end event
             trace = trace[1:-1]  # remove start and end event
@@ -191,7 +191,7 @@ class LogReplayer():
             cursor = [curr_node]
             remove = True
             # ----time recording------
-            t_times = save_record(model, t_times, trace, 0) if st else t_times
+            t_times = save_record(model, t_times, trace, 0, one_ts) if st else t_times
             # ------------------------
             for i in range(1, len(trace)):
                 try:
@@ -201,14 +201,14 @@ class LogReplayer():
                     break
                 # If loop management
                 if nnode == cursor[-1]:
-                    t_times = (save_record(model,t_times, trace, i, nnode) 
+                    t_times = (save_record(model,t_times, trace, i, nnode, one_ts)
                                if st else t_times)
                     model.nodes[nnode]['executions'] += 1
                     continue
                 try:
                     cursor, pnode = update_cursor(nnode, model, cursor)
                     # ----time recording------
-                    t_times = (save_record(model, t_times, trace, i, pnode) 
+                    t_times = (save_record(model, t_times, trace, i, pnode, one_ts)
                                if st else t_times)
                     model.nodes[nnode]['executions'] += 1
                     # ------------------------

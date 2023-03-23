@@ -25,10 +25,10 @@ import deep_simulator as ds
 @click.option('--mining_alg', default='sm1', required=False, type=click.Choice(['sm1', 'sm2', 'sm3']))
 @click.option('--s_gen_repetitions', default=5, required=False, type=int)
 @click.option('--s_gen_max_eval', default=30, required=False, type=int)
-@click.option('--t_gen_epochs', default=100, required=False, type=int)
+@click.option('--t_gen_epochs', default=30, required=False, type=int)
 @click.option('--t_gen_max_eval', default=6, required=False, type=int)
 
-@click.option('--num_inst', default=100, required=False, type=int)
+@click.option('--num_inst', default=30, required=False, type=int)
 @click.option('--one_timestamp', default=False, required=False, type=bool)
 
 def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, save_models, evaluate, mining_alg,

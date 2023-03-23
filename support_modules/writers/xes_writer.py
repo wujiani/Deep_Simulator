@@ -35,9 +35,8 @@ class XesWriter(object):
         log = XFactory.create_log()
         data = sorted(self.log, key=lambda x: x['caseid'])
         for key, group in it.groupby(data, key=lambda x: x['caseid']):
-            # sort_key = ('end_timestamp'
-            #             if self.one_timestamp else 'start_timestamp')
-            sort_key = ('start_timestamp')
+            sort_key = ('end_timestamp' if self.one_timestamp else 'start_timestamp')
+            # sort_key = ('start_timestamp')
             csv_trace = sorted(list(group), key=lambda x: x[sort_key])
             events = list()
             for line in csv_trace:

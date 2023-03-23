@@ -5,7 +5,7 @@ read_options:
     'Activity': task
     'lifecycle:transition': event_type
     'Resource': user
-  one_timestamp: false
+  one_timestamp: False
   filter_d_attrib: true
 event_logs_path: C:\Users\19wuj\PycharmProjects\DeepSimulator\input_files\event_logs
 bpmn_models: C:\Users\19wuj\PycharmProjects\DeepSimulator\input_files\bpmn_models

@@ -389,8 +389,8 @@ class DeepSimulator():
         if len(test) < int(total_events * 0.1):
             train, test = splitter.split_log('timeline_trace', size, one_ts)
         # Set splits
-        # key = 'end_timestamp' if one_ts else 'start_timestamp'
-        key = 'start_timestamp'
+        key = 'end_timestamp' if one_ts else 'start_timestamp'
+        # key = 'start_timestamp'
         test = pd.DataFrame(test)
         train = pd.DataFrame(train)
         self.log_test = (test.sort_values(key, ascending=True)

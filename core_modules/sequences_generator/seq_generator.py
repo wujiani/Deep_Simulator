@@ -147,10 +147,7 @@ class SeqGenerator():
             rep (int): repetition number
         """
         sim_log = os.path.join(temp_path, sup.file_id('SIM_'))
-        print(bimp_path)
-        print(model)
-        print(os.path.join(os.getcwd(), sim_log))
-        args = ['java', '-jar', bimp_path, os.path.join(os.getcwd(), model), '-csv', os.path.join(os.getcwd(), sim_log)]
+        args = ['java', '-jar', bimp_path, model, '-csv', sim_log]
         subprocess.run(args, check=True, stdout=subprocess.PIPE)
         return sim_log
 

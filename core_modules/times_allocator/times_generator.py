@@ -328,8 +328,8 @@ class TimesGenerator():
         if len(valdn) < int(total_events*0.1):
             train, valdn = splitter.split_log('timeline_trace', size, one_ts)
         # Set splits
-        # key = 'end_timestamp' if one_ts else 'start_timestamp'
-        key = 'start_timestamp'
+        key = 'end_timestamp' if one_ts else 'start_timestamp'
+        # key = 'start_timestamp'
         valdn = pd.DataFrame(valdn)
         train = pd.DataFrame(train)
         valdn = valdn[~valdn.task.isin(['Start', 'End'])]

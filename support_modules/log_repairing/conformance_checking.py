@@ -20,8 +20,8 @@ def evaluate_alignment(process_graph, log, settings):
         traces,
         settings,
         msg='evaluating train partition conformance:')
-    conformant = get_traces(test_replayer.conformant_traces, False)
-    not_conformant = get_traces(test_replayer.not_conformant_traces, False)
+    conformant = get_traces(test_replayer.conformant_traces, settings['read_options']['one_timestamp'])
+    not_conformant = get_traces(test_replayer.not_conformant_traces, settings['read_options']['one_timestamp'])
     # ------conformance percentage before repair------------------
     print_stats(log, conformant, traces)
     if settings['alg_manag'] == 'replacement':
@@ -48,7 +48,7 @@ def evaluate_alignment(process_graph, log, settings):
         aligned_traces,
         settings,
         msg='evaluating conformance after '+settings['alg_manag']+':')
-    conformant = get_traces(test_replayer.conformant_traces, False)
+    conformant = get_traces(test_replayer.conformant_traces, True)
     print_stats(log, conformant, aligned_traces)
 
 

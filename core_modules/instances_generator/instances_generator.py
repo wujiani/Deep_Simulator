@@ -92,8 +92,8 @@ class InstancesGenerator():
 
         """
         # Analysis of start tasks
-        # ordering_field = 'end_timestamp' if one_ts else 'start_timestamp'
-        ordering_field = 'start_timestamp'
+        ordering_field = 'end_timestamp' if one_ts else 'start_timestamp'
+        # ordering_field = 'start_timestamp'
         # Find the initial activity
         log_train = log_train[log_train.task.isin(tasks)]
         arrival_timestamps = (pd.DataFrame(
@@ -169,8 +169,8 @@ class InstancesGenerator():
         if len(valdn) < int(total_events*0.1):
             train, valdn = splitter.split_log('timeline_trace', size, one_ts)
         # Set splits
-        # key = 'end_timestamp' if one_ts else 'start_timestamp'
-        key = 'start_timestamp'
+        key = 'end_timestamp' if one_ts else 'start_timestamp'
+        # key = 'start_timestamp'
         valdn = pd.DataFrame(valdn)
         train = pd.DataFrame(train)
         self.log_valdn = (valdn.sort_values(key, ascending=True)
