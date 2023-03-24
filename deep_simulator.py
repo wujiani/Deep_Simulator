@@ -66,6 +66,12 @@ class DeepSimulator():
                                            {**self.parms['gl'],
                                             **self.parms['i_gen']})
         print('########### Generate instances times ###########')
+        # if self.parms['gl']['read_options']['one_timestamp']:
+        #     print('TEST!!!: one_ts=true')
+        #     _data = pd.DataFrame(self.log_train.data)
+        #     _data['processing_time'] = 0
+        #     _data['waiting_time'] = _data[['caseid','end_timestamp']].groupby('caseid').diff().shift(-1).fillna(pd.Timedelta(0, 'd'))
+        #     self.log_train.data = _data.to_dict('records')
         times_allocator = ta.TimesGenerator(self.process_graph,
                                             self.log_train,
                                             {**self.parms['gl'],

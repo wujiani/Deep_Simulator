@@ -208,12 +208,18 @@ class TimesGenerator():
             day_moment = list(set([self.extract_day_moment(x) for x in log_activity['start_timestamp']]))
             rol = list(set([x for x in log_activity['user']]))
             trace_position = np.mean(list(set([x for x in log_activity['order']])))
-            distribution = self.extract_distribution([x for x in log_activity['processing_time']])
-            mean_proc_time = np.mean(log_activity['processing_time'])
-            std_proc_time = np.std(log_activity['processing_time'])
+            if 'processing_time' in log_activity.keys():
+                distribution = self.extract_distribution([x for x in log_activity['processing_time']])
+                mean_proc_time = np.mean(log_activity['processing_time'])
+                std_proc_time = np.std(log_activity['processing_time'])
+            else:
+                distribution = 0
+                mean_proc_time = 0
+                std_proc_time = 0
             activity_desc.append([activity, day_moment, rol, trace_position, distribution, mean_proc_time, std_proc_time])
 
         df_activity_desc = pd.DataFrame(data=activity_desc, columns = ['task_name', 'day_moment', 'rol', 'trace_position', 'dstribution', 'mean_processing_time', 'std_processing_time'])
+        df_activity_desc.head(3)
         df_activity_desc.to_csv('output_files/Activity_description.csv', sep='|')
 
     def _discover_model(self, **kwargs):
@@ -382,8 +388,13 @@ class TimesGenerator():
         for _, group in itertools.groupby(log, key=lambda x: x['caseid']):
             events = list(group)
             events = sorted(events, key=itemgetter('start_timestamp'))
+            # print('test!!!: trace ', events)
             for i in range(0, len(events)):
-                time = events[i]['start_timestamp'].time()
+                # print('test!!!: start_time ', events[i]['start_timestamp'])
+                try:
+                    time = events[i]['start_timestamp'].time()
+                except:
+                    time = events[i]['end_timestamp'].time()
                 time = time.second + time.minute*60 + time.hour*3600
                 events[i]['st_daytime'] = time
                 events[i]['st_weekday'] = events[i]['start_timestamp'].weekday()
@@ -398,6 +409,14 @@ class TimesGenerator():
         # scale continue features
         cols = ['processing_time', 'waiting_time']
         self.scaler = MaxAbsScaler()
+        if self.one_timestamp:
+            self.log_train['processing_time'] = 0
+            self.log_train['waiting_time'] = self.log_train[['caseid', 'end_timestamp']].groupby('caseid').diff().shift(-1)
+            self.log_train['waiting_time'] = pd.to_numeric(self.log_train['waiting_time'])
+            self.log_valdn['processing_time'] = 0
+            self.log_valdn['waiting_time'] = self.log_valdn[['caseid', 'end_timestamp']].groupby('caseid').diff().shift(-1)
+            self.log_valdn['waiting_time'] = pd.to_numeric(self.log_valdn['waiting_time'])
+
         self.scaler.fit(self.log_train[cols])
         self.log_train[cols] = self.scaler.transform(self.log_train[cols])
         self.log_valdn[cols] = self.scaler.transform(self.log_valdn[cols])

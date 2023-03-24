@@ -72,16 +72,18 @@ class SeqGenerator():
                     save = False
                     print('dont save')
         if save:
+            print('test!!!: params ', self.parms)
+            print('test!!!: best_parms ', best_parms)
             # best structure mining parameters
             self.model_metadata['alg_manag'] = (
-                self.parms['alg_manag'][best_parms['alg_manag']])
+                self.parms['alg_manag'][best_parms.get('alg_manag', 0)])
             self.model_metadata['gate_management'] = (
-                self.parms['gate_management'][best_parms['gate_management']])
+                self.parms['gate_management'][best_parms.get('gate_management', 0)])
             if self.parms['mining_alg'] == 'sm1':
-                self.model_metadata['epsilon'] = best_parms['epsilon']
-                self.model_metadata['eta'] = best_parms['eta']
+                self.model_metadata['epsilon'] = best_parms.get('epsilon', 0)
+                self.model_metadata['eta'] = best_parms.get('eta', 0)
             elif self.parms['mining_alg'] == 'sm2':
-                self.model_metadata['concurrency'] = best_parms['concurrency']
+                self.model_metadata['concurrency'] = best_parms.get('concurrency', 0)
             self.model_metadata['similarity'] = best_similarity
             self.model_metadata['generated_at'] = (
                 datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
@@ -91,8 +93,12 @@ class SeqGenerator():
                 self.parms['file'].split('.')[0]+'.bpmn')
             source = os.path.join(struc_model,
                 self.parms['file'].split('.')[0]+'.bpmn')
+            print('TEST!!!: ', source)
+            print('TEST!!!: ', destination)
             shutil.copyfile(source, destination)
             # Save metadata
+            print('TEST!!!: ', self.model_metadata)
+            print('TEST!!!: ', metadata_file)
             sup.create_json(self.model_metadata, metadata_file)
         # clean output folder
         shutil.rmtree(structure_optimizer.temp_output)

@@ -238,7 +238,7 @@ class DualIntercasesPredictor():
                     iwait_t = ipred[0][1]
                     element['timestamp'] += timedelta(seconds=int(iwait_t))
                     element['action'] = 'create_activity'
-                except IndexError:
+                except:
                     element['action'] = 'complete_instance'
                 pbar.update(1)
                 self.queue.add(element)

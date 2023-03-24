@@ -23,7 +23,7 @@ import deep_simulator as ds
 @click.option('--save_models/--no-save_models', default=True, required=False, type=bool)
 @click.option('--evaluate/--no-evaluate', default=True, required=False, type=bool)
 @click.option('--mining_alg', default='sm1', required=False, type=click.Choice(['sm1', 'sm2', 'sm3']))
-@click.option('--s_gen_repetitions', default=5, required=False, type=int)
+@click.option('--s_gen_repetitions', default=1, required=False, type=int)
 @click.option('--s_gen_max_eval', default=30, required=False, type=int)
 @click.option('--t_gen_epochs', default=100, required=False, type=int)
 @click.option('--t_gen_max_eval', default=6, required=False, type=int)

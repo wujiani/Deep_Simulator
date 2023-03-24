@@ -120,6 +120,7 @@ class StructureMiner():
                 str(settings['epsilon']), str(settings['eta']),
                 input_route,
                 os.path.join(settings['output'], file_name)]
+        print('test!!!: ', args)
         subprocess.call(args)
 
     @staticmethod

@@ -163,16 +163,19 @@ class StructureOptimizer():
             return rsp
 
         # Optimize
+        print('test!!!: start fmin')
         best = fmin(fn=exec_pipeline,
                     space=self.space,
                     algo=tpe.suggest,
                     max_evals=self.settings['max_eval'],
                     trials=self.bayes_trials,
-                    show_progressbar=False)
+                    show_progressbar=False,
+                    timeout=10)
         # Save results
         try:
+            print('!!!test: trial results ', self.bayes_trials.results)
             results = (pd.DataFrame(self.bayes_trials.results)
-                       .sort_values('loss', ascending=bool))
+                       .sort_values('loss', ascending=True))
             self.best_output = (results[results.status=='ok']
                                 .head(1).iloc[0].output)
             self.best_parms = best
@@ -269,7 +272,8 @@ class StructureOptimizer():
         reps = settings['repetitions']
         cpu_count = multiprocessing.cpu_count()
         w_count =  reps if reps <= cpu_count else cpu_count
-        pool = Pool(processes=w_count)
+        # pool = Pool(processes=w_count)
+        pool = Pool(processes=1)
         # Simulate
         args = [(settings, rep) for rep in range(reps)]
         p = pool.map_async(self.execute_simulator, args)
