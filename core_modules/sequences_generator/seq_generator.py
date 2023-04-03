@@ -154,6 +154,7 @@ class SeqGenerator():
         """
         sim_log = os.path.join(temp_path, sup.file_id('SIM_'))
         args = ['java', '-jar', bimp_path, model, '-csv', sim_log]
+        print("bimp_path", bimp_path, "temp_path")
         subprocess.run(args, check=True, stdout=subprocess.PIPE)
         return sim_log
 

@@ -72,7 +72,7 @@ class LogReplayer():
                     results = future.get()
         elif (mode == 'multi') and not self.verbose:
             cpu_count = multiprocessing.cpu_count()
-            pool = Pool(processes=cpu_count)
+            pool = Pool(processes=4)
             p = pool.map_async(self.replay_trace, args)
             p.wait()
             pool.close()
@@ -138,7 +138,7 @@ class LogReplayer():
             cursor = list(OrderedDict.fromkeys(ap_list))
             return cursor, pnode
         
-        def save_record(model, t_times: list, trace: list, i: int, node=None, one_ts=False) -> list:
+        def save_record(model, t_times: list, trace: list, i: int, node=None, one_ts=True) -> list:
             """
             Saves the execution times of the trace in the t_times list
             """

@@ -86,6 +86,7 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params['gl']['read_options']['one_timestamp'] = one_timestamp
     print(params['gl']['file'])
     print(params['gl']['event_logs_path'])
+    print(params['gl']['read_options']['one_timestamp'])
 
     simulator = ds.DeepSimulator(params)
     simulator.execute_pipeline()

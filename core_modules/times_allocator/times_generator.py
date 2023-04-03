@@ -363,6 +363,7 @@ class TimesGenerator():
         inter_mannager = it.IntercaseMannager(log, 
                                               self.parms['all_r_pool'],
                                               self.parms['model_type'])
+        print(f'test!!!: {self.log[:3]}')
         log, mean_states = inter_mannager.fit_transform()
         self.mean_states = mean_states
         self.log = log

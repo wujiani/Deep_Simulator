@@ -170,7 +170,7 @@ class StructureOptimizer():
                     max_evals=self.settings['max_eval'],
                     trials=self.bayes_trials,
                     show_progressbar=False,
-                    timeout=10)
+                    timeout=600)
         # Save results
         try:
             print('!!!test: trial results ', self.bayes_trials.results)
