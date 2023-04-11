@@ -135,7 +135,7 @@ class SequencesCreator():
                                     axis=1).drop([week_col], axis=1)
             num_samples = len(
                 dt_prefixes[['caseid', 'ngram_num']].drop_duplicates())
-            dt_prefixes.drop(columns={'caseid', 'ngram_num'}, inplace=True)
+            dt_prefixes.drop(columns={'caseid', 'ngram_num', exp_col}, inplace=True)
             num_columns = len(dt_prefixes.columns)        
             dt_prefixes = dt_prefixes.to_numpy().reshape(num_samples,
                                                          ngram_size,
@@ -144,20 +144,24 @@ class SequencesCreator():
             return dt_prefixes, dt_expected
         
         caseid_col = ['caseid']
-        st_cols = (caseid_col + ['ac_index', 'processing_time'] +
+        #jiani
+        st_cols = (caseid_col + ['ac_index', 'processing_time', 'proc_label'] +
                    [c_n for c_n in log.columns if 'st_' in c_n])
-        end_cols = (caseid_col + ['n_ac_index', 'waiting_time'] +
+        end_cols = (caseid_col + ['n_ac_index', 'waiting_time', 'waiting_label'] +
                     [c_n for c_n in log.columns if 'end_' in c_n])
+        #jiani
         st_train, st_expected = create_vector(log[st_cols],
-                                              'processing_time',
+                                              'proc_label',
                                               'st_weekday')
         vec['proc_model']['pref'] = dict()
         vec['proc_model']['pref']['ac_index'] = st_train[:,:,0]
         vec['proc_model']['pref']['features'] = st_train[:,:,1:]
         vec['proc_model']['next'] = st_expected
+        #jiani
         end_train, end_expected = create_vector(log[end_cols],
-                                               'waiting_time',
+                                               'waiting_label',
                                                'end_weekday')
+        print("hhhhhhhhtesthhhhhh", end_train, end_expected)
         vec['waiting_model']: dict()
         vec['waiting_model']['pref'] = dict()
         vec['waiting_model']['pref']['ac_index'] = end_train[:,:,0]

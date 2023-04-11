@@ -273,6 +273,7 @@ class ProcessInstance():
                   [daytime] +
                   rp_oc +
                   list(day_dummies))
+
         self._proc_feat_ngram = np.append(self._proc_feat_ngram,
                                           np.array([[record]], dtype=object),
                                           axis=1)

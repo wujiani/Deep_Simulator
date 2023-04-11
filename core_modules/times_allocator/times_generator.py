@@ -221,13 +221,15 @@ class TimesGenerator():
         self.ac_index, self.index_ac = self._indexing(self.log.data, 'task')
         self.usr_index, self.index_usr = self._indexing(self.log.data, 'user')
         # replay
+        print("test!!!!!log_train -2 !!!!!!!!!!!!!!!!", pd.DataFrame(self.log.data).head(5))
         self._replay_process()
-        
         if self.parms['model_type'] in ['inter', 'dual_inter', 'inter_nt']:
             self._add_intercases()
         self._split_timeline(0.8, self.one_timestamp)
+        print("test!!!!!log_train -1 !!!!!!!!!!!!!!!!", self.log_train.iloc[0])
         self.log_train = self._add_calculated_times(self.log_train)
         self.log_valdn = self._add_calculated_times(self.log_valdn)
+        print("test!!!!!log_train -1 !!!!!!!!!!!!!!!!", self.log_train.columns)
         # Add index to the event log
         ac_idx = lambda x: self.ac_index[x['task']]
         self.log_train['ac_index'] = self.log_train.apply(ac_idx, axis=1)
@@ -250,10 +252,14 @@ class TimesGenerator():
                                     
         self.ac_weights = emb_trainer.Embedd(self.parms['emb_method'])
         self.extract_description_activities(self.log.copy())
+        print("test!!!!!log_train -1.5 !!!!!!!!!!!!!!!!", self.log_train.columns)
         # Scale features
         self._transform_features()
+        print("test!!!!!log_train -1.55 !!!!!!!!!!!!!!!!", self.log_train.columns)
         # Optimizer
         self.parms['output'] = os.path.join('output_files', sup.folder_id())
+        print("test!!!!!log_train!!!!!!!!!!!!!!!!", self.log_train.head(5))
+        print("test!!!!!log_train!!!!!!!!!!!!!!!!", self.log_train.iloc[0])
         if self.parms['opt_method'] == 'rand_hpc':
             times_optimizer = hpc_op.ModelHPCOptimizer(self.parms,
                                                        self.log_train,
@@ -353,7 +359,7 @@ class TimesGenerator():
         resource_table.rename(columns={'resource': 'user'}, inplace=True)
         self.roles = {role: group.user.to_list() for role, group in resource_table.groupby('role')}
         log = log.merge(resource_table, on='user', how='left')
-        inter_mannager = it.IntercaseMannager(log, 
+        inter_mannager = it.IntercaseMannager(log,
                                               self.parms['all_r_pool'],
                                               self.parms['model_type'])
         log, mean_states = inter_mannager.fit_transform()
@@ -396,6 +402,11 @@ class TimesGenerator():
     def _transform_features(self):
         # scale continue features
         cols = ['processing_time', 'waiting_time']
+        #jiani
+        self.log_train['proc_label'] = self.log_train['processing_time']
+        self.log_train['waiting_label'] = self.log_train['waiting_time']
+        self.log_valdn['proc_label'] = self.log_valdn['processing_time']
+        self.log_valdn['waiting_label'] = self.log_valdn['waiting_time']
         self.scaler = MaxAbsScaler()
         self.scaler.fit(self.log_train[cols])
         self.log_train[cols] = self.scaler.transform(self.log_train[cols])
@@ -441,6 +452,8 @@ class TimesGenerator():
         if self.parms['model_type'] in ['inter_nt', 'dual_inter']:
             cols.extend(['n_ac_index'])
         # filter features
+        #jiani
+        cols.extend(['proc_label', 'waiting_label'])
         self.log_train = self.log_train[cols]
         self.log_valdn = self.log_valdn[cols]
         # fill nan values

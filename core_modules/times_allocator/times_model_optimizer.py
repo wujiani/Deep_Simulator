@@ -98,6 +98,7 @@ class TimesModelOptimizer():
                 self.parms['read_options']['one_timestamp'], self.ac_index)
             train_vec = vectorizer.vectorize(
                 self.parms['model_type'], self.log_train, trial_stg)
+            print("***************************************", train_vec['proc_model']['next'])
             valdn_vec = vectorizer.vectorize(
                 self.parms['model_type'], self.log_valdn, trial_stg)
             # Train

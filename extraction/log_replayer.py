@@ -276,6 +276,8 @@ class LogReplayer():
                 record['waiting_time'] = waiting
                 record['multitasking'] = multitask
             ps = pd.DataFrame(ps)
+            print("11111111test1111111",ps.iloc[0:3])
+            print("222222test2", ps.columns)
         self.process_stats = ps
 
 # =============================================================================

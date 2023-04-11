@@ -168,11 +168,11 @@ class StructureOptimizer():
                     algo=tpe.suggest,
                     max_evals=self.settings['max_eval'],
                     trials=self.bayes_trials,
-                    show_progressbar=False)
+                    show_progressbar=False, timeout=300)
         # Save results
         try:
             results = (pd.DataFrame(self.bayes_trials.results)
-                       .sort_values('loss', ascending=bool))
+                       .sort_values('loss', ascending=False))
             self.best_output = (results[results.status=='ok']
                                 .head(1).iloc[0].output)
             self.best_parms = best

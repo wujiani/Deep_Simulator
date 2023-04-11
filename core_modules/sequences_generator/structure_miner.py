@@ -146,8 +146,8 @@ class StructureMiner():
                          'external_tools','splitminer3','lib','*')),
                      'au.edu.unimelb.services.ServiceProvider',
                      'SMD',
-                     str(settings['epsilon']), str(settings['eta']),
-                     'false', 'false', 'false',
+                     0, 0,
+                     'false', 'false', 'true',
                      input_route,
                      os.path.join(settings['output'], file_name)])
         subprocess.call(args)

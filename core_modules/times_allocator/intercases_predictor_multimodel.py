@@ -162,14 +162,15 @@ class DualIntercasesPredictor():
                         with self.first_session.as_default():
                             preds = self.proc_model_path.predict(
                                 {'ac_input': np.array([act_ngram]), 'features': feat_ngram})
-                preds[preds < 0] = 0.000001
+                # preds[preds < 0] = 0.000001
+                preds[preds < 0] = 1
                 proc_t = preds[0]
                 active_instances[cid].update_proc(proc_t)
-                ipred = self.scaler.inverse_transform(
-                    np.concatenate((preds, np.array([[0.000]])), axis=1))
-                iproc_t = ipred[0][0]
+                # ipred = self.scaler.inverse_transform(
+                #     np.concatenate((preds, np.array([[0.000]])), axis=1))
+                # iproc_t = ipred[0][0]
                 # resource assignment
-                release_time = element['timestamp'] + timedelta(seconds=int(round(iproc_t)))
+                release_time = element['timestamp'] + timedelta(seconds=int(round(proc_t[0])))
                 res = self.rl_dict[transition[1]].assign_resource(release_time)
                 # verify availability and reshedule if needed
                 if res is not None:
@@ -230,13 +231,14 @@ class DualIntercasesPredictor():
                                 preds = self.wait_model_path.predict(
                                     {'ac_input': np.array([n_act_ngram]),
                                      'features': feat_ngram})
-                    preds[preds < 0] = 0.000001
+                    # preds[preds < 0] = 0.000001
+                    preds[preds < 0] = 1
                     wait_t = preds[0]
                     active_instances[cid].update_wait(wait_t)
-                    ipred = self.scaler.inverse_transform(
-                        np.concatenate((np.array([[0.000]]), preds), axis=1))
-                    iwait_t = ipred[0][1]
-                    element['timestamp'] += timedelta(seconds=int(iwait_t))
+                    # ipred = self.scaler.inverse_transform(
+                    #     np.concatenate((np.array([[0.000]]), preds), axis=1))
+                    # iwait_t = ipred[0][1]
+                    element['timestamp'] += timedelta(seconds=int(wait_t[0]))
                     element['action'] = 'create_activity'
                 except IndexError:
                     element['action'] = 'complete_instance'
