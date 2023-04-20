@@ -18,7 +18,7 @@ class LogReplayer():
     """
 
     def __init__(self, model, log, settings, msg='',
-                 source='log', run_num=0, verbose=True, mode='multi', st=True):
+                 source='log', run_num=0, verbose=True, mode='seq', st=True):
         """constructor"""
         self.source = source
         self.run_num = run_num
@@ -45,7 +45,7 @@ class LogReplayer():
 
         self._replay_traces(mode, st)
 
-    def _replay_traces(self, mode, st,**kwargs) -> None:
+    def _replay_traces(self, mode, st) -> None:
         # Simulate
         args = [(i,
                  trace,
@@ -69,19 +69,21 @@ class LogReplayer():
                             processed = cprocesed
                     pool.close()
                     pbar.update(n=(size - processed))
-                    results = future.get()
+                    results = future.get()[0]
         elif (mode == 'multi') and not self.verbose:
             cpu_count = multiprocessing.cpu_count()
             pool = Pool(processes=cpu_count)
+            print("lllllll")
             p = pool.map_async(self.replay_trace, args)
             p.wait()
             pool.close()
-            results = p.get()
+            results = p.get()[:3]
         elif mode == 'seq' and self.verbose:
             results = list()
             with tqdm(total=size, desc=self.msg) as pbar:
                 for arg in args:
                     results.append(self.replay_trace(arg))
+
                     pbar.update(n=1)
         elif (mode == 'seq') and not self.verbose:
             results = [self.replay_trace(arg) for arg in args]
@@ -97,13 +99,42 @@ class LogReplayer():
             self.calculate_process_metrics() if st else self.process_stats
         else:
             raise AssertionError('Model not valid for testing')
+        for each_edge in self.model.edges:
+            self.model.edges[each_edge]['executions'] =  self.model.edges[each_edge].get('executions', 0)
+            print(self.model.edges[each_edge]['executions'])
+
+        print("fdfd",self.model.edges(data="executions"))
+        print("fdfd2", self.model.nodes(data=True))
+
 
     @staticmethod
     def replay_trace(args) -> None:
         """
         Replays the event-log traces over the BPMN model
         """
-   
+
+        def find_path(model, task_name1, task_name2):
+            node1 = find_task_node(model, task_name1)
+            node2 = find_task_node(model, task_name2)
+            print("node1node2", task_name1,",", task_name2)
+            path_list = list(nx.all_simple_edge_paths(model, node1, node2))
+            if node1 == node2:
+                neighs = list(nx.neighbors(model, node1))
+                for each_neigh in neighs:
+                    for e in list(nx.neighbors(model, each_neigh)):
+                        g = list(nx.neighbors(model, e))
+                        if node1 in g:
+                            path_list = [[(node1, each_neigh), (each_neigh, e), (e, node1)]]
+            list_path_gates = []
+            for each_path in path_list:
+                nodes_on_path = list(itertools.chain.from_iterable(each_path))
+                nodes_on_path = set(nodes_on_path[1:-1])
+                property = list(filter(lambda x: model.nodes[x]['type'] == 'task', nodes_on_path))
+                if len(property) == 0:
+                    list_path_gates.append(each_path)
+            print("each_path", list_path_gates)
+            return list_path_gates
+
         def find_task_node(model: iter, task_name: str) -> int:
             resp = list(filter(
                 lambda x: model.nodes[x]['name'] == task_name, model.nodes))
@@ -169,10 +200,86 @@ class LogReplayer():
             return record
 
 
-        def replay(index, trace, model, start_tasks, end_tasks, 
+        # def replay(index, trace, model, start_tasks, end_tasks,
+        #            parallel_gt_exec, subsec_set, st):
+        #     t_times = list()
+        #     # trace = traces[index][1:-1]  # remove start and end event
+        #     trace = trace[1:-1]  # remove start and end event
+        #     # Check if is a complete trace
+        #     is_conformant = True
+        #     curr_node, last_node = 0, 0
+        #     try:
+        #         curr_node = find_task_node(model, trace[0]['task'])
+        #         last_node = find_task_node(model, trace[-1]['task'])
+        #     except:
+        #         is_conformant = False
+        #     if curr_node not in start_tasks or not is_conformant:
+        #         return False, index, []
+        #     if last_node not in end_tasks or not is_conformant:
+        #         return False, index, []
+        #     # Initialize
+        #     temp_gt_exec = parallel_gt_exec
+        #     cursor = [curr_node]
+        #     remove = True
+        #     # ----time recording------
+        #     t_times = save_record(model, t_times, trace, 0) if st else t_times
+        #     # ------------------------
+        #     for i in range(1, len(trace)):
+        #         try:
+        #             nnode = find_task_node(model, trace[i]['task'])
+        #         except:
+        #             is_conformant = False
+        #             break
+        #         # If loop management
+        #         if nnode == cursor[-1]:
+        #             t_times = (save_record(model,t_times, trace, i, nnode)
+        #                        if st else t_times)
+        #             # print("$@@@@@&&&&&&&&&&!!!!!!into here!!!!")
+        #             model.nodes[nnode]['executions'] += 1
+        #             continue
+        #         try:
+        #             cursor, pnode = update_cursor(nnode, model, cursor)
+        #             # ----time recording------
+        #             t_times = (save_record(model, t_times, trace, i, pnode)
+        #                        if st else t_times)
+        #             # print("$@@@@@&&&&&&&&&&!!!!!!into here2!!!!")
+        #             model.nodes[nnode]['executions'] += 1
+        #             # print(model.nodes(data=True))
+        #
+        #             # ------------------------
+        #         except:
+        #             is_conformant = False
+        #             break
+        #         for element in reversed(cursor[:-1]):
+        #             element_type = model.nodes[element]['type']
+        #             # Process AND
+        #             if element_type == 'gate3':
+        #                 gate = [d for d in temp_gt_exec if d['nod_num'] == element][0]
+        #                 gate.update({'executed': gate['executed'] + 1})
+        #                 if gate['executed'] < gate['num_paths']:
+        #                     remove = False
+        #                 else:
+        #                     remove = True
+        #                     cursor.remove(element)
+        #             # Process Task
+        #             elif element_type == 'task':
+        #                 if (element, nnode) in subsec_set and remove:
+        #                     cursor.remove(element)
+        #             # Process other
+        #             elif remove:
+        #                 cursor.remove(element)
+        #
+        #     if is_conformant:
+        #         # Append the original one
+        #         return True, index, t_times
+        #     else:
+        #         return False, index, []
+        #jiani
+        def replay(index, trace, model, start_tasks, end_tasks,
                    parallel_gt_exec, subsec_set, st):
             t_times = list()
             # trace = traces[index][1:-1]  # remove start and end event
+            trace_start_end = trace
             trace = trace[1:-1]  # remove start and end event
             # Check if is a complete trace
             is_conformant = True
@@ -182,7 +289,7 @@ class LogReplayer():
                 last_node = find_task_node(model, trace[-1]['task'])
             except:
                 is_conformant = False
-            if curr_node not in start_tasks or not is_conformant:                
+            if curr_node not in start_tasks or not is_conformant:
                 return False, index, []
             if last_node not in end_tasks or not is_conformant:
                 return False, index, []
@@ -193,51 +300,68 @@ class LogReplayer():
             # ----time recording------
             t_times = save_record(model, t_times, trace, 0) if st else t_times
             # ------------------------
-            for i in range(1, len(trace)):
+            for i in range(0, len(trace_start_end)-1):
                 try:
-                    nnode = find_task_node(model, trace[i]['task'])
+                    # if i >= 1 and 1 < len(trace_start_end)-2:
+                        # nnode = find_task_node(model, trace[i]['task'])
+                    # print("jiani!")
+                    path = find_path(model, trace_start_end[i]['task'], trace_start_end[i+1]['task'])
+
+
+                    for each_edge in path[0]:
+                        model.edges[each_edge]['executions'] = model.edges[each_edge].get('executions', 0) + 1
+
+                    # if len(path) == 0:
+                    #     print("ppp", trace[i]['task'], trace[i+1]['task'])
+
                 except:
                     is_conformant = False
                     break
-                # If loop management
-                if nnode == cursor[-1]:
-                    t_times = (save_record(model,t_times, trace, i, nnode) 
-                               if st else t_times)
-                    model.nodes[nnode]['executions'] += 1
-                    continue
-                try:
-                    cursor, pnode = update_cursor(nnode, model, cursor)
-                    # ----time recording------
-                    t_times = (save_record(model, t_times, trace, i, pnode) 
-                               if st else t_times)
-                    model.nodes[nnode]['executions'] += 1
-                    # ------------------------
-                except:
-                    is_conformant = False
-                    break
-                for element in reversed(cursor[:-1]):
-                    element_type = model.nodes[element]['type']
-                    # Process AND
-                    if element_type == 'gate3':
-                        gate = [d for d in temp_gt_exec if d['nod_num'] == element][0]
-                        gate.update({'executed': gate['executed'] + 1})
-                        if gate['executed'] < gate['num_paths']:
-                            remove = False
-                        else:
-                            remove = True
-                            cursor.remove(element)
-                    # Process Task
-                    elif element_type == 'task':
-                        if (element, nnode) in subsec_set and remove:
-                            cursor.remove(element)
-                    # Process other
-                    elif remove:
-                        cursor.remove(element)
+                # # If loop management
+                # if nnode == cursor[-1]:
+                #     t_times = (save_record(model, t_times, trace, i, nnode)
+                #                if st else t_times)
+                #     # print("$@@@@@&&&&&&&&&&!!!!!!into here!!!!")
+                #     model.nodes[nnode]['executions'] += 1
+                #     continue
+                # try:
+                #     cursor, pnode = update_cursor(nnode, model, cursor)
+                #     # ----time recording------
+                #     t_times = (save_record(model, t_times, trace, i, pnode)
+                #                if st else t_times)
+                #     # print("$@@@@@&&&&&&&&&&!!!!!!into here2!!!!")
+                #     model.nodes[nnode]['executions'] += 1
+                #     # print(model.nodes(data=True))
+                #
+                #     # ------------------------
+                # except:
+                #     is_conformant = False
+                #     break
+                # for element in reversed(cursor[:-1]):
+                #     element_type = model.nodes[element]['type']
+                #     # Process AND
+                #     if element_type == 'gate3':
+                #         gate = [d for d in temp_gt_exec if d['nod_num'] == element][0]
+                #         gate.update({'executed': gate['executed'] + 1})
+                #         if gate['executed'] < gate['num_paths']:
+                #             remove = False
+                #         else:
+                #             remove = True
+                #             cursor.remove(element)
+                #     # Process Task
+                #     elif element_type == 'task':
+                #         if (element, nnode) in subsec_set and remove:
+                #             cursor.remove(element)
+                #     # Process other
+                #     elif remove:
+                #         cursor.remove(element)
+
             if is_conformant:
                 # Append the original one
                 return True, index, t_times
             else:
                 return False, index, []
+
         return replay(*args)
 
 # =============================================================================
@@ -327,4 +451,5 @@ class LogReplayer():
             else:
                 tasks_list.append(
                     LogReplayer.find_next_tasks(model, node))
+                # print("yyyyyyyy2")
         return tasks_list

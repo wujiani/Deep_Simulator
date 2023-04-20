@@ -289,6 +289,7 @@ class TimesGenerator():
                                    self.log.get_traces(),
                                    self.parms, 
                                    msg='reading conformant training traces:')
+        print("yyyyyyyy6")
         self.log = replayer.process_stats.rename(columns={'resource':'user'})
         self.log['user'] = self.log['user'].fillna('sys')
         self.log = self.log.to_dict('records')

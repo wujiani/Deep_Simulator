@@ -22,7 +22,7 @@ import deep_simulator as ds
 @click.option('--update_times_gen/--no-update_times_gen', default=False, required=False, type=bool)
 @click.option('--save_models/--no-save_models', default=True, required=False, type=bool)
 @click.option('--evaluate/--no-evaluate', default=True, required=False, type=bool)
-@click.option('--mining_alg', default='sm1', required=False, type=click.Choice(['sm1', 'sm2', 'sm3']))
+@click.option('--mining_alg', default='sm3', required=False, type=click.Choice(['sm1', 'sm2', 'sm3']))
 @click.option('--s_gen_repetitions', default=5, required=False, type=int)
 @click.option('--s_gen_max_eval', default=30, required=False, type=int)
 @click.option('--t_gen_epochs', default=100, required=False, type=int)
@@ -52,7 +52,7 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params['s_gen']['epsilon'] = [0.0, 1.0]
     params['s_gen']['eta'] = [0.0, 1.0]
     params['s_gen']['alg_manag'] = ['replacement', 'repair']
-    params['s_gen']['gate_management'] = ['discovery', 'equiprobable']
+    params['s_gen']['gate_management'] = ['random']
     # Inter arrival generator
     params['i_gen'] = dict()
     params['i_gen']['batch_size'] = 32  # Usually 32/64/128/256

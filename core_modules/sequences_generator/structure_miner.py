@@ -140,13 +140,13 @@ class StructureMiner():
         # Mining structure definition
         args = ['java']
         if not pl.system().lower() == 'windows':
-            args.extend(['-Xmx2G', '-Xss8G'])
+            args.extend(['-Xmx1G', '-Xss4G'])
         args.extend(['-cp',
                      (settings['sm3_path']+sep+os.path.join(
                          'external_tools','splitminer3','lib','*')),
                      'au.edu.unimelb.services.ServiceProvider',
                      'SMD',
-                     0, 0,
+                     str(settings['epsilon']), str(settings['eta']),
                      'false', 'false', 'true',
                      input_route,
                      os.path.join(settings['output'], file_name)])
