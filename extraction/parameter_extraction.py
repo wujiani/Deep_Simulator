@@ -126,6 +126,7 @@ class ParameterMiner():
         for seq in sequences:
             seq['elementid'] = self.bpmn.find_sequence_id(seq['gatewayid'],
                                                           seq['out_path_id'])
+            print("my_final_test", sequences.to_dict('records'))
         self.parameters['sequences'] = sequences
 
     @Decorators.safe_exec

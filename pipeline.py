@@ -52,7 +52,7 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params['s_gen']['epsilon'] = [0.0, 1.0]
     params['s_gen']['eta'] = [0.0, 1.0]
     params['s_gen']['alg_manag'] = ['replacement', 'repair']
-    params['s_gen']['gate_management'] = ['random']
+    params['s_gen']['gate_management'] = ['discovery']
     # Inter arrival generator
     params['i_gen'] = dict()
     params['i_gen']['batch_size'] = 32  # Usually 32/64/128/256

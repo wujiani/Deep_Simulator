@@ -34,6 +34,7 @@ class GatewaysEvaluator():
         """
         # sup.print_performed_task('Analysing gateways` probabilities')
         # Analisys of gateways probabilities
+        print("method,,", self.method)
         if self.method == 'discovery':
             gateways = self.analize_gateways()
         elif self.method == 'random':
@@ -41,7 +42,7 @@ class GatewaysEvaluator():
         elif self.method == 'equiprobable':
             gateways = self.analize_gateways_equi()
         # Fix 0 probabilities and float error sums
-        gateways = self.normalize_probabilities(gateways)
+        # gateways = self.normalize_probabilities(gateways)
         # Creating response list
         gids = lambda x: self.process_graph.nodes[x['gate']]['id']
         gateways['gatewayid'] = gateways.apply(gids, axis=1)
@@ -177,6 +178,8 @@ class GatewaysEvaluator():
         # Add task execution count
         # print("self.process_graph.nodes data=True", list(self.process_graph.nodes(data=True)))
         print('edges: ', list(self.process_graph.edges.data()))
+        print("columns,", nodes_list.columns)
+        nodes_list = nodes_list[['gate', 't_path']].drop_duplicates()
         executions = lambda x: self.process_graph.edges[(x['gate'], x['t_path'])]['executions']
         nodes_list['executions'] = nodes_list.apply(executions, axis=1)
         # print("nodes_list['executions']", nodes_list)
@@ -194,7 +197,7 @@ class GatewaysEvaluator():
                 np.divide(x['executions'], t_ocurrences[x['gate']]), 2)
             nodes_list['prob'] = nodes_list.apply(rate, axis=1)
             nodes_list['prob'] = nodes_list['prob'].fillna(0)
-        # print("prob",nodes_list['prob'])
+        print("prob",nodes_list)
         return nodes_list
 
     def analize_gateways_random(self) -> pd.DataFrame:
