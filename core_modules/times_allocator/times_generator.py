@@ -239,8 +239,8 @@ class TimesGenerator():
             ac_idx = lambda x: self.ac_index[x['n_task']]
             self.log_train['n_ac_index'] = self.log_train.apply(ac_idx, axis=1)
             self.log_valdn['n_ac_index'] = self.log_valdn.apply(ac_idx, axis=1)
-            print('ff', self.log_train['n_ac_index'].head(10))
-            print('ff', self.log_train['ac_index'].head(10))
+            print('ff', self.log_train[['n_ac_index','n_task']].head(10))
+            print('ff', self.log_train[['ac_index','task']].head(10))
         # Load embedding matrixes
         self.train_val_log = pd.concat([pd.DataFrame(self.log_train), pd.DataFrame(self.log_valdn)])
         self.ac_index_train_val, self.index_ac_train_val = self._indexing(self.train_val_log, 'task')

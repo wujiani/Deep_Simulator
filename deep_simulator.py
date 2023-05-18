@@ -46,7 +46,18 @@ class DeepSimulator():
         exec_times = dict()
         self.is_safe = self._read_inputs(
             log_time=exec_times, is_safe=self.is_safe)
+        # print('self.log_test', self.log_test)
         # modify number of instances in the model
+        self.log_test.to_csv(
+            os.path.join(r'C:\Users\19wuj\Desktop\test_0518', 'test_' +
+                         self.parms['gl']['file'].split('.')[0] + '.csv'),
+            index=False)
+
+
+        pd.DataFrame(self.log_train.data).to_csv(
+            os.path.join(r'C:\Users\19wuj\Desktop\test_0518', 'train_' +
+                         self.parms['gl']['file'].split('.')[0] + '.csv'),
+            index=False)
         if self.parms['gl']['num_sim'] == 'Y':
             num_inst = len(self.log_test.caseid.unique())
         else:
@@ -102,7 +113,7 @@ class DeepSimulator():
         # f = self.log[self.log['caseid'] == '114007']
         # print(f)
         # Time splitting 80-20
-        self._split_timeline(0.8,
+        self._split_timeline(0.5,
                              self.parms['gl']['read_options']['one_timestamp'])
 
     @timeit
@@ -403,15 +414,16 @@ class DeepSimulator():
         key = 'end_timestamp' if one_ts else 'start_timestamp'
         test = pd.DataFrame(test)
         train = pd.DataFrame(train)
-        self.log_test = (test.sort_values(key, ascending=True)
-                         .reset_index(drop=True))
-
+        self.log_test = test
+        # print('ee', self.log_test)
+        # self.log_test = (test.sort_values(key, ascending=True)
+        #                  .reset_index(drop=True))
+        # self.log_test = copy.deepcopy(test)
         print('Number of instances in test log: {}'.format(len(self.log_test['caseid'].drop_duplicates())))
         self.log_train = copy.deepcopy(self.log)
         
         
-        self.log_train.set_data(train.sort_values(key, ascending=True)
-                                .reset_index(drop=True).to_dict('records'))
+        self.log_train.set_data(train.to_dict('records'))
         print('Number of instances in train log: {}'.format(len(train.sort_values(key, ascending=True)
                                 .reset_index(drop=True)['caseid'].drop_duplicates())))
 
