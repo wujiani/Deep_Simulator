@@ -127,6 +127,7 @@ class DualIntercasesPredictor():
 
         pbar = tqdm(total=num_elements, desc='generating traces:')
         while not self.queue.get_all().empty():
+            print('start_predict')
             element = self.queue.get_remove_first()
             cid = element['caseid']
             if element['action'] == 'create_instance':
@@ -164,8 +165,14 @@ class DualIntercasesPredictor():
                                 {'ac_input': np.array([act_ngram]), 'features': feat_ngram})
                 # preds[preds < 0] = 0.000001
                 preds[preds < 0] = 1
+
                 proc_t = preds[0]
-                active_instances[cid].update_proc(proc_t)
+                print('processing', proc_t)
+                tpred = self.scaler.transform(
+                    np.concatenate((preds, np.array([[0.000]])), axis=1))
+                temp = tpred[0][0]
+                print('scale',temp)
+                active_instances[cid].update_proc(np.array([temp]))
                 # ipred = self.scaler.inverse_transform(
                 #     np.concatenate((preds, np.array([[0.000]])), axis=1))
                 # iproc_t = ipred[0][0]
@@ -233,12 +240,16 @@ class DualIntercasesPredictor():
                                      'features': feat_ngram})
                     # preds[preds < 0] = 0.000001
                     preds[preds < 0] = 1
+
                     wait_t = preds[0]
-                    active_instances[cid].update_wait(wait_t)
-                    # ipred = self.scaler.inverse_transform(
-                    #     np.concatenate((np.array([[0.000]]), preds), axis=1))
+                    print('waiting', wait_t)
+                    tpred = self.scaler.transform(
+                        np.concatenate((np.array([[0.000]]), preds), axis=1))
+                    temp = tpred[0][1]
+                    active_instances[cid].update_wait(np.array([temp]))
                     # iwait_t = ipred[0][1]
                     element['timestamp'] += timedelta(seconds=int(wait_t[0]))
+                    print(element['timestamp'])
                     element['action'] = 'create_activity'
                 except IndexError:
                     element['action'] = 'complete_instance'

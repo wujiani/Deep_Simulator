@@ -1,0 +1,11 @@
+python .\pipeline.py --file VINST_cases_incidents.xes --one_timestamp true
+java -cp C:\Users\19wuj\PycharmProjects\DeepSimulator\external_tools\splitminer2\sm2.jar;C:\Users\19wuj\PycharmProjects\DeepSimulator\external_tools\splitminer2\lib\*;. au.edu.unimelb.services.ServiceProvider SMD 0.5 0.5 false false true C:\Users\19wuj\Desktop\test\Production.xes output
+java -cp C:\Users\19wuj\PycharmProjects\DeepSimulator\external_tools\splitminer2\sm2.jar;C:\Users\19wuj\Py
+charmProjects\DeepSimulator\external_tools\splitminer2\lib\* au.edu.unimelb.services.ServiceProvider SM2 C:\Users\19wuj\PycharmProjects\DeepSimulator\input_files\event
+_logs\ConsultaDataMining201618.xes output_0418_sm2 1
+java -cp C:\Users\19wuj\PycharmProjects\DeepSimulator\external_tools\splitminer3\bpmtk.jar;C:\Users\19wuj\PycharmProjects\DeepSimulator\external_tools\splitminer3\lib\* au.edu.unimelb.services.ServiceProvider SMD 0.5 0.5 false false true C:\Users\19wuj\PycharmProjects\DeepSimulator\input_files\event_logs\BACcsv_random.xes output_0418_true
+
+false里有<standardLoopCharacteristics testBefore="false"/>表示self-loop
+
+node_6f004373-ea45-4702-ad9d-702e04d0cad6 27
+node_21bef8b6-8227-42ea-93fb-093b6011690d 19

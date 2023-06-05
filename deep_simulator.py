@@ -47,7 +47,10 @@ class DeepSimulator():
         self.is_safe = self._read_inputs(
             log_time=exec_times, is_safe=self.is_safe)
         # modify number of instances in the model
-        num_inst = len(self.log_test.caseid.unique())
+        if self.parms['gl']['num_sim'] == 'Y':
+            num_inst = len(self.log_test.caseid.unique())
+        else:
+            num_inst = int(self.parms['gl']['num_sim'])
         # get minimum date
         start_time = (self.log_test.start_timestamp.min().strftime("%Y-%m-%dT%H:%M:%S.%f+00:00"))
         print('############ Structure optimization ############')
@@ -95,6 +98,9 @@ class DeepSimulator():
         self.log = lr.LogReader(os.path.join(self.parms['gl']['event_logs_path'],
                                              self.parms['gl']['file']),
                                 self.parms['gl']['read_options'])
+        # self.log = pd.DataFrame(self.log.data)
+        # f = self.log[self.log['caseid'] == '114007']
+        # print(f)
         # Time splitting 80-20
         self._split_timeline(0.8,
                              self.parms['gl']['read_options']['one_timestamp'])
@@ -284,11 +290,19 @@ class DeepSimulator():
             index=False)
             
         # Save logs        
-        log_test = self.log_test[~self.log_test.task.isin(['Start', 'End'])]
+        # log_test = self.log_test[~self.log_test.task.isin(['Start', 'End'])]
+        log_test = self.log_test
         log_test.to_csv(
-            os.path.join(output_path, 'tst_' +
+            os.path.join(output_path, 'test_' +
                          self.parms['gl']['file'].split('.')[0] + '.csv'),
             index=False)
+
+        log_train = pd.DataFrame(self.log_train.data)
+        log_train.to_csv(
+            os.path.join(output_path, 'train_' +
+                         self.parms['gl']['file'].split('.')[0] + '.csv'),
+            index=False)
+
         if self.parms['gl']['save_models']:
             paths = ['bpmn_models', 'embedded_path', 'ia_gen_path',
                      'seq_flow_gen_path', 'times_gen_path']

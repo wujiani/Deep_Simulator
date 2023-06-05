@@ -221,8 +221,9 @@ class TimesGenerator():
         self.ac_index, self.index_ac = self._indexing(self.log.data, 'task')
         self.usr_index, self.index_usr = self._indexing(self.log.data, 'user')
         # replay
-        print("test!!!!!log_train -2 !!!!!!!!!!!!!!!!", pd.DataFrame(self.log.data).head(5))
+        # print("test!!!!!log_train -2 !!!!!!!!!!!!!!!!", pd.DataFrame(self.log.data).head(5))
         self._replay_process()
+
         if self.parms['model_type'] in ['inter', 'dual_inter', 'inter_nt']:
             self._add_intercases()
         self._split_timeline(0.8, self.one_timestamp)
@@ -238,6 +239,8 @@ class TimesGenerator():
             ac_idx = lambda x: self.ac_index[x['n_task']]
             self.log_train['n_ac_index'] = self.log_train.apply(ac_idx, axis=1)
             self.log_valdn['n_ac_index'] = self.log_valdn.apply(ac_idx, axis=1)
+            print('ff', self.log_train['n_ac_index'].head(10))
+            print('ff', self.log_train['ac_index'].head(10))
         # Load embedding matrixes
         self.train_val_log = pd.concat([pd.DataFrame(self.log_train), pd.DataFrame(self.log_valdn)])
         self.ac_index_train_val, self.index_ac_train_val = self._indexing(self.train_val_log, 'task')
@@ -251,6 +254,7 @@ class TimesGenerator():
                                     self.index_usr)
                                     
         self.ac_weights = emb_trainer.Embedd(self.parms['emb_method'])
+        print('ac_weights', self.ac_weights)
         self.extract_description_activities(self.log.copy())
         print("test!!!!!log_train -1.5 !!!!!!!!!!!!!!!!", self.log_train.columns)
         # Scale features
@@ -289,7 +293,7 @@ class TimesGenerator():
                                    self.log.get_traces(),
                                    self.parms, 
                                    msg='reading conformant training traces:')
-        print("yyyyyyyy6")
+        # print("yyyyyyyy6")
         self.log = replayer.process_stats.rename(columns={'resource':'user'})
         self.log['user'] = self.log['user'].fillna('sys')
         self.log = self.log.to_dict('records')

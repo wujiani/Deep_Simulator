@@ -32,5 +32,6 @@ class TimesPredictor:
             return ip.IntercasesPredictor(self.model_path, self.parms)
         elif method == 'dual_inter':
             return mip.DualIntercasesPredictor(self.model_path, self.parms)
+            # return ndp.NoIntercasesPredictor(self.model_path, self.parms)
         else:
             raise ValueError(method)

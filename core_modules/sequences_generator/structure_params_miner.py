@@ -78,7 +78,7 @@ class StructureParametersMiner():
                                    self.log.get_traces(),
                                    self.settings,
                                    msg='reading conformant training traces:')
-        print("yyyyyyyy")
+        # print("yyyyyyyy")
         self.process_stats = replayer.process_stats
         self.process_stats['role'] = 'SYSTEM'
         self.conformant_traces = replayer.conformant_traces
@@ -124,7 +124,7 @@ class StructureParametersMiner():
         gevaluator = gt.GatewaysEvaluator(self.process_graph,
                                           self.settings['gate_management'])
         sequences = gevaluator.probabilities
-        print("########################sequences0418######", sequences)
+        # print("########################sequences0418######", sequences)
         for seq in sequences:
             seq['elementid'] = self.bpmn.find_sequence_id(seq['gatewayid'],
                                                           seq['out_path_id'])

@@ -73,7 +73,7 @@ class LogReplayer():
         elif (mode == 'multi') and not self.verbose:
             cpu_count = multiprocessing.cpu_count()
             pool = Pool(processes=cpu_count)
-            print("lllllll")
+            # print("lllllll")
             p = pool.map_async(self.replay_trace, args)
             p.wait()
             pool.close()
@@ -103,8 +103,8 @@ class LogReplayer():
             self.model.edges[each_edge]['executions'] =  self.model.edges[each_edge].get('executions', 0)
             print(self.model.edges[each_edge]['executions'])
 
-        print("fdfd",self.model.edges(data="executions"))
-        print("fdfd2", self.model.nodes(data=True))
+        # print("fdfd",self.model.edges(data="executions"))
+        # print("fdfd2", self.model.nodes(data=True))
 
 
     @staticmethod
@@ -116,7 +116,7 @@ class LogReplayer():
         def find_path(model, task_name1, task_name2):
             node1 = find_task_node(model, task_name1)
             node2 = find_task_node(model, task_name2)
-            print("node1node2", task_name1,",", task_name2)
+            # print("node1node2", task_name1,",", task_name2)
             path_list = list(nx.all_simple_edge_paths(model, node1, node2))
             if node1 == node2:
                 neighs = list(nx.neighbors(model, node1))
@@ -132,7 +132,7 @@ class LogReplayer():
                 property = list(filter(lambda x: model.nodes[x]['type'] == 'task', nodes_on_path))
                 if len(property) == 0:
                     list_path_gates.append(each_path)
-            print("each_path", list_path_gates)
+            # print("each_path", list_path_gates)
             return list_path_gates
 
         def find_task_node(model: iter, task_name: str) -> int:
@@ -302,8 +302,8 @@ class LogReplayer():
             # ------------------------
             for i in range(0, len(trace_start_end)-1):
                 try:
-                    # if i >= 1 and 1 < len(trace_start_end)-2:
-                        # nnode = find_task_node(model, trace[i]['task'])
+                    if i >= 1 and i < len(trace_start_end)-2:
+                        nnode = find_task_node(model, trace[i]['task'])
                     # print("jiani!")
                     path = find_path(model, trace_start_end[i]['task'], trace_start_end[i+1]['task'])
 
@@ -317,44 +317,45 @@ class LogReplayer():
                 except:
                     is_conformant = False
                     break
-                # # If loop management
-                # if nnode == cursor[-1]:
-                #     t_times = (save_record(model, t_times, trace, i, nnode)
-                #                if st else t_times)
-                #     # print("$@@@@@&&&&&&&&&&!!!!!!into here!!!!")
-                #     model.nodes[nnode]['executions'] += 1
-                #     continue
-                # try:
-                #     cursor, pnode = update_cursor(nnode, model, cursor)
-                #     # ----time recording------
-                #     t_times = (save_record(model, t_times, trace, i, pnode)
-                #                if st else t_times)
-                #     # print("$@@@@@&&&&&&&&&&!!!!!!into here2!!!!")
-                #     model.nodes[nnode]['executions'] += 1
-                #     # print(model.nodes(data=True))
-                #
-                #     # ------------------------
-                # except:
-                #     is_conformant = False
-                #     break
-                # for element in reversed(cursor[:-1]):
-                #     element_type = model.nodes[element]['type']
-                #     # Process AND
-                #     if element_type == 'gate3':
-                #         gate = [d for d in temp_gt_exec if d['nod_num'] == element][0]
-                #         gate.update({'executed': gate['executed'] + 1})
-                #         if gate['executed'] < gate['num_paths']:
-                #             remove = False
-                #         else:
-                #             remove = True
-                #             cursor.remove(element)
-                #     # Process Task
-                #     elif element_type == 'task':
-                #         if (element, nnode) in subsec_set and remove:
-                #             cursor.remove(element)
-                #     # Process other
-                #     elif remove:
-                #         cursor.remove(element)
+                # If loop management
+                if i >= 1 and i < len(trace_start_end) - 2:
+                    if nnode == cursor[-1]:
+                        t_times = (save_record(model, t_times, trace, i, nnode)
+                                   if st else t_times)
+                        # print("$@@@@@&&&&&&&&&&!!!!!!into here!!!!")
+                        model.nodes[nnode]['executions'] += 1
+                        continue
+                    try:
+                        cursor, pnode = update_cursor(nnode, model, cursor)
+                        # ----time recording------
+                        t_times = (save_record(model, t_times, trace, i, pnode)
+                                   if st else t_times)
+                        # print("$@@@@@&&&&&&&&&&!!!!!!into here2!!!!")
+                        model.nodes[nnode]['executions'] += 1
+                        # print(model.nodes(data=True))
+
+                        # ------------------------
+                    except:
+                        is_conformant = False
+                        break
+                    for element in reversed(cursor[:-1]):
+                        element_type = model.nodes[element]['type']
+                        # Process AND
+                        if element_type == 'gate3':
+                            gate = [d for d in temp_gt_exec if d['nod_num'] == element][0]
+                            gate.update({'executed': gate['executed'] + 1})
+                            if gate['executed'] < gate['num_paths']:
+                                remove = False
+                            else:
+                                remove = True
+                                cursor.remove(element)
+                        # Process Task
+                        elif element_type == 'task':
+                            if (element, nnode) in subsec_set and remove:
+                                cursor.remove(element)
+                        # Process other
+                        elif remove:
+                            cursor.remove(element)
 
             if is_conformant:
                 # Append the original one
@@ -400,8 +401,8 @@ class LogReplayer():
                 record['waiting_time'] = waiting
                 record['multitasking'] = multitask
             ps = pd.DataFrame(ps)
-            print("11111111test1111111",ps.iloc[0:3])
-            print("222222test2", ps.columns)
+            # print("11111111test1111111",ps.iloc[0:3])
+            # print("222222test2", ps.columns)
         self.process_stats = ps
 
 # =============================================================================

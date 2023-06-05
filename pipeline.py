@@ -27,8 +27,10 @@ import deep_simulator as ds
 @click.option('--s_gen_max_eval', default=30, required=False, type=int)
 @click.option('--t_gen_epochs', default=100, required=False, type=int)
 @click.option('--t_gen_max_eval', default=6, required=False, type=int)
+@click.option('--use_bimp', default='Y', required=False, type=str)
+@click.option('--num_sim', default='Y', required=False, type=str)
 def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, save_models, evaluate, mining_alg,
-         s_gen_repetitions, s_gen_max_eval, t_gen_epochs, t_gen_max_eval):
+         s_gen_repetitions, s_gen_max_eval, t_gen_epochs, t_gen_max_eval, use_bimp, num_sim):
     params = dict()
     params['gl'] = dict()
     params['gl']['file'] = file
@@ -38,6 +40,9 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params['gl']['update_times_gen'] = update_times_gen
     params['gl']['save_models'] = save_models
     params['gl']['evaluate'] = evaluate
+    print(evaluate)
+    params['gl']['use_bimp'] = use_bimp
+    params['gl']['num_sim'] = num_sim
     params['gl']['mining_alg'] = mining_alg
     params = read_properties(params)
     params['gl']['sim_metric'] = 'tsd'  # Main metric
@@ -77,7 +82,6 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params['t_gen']['all_r_pool'] = True  # only intercase features
     params['t_gen']['reschedule'] = False  # reschedule according resource pool ocupation
     params['t_gen']['rp_similarity'] = 0.80  # Train models
-    print(params['gl']['file'])
     print(params)
     simulator = ds.DeepSimulator(params)
     simulator.execute_pipeline()

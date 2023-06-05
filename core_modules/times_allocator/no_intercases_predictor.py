@@ -5,6 +5,7 @@ Created on Sun Apr 25 16:45:56 2021
 @author: Manuel Camargo
 """
 import os
+import copy
 import json
 import math
 import itertools
@@ -72,8 +73,8 @@ class NoIntercasesPredictor():
         # Generate
         args = [(iarr, 
                  sequences[sequences.caseid.isin(cases)], 
-                 n_size, 
-                 self.ac_index, 
+                 n_size,
+                 self.ac_index,
                  self.model_path, 
                  s_path) for cases in chunks]
         p = pool.map_async(self.generate_trace, args)
@@ -101,11 +102,22 @@ class NoIntercasesPredictor():
                     act_ngram = [0 for i in range(n_size)]
                     feat_ngram = np.zeros((1, n_size, 10))
                     for event in trace.to_dict('records'):
+
+                        redo = False
+                        if event['task'][0] == '(' and event['task'][-1] == ')':
+                            redo = True
+                            event_reuse = copy.deepcopy(event)
+                            elements = event['task'][1:-1].split(", ")
+                            elements = [each.strip("\'") for each in elements]
+                            mytuple = tuple(elements)
+                            len_tuple = len(mytuple)
+                            event['task'] = mytuple[0]
+
                         new_event = dict()
                         daytime = s_timestamp.time()
                         daytime = daytime.second + daytime.minute*60 + daytime.hour*3600
                         daytime = daytime / 86400
-                        day_dummies = ku.to_categorical(s_timestamp.weekday(), 
+                        day_dummies = ku.to_categorical(s_timestamp.weekday(),
                                                         num_classes=7)
                         record = list(day_dummies) + [proc_t, wait_t, daytime]
                         feat_ngram = np.append(feat_ngram, [[record]], axis=1)
@@ -116,20 +128,61 @@ class NoIntercasesPredictor():
                                                'features': feat_ngram})
                         preds[preds < 0] = 0
                         scaler = load(open(s_path, 'rb'))
-                        ipred = scaler.inverse_transform(preds)
-                        proc_t, wait_t = preds[0]
+                        # ipred = scaler.inverse_transform(preds)
+
+                        ipred = preds
+                        proc_t, wait_t = scaler.transform(preds)[0]
+                        with open('./output_time.txt', 'w') as f:
+                            f.write(proc_t)
+                            f.write(wait_t)
                         new_event['caseid'] = cid
                         new_event['resource'] = event['resource']
-                        new_event['task'] = (index_ac[event['task']] 
-                                             if type(event['task']) is int 
+                        new_event['task'] = (index_ac[event['task']]
+                                             if type(event['task']) is int
                                              else event['task'])
                         new_event['start_timestamp'] = s_timestamp
                         new_event['end_timestamp'] = (
                             s_timestamp + timedelta(seconds=float(ipred[0][0])))
-                        s_timestamp = (
-                            new_event['end_timestamp'] + timedelta(
-                                seconds=float(ipred[0][1])))
+
                         new_batch.append(new_event)
+
+                        if redo == True:
+                            for i in range(len_tuple - 1):
+                                new_event = dict()
+                                event_reuse['task'] = mytuple[i + 1]
+                                daytime = s_timestamp.time()
+                                daytime = daytime.second + daytime.minute * 60 + daytime.hour * 3600
+                                daytime = daytime / 86400
+                                day_dummies = ku.to_categorical(s_timestamp.weekday(),
+                                                                num_classes=7)
+                                record = list(day_dummies) + [proc_t, wait_t, daytime]
+                                feat_ngram = np.append(feat_ngram, [[record]], axis=1)
+                                feat_ngram = np.delete(feat_ngram, 0, 1)
+                                act_ngram.append(ac_index[event_reuse['task']])
+                                act_ngram.pop(0)
+                                preds = model.predict({'ac_input': np.array([act_ngram]),
+                                                       'features': feat_ngram})
+                                preds[preds < 0] = 0
+                                scaler = load(open(s_path, 'rb'))
+                                ipred = scaler.inverse_transform(preds)
+                                # ipred = preds
+                                proc_t, wait_t = preds[0]
+                                new_event['caseid'] = cid
+                                new_event['resource'] = event_reuse['resource']
+
+                                new_event['task'] = (index_ac[event_reuse['task']]
+                                                     if type(event_reuse['task']) is int
+                                                     else event_reuse['task'])
+                                new_event['start_timestamp'] = s_timestamp
+                                new_event['end_timestamp'] = (
+                                        s_timestamp + timedelta(seconds=float(ipred[0][0])))
+
+                                new_batch.append(new_event)
+
+
+                        s_timestamp = (
+                                new_event['end_timestamp'] + timedelta(
+                            seconds=float(ipred[0][1])))
                 return new_batch
             except Exception:
                 traceback.print_exc()

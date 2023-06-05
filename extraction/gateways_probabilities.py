@@ -177,8 +177,8 @@ class GatewaysEvaluator():
         nodes_list = self.analize_gateway_structure()
         # Add task execution count
         # print("self.process_graph.nodes data=True", list(self.process_graph.nodes(data=True)))
-        print('edges: ', list(self.process_graph.edges.data()))
-        print("columns,", nodes_list.columns)
+        # print('edges: ', list(self.process_graph.edges.data()))
+        # print("columns,", nodes_list.columns)
         nodes_list = nodes_list[['gate', 't_path']].drop_duplicates()
         executions = lambda x: self.process_graph.edges[(x['gate'], x['t_path'])]['executions']
         nodes_list['executions'] = nodes_list.apply(executions, axis=1)
@@ -187,17 +187,17 @@ class GatewaysEvaluator():
         # nodes_list = (nodes_list.groupby(by=['gate', 't_path'])['executions']
         #               .sum()
         #               .reset_index())
-        print("number executions_nodes_list",nodes_list)
+        # print("number executions_nodes_list",nodes_list)
         # Calculate probabilities
         t_ocurrences = (nodes_list.groupby(by=['gate'])['executions']
                         .sum().to_dict())
         # print('t_occur\n', t_ocurrences)
         with np.errstate(divide='ignore', invalid='ignore'):
             rate = lambda x: round(
-                np.divide(x['executions'], t_ocurrences[x['gate']]), 2)
+                np.divide(x['executions'], t_ocurrences[x['gate']]), 3)
             nodes_list['prob'] = nodes_list.apply(rate, axis=1)
             nodes_list['prob'] = nodes_list['prob'].fillna(0)
-        print("prob",nodes_list)
+        # print("prob",nodes_list)
         return nodes_list
 
     def analize_gateways_random(self) -> pd.DataFrame:
@@ -235,9 +235,9 @@ class GatewaysEvaluator():
         """
         # Obtain gateways structure
         nodes_list = self.analize_gateway_structure()
-        print("$$$$$$$$$$$$$$$$this is my test for nodes_list on 18th April.",nodes_list.columns)
+        # print("$$$$$$$$$$$$$$$$this is my test for nodes_list on 18th April.",nodes_list.columns)
         #jiani
-        print("$$$$$$$$$$$$$$$$this is my test for nodes_list on 17th April.",nodes_list)
+        # print("$$$$$$$$$$$$$$$$this is my test for nodes_list on 17th April.",nodes_list)
         # Aggregate paths
         nodes_list = (nodes_list.groupby(by=['gate', 't_path'])
                       .count()

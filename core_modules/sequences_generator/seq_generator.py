@@ -101,8 +101,11 @@ class SeqGenerator():
     def _generate_traces(self):
         temp_path = self._temp_path_creation()
         # generate instances
-        sim_log = self._execute_simulator(self.parms['bimp_path'],
-                                          temp_path, self.model)
+        if self.parms['use_bimp']=='Y':
+            sim_log = self._execute_simulator(self.parms['bimp_path'],
+                                              temp_path, self.model)
+        else:
+            sim_log = self.parms['use_bimp']
         # order by caseid and add position in the trace
         sim_log = pd.read_csv(sim_log)
         sim_log = self._sort_log(sim_log)
