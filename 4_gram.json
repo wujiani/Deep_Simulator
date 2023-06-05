@@ -1,0 +1,836 @@
+{
+    "('start', 'Start', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Start', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Validar solicitud": 0.5249433107,
+        "Notificacion estudiante cancelacion soli": 0.0476190476,
+        "Cancelar Solicitud": 0.4013605442,
+        "Recepcion de documentos": 0.0011337868,
+        "Radicar Solicitud Homologacion": 0.0136054422,
+        "Homologacion por grupo de cursos": 0.0090702948,
+        "Revisar curso": 0.0022675737
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Validar solicitud')": {
+        "Homologacion por grupo de cursos": 0.8763102725,
+        "Cancelar Solicitud": 0.0587002096,
+        "End": 0.0167714885,
+        "Recepcion de documentos": 0.0209643606,
+        "Revisar curso": 0.0125786164,
+        "Validar solicitud / pre-homologacion": 0.0083857442,
+        "Validacion final": 0.0020964361,
+        "Transferir Creditos": 0.0020964361,
+        "Evaluacion curso": 0.0020964361
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Homologacion por grupo de cursos')": {
+        "End": 0.4798099762,
+        "Recepcion de documentos": 0.0237529691,
+        "Revisar curso": 0.4536817102,
+        "Validacion final": 0.0213776722,
+        "Cancelar curso": 0.0166270784,
+        "Validar solicitud / pre-homologacion": 0.0047505938
+    },
+    "('Validar solicitud', 'Homologacion por grupo de cursos', 'End')": {
+        "end": 1.0
+    },
+    "('start',)": {
+        "Start": 1.0
+    },
+    "('start', 'Start')": {
+        "Traer informacion estudiante - banner": 0.9245283019,
+        "Homologacion por grupo de cursos": 0.0115303983,
+        "Validar solicitud": 0.0199161426,
+        "Cancelar Solicitud": 0.0167714885,
+        "Notificacion estudiante cancelacion soli": 0.0115303983,
+        "Radicar Solicitud Homologacion": 0.0094339623,
+        "Revisar curso": 0.0052410901,
+        "Evaluacion curso": 0.001048218
+    },
+    "('End',)": {
+        "end": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'End')": {
+        "end": 1.0
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Notificacion estudiante cancelacion soli')": {
+        "Cancelar Solicitud": 0.1153846154,
+        "End": 0.8846153846
+    },
+    "('Radicar Solicitud Homologacion', 'Notificacion estudiante cancelacion soli', 'Cancelar Solicitud')": {
+        "End": 1.0
+    },
+    "('Notificacion estudiante cancelacion soli', 'Cancelar Solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('Cancelar Solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Cancelar Solicitud')": {
+        "Notificacion estudiante cancelacion soli": 0.6206896552,
+        "Recepcion de documentos": 0.0344827586,
+        "Revisar curso": 0.3448275862
+    },
+    "('Validar solicitud', 'Cancelar Solicitud', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Cancelar Solicitud', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('start', 'Start', 'Homologacion por grupo de cursos')": {
+        "Traer informacion estudiante - banner": 0.7272727273,
+        "Revisar curso": 0.1818181818,
+        "Validacion final": 0.0909090909
+    },
+    "('Start', 'Homologacion por grupo de cursos', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Validar solicitud": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Cancelar Solicitud')": {
+        "Notificacion estudiante cancelacion soli": 0.839673913,
+        "End": 0.0298913043,
+        "Validar solicitud": 0.1304347826
+    },
+    "('Radicar Solicitud Homologacion', 'Cancelar Solicitud', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Recepcion de documentos')": {
+        "Homologacion por grupo de cursos": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Recepcion de documentos', 'Homologacion por grupo de cursos')": {
+        "Validar solicitud": 1.0
+    },
+    "('Recepcion de documentos', 'Homologacion por grupo de cursos', 'Validar solicitud')": {
+        "End": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Validar solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('start', 'Start', 'Validar solicitud')": {
+        "Traer informacion estudiante - banner": 0.9473684211,
+        "Cancelar Solicitud": 0.0526315789
+    },
+    "('Start', 'Validar solicitud', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Validar solicitud', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Homologacion por grupo de cursos": 0.8571428571,
+        "Revisar curso": 0.0952380952,
+        "Notificacion estudiante cancelacion soli": 0.0476190476
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Homologacion por grupo de cursos')": {
+        "End": 0.3076923077,
+        "Revisar curso": 0.5,
+        "Validar solicitud": 0.1923076923
+    },
+    "('Radicar Solicitud Homologacion', 'Homologacion por grupo de cursos', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'Homologacion por grupo de cursos', 'Recepcion de documentos')": {
+        "End": 0.4,
+        "Revisar curso": 0.5,
+        "Validar solicitud / pre-homologacion": 0.1
+    },
+    "('Homologacion por grupo de cursos', 'Recepcion de documentos', 'End')": {
+        "end": 1.0
+    },
+    "('Recepcion de documentos', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Homologacion por grupo de cursos', 'Revisar curso')": {
+        "Evaluacion curso": 0.8461538462,
+        "Cancelar curso": 0.0769230769,
+        "Revisar curso": 0.0769230769
+    },
+    "('Homologacion por grupo de cursos', 'Revisar curso', 'Evaluacion curso')": {
+        "Validacion final": 0.5204081633,
+        "End": 0.1632653061,
+        "Validar solicitud / pre-homologacion": 0.2653061224,
+        "Visto Bueno Cierre Proceso": 0.0408163265,
+        "Traer informacion estudiante - banner": 0.0051020408,
+        "Validar solicitud": 0.0051020408
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 0.9903846154,
+        "Notificacion estudiante cancelacion soli": 0.0096153846
+    },
+    "('Evaluacion curso', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 0.3125,
+        "End": 0.6339285714,
+        "Validacion final": 0.0178571429,
+        "Transferir creditos homologables": 0.0267857143,
+        "Evaluacion curso": 0.0089285714
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 0.7592592593,
+        "End": 0.2407407407
+    },
+    "('Visto Bueno Cierre Proceso', 'Transferir Creditos', 'Transferir creditos homologables')": {
+        "Transferir creditos homologables": 0.4285714286,
+        "End": 0.5,
+        "Transferir Creditos": 0.0238095238,
+        "Evaluacion curso": 0.0238095238,
+        "Validacion final": 0.0238095238
+    },
+    "('Transferir Creditos', 'Transferir creditos homologables', 'Transferir creditos homologables')": {
+        "End": 0.4761904762,
+        "Transferir creditos homologables": 0.4761904762,
+        "Transferir Creditos": 0.0476190476
+    },
+    "('Transferir creditos homologables', 'Transferir creditos homologables', 'End')": {
+        "end": 1.0
+    },
+    "('Transferir creditos homologables', 'End')": {
+        "end": 1.0
+    },
+    "('start', 'Start', 'Cancelar Solicitud')": {
+        "Traer informacion estudiante - banner": 0.5,
+        "Cancelar Solicitud": 0.0625,
+        "Validar solicitud": 0.1875,
+        "Revisar curso": 0.0625,
+        "Notificacion estudiante cancelacion soli": 0.1875
+    },
+    "('Start', 'Cancelar Solicitud', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Cancelar Solicitud', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Notificacion estudiante cancelacion soli": 1.0
+    },
+    "('Validar solicitud', 'Homologacion por grupo de cursos', 'Revisar curso')": {
+        "Evaluacion curso": 0.9267015707,
+        "Revisar curso": 0.0157068063,
+        "Cancelar curso": 0.0471204188,
+        "Validar solicitud / pre-homologacion": 0.0052356021,
+        "Validacion final": 0.0052356021
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'End')": {
+        "end": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'Cancelar Solicitud', 'Recepcion de documentos')": {
+        "Notificacion estudiante cancelacion soli": 1.0
+    },
+    "('Cancelar Solicitud', 'Recepcion de documentos', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Recepcion de documentos', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Transferir creditos homologables', 'Transferir creditos homologables', 'Transferir creditos homologables')": {
+        "Transferir creditos homologables": 0.4117647059,
+        "End": 0.5882352941
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Radicar Solicitud Homologacion')": {
+        "Notificacion estudiante cancelacion soli": 0.5,
+        "Validar solicitud": 0.25,
+        "Radicar Solicitud Homologacion": 0.0833333333,
+        "Cancelar Solicitud": 0.1666666667
+    },
+    "('Radicar Solicitud Homologacion', 'Radicar Solicitud Homologacion', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Transferir Creditos', 'Transferir creditos homologables', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Homologacion por grupo de cursos', 'Validar solicitud')": {
+        "End": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Transferir Creditos', 'End')": {
+        "end": 1.0
+    },
+    "('Transferir Creditos', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'Cancelar Solicitud', 'Revisar curso')": {
+        "Revisar curso": 0.2,
+        "Notificacion estudiante cancelacion soli": 0.7,
+        "Evaluacion curso": 0.1
+    },
+    "('Cancelar Solicitud', 'Revisar curso', 'Revisar curso')": {
+        "Notificacion estudiante cancelacion soli": 0.5,
+        "Evaluacion curso": 0.5
+    },
+    "('Revisar curso', 'Revisar curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Revisar curso', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'Homologacion por grupo de cursos', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 0.3,
+        "End": 0.6,
+        "Traer informacion estudiante - banner": 0.1
+    },
+    "('start', 'Start', 'Notificacion estudiante cancelacion soli')": {
+        "Traer informacion estudiante - banner": 1.0
+    },
+    "('Start', 'Notificacion estudiante cancelacion soli', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Notificacion estudiante cancelacion soli', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Cancelar Solicitud": 0.7857142857,
+        "End": 0.2142857143
+    },
+    "('Radicar Solicitud Homologacion', 'Cancelar Solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('Start', 'Cancelar Solicitud', 'Cancelar Solicitud')": {
+        "Recepcion de documentos": 1.0
+    },
+    "('Cancelar Solicitud', 'Cancelar Solicitud', 'Recepcion de documentos')": {
+        "Cancelar curso": 1.0
+    },
+    "('Cancelar Solicitud', 'Recepcion de documentos', 'Cancelar curso')": {
+        "Cancelar curso": 1.0
+    },
+    "('Recepcion de documentos', 'Cancelar curso', 'Cancelar curso')": {
+        "Avanzar recepcion documentos": 1.0
+    },
+    "('Cancelar curso', 'Cancelar curso', 'Avanzar recepcion documentos')": {
+        "Avanzar recepcion documentos": 1.0
+    },
+    "('Cancelar curso', 'Avanzar recepcion documentos', 'Avanzar recepcion documentos')": {
+        "End": 1.0
+    },
+    "('Avanzar recepcion documentos', 'Avanzar recepcion documentos', 'End')": {
+        "end": 1.0
+    },
+    "('Avanzar recepcion documentos', 'End')": {
+        "end": 1.0
+    },
+    "('Revisar curso', 'Evaluacion curso', 'End')": {
+        "end": 1.0
+    },
+    "('Evaluacion curso', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'Homologacion por grupo de cursos', 'Cancelar curso')": {
+        "End": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Cancelar curso', 'End')": {
+        "end": 1.0
+    },
+    "('Cancelar curso', 'End')": {
+        "end": 1.0
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Validar solicitud / pre-homologacion')": {
+        "End": 0.7704918033,
+        "Avanzar recepcion documentos": 0.1147540984,
+        "Validacion final": 0.0491803279,
+        "Notificacion estudiante cancelacion soli": 0.0655737705
+    },
+    "('Evaluacion curso', 'Validar solicitud / pre-homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'Revisar curso')": {
+        "Revisar curso": 0.25,
+        "Validar solicitud": 0.25,
+        "Notificacion estudiante cancelacion soli": 0.5
+    },
+    "('Radicar Solicitud Homologacion', 'Revisar curso', 'Revisar curso')": {
+        "Validar solicitud": 1.0
+    },
+    "('Revisar curso', 'Revisar curso', 'Validar solicitud')": {
+        "Cancelar Solicitud": 0.5,
+        "Evaluacion curso": 0.5
+    },
+    "('Revisar curso', 'Validar solicitud', 'Cancelar Solicitud')": {
+        "Evaluacion curso": 0.5,
+        "Notificacion estudiante cancelacion soli": 0.5
+    },
+    "('Validar solicitud', 'Cancelar Solicitud', 'Evaluacion curso')": {
+        "Notificacion estudiante cancelacion soli": 1.0
+    },
+    "('Cancelar Solicitud', 'Evaluacion curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Evaluacion curso', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Cancelar Solicitud', 'Validar solicitud')": {
+        "Revisar curso": 0.4791666667,
+        "Notificacion estudiante cancelacion soli": 0.5,
+        "Evaluacion curso": 0.0208333333
+    },
+    "('Cancelar Solicitud', 'Validar solicitud', 'Revisar curso')": {
+        "Notificacion estudiante cancelacion soli": 0.7826086957,
+        "Revisar curso": 0.0434782609,
+        "Evaluacion curso": 0.1739130435
+    },
+    "('Validar solicitud', 'Revisar curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Revisar curso', 'Validar solicitud')": {
+        "Cancelar Solicitud": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Recepcion de documentos', 'Revisar curso')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Recepcion de documentos', 'Revisar curso', 'Evaluacion curso')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Evaluacion curso', 'Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos')": {
+        "Validacion final": 0.8888888889,
+        "Visto Bueno Cierre Proceso": 0.1111111111
+    },
+    "('Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Avanzar recepcion documentos', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Evaluacion curso', 'Validar solicitud / pre-homologacion', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 0.75,
+        "Validacion final": 0.25
+    },
+    "('Validar solicitud / pre-homologacion', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Revisar curso', 'Revisar curso', 'Evaluacion curso')": {
+        "Notificacion estudiante cancelacion soli": 0.1428571429,
+        "Evaluacion curso": 0.7142857143,
+        "Validacion final": 0.1428571429
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Start', 'Cancelar Solicitud', 'Validar solicitud')": {
+        "Traer informacion estudiante - banner": 1.0
+    },
+    "('Cancelar Solicitud', 'Validar solicitud', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Revisar curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Recepcion de documentos')": {
+        "Homologacion por grupo de cursos": 1.0
+    },
+    "('Validar solicitud', 'Recepcion de documentos', 'Homologacion por grupo de cursos')": {
+        "Revisar curso": 0.8,
+        "Validar solicitud / pre-homologacion": 0.1,
+        "End": 0.1
+    },
+    "('Recepcion de documentos', 'Homologacion por grupo de cursos', 'Revisar curso')": {
+        "Evaluacion curso": 0.625,
+        "Validar solicitud / pre-homologacion": 0.125,
+        "Revisar curso": 0.25
+    },
+    "('Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos', 'Visto Bueno Cierre Proceso')": {
+        "Validacion final": 1.0
+    },
+    "('Avanzar recepcion documentos', 'Visto Bueno Cierre Proceso', 'Validacion final')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Validacion final', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 0.8571428571,
+        "End": 0.1428571429
+    },
+    "('Validacion final', 'Transferir Creditos', 'Transferir creditos homologables')": {
+        "End": 0.8333333333,
+        "Transferir creditos homologables": 0.1666666667
+    },
+    "('Cancelar Solicitud', 'Revisar curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Revisar curso', 'Revisar curso')": {
+        "Evaluacion curso": 0.6666666667,
+        "Revisar curso": 0.1666666667,
+        "Validar solicitud": 0.1666666667
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Evaluacion curso')": {
+        "End": 0.2,
+        "Notificacion estudiante cancelacion soli": 0.2,
+        "Validacion final": 0.2,
+        "Validar solicitud / pre-homologacion": 0.4
+    },
+    "('Evaluacion curso', 'Evaluacion curso', 'End')": {
+        "end": 1.0
+    },
+    "('Validar solicitud', 'Revisar curso', 'Revisar curso')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Evaluacion curso', 'Evaluacion curso', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Start', 'Cancelar Solicitud', 'Revisar curso')": {
+        "Cancelar curso": 1.0
+    },
+    "('Cancelar Solicitud', 'Revisar curso', 'Cancelar curso')": {
+        "Cancelar curso": 1.0
+    },
+    "('Revisar curso', 'Cancelar curso', 'Cancelar curso')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Cancelar curso', 'Cancelar curso', 'Visto Bueno Cierre Proceso')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Cancelar curso', 'Visto Bueno Cierre Proceso', 'Visto Bueno Cierre Proceso')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Visto Bueno Cierre Proceso', 'Evaluacion curso')": {
+        "Validacion final": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Evaluacion curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Visto Bueno Cierre Proceso')": {
+        "Validacion final": 0.875,
+        "End": 0.125
+    },
+    "('Evaluacion curso', 'Visto Bueno Cierre Proceso', 'Validacion final')": {
+        "Transferir Creditos": 0.7142857143,
+        "End": 0.2857142857
+    },
+    "('Recepcion de documentos', 'Homologacion por grupo de cursos', 'Validar solicitud / pre-homologacion')": {
+        "Avanzar recepcion documentos": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos')": {
+        "Validacion final": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Revisar curso')": {
+        "Homologacion por grupo de cursos": 1.0
+    },
+    "('Validar solicitud', 'Revisar curso', 'Homologacion por grupo de cursos')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Revisar curso', 'Homologacion por grupo de cursos', 'Evaluacion curso')": {
+        "End": 0.125,
+        "Validacion final": 0.625,
+        "Traer informacion estudiante - banner": 0.25
+    },
+    "('Homologacion por grupo de cursos', 'Evaluacion curso', 'End')": {
+        "end": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Revisar curso', 'Validar solicitud / pre-homologacion')": {
+        "Avanzar recepcion documentos": 0.5,
+        "Evaluacion curso": 0.5
+    },
+    "('Revisar curso', 'Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos', 'Evaluacion curso')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Avanzar recepcion documentos', 'Evaluacion curso', 'Validar solicitud / pre-homologacion')": {
+        "Validacion final": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Validacion final', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Validacion final', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Visto Bueno Cierre Proceso', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 1.0
+    },
+    "('Transferir creditos homologables', 'Transferir creditos homologables', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 1.0
+    },
+    "('Transferir creditos homologables', 'Transferir Creditos', 'Transferir creditos homologables')": {
+        "Transferir creditos homologables": 0.5,
+        "End": 0.5
+    },
+    "('Radicar Solicitud Homologacion', 'Radicar Solicitud Homologacion', 'Validar solicitud')": {
+        "Homologacion por grupo de cursos": 0.75,
+        "Cancelar Solicitud": 0.25
+    },
+    "('Validar solicitud', 'Revisar curso', 'Evaluacion curso')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Evaluacion curso', 'Validar solicitud / pre-homologacion', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('start', 'Start', 'Radicar Solicitud Homologacion')": {
+        "End": 1.0
+    },
+    "('Start', 'Radicar Solicitud Homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('start', 'Start', 'Revisar curso')": {
+        "Traer informacion estudiante - banner": 0.6,
+        "Homologacion por grupo de cursos": 0.4
+    },
+    "('Start', 'Revisar curso', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Revisar curso', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Cancelar Solicitud": 0.75,
+        "Validar solicitud": 0.25
+    },
+    "('Cancelar Solicitud', 'Validar solicitud', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Validar solicitud', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Transferir creditos homologables')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Transferir creditos homologables', 'Transferir Creditos')": {
+        "End": 1.0
+    },
+    "('Transferir creditos homologables', 'Transferir Creditos', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Validar solicitud / pre-homologacion')": {
+        "Homologacion por grupo de cursos": 0.25,
+        "End": 0.75
+    },
+    "('Validar solicitud', 'Validar solicitud / pre-homologacion', 'Homologacion por grupo de cursos')": {
+        "Revisar curso": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Homologacion por grupo de cursos', 'Revisar curso')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Validar solicitud', 'Homologacion por grupo de cursos', 'Validar solicitud / pre-homologacion')": {
+        "End": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Validar solicitud / pre-homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('Validacion final', 'Transferir Creditos', 'End')": {
+        "end": 1.0
+    },
+    "('Evaluacion curso', 'Evaluacion curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Transferir Creditos', 'Transferir creditos homologables', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 1.0
+    },
+    "('Cancelar Solicitud', 'Revisar curso', 'Evaluacion curso')": {
+        "Validacion final": 1.0
+    },
+    "('Evaluacion curso', 'Validacion final', 'Notificacion estudiante cancelacion soli')": {
+        "End": 1.0
+    },
+    "('Validacion final', 'Notificacion estudiante cancelacion soli', 'End')": {
+        "end": 1.0
+    },
+    "('Revisar curso', 'Revisar curso', 'Revisar curso')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Evaluacion curso', 'Evaluacion curso', 'Validar solicitud / pre-homologacion')": {
+        "Validar solicitud / pre-homologacion": 0.5,
+        "Avanzar recepcion documentos": 0.5
+    },
+    "('Evaluacion curso', 'Validar solicitud / pre-homologacion', 'Validar solicitud / pre-homologacion')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Validar solicitud / pre-homologacion', 'Evaluacion curso')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Evaluacion curso', 'Validar solicitud / pre-homologacion')": {
+        "Avanzar recepcion documentos": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Revisar curso', 'Cancelar curso')": {
+        "Validar solicitud": 0.1,
+        "End": 0.9
+    },
+    "('Revisar curso', 'Cancelar curso', 'Validar solicitud')": {
+        "End": 1.0
+    },
+    "('Cancelar curso', 'Validar solicitud', 'End')": {
+        "end": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Validacion final')": {
+        "Homologacion por grupo de cursos": 1.0
+    },
+    "('Validar solicitud', 'Validacion final', 'Homologacion por grupo de cursos')": {
+        "Revisar curso": 1.0
+    },
+    "('Validacion final', 'Homologacion por grupo de cursos', 'Revisar curso')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Evaluacion curso', 'Visto Bueno Cierre Proceso', 'End')": {
+        "end": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Validacion final', 'End')": {
+        "end": 1.0
+    },
+    "('Validacion final', 'End')": {
+        "end": 1.0
+    },
+    "('Revisar curso', 'Cancelar curso', 'End')": {
+        "end": 1.0
+    },
+    "('Revisar curso', 'Validar solicitud / pre-homologacion', 'Evaluacion curso')": {
+        "End": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Evaluacion curso', 'End')": {
+        "end": 1.0
+    },
+    "('Revisar curso', 'Validar solicitud', 'Evaluacion curso')": {
+        "Validacion final": 1.0
+    },
+    "('Validar solicitud', 'Evaluacion curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 0.5,
+        "Notificacion estudiante cancelacion soli": 0.5
+    },
+    "('Transferir Creditos', 'Transferir creditos homologables', 'Evaluacion curso')": {
+        "Validacion final": 1.0
+    },
+    "('Transferir creditos homologables', 'Evaluacion curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('start', 'Start', 'Evaluacion curso')": {
+        "Traer informacion estudiante - banner": 1.0
+    },
+    "('Start', 'Evaluacion curso', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Evaluacion curso', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Validar solicitud": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Revisar curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Revisar curso', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Start', 'Homologacion por grupo de cursos', 'Revisar curso')": {
+        "Evaluacion curso": 0.5,
+        "Traer informacion estudiante - banner": 0.5
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Validar solicitud', 'Validar solicitud / pre-homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Evaluacion curso', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Revisar curso', 'Evaluacion curso', 'Validar solicitud')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Evaluacion curso', 'Validar solicitud', 'Validar solicitud / pre-homologacion')": {
+        "End": 1.0
+    },
+    "('Cancelar Solicitud', 'Validar solicitud', 'Evaluacion curso')": {
+        "Validacion final": 1.0
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Evaluacion curso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Evaluacion curso', 'Transferir Creditos')": {
+        "Validacion final": 1.0
+    },
+    "('Evaluacion curso', 'Transferir Creditos', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Transferir Creditos', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Start', 'Revisar curso', 'Homologacion por grupo de cursos')": {
+        "Evaluacion curso": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Evaluacion curso', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Start', 'Homologacion por grupo de cursos', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion')": {
+        "Validar solicitud": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 1.0
+    },
+    "('Validar solicitud', 'Transferir Creditos', 'Transferir creditos homologables')": {
+        "End": 1.0
+    },
+    "('Start', 'Cancelar Solicitud', 'Notificacion estudiante cancelacion soli')": {
+        "Traer informacion estudiante - banner": 1.0
+    },
+    "('Cancelar Solicitud', 'Notificacion estudiante cancelacion soli', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Traer informacion estudiante - banner', 'Radicar Solicitud Homologacion', 'End')": {
+        "end": 1.0
+    },
+    "('Transferir Creditos', 'Transferir creditos homologables', 'Validacion final')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Transferir creditos homologables', 'Validacion final', 'Visto Bueno Cierre Proceso')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Validacion final', 'Visto Bueno Cierre Proceso', 'Validar solicitud / pre-homologacion')": {
+        "Transferir Creditos": 1.0
+    },
+    "('Visto Bueno Cierre Proceso', 'Validar solicitud / pre-homologacion', 'Transferir Creditos')": {
+        "Transferir creditos homologables": 1.0
+    },
+    "('Validar solicitud / pre-homologacion', 'Transferir Creditos', 'Transferir creditos homologables')": {
+        "Transferir creditos homologables": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Revisar curso', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Validar solicitud', 'Evaluacion curso')": {
+        "Validar solicitud / pre-homologacion": 1.0
+    },
+    "('Validar solicitud', 'Evaluacion curso', 'Validar solicitud / pre-homologacion')": {
+        "End": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Radicar Solicitud Homologacion', 'Radicar Solicitud Homologacion')": {
+        "Validar solicitud": 1.0
+    },
+    "('Homologacion por grupo de cursos', 'Recepcion de documentos', 'Validar solicitud / pre-homologacion')": {
+        "Avanzar recepcion documentos": 1.0
+    },
+    "('Recepcion de documentos', 'Validar solicitud / pre-homologacion', 'Avanzar recepcion documentos')": {
+        "Visto Bueno Cierre Proceso": 1.0
+    },
+    "('Recepcion de documentos', 'Homologacion por grupo de cursos', 'End')": {
+        "end": 1.0
+    },
+    "('Start', 'Validar solicitud', 'Cancelar Solicitud')": {
+        "Traer informacion estudiante - banner": 1.0
+    },
+    "('Validar solicitud', 'Cancelar Solicitud', 'Traer informacion estudiante - banner')": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Radicar Solicitud Homologacion', 'Radicar Solicitud Homologacion', 'Cancelar Solicitud')": {
+        "Notificacion estudiante cancelacion soli": 1.0
+    }
+}

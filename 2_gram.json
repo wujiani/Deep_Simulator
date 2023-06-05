@@ -1,0 +1,154 @@
+{
+    "('start',)": {
+        "Start": 1.0
+    },
+    "('Start',)": {
+        "Traer informacion estudiante - banner": 0.9245283019,
+        "Homologacion por grupo de cursos": 0.0115303983,
+        "Validar solicitud": 0.0199161426,
+        "Cancelar Solicitud": 0.0167714885,
+        "Notificacion estudiante cancelacion soli": 0.0115303983,
+        "Radicar Solicitud Homologacion": 0.0094339623,
+        "Revisar curso": 0.0052410901,
+        "Evaluacion curso": 0.001048218
+    },
+    "('Traer informacion estudiante - banner',)": {
+        "Radicar Solicitud Homologacion": 1.0
+    },
+    "('Radicar Solicitud Homologacion',)": {
+        "Validar solicitud": 0.4984455959,
+        "Notificacion estudiante cancelacion soli": 0.0601036269,
+        "Cancelar Solicitud": 0.3834196891,
+        "Recepcion de documentos": 0.0010362694,
+        "Homologacion por grupo de cursos": 0.0269430052,
+        "Radicar Solicitud Homologacion": 0.0134715026,
+        "Revisar curso": 0.0041450777,
+        "End": 0.0124352332
+    },
+    "('Validar solicitud',)": {
+        "Homologacion por grupo de cursos": 0.7491103203,
+        "Cancelar Solicitud": 0.0569395018,
+        "End": 0.0266903915,
+        "Traer informacion estudiante - banner": 0.037366548,
+        "Revisar curso": 0.0516014235,
+        "Recepcion de documentos": 0.0177935943,
+        "Notificacion estudiante cancelacion soli": 0.0427046263,
+        "Validar solicitud / pre-homologacion": 0.0088967972,
+        "Validacion final": 0.0017793594,
+        "Evaluacion curso": 0.0053380783,
+        "Transferir Creditos": 0.0017793594
+    },
+    "('Homologacion por grupo de cursos',)": {
+        "End": 0.4405010438,
+        "Traer informacion estudiante - banner": 0.0167014614,
+        "Validar solicitud": 0.012526096,
+        "Recepcion de documentos": 0.0208768267,
+        "Revisar curso": 0.4509394572,
+        "Validacion final": 0.0208768267,
+        "Cancelar curso": 0.0146137787,
+        "Validar solicitud / pre-homologacion": 0.006263048,
+        "Evaluacion curso": 0.0167014614
+    },
+    "('End',)": {
+        "end": 1.0
+    },
+    "('Notificacion estudiante cancelacion soli',)": {
+        "Cancelar Solicitud": 0.0129310345,
+        "End": 0.9568965517,
+        "Traer informacion estudiante - banner": 0.0301724138
+    },
+    "('Cancelar Solicitud',)": {
+        "End": 0.04,
+        "Notificacion estudiante cancelacion soli": 0.7835294118,
+        "Traer informacion estudiante - banner": 0.0211764706,
+        "Recepcion de documentos": 0.0047058824,
+        "Revisar curso": 0.0258823529,
+        "Cancelar Solicitud": 0.0023529412,
+        "Evaluacion curso": 0.0023529412,
+        "Validar solicitud": 0.12
+    },
+    "('Recepcion de documentos',)": {
+        "Homologacion por grupo de cursos": 0.4782608696,
+        "End": 0.1739130435,
+        "Notificacion estudiante cancelacion soli": 0.0434782609,
+        "Cancelar curso": 0.0434782609,
+        "Revisar curso": 0.2173913043,
+        "Validar solicitud / pre-homologacion": 0.0434782609
+    },
+    "('Revisar curso',)": {
+        "Evaluacion curso": 0.7580071174,
+        "Revisar curso": 0.0391459075,
+        "Notificacion estudiante cancelacion soli": 0.0996441281,
+        "Validar solicitud": 0.0106761566,
+        "Cancelar curso": 0.0391459075,
+        "Homologacion por grupo de cursos": 0.0284697509,
+        "Validar solicitud / pre-homologacion": 0.0071174377,
+        "Traer informacion estudiante - banner": 0.0142348754,
+        "Validacion final": 0.0035587189
+    },
+    "('Evaluacion curso',)": {
+        "Validacion final": 0.4810126582,
+        "End": 0.1476793249,
+        "Validar solicitud / pre-homologacion": 0.2784810127,
+        "Notificacion estudiante cancelacion soli": 0.0126582278,
+        "Evaluacion curso": 0.0210970464,
+        "Visto Bueno Cierre Proceso": 0.0337552743,
+        "Traer informacion estudiante - banner": 0.0168776371,
+        "Validar solicitud": 0.0042194093,
+        "Transferir Creditos": 0.0042194093
+    },
+    "('Validacion final',)": {
+        "Visto Bueno Cierre Proceso": 0.9150326797,
+        "Transferir Creditos": 0.045751634,
+        "Validacion final": 0.0065359477,
+        "Notificacion estudiante cancelacion soli": 0.0130718954,
+        "Homologacion por grupo de cursos": 0.0065359477,
+        "End": 0.0130718954
+    },
+    "('Visto Bueno Cierre Proceso',)": {
+        "Transferir Creditos": 0.3594771242,
+        "End": 0.5098039216,
+        "Validacion final": 0.0718954248,
+        "Visto Bueno Cierre Proceso": 0.0130718954,
+        "Evaluacion curso": 0.0130718954,
+        "Transferir creditos homologables": 0.0196078431,
+        "Traer informacion estudiante - banner": 0.0065359477,
+        "Validar solicitud / pre-homologacion": 0.0065359477
+    },
+    "('Transferir Creditos',)": {
+        "Transferir creditos homologables": 0.7428571429,
+        "End": 0.2428571429,
+        "Validacion final": 0.0142857143
+    },
+    "('Transferir creditos homologables',)": {
+        "Transferir creditos homologables": 0.4086021505,
+        "End": 0.5161290323,
+        "Transferir Creditos": 0.0537634409,
+        "Evaluacion curso": 0.0107526882,
+        "Validacion final": 0.0107526882
+    },
+    "('Cancelar curso',)": {
+        "Cancelar curso": 0.0952380952,
+        "Avanzar recepcion documentos": 0.0476190476,
+        "End": 0.7619047619,
+        "Visto Bueno Cierre Proceso": 0.0476190476,
+        "Validar solicitud": 0.0476190476
+    },
+    "('Avanzar recepcion documentos',)": {
+        "Avanzar recepcion documentos": 0.0714285714,
+        "End": 0.0714285714,
+        "Validacion final": 0.6428571429,
+        "Visto Bueno Cierre Proceso": 0.1428571429,
+        "Evaluacion curso": 0.0714285714
+    },
+    "('Validar solicitud / pre-homologacion',)": {
+        "End": 0.6835443038,
+        "Avanzar recepcion documentos": 0.1518987342,
+        "Validacion final": 0.0506329114,
+        "Notificacion estudiante cancelacion soli": 0.0506329114,
+        "Homologacion por grupo de cursos": 0.0126582278,
+        "Validar solicitud / pre-homologacion": 0.0126582278,
+        "Evaluacion curso": 0.0253164557,
+        "Transferir Creditos": 0.0126582278
+    }
+}
