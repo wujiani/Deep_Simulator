@@ -284,11 +284,19 @@ class DeepSimulator():
             index=False)
             
         # Save logs        
-        log_test = self.log_test[~self.log_test.task.isin(['Start', 'End'])]
+        # log_test = self.log_test[~self.log_test.task.isin(['Start', 'End'])]
+        log_test = self.log_test
         log_test.to_csv(
-            os.path.join(output_path, 'tst_' +
+            os.path.join(output_path, 'test_' +
                          self.parms['gl']['file'].split('.')[0] + '.csv'),
             index=False)
+
+        log_train = pd.DataFrame(self.log_train.data)
+        log_train.to_csv(
+            os.path.join(output_path, 'train_' +
+                         self.parms['gl']['file'].split('.')[0] + '.csv'),
+            index=False)
+
         if self.parms['gl']['save_models']:
             paths = ['bpmn_models', 'embedded_path', 'ia_gen_path',
                      'seq_flow_gen_path', 'times_gen_path']
@@ -389,15 +397,16 @@ class DeepSimulator():
         key = 'end_timestamp' if one_ts else 'start_timestamp'
         test = pd.DataFrame(test)
         train = pd.DataFrame(train)
-        self.log_test = (test.sort_values(key, ascending=True)
-                         .reset_index(drop=True))
-
+        self.log_test = test
+        # print('ee', self.log_test)
+        # self.log_test = (test.sort_values(key, ascending=True)
+        #                  .reset_index(drop=True))
+        # self.log_test = copy.deepcopy(test)
         print('Number of instances in test log: {}'.format(len(self.log_test['caseid'].drop_duplicates())))
         self.log_train = copy.deepcopy(self.log)
         
         
-        self.log_train.set_data(train.sort_values(key, ascending=True)
-                                .reset_index(drop=True).to_dict('records'))
+        self.log_train.set_data(train.to_dict('records'))
         print('Number of instances in train log: {}'.format(len(train.sort_values(key, ascending=True)
                                 .reset_index(drop=True)['caseid'].drop_duplicates())))
 

@@ -216,8 +216,8 @@ class TracesAligner(object):
         file_name = settings['file'].split('.')[0]
         args = ['java']
         if not pl.system().lower() == 'windows':
-            args.append('-Xmx2G')
-            args.append('-Xss8G')
+            args.append('-Xmx1G')
+            args.append('-Xss4G')
 							 
         args.extend(['-jar', settings['align_path'],
                 settings['output']+os.sep,

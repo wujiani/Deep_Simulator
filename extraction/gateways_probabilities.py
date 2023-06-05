@@ -34,6 +34,7 @@ class GatewaysEvaluator():
         """
         # sup.print_performed_task('Analysing gateways` probabilities')
         # Analisys of gateways probabilities
+        print("method,,", self.method)
         if self.method == 'discovery':
             gateways = self.analize_gateways()
         elif self.method == 'random':
@@ -41,7 +42,7 @@ class GatewaysEvaluator():
         elif self.method == 'equiprobable':
             gateways = self.analize_gateways_equi()
         # Fix 0 probabilities and float error sums
-        gateways = self.normalize_probabilities(gateways)
+        # gateways = self.normalize_probabilities(gateways)
         # Creating response list
         gids = lambda x: self.process_graph.nodes[x['gate']]['id']
         gateways['gatewayid'] = gateways.apply(gids, axis=1)
@@ -101,6 +102,42 @@ class GatewaysEvaluator():
             nodes_list, columns=['gate', 't_path', 't_task'])
         return gateways
 
+    def analize_gateway_structure_2(self) -> pd.DataFrame:
+        """
+        Creates a structure that contains the subsequent tasks of each
+        gateway's paths
+
+        Returns
+        -------
+        Dataframe
+        """
+        # look for source and target tasks
+        def extract_target_tasks(graph: object, num: int) -> list:
+            tasks_list = list()
+            for node in graph.neighbors(num):
+                if graph.nodes[node]['type'] in ['task', 'start', 'end']:
+                    tasks_list.append([node])
+                else:
+                    tasks_list.append(extract_target_tasks(graph, node))
+            return tasks_list
+
+        nodes_list = list()
+        for node in tqdm(self.process_graph.nodes,
+                         desc='analysing gateways probabilities:'):
+            outs = list()
+            if self.process_graph.nodes[node]['type'] == 'gate':
+                # Targets
+                paths = list(self.process_graph.neighbors(node))
+                task_paths = extract_target_tasks(self.process_graph, node)
+                task_paths = [sup.reduce_list(path) for path in task_paths]
+                for path, tasks in zip(paths, task_paths):
+                    for task in tasks:
+                        outs.append((node, path, task))
+            nodes_list.extend(outs)
+        gateways = pd.DataFrame.from_records(
+            nodes_list, columns=['gate', 't_path', 't_task'])
+        return gateways
+
     def analize_gateways(self) -> pd.DataFrame:
         """
         Discovers the gateway's paths probabilities accordig with the
@@ -112,21 +149,55 @@ class GatewaysEvaluator():
 
         """
         # Obtain gateways structure
+        # print("@@@@@@@@@entering nodes_list@@@@@")
+        # nodes_list = self.analize_gateway_structure()
+        # print('nodes_list', nodes_list)
+        # # Add task execution count
+        # print("self.process_graph.nodes data=True", list(self.process_graph.nodes(data=True)))
+        # print('edges: ', list(self.process_graph.edges.data()))
+        # executions = lambda x: self.process_graph.nodes[x['t_task']]['executions']
+        # nodes_list['executions'] = nodes_list.apply(executions, axis=1)
+        # print("nodes_list['executions']", nodes_list['executions'])
+        # # Aggregate path executions
+        # nodes_list = (nodes_list.groupby(by=['gate', 't_path'])['executions']
+        #               .sum()
+        #               .reset_index())
+        # print("number executions_nodes_list",nodes_list)
+        # # Calculate probabilities
+        # t_ocurrences = (nodes_list.groupby(by=['gate'])['executions']
+        #                 .sum().to_dict())
+        # print('t_occur\n', t_ocurrences)
+        # with np.errstate(divide='ignore', invalid='ignore'):
+        #     rate = lambda x: round(
+        #         np.divide(x['executions'], t_ocurrences[x['gate']]), 2)
+        #     nodes_list['prob'] = nodes_list.apply(rate, axis=1)
+        # print("prob",nodes_list['prob'])
+        # return nodes_list
+
         nodes_list = self.analize_gateway_structure()
         # Add task execution count
-        executions = lambda x: self.process_graph.nodes[x['t_task']]['executions']
+        # print("self.process_graph.nodes data=True", list(self.process_graph.nodes(data=True)))
+        # print('edges: ', list(self.process_graph.edges.data()))
+        # print("columns,", nodes_list.columns)
+        nodes_list = nodes_list[['gate', 't_path']].drop_duplicates()
+        executions = lambda x: self.process_graph.edges[(x['gate'], x['t_path'])]['executions']
         nodes_list['executions'] = nodes_list.apply(executions, axis=1)
+        # print("nodes_list['executions']", nodes_list)
         # Aggregate path executions
-        nodes_list = (nodes_list.groupby(by=['gate', 't_path'])['executions']
-                      .sum()
-                      .reset_index())
+        # nodes_list = (nodes_list.groupby(by=['gate', 't_path'])['executions']
+        #               .sum()
+        #               .reset_index())
+        # print("number executions_nodes_list",nodes_list)
         # Calculate probabilities
         t_ocurrences = (nodes_list.groupby(by=['gate'])['executions']
                         .sum().to_dict())
+        # print('t_occur\n', t_ocurrences)
         with np.errstate(divide='ignore', invalid='ignore'):
             rate = lambda x: round(
-                np.divide(x['executions'], t_ocurrences[x['gate']]), 2)
+                np.divide(x['executions'], t_ocurrences[x['gate']]), 3)
             nodes_list['prob'] = nodes_list.apply(rate, axis=1)
+            nodes_list['prob'] = nodes_list['prob'].fillna(0)
+        # print("prob",nodes_list)
         return nodes_list
 
     def analize_gateways_random(self) -> pd.DataFrame:
@@ -164,6 +235,9 @@ class GatewaysEvaluator():
         """
         # Obtain gateways structure
         nodes_list = self.analize_gateway_structure()
+        # print("$$$$$$$$$$$$$$$$this is my test for nodes_list on 18th April.",nodes_list.columns)
+        #jiani
+        # print("$$$$$$$$$$$$$$$$this is my test for nodes_list on 17th April.",nodes_list)
         # Aggregate paths
         nodes_list = (nodes_list.groupby(by=['gate', 't_path'])
                       .count()
