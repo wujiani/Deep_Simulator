@@ -43,57 +43,66 @@ class DeepSimulator():
         self.sim_values = list()
 
     def execute_pipeline(self) -> None:
-        exec_times = dict()
-        self.is_safe = self._read_inputs(
-            log_time=exec_times, is_safe=self.is_safe)
-        # print('self.log_test', self.log_test)
-        # modify number of instances in the model
-        self.log_test.to_csv(
-            os.path.join(r'C:\Users\19wuj\Desktop\test_0518', 'test_' +
-                         self.parms['gl']['file'].split('.')[0] + '.csv'),
-            index=False)
+        # exec_times = dict()
+        # self.is_safe = self._read_inputs(
+        #     log_time=exec_times, is_safe=self.is_safe)
+        # # print('self.log_test', self.log_test)
+        # # modify number of instances in the model
+        # self.log_test.to_csv(
+        #     os.path.join(r'C:\Users\19wuj\Desktop\test_0518', 'test_' +
+        #                  self.parms['gl']['file'].split('.')[0] + '.csv'),
+        #     index=False)
 
-
-        pd.DataFrame(self.log_train.data).to_csv(
-            os.path.join(r'C:\Users\19wuj\Desktop\test_0518', 'train_' +
-                         self.parms['gl']['file'].split('.')[0] + '.csv'),
-            index=False)
-        if self.parms['gl']['num_sim'] == 'Y':
-            num_inst = len(self.log_test.caseid.unique())
-        else:
-            num_inst = int(self.parms['gl']['num_sim'])
-        # get minimum date
-        start_time = (self.log_test.start_timestamp.min().strftime("%Y-%m-%dT%H:%M:%S.%f+00:00"))
-        print('############ Structure optimization ############')
-        # Structure optimization
-        seq_gen = sg.SeqGenerator({**self.parms['gl'],
-                                   **self.parms['s_gen']},
-                                  self.log_train)
-        print('############ Generate interarrivals ############')
-        self.is_safe = self._read_bpmn(
-            log_time=exec_times, is_safe=self.is_safe)
-        generator = gen.InstancesGenerator(self.process_graph,
-                                           self.log_train,
-                                           self.parms['i_gen']['gen_method'],
-                                           {**self.parms['gl'],
-                                            **self.parms['i_gen']})
-        print('########### Generate instances times ###########')
-        times_allocator = ta.TimesGenerator(self.process_graph,
-                                            self.log_train,
-                                            {**self.parms['gl'],
-                                             **self.parms['t_gen']})
-        output_path = os.path.join('output_files', sup.folder_id())
+        self.log_test = pd.read_csv(r'C:\Users\19wuj\Desktop\test_0522\test_ConsultaDataMining201618.csv')
+        event_log = pd.read_csv(r'C:\Users\19wuj\Desktop\test_0522\new_technique_with_time.csv')
+        self.log_test['start_timestamp'] = self.log_test['start_timestamp'].map(lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S.%f'))
+        self.log_test['end_timestamp'] = self.log_test['end_timestamp'].map(
+            lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S.%f'))
+        event_log['start_timestamp'] = event_log['start_timestamp'].map(lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S.%f'))
+        event_log['end_timestamp'] = event_log['end_timestamp'].map(
+            lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S.%f'))
+        print(event_log['start_timestamp'].head(3))
+        # pd.DataFrame(self.log_train.data).to_csv(
+        #     os.path.join(r'C:\Users\19wuj\Desktop\test_0518', 'train_' +
+        #                  self.parms['gl']['file'].split('.')[0] + '.csv'),
+        #     index=False)
+        # if self.parms['gl']['num_sim'] == 'Y':
+        #     num_inst = len(self.log_test.caseid.unique())
+        # else:
+        #     num_inst = int(self.parms['gl']['num_sim'])
+        # # get minimum date
+        # start_time = (self.log_test.start_timestamp.min().strftime("%Y-%m-%dT%H:%M:%S.%f+00:00"))
+        # print('############ Structure optimization ############')
+        # # Structure optimization
+        # seq_gen = sg.SeqGenerator({**self.parms['gl'],
+        #                            **self.parms['s_gen']},
+        #                           self.log_train)
+        # print('############ Generate interarrivals ############')
+        # self.is_safe = self._read_bpmn(
+        #     log_time=exec_times, is_safe=self.is_safe)
+        # generator = gen.InstancesGenerator(self.process_graph,
+        #                                    self.log_train,
+        #                                    self.parms['i_gen']['gen_method'],
+        #                                    {**self.parms['gl'],
+        #                                     **self.parms['i_gen']})
+        # print('########### Generate instances times ###########')
+        # times_allocator = ta.TimesGenerator(self.process_graph,
+        #                                     self.log_train,
+        #                                     {**self.parms['gl'],
+        #                                      **self.parms['t_gen']})
+        # output_path = os.path.join('output_files', sup.folder_id())
+        output_path = r'C:\Users\19wuj\Desktop\test_0522'
         for rep_num in range(0, self.parms['gl']['exp_reps']):
-            seq_gen.generate(num_inst, start_time)
-            # TODO: remover esto, es simplemente para test
-            if self.parms['i_gen']['gen_method'] == 'test':
-                iarr = generator.generate(self.log_test, start_time)
-            else:
-                iarr = generator.generate(num_inst, start_time)
-            event_log = times_allocator.generate(seq_gen.gen_seqs, iarr)
-            event_log = pd.DataFrame(event_log)
-            # Export log
-            self._export_log(event_log, output_path, rep_num)
+        #     seq_gen.generate(num_inst, start_time)
+        #     # TODO: remover esto, es simplemente para test
+        #     if self.parms['i_gen']['gen_method'] == 'test':
+        #         iarr = generator.generate(self.log_test, start_time)
+        #     else:
+        #         iarr = generator.generate(num_inst, start_time)
+        #     event_log = times_allocator.generate(seq_gen.gen_seqs, iarr)
+        #     event_log = pd.DataFrame(event_log)
+        #     # Export log
+        #     self._export_log(event_log, output_path, rep_num)
             # Evaluate log
             if self.parms['gl']['evaluate']:
                 self.sim_values.extend(
@@ -134,7 +143,7 @@ class DeepSimulator():
         # print('Reading repetition:', (rep+1), sep=' ')
         sim_values = list()
         log = copy.deepcopy(log)
-        log = log[~log.task.isin(['Start', 'End'])]
+        # log = log[~log.task.isin(['Start', 'End'])]
         log['source'] = 'log'
         log.rename(columns={'user': 'resource'}, inplace=True)
         log['caseid'] = log['caseid'].astype(str)
@@ -248,107 +257,107 @@ class DeepSimulator():
         sim_values_df = pd.DataFrame(self.sim_values).sort_values(by='metric')
         results_df = pd.concat([sim_values_df, clust_mets])
 
-        file_name = self.parms['gl']['file']
-        embedded_path = self.parms['gl']['embedded_path']
-        concat_method = self.parms['t_gen']['concat_method']
-
-        if self.parms['t_gen']['emb_method'] == 'emb_dot_product':
-            emb_path = 'ac_DP_' + file_name.split('.')[0]+'.emb'
-            embedd_method = 'Dot product'
-            input_method = 'No aplica'
-            include_times = 'No aplica'
-        elif self.parms['t_gen']['emb_method'] == 'emb_w2vec':
-            if self.parms['t_gen']['include_times']:
-                emb_path = 'ac_W2V_' + '{}_times_'.format(concat_method) + file_name.split('.')[0] +'.emb'
-                embedd_method = 'Word2vec'
-                input_method = self.parms['t_gen']['concat_method']
-                include_times = self.parms['t_gen']['include_times']
-            else:
-                emb_path = 'ac_W2V_' + '{}_no_times_'.format(concat_method) + file_name.split('.')[0] +'.emb'
-                embedd_method = 'Word2vec'
-                input_method = self.parms['t_gen']['concat_method']
-                include_times = self.parms['t_gen']['include_times']
-        elif self.parms['t_gen']['emb_method'] == 'emb_dot_product_times':
-            emb_path = 'ac_DP_times_' + file_name.split('.')[0] + '.emb'
-            embedd_method = 'Dot product'
-            input_method = 'Times'
-            include_times = True
-        elif self.parms['t_gen']['emb_method'] == 'emb_dot_product_act_weighting':
-            if self.parms['t_gen']['include_times']:
-                emb_path = 'ac_DP_act_weighting_times_' + file_name.split('.')[0] + '.emb'
-                embedd_method = 'Dot product'
-                input_method = 'Activity weighting'
-                include_times = self.parms['t_gen']['include_times']
-            else:
-                emb_path = 'ac_DP_act_weighting_no_times_' + file_name.split('.')[0] + '.emb'
-                embedd_method = 'Dot product'
-                input_method = 'Activity weighting'
-                include_times = self.parms['t_gen']['include_times']
+        # file_name = self.parms['gl']['file']
+        # embedded_path = self.parms['gl']['embedded_path']
+        # concat_method = self.parms['t_gen']['concat_method']
+        #
+        # if self.parms['t_gen']['emb_method'] == 'emb_dot_product':
+        #     emb_path = 'ac_DP_' + file_name.split('.')[0]+'.emb'
+        #     embedd_method = 'Dot product'
+        #     input_method = 'No aplica'
+        #     include_times = 'No aplica'
+        # elif self.parms['t_gen']['emb_method'] == 'emb_w2vec':
+        #     if self.parms['t_gen']['include_times']:
+        #         emb_path = 'ac_W2V_' + '{}_times_'.format(concat_method) + file_name.split('.')[0] +'.emb'
+        #         embedd_method = 'Word2vec'
+        #         input_method = self.parms['t_gen']['concat_method']
+        #         include_times = self.parms['t_gen']['include_times']
+        #     else:
+        #         emb_path = 'ac_W2V_' + '{}_no_times_'.format(concat_method) + file_name.split('.')[0] +'.emb'
+        #         embedd_method = 'Word2vec'
+        #         input_method = self.parms['t_gen']['concat_method']
+        #         include_times = self.parms['t_gen']['include_times']
+        # elif self.parms['t_gen']['emb_method'] == 'emb_dot_product_times':
+        #     emb_path = 'ac_DP_times_' + file_name.split('.')[0] + '.emb'
+        #     embedd_method = 'Dot product'
+        #     input_method = 'Times'
+        #     include_times = True
+        # elif self.parms['t_gen']['emb_method'] == 'emb_dot_product_act_weighting':
+        #     if self.parms['t_gen']['include_times']:
+        #         emb_path = 'ac_DP_act_weighting_times_' + file_name.split('.')[0] + '.emb'
+        #         embedd_method = 'Dot product'
+        #         input_method = 'Activity weighting'
+        #         include_times = self.parms['t_gen']['include_times']
+        #     else:
+        #         emb_path = 'ac_DP_act_weighting_no_times_' + file_name.split('.')[0] + '.emb'
+        #         embedd_method = 'Dot product'
+        #         input_method = 'Activity weighting'
+        #         include_times = self.parms['t_gen']['include_times']
 
         # Save results
         results_df.to_csv(
-            os.path.join(output_path, sup.file_id(prefix='SE_')),
-            index=False)
+            os.path.join(output_path, 'evaluation_test.csv'),
+        index=False)
 
-        results_df_T = results_df.set_index('metric').T.reset_index(drop=True)
-        results_df_T['input_method'] = input_method
-        results_df_T['embedding_method'] = embedd_method
-        results_df_T['log_name'] = self.parms['gl']['file']
-        results_df_T['times_included'] = include_times
-
-        results_df_T.to_csv(
-            os.path.join('output_files', emb_path.replace('.emb', '.csv')),
-            index=False)
+        # results_df_T = results_df.set_index('metric').T.reset_index(drop=True)
+        # results_df_T['input_method'] = input_method
+        # results_df_T['embedding_method'] = embedd_method
+        # results_df_T['log_name'] = self.parms['gl']['file']
+        # results_df_T['times_included'] = include_times
+        #
+        # results_df_T.to_csv(
+        #     os.path.join('output_files', emb_path.replace('.emb', '.csv')),
+        #     index=False)
             
         # Save logs        
         # log_test = self.log_test[~self.log_test.task.isin(['Start', 'End'])]
-        log_test = self.log_test
-        log_test.to_csv(
-            os.path.join(output_path, 'test_' +
-                         self.parms['gl']['file'].split('.')[0] + '.csv'),
-            index=False)
-
-        log_train = pd.DataFrame(self.log_train.data)
-        log_train.to_csv(
-            os.path.join(output_path, 'train_' +
-                         self.parms['gl']['file'].split('.')[0] + '.csv'),
-            index=False)
-
-        if self.parms['gl']['save_models']:
-            paths = ['bpmn_models', 'embedded_path', 'ia_gen_path',
-                     'seq_flow_gen_path', 'times_gen_path']
-            sources = list()
-            for path in paths:
-                for root, dirs, files in os.walk(self.parms['gl'][path]):
-                    for file in files:
-                        if self.parms['gl']['file'].split('.')[0] in file:
-                            sources.append(os.path.join(root, file))
-            for source in sources:
-                base_folder = os.path.join(
-                    output_path, os.path.basename(os.path.dirname(source)))
-                if not os.path.exists(base_folder):
-                    os.makedirs(base_folder)
-                destination = os.path.join(base_folder,
-                                           os.path.basename(source))
-                # Copy dl models
-                allowed_ext = self._define_model_path({**self.parms['gl'],
-                                                       **self.parms['t_gen']})
-                is_dual = self.parms['t_gen']['model_type'] == 'dual_inter'
-                if is_dual and ('times_gen_models' in source) and any(
-                        [x in source for x in allowed_ext]):
-                    shutil.copyfile(source, destination)
-                elif not is_dual and ('times_gen_models' in source) and any(
-                        [self.parms['gl']['file'].split('.')[0] + x in source
-                         for x in allowed_ext]):
-                    shutil.copyfile(source, destination)
-                # copy other models
-                folders = ['bpmn_models', 'embedded_matix', 'ia_gen_models']
-                allowed_ext = ['.emb', '.bpmn', '_mpdf.json', '_prf.json',
-                               '_prf_meta.json', '_mpdf_meta.json', '_meta.json']
-                if any([x in source for x in folders]) and any(
-                        [self.parms['gl']['file'].split('.')[0] + x in source
-                         for x in allowed_ext]):
-                    shutil.copyfile(source, destination)
+        # log_test = self.log_test
+        # log_test.to_csv(
+        #     os.path.join(output_path, 'test_' +
+        #                  self.parms['gl']['file'].split('.')[0] + '.csv'),
+        #     index=False)
+        #
+        # log_train = pd.DataFrame(self.log_train.data)
+        # log_train.to_csv(
+        #     os.path.join(output_path, 'train_' +
+        #                  self.parms['gl']['file'].split('.')[0] + '.csv'),
+        #     index=False)
+        #
+        # if self.parms['gl']['save_models']:
+        #     paths = ['bpmn_models', 'embedded_path', 'ia_gen_path',
+        #              'seq_flow_gen_path', 'times_gen_path']
+        #     sources = list()
+        #     for path in paths:
+        #         for root, dirs, files in os.walk(self.parms['gl'][path]):
+        #             for file in files:
+        #                 if self.parms['gl']['file'].split('.')[0] in file:
+        #                     sources.append(os.path.join(root, file))
+        #     for source in sources:
+        #         base_folder = os.path.join(
+        #             output_path, os.path.basename(os.path.dirname(source)))
+        #         if not os.path.exists(base_folder):
+        #             os.makedirs(base_folder)
+        #         destination = os.path.join(base_folder,
+        #                                    os.path.basename(source))
+        #         # Copy dl models
+        #         allowed_ext = self._define_model_path({**self.parms['gl'],
+        #                                                **self.parms['t_gen']})
+        #         is_dual = self.parms['t_gen']['model_type'] == 'dual_inter'
+        #         if is_dual and ('times_gen_models' in source) and any(
+        #                 [x in source for x in allowed_ext]):
+        #             shutil.copyfile(source, destination)
+        #         elif not is_dual and ('times_gen_models' in source) and any(
+        #                 [self.parms['gl']['file'].split('.')[0] + x in source
+        #                  for x in allowed_ext]):
+        #             shutil.copyfile(source, destination)
+        #         # copy other models
+        #         folders = ['bpmn_models', 'embedded_matix', 'ia_gen_models']
+        #         allowed_ext = ['.emb', '.bpmn', '_mpdf.json', '_prf.json',
+        #                        '_prf_meta.json', '_mpdf_meta.json', '_meta.json']
+        #         if any([x in source for x in folders]) and any(
+        #                 [self.parms['gl']['file'].split('.')[0] + x in source
+        #                  for x in allowed_ext]):
+        #             shutil.copyfile(source, destination)
 
     @staticmethod
     def _define_model_path(parms):

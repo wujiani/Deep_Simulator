@@ -47,7 +47,7 @@ def main(file, update_gen, update_ia_gen, update_mpdf_gen, update_times_gen, sav
     params = read_properties(params)
     params['gl']['sim_metric'] = 'tsd'  # Main metric
     # Additional metrics
-    params['gl']['add_metrics'] = ['day_hour_emd', 'log_mae', 'dl', 'mae']
+    params['gl']['add_metrics'] = ['day_hour_emd', 'log_mae', 'dl', 'mae'] #['day_hour_emd', 'log_mae', 'dl', 'mae']
     params['gl']['exp_reps'] = 1
     # Sequences generator
     params['s_gen'] = dict()
