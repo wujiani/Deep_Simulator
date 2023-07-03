@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-To execute this code you just need to install Anaconda or Conda in your system, and create an environment using the *environment.yml* specification provided in the repository.
+To execute this code you just need to install Anaconda or Conda in your system, then execute pip install -r requirements.txt.
 
 ## Running the script
 
@@ -42,8 +42,5 @@ Once created the environment, you can execute the tool from a terminal specifyin
 ## Examples
 
 The datasets, models, and evaluation results can be found at <a href="https://doi.org/10.5281/zenodo.5734443" target="_blank">Zenodo</a>. The paper of the approach can be found at  <a href="https://doi.org/10.1007/978-3-031-07472-1_4" target="_blank">CAiSE'22 Paper</a>
-## Authors
 
-* **Manuel Camargo**
-* **Marlon Dumas**
-* **Oscar Gonzalez-Rojas**
+## JIANI
