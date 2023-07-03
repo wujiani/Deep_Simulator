@@ -4,6 +4,7 @@ import numpy as np
 from collections import Counter
 import click
 import warnings
+import sys
 
 from log_gen_seq_utils import *
 warnings.filterwarnings("ignore")
@@ -28,7 +29,7 @@ def main(import_file, import_test_file, if_csv, id_column, act_column, time_colu
     file_name = dirStr.split("\\")[-1]
 
     # info of test data, here we just need the amount of generated traces(len_case), so len_case can be anything else that we defined
-    data_test = pm4py.read.read_xes(import_test_file)
+    data_test = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_test_file))
     # data_test.drop_duplicates(keep='first',inplace=True)
     caseid_list = list(data_test[id_column].unique())
     len_case = len(caseid_list)
@@ -56,7 +57,10 @@ def main(import_file, import_test_file, if_csv, id_column, act_column, time_colu
         df.to_csv(f'{file_name}_unfold.csv', index=False)
     else:
 
-        data = pm4py.read.read_xes(import_file)
+        data = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_file))
+        caseid_list_train = list(data_test[id_column].unique())
+        len_case_train = len(caseid_list_train)
+        print(f"number of traces in train dataset: {len_case_train}")
         # reorder the columns of dataset
         df = copy.deepcopy(pd.DataFrame(data, columns=[id_column, act_column, time_column, resource_column, state_column]))
 
@@ -372,3 +376,6 @@ def main(import_file, import_test_file, if_csv, id_column, act_column, time_colu
 
     os.makedirs(file_name, exist_ok=True)
     dddf.to_csv(os.path.join(file_name, f'gen_seq_{file_name}.csv'))
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

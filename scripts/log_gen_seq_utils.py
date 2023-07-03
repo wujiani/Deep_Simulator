@@ -21,7 +21,7 @@ def add_start_end(group, act_column, resource_column, state_column):
     end_series_[state_column] = 'complete'
     end_serieses = pd.DataFrame([end_series, end_series_])
     group = pd.concat([group, end_serieses], axis=0 ,ignore_index=True)
-    return
+    return group
 
 # to record the order and the info of the parallel
 # input: group: trace with parallel
@@ -120,13 +120,19 @@ def all_prefix_(input_list):
         all_pref.append(input_list[:i])
     return all_pref
 
+def all_prefix(input_list):
+    input_list = ['addstart']+list(input_list)+['addend']
+    all_pref = []
+    for i in range(2, len(input_list)+1):
+        all_pref.append(input_list[:i])
+    return all_pref
 # get all prefixes or n-gram
 # input: all_traces: list that contains all the sequences of traces
 #        method: 'n_gram'/'prefix'
 #        num: if used 'n_gram' method, set n
 #        if_sub_group: check if parallel
 # output: sub_traces: list that consists of all prefixes or n-grams
-def get_sub_traces(all_traces, all_prefix, method='n_gram', num=2, if_sub_group=False):
+def get_sub_traces(all_traces, method='n_gram', num=2, if_sub_group=False):
     sub_traces = []
     if method == 'prefix':
         for each_trace in all_traces:
