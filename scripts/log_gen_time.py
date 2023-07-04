@@ -12,6 +12,7 @@ from log_gen_time_utils import *
 warnings.filterwarnings("ignore")
 
 @click.command()
+@click.option('--experiment-name', required=True, type=str)
 @click.option('--import-file', required=True, type=str)
 @click.option('--simulator-output', required=True, type=str)
 @click.option('--embedding-matrix', required=True, type=str)
@@ -20,7 +21,7 @@ warnings.filterwarnings("ignore")
 @click.option('--time-column', default='time:timestamp', type=str)
 @click.option('--resource-column', default='user', type=str)
 @click.option('--state-column', default='lifecycle:transition', type=str)
-def main(import_file, simulator_output, embedding_matrix, id_column, act_column, time_column, resource_column, state_column):
+def main(experiment_name, import_file, simulator_output, embedding_matrix, id_column, act_column, time_column, resource_column, state_column):
     # get the start time of each generated trace
     ia_df = pd.read_csv(simulator_output)
 
@@ -32,6 +33,7 @@ def main(import_file, simulator_output, embedding_matrix, id_column, act_column,
 
     dirStr, ext = os.path.splitext(import_file)
     file_name = dirStr.split("\\")[-1]
+    output_folder = f'example_outputs\{experiment_name}'
 
     data = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_file))
     # reorder the columns of dataset
@@ -175,7 +177,7 @@ def main(import_file, simulator_output, embedding_matrix, id_column, act_column,
             dict_kde['wait'][each[0]] = kde
 
     # the generated sequence
-    gen_df = pd.read_csv(os.path.join(file_name, f'gen_seq_{file_name}.csv'))
+    gen_df = pd.read_csv(os.path.join(output_folder, f'gen_seq_{file_name}.csv'))
     gen_df = gen_df.set_index('Unnamed: 0')
     gen_df['next'] = gen_df['next'].astype('str')
     gen_df['last'] = gen_df['last'].astype('str')
@@ -254,7 +256,8 @@ def main(import_file, simulator_output, embedding_matrix, id_column, act_column,
     g['caseid'] = g['caseid'].map(lambda x: 'Case' + str(x))
     g = g[['caseid', 'task', 'start_timestamp', 'end_timestamp', 'resource']]
 
-    g.to_csv(os.path.join(file_name, f'gen_seq_time_{file_name}.csv'), index=False)
+    output_folder = f'example_outputs\{experiment_name}'
+    g.to_csv(os.path.join(output_folder, f'gen_seq_time_{file_name}.csv'), index=False)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

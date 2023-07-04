@@ -10,7 +10,7 @@ from log_gen_seq_utils import *
 warnings.filterwarnings("ignore")
 
 @click.command()
-@click.option('--if-csv', default=False, type=bool)
+@click.option('--experiment-name', required=True, type=str)
 @click.option('--import-file', required=True, type=str)
 @click.option('--import-test-file', required=True, type=str)
 @click.option('--id-column', default='caseid', type=str)
@@ -18,15 +18,13 @@ warnings.filterwarnings("ignore")
 @click.option('--time-column', default='time:timestamp', type=str)
 @click.option('--resource-column', default='user', type=str)
 @click.option('--state-column', default='lifecycle:transition', type=str)
-@click.option('--start-time-column', default='START_DATE', type=str)
-@click.option('--end-time-column', default='END_DATE', type=str)
 @click.option('--method', default='prefix', type=str)
 @click.option('--num', default=2, type=int)
-def main(import_file, import_test_file, if_csv, id_column, act_column, time_column, resource_column, state_column, start_time_column,
-         end_time_column, method, num):
+def main(experiment_name, import_file, import_test_file, id_column, act_column, time_column, resource_column, state_column, method, num):
 
     dirStr, ext = os.path.splitext(import_file)
     file_name = dirStr.split("\\")[-1]
+    print(file_name)
 
     # info of test data, here we just need the amount of generated traces(len_case), so len_case can be anything else that we defined
     data_test = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_test_file))
@@ -35,34 +33,34 @@ def main(import_file, import_test_file, if_csv, id_column, act_column, time_colu
     len_case = len(caseid_list)
     print(f"number of traces in test dataset: {len_case}")
 
-    if if_csv:
-        df = pd.read_csv('C:\\Users\\19wuj\\Desktop\\test_0514\\bac_cut_time.csv')
-        df_start = df[[id_column, act_column, start_time_column, resource_column]].rename(
-            columns={start_time_column: time_column})
-        df_start[state_column] = 'start'
+    # if if_csv:
+    #     df = pd.read_csv('C:\\Users\\19wuj\\Desktop\\test_0514\\bac_cut_time.csv')
+    #     df_start = df[[id_column, act_column, start_time_column, resource_column]].rename(
+    #         columns={start_time_column: time_column})
+    #     df_start[state_column] = 'start'
+    #
+    #     df_end = df[[id_column, act_column, end_time_column, resource_column]].rename(
+    #         columns={end_time_column: time_column})
+    #     df_end[state_column] = 'complete'
+    #
+    #     df_start_end = pd.concat([df_start, df_end])
+    #     df_start_end['index'] = df_start_end.index
+    #
+    #     new = pd.DataFrame()
+    #     for key, group in df_start_end.groupby(id_column):
+    #         temp = group.sort_values(by=[time_column, 'index'], ascending=[True, True]).reset_index(drop=True)
+    #         new = pd.concat([new, temp], ignore_index=True)
+    #     del new['index']
+    #     df = new
+    #     df.to_csv(f'{file_name}_unfold.csv', index=False)
+    # else:
 
-        df_end = df[[id_column, act_column, end_time_column, resource_column]].rename(
-            columns={end_time_column: time_column})
-        df_end[state_column] = 'complete'
-
-        df_start_end = pd.concat([df_start, df_end])
-        df_start_end['index'] = df_start_end.index
-
-        new = pd.DataFrame()
-        for key, group in df_start_end.groupby(id_column):
-            temp = group.sort_values(by=[time_column, 'index'], ascending=[True, True]).reset_index(drop=True)
-            new = pd.concat([new, temp], ignore_index=True)
-        del new['index']
-        df = new
-        df.to_csv(f'{file_name}_unfold.csv', index=False)
-    else:
-
-        data = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_file))
-        caseid_list_train = list(data_test[id_column].unique())
-        len_case_train = len(caseid_list_train)
-        print(f"number of traces in train dataset: {len_case_train}")
-        # reorder the columns of dataset
-        df = copy.deepcopy(pd.DataFrame(data, columns=[id_column, act_column, time_column, resource_column, state_column]))
+    data = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_file))
+    caseid_list_train = list(data[id_column].unique())
+    len_case_train = len(caseid_list_train)
+    print(f"number of traces in train dataset: {len_case_train}")
+    # reorder the columns of dataset
+    df = copy.deepcopy(pd.DataFrame(data, columns=[id_column, act_column, time_column, resource_column, state_column]))
 
     # pre-processing
     mydata = pd.DataFrame()
@@ -374,8 +372,11 @@ def main(import_file, import_test_file, if_csv, id_column, act_column, time_colu
     dddf['resource'] = dddf['act']
     print(f'final new data with info: {dddf}')
 
-    os.makedirs(file_name, exist_ok=True)
-    dddf.to_csv(os.path.join(file_name, f'gen_seq_{file_name}.csv'))
+    output_folder = f'example_outputs\{experiment_name}'
+    os.makedirs(output_folder, exist_ok=True)
+    dddf.to_csv(os.path.join(output_folder, f'gen_seq_{file_name}.csv'))
+    # g.to_csv(os.path.join(f'example_outputs\{experiment_name}', f'gen_seq_time_{file_name}.csv'), index=False)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+

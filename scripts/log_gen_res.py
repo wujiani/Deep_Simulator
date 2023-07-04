@@ -12,15 +12,17 @@ from log_gen_res_utils import *
 warnings.filterwarnings("ignore")
 
 @click.command()
+@click.option('--experiment-name', required=True, type=str)
 @click.option('--import-file', required=True, type=str)
 @click.option('--id-column', default='caseid', type=str)
 @click.option('--act-column', default='concept:name', type=str)
 @click.option('--time-column', default='time:timestamp', type=str)
 @click.option('--resource-column', default='user', type=str)
 @click.option('--state-column', default='lifecycle:transition', type=str)
-def main(import_file, id_column, act_column, time_column, resource_column, state_column):
+def main(experiment_name, import_file, id_column, act_column, time_column, resource_column, state_column):
     dirStr, ext = os.path.splitext(import_file)
     file_name = dirStr.split("\\")[-1]
+    output_folder = f'example_outputs\{experiment_name}'
 
     data = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_file))
     # reorder the columns of dataset
@@ -33,7 +35,7 @@ def main(import_file, id_column, act_column, time_column, resource_column, state
 
     add_occurence(df)
 
-    df_gen = pd.read_csv(os.path.join(file_name, f'gen_seq_time_{file_name}.csv'))
+    df_gen = pd.read_csv(os.path.join(output_folder, f'gen_seq_time_{file_name}.csv'))
     add_occurence(df_gen)
     df_gen['res'] = None
 
@@ -170,7 +172,7 @@ def main(import_file, id_column, act_column, time_column, resource_column, state
     df_gen_output = df_gen[[id_column, 'task', 'start_timestamp', 'end_timestamp', 'res']]
     df_gen_output = df_gen_output.rename(columns={'res': 'resource'})
 
-    df_gen_output.to_csv(os.path.join(file_name, f'gen_seq_time_res_{file_name}.csv'), index=False)
+    df_gen_output.to_csv(os.path.join(output_folder, f'gen_seq_time_res_{file_name}.csv'), index=False)
 
 
 if __name__ == "__main__":
