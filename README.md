@@ -1,13 +1,13 @@
-##Jiani
-###Environment
+## Jiani
+### Environment
 To execute this code you just need to install Anaconda or Conda in your system, then execute pip install -r requirement.txt.
-###Baseline model outputs
+### Baseline model outputs
 First, run the **DeepSimulator** code to get the baseline generated event log, as well as the embedding matrix of the activities.
 Since we use the same generated arrival times for each trace as the DeepSimulator and the embedding matrix to compute the nearest activities, we need the output of the baseline model.
 
 (In the directory `example_datasets`, we already have the outputs of DeepSimulator with some datasets.)
 
-###Our method
+### Our method
 * In our method, generate the sequence of trace activities first. All generated logs are saved in the directory `example_outputs`.   
 example:
 
@@ -42,7 +42,7 @@ parameters explanations:
 `--embedding-matrix` : embbeding matrix file for the activities(got from the output of DeepSimulator)  
 
 
-###other example datasets:  
+### other example datasets:  
 *Production*  
 * gen_seq  
 `python scripts\log_gen_seq.py --experiment-name "Production_0.2" --import-file "example_datasets\Production_0.2\train_Production.xes" --import-test-file "example_datasets\Production_0.2\test_Production.xes" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition" --method prefix
