@@ -7,6 +7,7 @@ import warnings
 import sys
 import copy
 import pandas as pd
+import json
 
 from log_gen_res_utils import *
 warnings.filterwarnings("ignore")
@@ -19,7 +20,9 @@ warnings.filterwarnings("ignore")
 @click.option('--time-column', default='time:timestamp', type=str)
 @click.option('--resource-column', default='user', type=str)
 @click.option('--state-column', default='lifecycle:transition', type=str)
-def main(experiment_name, import_file, id_column, act_column, time_column, resource_column, state_column):
+@click.option('--suffix', default=0, type=int)
+
+def main(experiment_name, import_file, id_column, act_column, time_column, resource_column, state_column, suffix):
     dirStr, ext = os.path.splitext(import_file)
     file_name = dirStr.split("\\")[-1]
     output_folder = f'example_outputs\{experiment_name}'
@@ -35,13 +38,27 @@ def main(experiment_name, import_file, id_column, act_column, time_column, resou
 
     add_occurence(df)
 
-    df_gen = pd.read_csv(os.path.join(output_folder, f'gen_seq_time_{file_name}.csv'))
+    df_gen = pd.read_csv(os.path.join(output_folder, f'gen_seq_time_{file_name}_{suffix}.csv'))
     add_occurence(df_gen)
     df_gen['res'] = None
 
     dict_re_by_task = resources_by_task(df)
 
-    dict_re_tasks, dict_re_caseid, dict_re_caseids_tasks, dict_caseid_tasks = tasks_by_resource(df)
+    if os.path.exists(os.path.join(output_folder, f'dict_re_tasks_{file_name}.json')):
+        if os.path.exists(os.path.join(output_folder, f'dict_re_caseid_{file_name}.json')):
+            if os.path.exists(os.path.join(output_folder, f'dict_re_caseids_tasks_{file_name}.json')):
+                if os.path.exists(os.path.join(output_folder, f'dict_caseid_tasks_{file_name}.json')):
+                    print('found required dicts')
+                    with open(os.path.join(output_folder, f'dict_re_tasks_{file_name}.json')) as json_file:
+                        dict_re_tasks = json.load(json_file)
+                    with open(os.path.join(output_folder, f'dict_re_caseid_{file_name}.json')) as json_file:
+                        dict_re_caseid = json.load(json_file)
+                    with open(os.path.join(output_folder, f'dict_re_caseids_tasks_{file_name}.json')) as json_file:
+                        dict_re_caseids_tasks = json.load(json_file)
+                    with open(os.path.join(output_folder, f'dict_caseid_tasks_{file_name}.json')) as json_file:
+                        dict_caseid_tasks = json.load(json_file)
+    else:
+        dict_re_tasks, dict_re_caseid, dict_re_caseids_tasks, dict_caseid_tasks = tasks_by_resource(df)
 
     dict_tasks_re = {}
     for each in dict_re_tasks.items():
@@ -51,14 +68,23 @@ def main(experiment_name, import_file, id_column, act_column, time_column, resou
             dict_tasks_re[a] = tmp
     # dict_tasks_re
 
-    tasks_re_prob = {}  # dictionary: keys: all the seq1,
-    #                                  values(dictionary): the next events(keys) and the probabilities(values)
-    for each in dict_tasks_re.items():
-        counter = Counter(each[1])
-        tol_events = len(each[1])
-        number = np.array(list(counter.values()))
-        prob = np.round(np.divide(number, tol_events), 10)
-        tasks_re_prob[each[0]] = dict(zip(counter.keys(), prob))
+
+    if os.path.exists(os.path.join(output_folder, f'tasks_re_prob_{file_name}.json')):
+        print('found tasks_re_prob')
+        with open(os.path.join(output_folder, f'tasks_re_prob_{file_name}.json')) as json_file:
+            tasks_re_prob = json.load(json_file)
+    else:
+
+        tasks_re_prob = {}  # dictionary: keys: all the seq1,
+        #                                  values(dictionary): the next events(keys) and the probabilities(values)
+        for each in dict_tasks_re.items():
+            counter = Counter(each[1])
+            tol_events = len(each[1])
+            number = np.array(list(counter.values()))
+            prob = np.round(np.divide(number, tol_events), 10)
+            tasks_re_prob[each[0]] = dict(zip(counter.keys(), prob))
+        with open(os.path.join(output_folder, f'tasks_re_prob_{file_name}.json'), "w") as f:
+            json.dump(tasks_re_prob, f)
 
     all_acts_under_re = [each_[1] for each in dict_re_caseids_tasks.items() for each_ in each[1]]
 
@@ -172,7 +198,7 @@ def main(experiment_name, import_file, id_column, act_column, time_column, resou
     df_gen_output = df_gen[[id_column, 'task', 'start_timestamp', 'end_timestamp', 'res']]
     df_gen_output = df_gen_output.rename(columns={'res': 'resource'})
 
-    df_gen_output.to_csv(os.path.join(output_folder, f'gen_seq_time_res_{file_name}.csv'), index=False)
+    df_gen_output.to_csv(os.path.join(output_folder, f'gen_seq_time_res_{file_name}_{suffix}.csv'), index=False)
 
 
 if __name__ == "__main__":

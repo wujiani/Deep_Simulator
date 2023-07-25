@@ -25,6 +25,7 @@ warnings.filterwarnings("ignore")
 @click.option('--suffix', default=0, type=int)
 def main(experiment_name, import_file, import_test_file, id_column, act_column, time_column, resource_column, state_column, method, num, suffix):
 
+
     dirStr, ext = os.path.splitext(import_file)
     file_name = dirStr.split("\\")[-1]
     print(file_name)
@@ -254,43 +255,50 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
                     temp.append(each_seq)
                     all_sub_para[each_tuple][each_sub_tuple[0]][each_seq[0]] = temp   # record the seuqences start with the first event in the sub_parallel,
                                                                                     #the key is the parallel name and sub_key is the name of sub_parallel and (sub_)sub_key is the start event in the sub_parallel
-    my_prob = {}  # dictionary stores probabilities
 
-    for each in first_parallels.items():
-        my_prob[each[0]] = {}
-        a = each[1]
-        counter = Counter(a)
-        tol_events = len(a)
-        number = np.array(list(counter.values()))
-        prob = np.round(np.divide(number, tol_events), 10)
-        my_prob[each[0]]['first'] = dict(zip(counter.keys(), prob))
-        # the key is the combination of the first events in the parallel under the name of parallism and value is its probability
+    if os.path.exists(os.path.join(output_folder, f'my_prob_{file_name}.json')):
+        print('found my probability')
+        with open(os.path.join(output_folder, f'my_prob_{file_name}.json')) as json_file:
+            my_prob = json.load(json_file)
+    else:
 
-    for each in all_para_seqs.items():
-        my_prob[each[0]]['seqs'] = {}
-        for each_first_seq in each[1].items():
-            a = each_first_seq[1]
+        my_prob = {}  # dictionary stores probabilities
+
+        for each in first_parallels.items():
+            my_prob[each[0]] = {}
+            a = each[1]
             counter = Counter(a)
             tol_events = len(a)
             number = np.array(list(counter.values()))
             prob = np.round(np.divide(number, tol_events), 10)
-            my_prob[each[0]]['seqs'][each_first_seq[0]] = dict(zip(counter.keys(), prob))
-            # the key is sequence start with first event in the parallel under the name of parallism, then under the first event and value is its probability
+            my_prob[each[0]]['first'] = dict(zip(counter.keys(), prob))
+            # the key is the combination of the first events in the parallel under the name of parallism and value is its probability
 
-    for each in all_sub_para.items():
-        for each_sub_para in each[1].items():
-            my_prob[each[0]][each_sub_para[0]] = {}
-            for each_ in each_sub_para[1].items():
-                a = each_[1]
+        for each in all_para_seqs.items():
+            my_prob[each[0]]['seqs'] = {}
+            for each_first_seq in each[1].items():
+                a = each_first_seq[1]
                 counter = Counter(a)
                 tol_events = len(a)
                 number = np.array(list(counter.values()))
                 prob = np.round(np.divide(number, tol_events), 10)
-                my_prob[each[0]][each_sub_para[0]][each_[0]] = dict(zip(counter.keys(), prob))
-                # the key is sequence start with first event in the sub parallel under the name of parallism, then under the name of sub_parallel, then under the first event
-                # and value is its probability
-    with open(os.path.join(output_folder, f'my_prob_{file_name}.json'), "w") as f:
-        json.dump(my_prob, f)
+                my_prob[each[0]]['seqs'][each_first_seq[0]] = dict(zip(counter.keys(), prob))
+                # the key is sequence start with first event in the parallel under the name of parallism, then under the first event and value is its probability
+
+        for each in all_sub_para.items():
+            for each_sub_para in each[1].items():
+                my_prob[each[0]][each_sub_para[0]] = {}
+                for each_ in each_sub_para[1].items():
+                    a = each_[1]
+                    counter = Counter(a)
+                    tol_events = len(a)
+                    number = np.array(list(counter.values()))
+                    prob = np.round(np.divide(number, tol_events), 10)
+                    my_prob[each[0]][each_sub_para[0]][each_[0]] = dict(zip(counter.keys(), prob))
+                    # the key is sequence start with first event in the sub parallel under the name of parallism, then under the name of sub_parallel, then under the first event
+                    # and value is its probability
+        with open(os.path.join(output_folder, f'my_prob_{file_name}.json'), "w") as f:
+            json.dump(my_prob, f)
 
     gen_number = len_case #
     # gen_number = 160

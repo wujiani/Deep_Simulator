@@ -8,6 +8,7 @@ import click
 import sys
 
 from log_gen_time_utils import *
+import json
 
 warnings.filterwarnings("ignore")
 
@@ -131,54 +132,72 @@ def main(experiment_name, import_file, simulator_output, embedding_matrix, id_co
 
     process_data_use = copy.deepcopy(process_data)
     waiting_data_use = copy.deepcopy(waiting_data)
-    dict_time = {}
-    dict_kde = {}
-    dict_time['pro'] = {}
-    dict_kde['pro'] = {}
-    for each in process_data_use.items():
-        dict_time['pro'][each[0]] = {}
-        data_list = each[1]
-        count = Counter(data_list)
-        tol_events = len(data_list)
 
-        if 0 in count:
-            dict_time['pro'][each[0]][0] = count[0] / tol_events
-            del count[0]
-            while 0 in data_list:
-                data_list.remove(0)
-        if len(count) == 1:
-            for each_ in count:
-                dict_time['pro'][each[0]][each_] = count[each_] / tol_events
-        elif len(count) > 1:
-            dict_time['pro'][each[0]]['kde'] = len(data_list) / tol_events
-            data = np.array(data_list).reshape(-1, 1)
-            kde = KernelDensity(kernel='gaussian', bandwidth=0.2).fit(data)
-            dict_kde['pro'][each[0]] = kde
+    if os.path.exists(os.path.join(output_folder, f'dict_time_{file_name}.json')):
+        if os.path.exists(os.path.join(output_folder, f'dict_kde_{file_name}.json')):
+            print('found dict time')
+            print('found dict kde')
+            with open(os.path.join(output_folder, f'dict_time_{file_name}.json')) as json_file:
+                dict_time = json.load(json_file)
+            with open(os.path.join(output_folder, f'dict_kde_{file_name}.json')) as json_file:
+                dict_kde = json.load(json_file)
 
-    dict_time['wait'] = {}
-    dict_kde['wait'] = {}
-    for each in waiting_data_use.items():
-        dict_time['wait'][each[0]] = {}
-        data_list = each[1]
-        count = Counter(data_list)
-        tol_events = len(data_list)
+    else:
 
-        if 0 in count:
-            dict_time['wait'][each[0]][0] = count[0] / tol_events
-            del count[0]
-            while 0 in data_list:
-                data_list.remove(0)
-        if len(count) == 1:
-            for each_ in count:
-                dict_time['wait'][each[0]][each_] = count[each_] / tol_events
-        elif len(count) > 1:
-            dict_time['wait'][each[0]]['kde'] = len(data_list) / tol_events
-            data = np.array(data_list).reshape(-1, 1)
-            kde = KernelDensity(kernel='gaussian', bandwidth=0.2).fit(data)
-            dict_kde['wait'][each[0]] = kde
+        dict_time = {}
+        dict_kde = {}
+        dict_time['pro'] = {}
+        dict_kde['pro'] = {}
+        for each in process_data_use.items():
+            dict_time['pro'][each[0]] = {}
+            data_list = each[1]
+            count = Counter(data_list)
+            tol_events = len(data_list)
+
+            if 0 in count:
+                dict_time['pro'][each[0]][0] = count[0] / tol_events
+                del count[0]
+                while 0 in data_list:
+                    data_list.remove(0)
+            if len(count) == 1:
+                for each_ in count:
+                    dict_time['pro'][each[0]][each_] = count[each_] / tol_events
+            elif len(count) > 1:
+                dict_time['pro'][each[0]]['kde'] = len(data_list) / tol_events
+                data = np.array(data_list).reshape(-1, 1)
+                kde = KernelDensity(kernel='gaussian', bandwidth=0.2).fit(data)
+                dict_kde['pro'][each[0]] = kde
+
+
+        dict_time['wait'] = {}
+        dict_kde['wait'] = {}
+        for each in waiting_data_use.items():
+            dict_time['wait'][each[0]] = {}
+            data_list = each[1]
+            count = Counter(data_list)
+            tol_events = len(data_list)
+
+            if 0 in count:
+                dict_time['wait'][each[0]][0] = count[0] / tol_events
+                del count[0]
+                while 0 in data_list:
+                    data_list.remove(0)
+            if len(count) == 1:
+                for each_ in count:
+                    dict_time['wait'][each[0]][each_] = count[each_] / tol_events
+            elif len(count) > 1:
+                dict_time['wait'][each[0]]['kde'] = len(data_list) / tol_events
+                data = np.array(data_list).reshape(-1, 1)
+                kde = KernelDensity(kernel='gaussian', bandwidth=0.2).fit(data)
+                dict_kde['wait'][each[0]] = kde
+
+        # with open(os.path.join(output_folder, f'dict_time_{file_name}.json'), "w") as f:
+        #     json.dump(dict_time, f)
+        # with open(os.path.join(output_folder, f'dict_kde_{file_name}.json'), "w") as f:
+        #     json.dump(dict_kde, f)
 
     # the generated sequence
-    gen_df = pd.read_csv(os.path.join(output_folder, f'gen_seq_{file_name}.csv'))
+    gen_df = pd.read_csv(os.path.join(output_folder, f'gen_seq_{file_name}_{suffix}.csv'))
     gen_df = gen_df.set_index('Unnamed: 0')
     gen_df['next'] = gen_df['next'].astype('str')
     gen_df['last'] = gen_df['last'].astype('str')
@@ -258,7 +277,7 @@ def main(experiment_name, import_file, simulator_output, embedding_matrix, id_co
     g = g[['caseid', 'task', 'start_timestamp', 'end_timestamp', 'resource']]
 
     output_folder = f'example_outputs\{experiment_name}'
-    g.to_csv(os.path.join(output_folder, f'gen_seq_time_{file_name}.csv'), index=False)
+    g.to_csv(os.path.join(output_folder, f'gen_seq_time_{file_name}_{suffix}.csv'), index=False)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

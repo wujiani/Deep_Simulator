@@ -56,13 +56,13 @@ parameters explanations:
 
 *PurchasingExample*  
 * gen_seq  
-`python scripts\log_gen_seq.py --experiment-name "PurchasingExample_0.5" --import-file "example_datasets\PurchasingExample_0.5\train_PurchasingExample.xes" --import-test-file "example_datasets\PurchasingExample_0.5\test_PurchasingExample.xes" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition" --method prefix
+`python scripts\log_gen_seq.py --experiment-name "PurchasingExample_0.2" --import-file "example_datasets\PurchasingExample_0.2\train_PurchasingExample.xes" --import-test-file "example_datasets\PurchasingExample_0.5\test_PurchasingExample.xes" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition" --method prefix
 `
 * gen_time  
-`python scripts\log_gen_time.py --experiment-name "PurchasingExample_0.5" --import-file "example_datasets\PurchasingExample_0.5\train_PurchasingExample.xes" --simulator-output "example_datasets\PurchasingExample_0.5\gen_PurchasingExample_1.csv" --embedding-matrix "example_datasets\PurchasingExample_0.5\embedded_matix\ac_DP_PurchasingExample.emb" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition"
+`python scripts\log_gen_time.py --experiment-name "PurchasingExample_0.2" --import-file "example_datasets\PurchasingExample_0.2\train_PurchasingExample.xes" --simulator-output "example_datasets\PurchasingExample_0.5\gen_PurchasingExample_1.csv" --embedding-matrix "example_datasets\PurchasingExample_0.5\embedded_matix\ac_DP_PurchasingExample.emb" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition"
 `
 * gen_res  
-`python scripts\log_gen_res.py --experiment-name "PurchasingExample_0.5" --import-file "example_datasets\PurchasingExample_0.5\train_PurchasingExample.xes" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition"
+`python scripts\log_gen_res.py --experiment-name "PurchasingExample_0.2" --import-file "example_datasets\PurchasingExample_0.2\train_PurchasingExample.xes" --id-column caseid --act-column "concept:name" --time-column "time:timestamp" --resource-column user --state-column "lifecycle:transition"
 `
 
   
