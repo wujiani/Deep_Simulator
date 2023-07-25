@@ -1,0 +1,1971 @@
+caseid,task,start_timestamp,end_timestamp,resource
+Case1,Start,2011-01-01 00:57:52,2011-01-01 00:57:52,Create Purchase Requisition
+Case1,Create Purchase Requisition,2011-01-01 00:57:52,2011-01-01 01:34:52,Create Purchase Requisition
+Case1,Create Request for Quotation,2011-01-01 04:54:52,2011-01-01 05:03:52,Create Request for Quotation
+Case1,Analyze Request for Quotation,2011-01-08 13:10:52,2011-01-08 13:35:52,Analyze Request for Quotation
+Case1,Send Request for Quotation to Supplier,2011-01-10 02:40:52,2011-01-10 03:10:52,Send Request for Quotation to Supplier
+Case1,Create Quotation comparison Map,2011-01-11 01:29:52,2011-01-11 04:14:52,Create Quotation comparison Map
+Case1,Analyze Quotation Comparison Map,2011-01-11 10:17:52,2011-01-11 10:26:52,Analyze Quotation Comparison Map
+Case1,Choose best option,2011-01-11 10:26:52,2011-01-11 10:26:52,Choose best option
+Case1,Settle Conditions With Supplier,2011-01-11 22:00:52,2011-01-12 10:17:52,Settle Conditions With Supplier
+Case1,Create Purchase Order,2011-01-12 18:08:52,2011-01-12 18:19:52,Create Purchase Order
+Case1,Confirm Purchase Order,2011-01-13 02:47:52,2011-01-13 03:02:52,Confirm Purchase Order
+Case1,Deliver Goods Services,2011-01-14 12:45:53,2011-01-16 07:02:53,Deliver Goods Services
+Case1,Release Purchase Order,2011-01-16 14:31:53,2011-01-16 14:32:53,Release Purchase Order
+Case1,Approve Purchase Order for payment,2011-01-16 23:54:53,2011-01-16 23:55:53,Approve Purchase Order for payment
+Case1,Send Invoice,2011-01-17 12:18:53,2011-01-17 12:18:53,Send Invoice
+Case1,Release Supplier's Invoice,2011-01-18 02:25:53,2011-01-18 02:32:53,Release Supplier's Invoice
+Case1,Authorize Supplier's Invoice payment,2011-01-18 02:38:53,2011-01-18 02:38:53,Authorize Supplier's Invoice payment
+Case1,Pay Invoice,2011-01-18 02:56:53,2011-01-18 03:04:53,Pay Invoice
+Case1,End,2011-01-18 03:04:53,2011-01-18 03:04:53,End
+Case2,Start,2011-01-01 11:17:36,2011-01-01 11:17:36,Create Purchase Requisition
+Case2,Create Purchase Requisition,2011-01-01 11:17:36,2011-01-01 11:44:36,Create Purchase Requisition
+Case2,Analyze Purchase Requisition,2011-01-02 10:34:36,2011-01-02 10:43:36,Analyze Purchase Requisition
+Case2,Create Request for Quotation,2011-01-02 10:48:36,2011-01-02 10:49:36,Create Request for Quotation
+Case2,Analyze Request for Quotation,2011-01-10 16:52:36,2011-01-10 17:11:36,Analyze Request for Quotation
+Case2,Send Request for Quotation to Supplier,2011-01-10 22:46:36,2011-01-10 23:01:36,Send Request for Quotation to Supplier
+Case2,Create Quotation comparison Map,2011-01-11 04:44:36,2011-01-11 06:05:36,Create Quotation comparison Map
+Case2,Analyze Quotation Comparison Map,2011-01-11 12:51:36,2011-01-11 13:20:36,Analyze Quotation Comparison Map
+Case2,Choose best option,2011-01-11 13:20:36,2011-01-11 13:20:36,Choose best option
+Case2,Settle Conditions With Supplier,2011-01-11 21:24:36,2011-01-12 06:40:36,Settle Conditions With Supplier
+Case2,Create Purchase Order,2011-01-12 11:01:36,2011-01-12 11:08:36,Create Purchase Order
+Case2,Confirm Purchase Order,2011-01-12 15:00:36,2011-01-12 15:30:36,Confirm Purchase Order
+Case2,Deliver Goods Services,2011-01-13 14:58:36,2011-01-15 00:04:36,Deliver Goods Services
+Case2,Release Purchase Order,2011-01-15 07:29:36,2011-01-15 07:30:36,Release Purchase Order
+Case2,Approve Purchase Order for payment,2011-01-17 17:20:36,2011-01-17 17:21:36,Approve Purchase Order for payment
+Case2,Send Invoice,2011-01-22 20:03:36,2011-01-22 20:03:36,Send Invoice
+Case2,Release Supplier's Invoice,2011-01-23 10:18:36,2011-01-23 10:23:36,Release Supplier's Invoice
+Case2,Settle Dispute With Supplier,2011-01-23 11:02:35,2011-01-23 11:22:35,Settle Dispute With Supplier
+Case2,Authorize Supplier's Invoice payment,2011-01-23 11:22:35,2011-01-23 11:22:35,Authorize Supplier's Invoice payment
+Case2,Pay Invoice,2011-01-23 12:02:35,2011-01-23 12:06:35,Pay Invoice
+Case2,End,2011-01-23 12:06:35,2011-01-23 12:06:35,End
+Case3,Start,2011-01-06 04:58:18,2011-01-06 04:58:18,Create Purchase Requisition
+Case3,Create Purchase Requisition,2011-01-06 04:58:18,2011-01-06 05:28:18,Create Purchase Requisition
+Case3,Create Request for Quotation,2011-01-06 05:40:18,2011-01-06 05:49:18,Create Request for Quotation
+Case3,Analyze Request for Quotation,2011-01-07 00:37:18,2011-01-07 01:11:18,Analyze Request for Quotation
+Case3,Send Request for Quotation to Supplier,2011-01-07 14:18:18,2011-01-07 14:46:18,Send Request for Quotation to Supplier
+Case3,Create Quotation comparison Map,2011-01-07 17:29:18,2011-01-07 22:52:18,Create Quotation comparison Map
+Case3,Analyze Quotation Comparison Map,2011-01-08 05:34:18,2011-01-08 05:41:18,Analyze Quotation Comparison Map
+Case3,Choose best option,2011-01-08 05:41:18,2011-01-08 05:41:18,Choose best option
+Case3,Settle Conditions With Supplier,2011-01-08 13:45:18,2011-01-09 03:31:18,Settle Conditions With Supplier
+Case3,Create Purchase Order,2011-01-10 16:31:18,2011-01-10 16:38:18,Create Purchase Order
+Case3,Confirm Purchase Order,2011-01-11 05:03:18,2011-01-11 05:20:18,Confirm Purchase Order
+Case3,Deliver Goods Services,2011-01-12 05:39:18,2011-01-13 08:47:18,Deliver Goods Services
+Case3,Release Purchase Order,2011-01-13 16:24:18,2011-01-13 16:25:18,Release Purchase Order
+Case3,Approve Purchase Order for payment,2011-01-14 19:31:18,2011-01-14 19:32:18,Approve Purchase Order for payment
+Case3,Send Invoice,2011-01-16 20:50:18,2011-01-16 20:50:18,Send Invoice
+Case3,Release Supplier's Invoice,2011-01-17 11:10:18,2011-01-17 11:13:18,Release Supplier's Invoice
+Case3,Authorize Supplier's Invoice payment,2011-01-17 11:13:18,2011-01-17 11:13:18,Authorize Supplier's Invoice payment
+Case3,Pay Invoice,2011-01-17 12:07:18,2011-01-17 12:21:18,Pay Invoice
+Case3,End,2011-01-17 12:21:18,2011-01-17 12:21:18,End
+Case4,Start,2011-01-06 06:56:25,2011-01-06 06:56:25,Create Purchase Requisition
+Case4,Create Purchase Requisition,2011-01-06 06:56:25,2011-01-06 07:29:25,Create Purchase Requisition
+Case4,Analyze Purchase Requisition,2011-01-07 02:07:25,2011-01-07 02:14:25,Analyze Purchase Requisition
+Case4,Create Request for Quotation,2011-01-07 02:19:25,2011-01-07 02:21:25,Create Request for Quotation
+Case4,Analyze Request for Quotation,2011-01-07 19:35:25,2011-01-07 19:57:25,Analyze Request for Quotation
+Case4,Send Request for Quotation to Supplier,2011-01-08 03:23:25,2011-01-08 03:37:25,Send Request for Quotation to Supplier
+Case4,Create Quotation comparison Map,2011-01-08 04:16:25,2011-01-08 06:34:25,Create Quotation comparison Map
+Case4,Analyze Quotation Comparison Map,2011-01-08 13:31:25,2011-01-08 13:46:25,Analyze Quotation Comparison Map
+Case4,Choose best option,2011-01-08 13:46:25,2011-01-08 13:46:25,Choose best option
+Case4,Settle Conditions With Supplier,2011-01-09 15:52:25,2011-01-10 02:03:25,Settle Conditions With Supplier
+Case4,Create Purchase Order,2011-01-10 03:27:25,2011-01-10 03:37:25,Create Purchase Order
+Case4,Confirm Purchase Order,2011-01-10 18:25:25,2011-01-10 18:55:25,Confirm Purchase Order
+Case4,Deliver Goods Services,2011-01-11 10:47:25,2011-01-12 15:25:25,Deliver Goods Services
+Case4,Release Purchase Order,2011-01-12 23:33:25,2011-01-12 23:34:25,Release Purchase Order
+Case4,Approve Purchase Order for payment,2011-01-13 08:51:25,2011-01-13 08:52:25,Approve Purchase Order for payment
+Case4,Send Invoice,2011-01-20 23:06:25,2011-01-20 23:06:25,Send Invoice
+Case4,Release Supplier's Invoice,2011-01-21 13:18:25,2011-01-21 13:23:25,Release Supplier's Invoice
+Case4,Authorize Supplier's Invoice payment,2011-01-21 13:23:25,2011-01-21 13:23:25,Authorize Supplier's Invoice payment
+Case4,Pay Invoice,2011-01-21 13:51:25,2011-01-21 13:57:25,Pay Invoice
+Case4,End,2011-01-21 13:57:25,2011-01-21 13:57:25,End
+Case5,Start,2011-01-06 07:56:44,2011-01-06 07:56:44,Create Purchase Requisition
+Case5,Create Purchase Requisition,2011-01-06 07:56:44,2011-01-06 08:50:44,Create Purchase Requisition
+Case5,Analyze Purchase Requisition,2011-01-06 18:35:44,2011-01-06 18:39:44,Analyze Purchase Requisition
+Case5,End,2011-01-06 18:39:44,2011-01-06 18:39:44,End
+Case6,Start,2011-01-06 08:16:35,2011-01-06 08:16:35,Create Purchase Requisition
+Case6,Create Purchase Requisition,2011-01-06 08:16:35,2011-01-06 08:46:35,Create Purchase Requisition
+Case6,Analyze Purchase Requisition,2011-01-06 20:30:35,2011-01-06 20:35:35,Analyze Purchase Requisition
+Case6,Create Request for Quotation,2011-01-06 20:42:35,2011-01-06 20:45:35,Create Request for Quotation
+Case6,Analyze Request for Quotation,2011-01-09 00:50:35,2011-01-09 01:15:35,Analyze Request for Quotation
+Case6,Amend Request for Quotation,2011-01-09 02:04:35,2011-01-09 02:17:35,Amend Request for Quotation
+Case6,Analyze Request for Quotation,2011-01-27 10:54:35,2011-01-27 11:21:35,Analyze Request for Quotation
+Case6,Send Request for Quotation to Supplier,2011-01-29 18:30:35,2011-01-29 18:49:35,Send Request for Quotation to Supplier
+Case6,Create Quotation comparison Map,2011-01-29 22:32:35,2011-01-30 03:49:35,Create Quotation comparison Map
+Case6,Analyze Quotation Comparison Map,2011-01-30 10:03:35,2011-01-30 10:20:35,Analyze Quotation Comparison Map
+Case6,Choose best option,2011-01-30 10:20:35,2011-01-30 10:20:35,Choose best option
+Case6,Settle Conditions With Supplier,2011-02-02 01:31:35,2011-02-02 15:16:35,Settle Conditions With Supplier
+Case6,Create Purchase Order,2011-02-02 21:56:35,2011-02-02 22:08:35,Create Purchase Order
+Case6,Confirm Purchase Order,2011-02-03 09:04:35,2011-02-03 09:21:35,Confirm Purchase Order
+Case6,Deliver Goods Services,2011-02-04 13:02:35,2011-02-06 04:46:35,Deliver Goods Services
+Case6,Release Purchase Order,2011-02-06 12:38:35,2011-02-06 12:39:35,Release Purchase Order
+Case6,Approve Purchase Order for payment,2011-02-07 14:52:35,2011-02-07 14:53:35,Approve Purchase Order for payment
+Case6,Send Invoice,2011-02-09 03:21:35,2011-02-09 03:21:35,Send Invoice
+Case6,Release Supplier's Invoice,2011-02-09 17:46:35,2011-02-09 17:49:35,Release Supplier's Invoice
+Case6,Authorize Supplier's Invoice payment,2011-02-09 17:49:35,2011-02-09 17:49:35,Authorize Supplier's Invoice payment
+Case6,Pay Invoice,2011-02-09 18:29:35,2011-02-09 18:39:35,Pay Invoice
+Case6,End,2011-02-09 18:39:35,2011-02-09 18:39:35,End
+Case7,Start,2011-01-06 09:16:46,2011-01-06 09:16:46,Create Purchase Requisition
+Case7,Create Purchase Requisition,2011-01-06 09:16:46,2011-01-06 09:52:46,Create Purchase Requisition
+Case7,Analyze Purchase Requisition,2011-01-06 23:39:46,2011-01-06 23:43:46,Analyze Purchase Requisition
+Case7,Create Request for Quotation,2011-01-06 23:46:46,2011-01-06 23:48:46,Create Request for Quotation
+Case7,Analyze Request for Quotation,2011-01-07 09:57:46,2011-01-07 10:12:46,Analyze Request for Quotation
+Case7,Amend Request for Quotation,2011-01-07 11:00:46,2011-01-07 11:10:46,Amend Request for Quotation
+Case7,Analyze Request for Quotation,2011-02-03 01:20:46,2011-02-03 01:36:46,Analyze Request for Quotation
+Case7,Send Request for Quotation to Supplier,2011-02-03 10:21:46,2011-02-03 10:39:46,Send Request for Quotation to Supplier
+Case7,Create Quotation comparison Map,2011-02-03 11:50:46,2011-02-03 14:07:46,Create Quotation comparison Map
+Case7,Analyze Quotation Comparison Map,2011-02-03 21:07:46,2011-02-03 21:36:46,Analyze Quotation Comparison Map
+Case7,Choose best option,2011-02-03 21:36:46,2011-02-03 21:36:46,Choose best option
+Case7,Settle Conditions With Supplier,2011-02-04 00:52:46,2011-02-04 12:34:46,Settle Conditions With Supplier
+Case7,Create Purchase Order,2011-02-04 23:00:46,2011-02-04 23:13:46,Create Purchase Order
+Case7,Confirm Purchase Order,2011-02-06 19:40:46,2011-02-06 20:08:46,Confirm Purchase Order
+Case7,Deliver Goods Services,2011-02-08 05:05:46,2011-02-09 10:50:46,Deliver Goods Services
+Case7,Release Purchase Order,2011-02-09 18:37:46,2011-02-09 18:38:46,Release Purchase Order
+Case7,Approve Purchase Order for payment,2011-02-09 23:46:46,2011-02-09 23:47:46,Approve Purchase Order for payment
+Case7,Send Invoice,2011-02-10 18:21:46,2011-02-10 18:21:46,Send Invoice
+Case7,Release Supplier's Invoice,2011-02-11 08:46:46,2011-02-11 08:51:46,Release Supplier's Invoice
+Case7,Authorize Supplier's Invoice payment,2011-02-11 08:51:46,2011-02-11 08:51:46,Authorize Supplier's Invoice payment
+Case7,Pay Invoice,2011-02-11 09:51:46,2011-02-11 10:00:45,Pay Invoice
+Case7,End,2011-02-11 10:00:45,2011-02-11 10:00:45,End
+Case8,Start,2011-01-06 14:04:24,2011-01-06 14:04:24,Create Purchase Requisition
+Case8,Create Purchase Requisition,2011-01-06 14:04:24,2011-01-06 14:13:24,Create Purchase Requisition
+Case8,Analyze Purchase Requisition,2011-01-07 14:39:24,2011-01-07 14:47:24,Analyze Purchase Requisition
+Case8,Create Request for Quotation,2011-01-07 14:52:24,2011-01-07 14:53:24,Create Request for Quotation
+Case8,Analyze Request for Quotation,2011-01-08 23:42:24,2011-01-09 00:03:24,Analyze Request for Quotation
+Case8,Send Request for Quotation to Supplier,2011-01-10 01:24:24,2011-01-10 01:51:24,Send Request for Quotation to Supplier
+Case8,Create Quotation comparison Map,2011-01-10 01:54:24,2011-01-10 05:46:24,Create Quotation comparison Map
+Case8,Analyze Quotation Comparison Map,2011-01-10 12:19:24,2011-01-10 12:26:24,Analyze Quotation Comparison Map
+Case8,Choose best option,2011-01-10 12:26:24,2011-01-10 12:26:24,Choose best option
+Case8,Settle Conditions With Supplier,2011-01-10 22:26:24,2011-01-11 08:21:24,Settle Conditions With Supplier
+Case8,Create Purchase Order,2011-01-11 15:08:24,2011-01-11 15:16:24,Create Purchase Order
+Case8,Confirm Purchase Order,2011-01-11 21:35:24,2011-01-11 21:53:24,Confirm Purchase Order
+Case8,Deliver Goods Services,2011-01-12 11:17:24,2011-01-13 01:13:24,Deliver Goods Services
+Case8,Release Purchase Order,2011-01-13 08:41:24,2011-01-13 08:42:24,Release Purchase Order
+Case8,Approve Purchase Order for payment,2011-01-13 22:07:24,2011-01-13 22:08:24,Approve Purchase Order for payment
+Case8,Send Invoice,2011-01-17 08:38:24,2011-01-17 08:38:24,Send Invoice
+Case8,Release Supplier's Invoice,2011-01-17 22:57:24,2011-01-17 23:00:24,Release Supplier's Invoice
+Case8,Authorize Supplier's Invoice payment,2011-01-17 23:00:24,2011-01-17 23:00:24,Authorize Supplier's Invoice payment
+Case8,Pay Invoice,2011-01-17 23:19:24,2011-01-17 23:23:24,Pay Invoice
+Case8,End,2011-01-17 23:23:24,2011-01-17 23:23:24,End
+Case9,Start,2011-01-06 16:53:47,2011-01-06 16:53:47,Create Purchase Requisition
+Case9,Create Purchase Requisition,2011-01-06 16:53:47,2011-01-06 17:21:47,Create Purchase Requisition
+Case9,Analyze Purchase Requisition,2011-01-07 05:34:47,2011-01-07 05:40:47,Analyze Purchase Requisition
+Case9,End,2011-01-07 05:40:47,2011-01-07 05:40:47,End
+Case10,Start,2011-01-06 17:16:30,2011-01-06 17:16:30,Create Purchase Requisition
+Case10,Create Purchase Requisition,2011-01-06 17:16:30,2011-01-06 18:06:30,Create Purchase Requisition
+Case10,Analyze Purchase Requisition,2011-01-07 12:19:30,2011-01-07 12:24:30,Analyze Purchase Requisition
+Case10,Create Request for Quotation,2011-01-07 12:28:29,2011-01-07 12:30:29,Create Request for Quotation
+Case10,Analyze Request for Quotation,2011-01-09 01:36:29,2011-01-09 02:05:29,Analyze Request for Quotation
+Case10,End,2011-01-09 02:05:29,2011-01-09 02:05:29,End
+Case11,Start,2011-01-06 18:33:42,2011-01-06 18:33:42,Create Purchase Requisition
+Case11,Create Purchase Requisition,2011-01-06 18:33:42,2011-01-06 19:27:42,Create Purchase Requisition
+Case11,Create Request for Quotation,2011-01-06 20:06:42,2011-01-06 20:16:42,Create Request for Quotation
+Case11,Analyze Request for Quotation,2011-02-19 09:11:42,2011-02-19 09:38:42,Analyze Request for Quotation
+Case11,Send Request for Quotation to Supplier,2011-02-19 22:06:42,2011-02-19 22:18:42,Send Request for Quotation to Supplier
+Case11,Create Quotation comparison Map,2011-02-20 07:54:42,2011-02-20 10:36:42,Create Quotation comparison Map
+Case11,Analyze Quotation Comparison Map,2011-02-20 17:39:42,2011-02-20 18:12:42,Analyze Quotation Comparison Map
+Case11,Choose best option,2011-02-20 18:12:42,2011-02-20 18:12:42,Choose best option
+Case11,Settle Conditions With Supplier,2011-02-24 18:52:42,2011-02-25 00:59:42,Settle Conditions With Supplier
+Case11,Create Purchase Order,2011-02-25 20:08:42,2011-02-25 20:15:42,Create Purchase Order
+Case11,Confirm Purchase Order,2011-03-01 15:04:42,2011-03-01 15:16:42,Confirm Purchase Order
+Case11,Deliver Goods Services,2011-03-02 12:02:42,2011-03-02 15:05:42,Deliver Goods Services
+Case11,Release Purchase Order,2011-03-02 22:28:42,2011-03-02 22:29:42,Release Purchase Order
+Case11,Approve Purchase Order for payment,2011-03-03 15:44:42,2011-03-03 15:45:42,Approve Purchase Order for payment
+Case11,Send Invoice,2011-03-05 16:18:42,2011-03-05 16:18:42,Send Invoice
+Case11,Release Supplier's Invoice,2011-03-06 06:36:42,2011-03-06 06:40:43,Release Supplier's Invoice
+Case11,Settle Dispute With Supplier,2011-03-06 06:48:43,2011-03-06 07:10:43,Settle Dispute With Supplier
+Case11,Authorize Supplier's Invoice payment,2011-03-06 07:15:43,2011-03-06 07:15:43,Authorize Supplier's Invoice payment
+Case11,Pay Invoice,2011-03-06 08:11:43,2011-03-06 08:20:43,Pay Invoice
+Case11,End,2011-03-06 08:20:43,2011-03-06 08:20:43,End
+Case12,Start,2011-01-06 19:16:39,2011-01-06 19:16:39,Create Purchase Requisition
+Case12,Create Purchase Requisition,2011-01-06 19:16:39,2011-01-06 19:37:39,Create Purchase Requisition
+Case12,Create Request for Quotation,2011-01-07 02:21:39,2011-01-07 02:31:39,Create Request for Quotation
+Case12,Analyze Request for Quotation,2011-01-21 08:44:39,2011-01-21 09:13:39,Analyze Request for Quotation
+Case12,Amend Request for Quotation,2011-01-21 10:05:39,2011-01-21 10:12:39,Amend Request for Quotation
+Case12,Analyze Request for Quotation,2011-01-21 14:31:39,2011-01-21 14:46:39,Analyze Request for Quotation
+Case12,Send Request for Quotation to Supplier,2011-01-23 00:21:39,2011-01-23 00:52:39,Send Request for Quotation to Supplier
+Case12,Create Quotation comparison Map,2011-01-23 04:33:39,2011-01-23 05:42:39,Create Quotation comparison Map
+Case12,Analyze Quotation Comparison Map,2011-01-23 12:43:39,2011-01-23 13:08:39,Analyze Quotation Comparison Map
+Case12,Choose best option,2011-01-23 13:08:39,2011-01-23 13:08:39,Choose best option
+Case12,Settle Conditions With Supplier,2011-01-23 16:32:39,2011-01-24 00:53:39,Settle Conditions With Supplier
+Case12,Create Purchase Order,2011-01-24 02:56:39,2011-01-24 03:04:39,Create Purchase Order
+Case12,Confirm Purchase Order,2011-01-24 07:21:39,2011-01-24 07:38:39,Confirm Purchase Order
+Case12,Deliver Goods Services,2011-01-27 01:08:39,2011-01-27 21:30:39,Deliver Goods Services
+Case12,Release Purchase Order,2011-01-28 05:12:39,2011-01-28 05:13:39,Release Purchase Order
+Case12,Approve Purchase Order for payment,2011-01-29 02:14:39,2011-01-29 02:15:39,Approve Purchase Order for payment
+Case12,Send Invoice,2011-02-02 07:51:39,2011-02-02 07:51:39,Send Invoice
+Case12,Release Supplier's Invoice,2011-02-02 22:11:39,2011-02-02 22:17:39,Release Supplier's Invoice
+Case12,Settle Dispute With Supplier,2011-02-02 22:55:39,2011-02-02 23:12:39,Settle Dispute With Supplier
+Case12,Authorize Supplier's Invoice payment,2011-02-02 23:12:39,2011-02-02 23:12:39,Authorize Supplier's Invoice payment
+Case12,Pay Invoice,2011-02-02 23:22:39,2011-02-02 23:31:39,Pay Invoice
+Case12,End,2011-02-02 23:31:39,2011-02-02 23:31:39,End
+Case13,Start,2011-01-01 12:54:54,2011-01-01 12:54:54,Create Purchase Requisition
+Case13,Create Purchase Requisition,2011-01-01 12:54:54,2011-01-01 13:24:54,Create Purchase Requisition
+Case13,Create Request for Quotation,2011-01-01 19:45:54,2011-01-01 19:51:54,Create Request for Quotation
+Case13,Analyze Request for Quotation,2011-01-03 01:25:54,2011-01-03 01:55:54,Analyze Request for Quotation
+Case13,End,2011-01-03 01:55:54,2011-01-03 01:55:54,End
+Case14,Start,2011-01-06 20:16:49,2011-01-06 20:16:49,Create Purchase Requisition
+Case14,Create Purchase Requisition,2011-01-06 20:16:49,2011-01-06 20:26:49,Create Purchase Requisition
+Case14,Create Request for Quotation,2011-01-07 00:18:49,2011-01-07 00:30:49,Create Request for Quotation
+Case14,Analyze Request for Quotation,2011-01-07 14:40:49,2011-01-07 15:02:49,Analyze Request for Quotation
+Case14,End,2011-01-07 15:02:49,2011-01-07 15:02:49,End
+Case15,Start,2011-01-06 21:26:53,2011-01-06 21:26:53,Create Purchase Requisition
+Case15,Create Purchase Requisition,2011-01-06 21:26:53,2011-01-06 21:54:53,Create Purchase Requisition
+Case15,Analyze Purchase Requisition,2011-01-07 07:31:53,2011-01-07 07:38:53,Analyze Purchase Requisition
+Case15,Create Request for Quotation,2011-01-07 07:44:53,2011-01-07 07:45:53,Create Request for Quotation
+Case15,Analyze Request for Quotation,2011-01-08 00:59:53,2011-01-08 01:25:53,Analyze Request for Quotation
+Case15,Amend Request for Quotation,2011-01-08 02:17:53,2011-01-08 02:30:53,Amend Request for Quotation
+Case15,Analyze Request for Quotation,2011-01-19 18:42:53,2011-01-19 19:09:53,Analyze Request for Quotation
+Case15,Send Request for Quotation to Supplier,2011-01-21 00:51:53,2011-01-21 01:14:53,Send Request for Quotation to Supplier
+Case15,Create Quotation comparison Map,2011-01-21 01:58:53,2011-01-21 07:32:53,Create Quotation comparison Map
+Case15,Analyze Quotation Comparison Map,2011-01-21 14:02:53,2011-01-21 14:24:53,Analyze Quotation Comparison Map
+Case15,Choose best option,2011-01-21 14:24:53,2011-01-21 14:24:53,Choose best option
+Case15,Settle Conditions With Supplier,2011-01-21 17:22:53,2011-01-22 04:02:53,Settle Conditions With Supplier
+Case15,Create Purchase Order,2011-01-22 11:53:53,2011-01-22 12:01:53,Create Purchase Order
+Case15,Confirm Purchase Order,2011-01-22 21:52:53,2011-01-22 22:07:53,Confirm Purchase Order
+Case15,Deliver Goods Services,2011-01-23 05:51:53,2011-01-24 12:35:53,Deliver Goods Services
+Case15,Release Purchase Order,2011-01-24 19:47:53,2011-01-24 19:48:53,Release Purchase Order
+Case15,Approve Purchase Order for payment,2011-01-25 14:07:53,2011-01-25 14:08:53,Approve Purchase Order for payment
+Case15,Send Invoice,2011-01-27 23:06:53,2011-01-27 23:06:53,Send Invoice
+Case15,Release Supplier's Invoice,2011-01-28 13:20:53,2011-01-28 13:26:53,Release Supplier's Invoice
+Case15,Authorize Supplier's Invoice payment,2011-01-28 13:26:53,2011-01-28 13:26:53,Authorize Supplier's Invoice payment
+Case15,Pay Invoice,2011-01-28 14:08:53,2011-01-28 14:22:53,Pay Invoice
+Case15,End,2011-01-28 14:22:53,2011-01-28 14:22:53,End
+Case16,Start,2011-01-06 23:08:48,2011-01-06 23:08:48,Create Purchase Requisition
+Case16,Create Purchase Requisition,2011-01-06 23:08:48,2011-01-06 23:57:48,Create Purchase Requisition
+Case16,Analyze Purchase Requisition,2011-01-07 11:17:48,2011-01-07 11:26:48,Analyze Purchase Requisition
+Case16,Create Request for Quotation,2011-01-07 11:30:48,2011-01-07 11:33:48,Create Request for Quotation
+Case16,Analyze Request for Quotation,2011-01-07 23:46:48,2011-01-08 00:08:48,Analyze Request for Quotation
+Case16,Amend Request for Quotation,2011-01-08 00:55:48,2011-01-08 01:08:48,Amend Request for Quotation
+Case16,Analyze Request for Quotation,2011-01-10 14:38:48,2011-01-10 14:47:48,Analyze Request for Quotation
+Case16,Amend Request for Quotation,2011-01-10 15:43:48,2011-01-10 15:49:48,Amend Request for Quotation
+Case16,Analyze Request for Quotation,2011-01-17 07:23:48,2011-01-17 07:52:48,Analyze Request for Quotation
+Case16,Amend Request for Quotation,2011-01-17 08:38:48,2011-01-17 08:49:48,Amend Request for Quotation
+Case16,Analyze Request for Quotation,2011-01-21 10:46:48,2011-01-21 11:03:48,Analyze Request for Quotation
+Case16,Amend Request for Quotation,2011-01-21 11:53:48,2011-01-21 12:07:48,Amend Request for Quotation
+Case16,Analyze Request for Quotation,2011-01-27 01:56:48,2011-01-27 02:19:48,Analyze Request for Quotation
+Case16,Send Request for Quotation to Supplier,2011-01-27 15:57:48,2011-01-27 16:11:48,Send Request for Quotation to Supplier
+Case16,Create Quotation comparison Map,2011-01-27 16:35:48,2011-01-27 20:12:48,Create Quotation comparison Map
+Case16,Analyze Quotation Comparison Map,2011-01-28 03:18:48,2011-01-28 03:29:48,Analyze Quotation Comparison Map
+Case16,Choose best option,2011-01-28 03:29:48,2011-01-28 03:29:48,Choose best option
+Case16,Settle Conditions With Supplier,2011-01-28 06:06:48,2011-01-28 10:18:48,Settle Conditions With Supplier
+Case16,Create Purchase Order,2011-01-28 16:34:48,2011-01-28 16:42:48,Create Purchase Order
+Case16,Confirm Purchase Order,2011-02-03 22:06:48,2011-02-03 22:33:48,Confirm Purchase Order
+Case16,Deliver Goods Services,2011-02-05 11:15:48,2011-02-06 00:28:48,Deliver Goods Services
+Case16,Release Purchase Order,2011-02-06 07:40:48,2011-02-06 07:41:48,Release Purchase Order
+Case16,Approve Purchase Order for payment,2011-02-07 15:26:48,2011-02-07 15:27:48,Approve Purchase Order for payment
+Case16,Send Invoice,2011-02-08 20:24:48,2011-02-08 20:24:48,Send Invoice
+Case16,Release Supplier's Invoice,2011-02-09 10:38:48,2011-02-09 10:42:48,Release Supplier's Invoice
+Case16,Settle Dispute With Supplier,2011-02-09 11:36:48,2011-02-09 11:51:48,Settle Dispute With Supplier
+Case16,Authorize Supplier's Invoice payment,2011-02-09 11:51:48,2011-02-09 11:51:48,Authorize Supplier's Invoice payment
+Case16,Pay Invoice,2011-02-09 12:02:48,2011-02-09 12:07:48,Pay Invoice
+Case16,End,2011-02-09 12:07:48,2011-02-09 12:07:48,End
+Case17,Start,2011-01-07 00:50:43,2011-01-07 00:50:43,Create Purchase Requisition
+Case17,Create Purchase Requisition,2011-01-07 00:50:43,2011-01-07 01:37:43,Create Purchase Requisition
+Case17,Create Request for Quotation,2011-01-07 05:29:43,2011-01-07 05:42:43,Create Request for Quotation
+Case17,Analyze Request for Quotation,2011-01-10 16:21:43,2011-01-10 16:56:43,Analyze Request for Quotation
+Case17,Send Request for Quotation to Supplier,2011-01-11 23:50:43,2011-01-12 00:31:43,Send Request for Quotation to Supplier
+Case17,Create Quotation comparison Map,2011-01-12 05:19:43,2011-01-12 10:24:43,Create Quotation comparison Map
+Case17,Analyze Quotation Comparison Map,2011-01-12 16:26:43,2011-01-12 16:56:43,Analyze Quotation Comparison Map
+Case17,Choose best option,2011-01-12 16:56:43,2011-01-12 16:56:43,Choose best option
+Case17,Settle Conditions With Supplier,2011-01-12 18:44:43,2011-01-12 23:18:43,Settle Conditions With Supplier
+Case17,Create Purchase Order,2011-01-13 18:27:42,2011-01-13 18:39:42,Create Purchase Order
+Case17,Confirm Purchase Order,2011-01-14 07:05:42,2011-01-14 07:15:42,Confirm Purchase Order
+Case17,Deliver Goods Services,2011-01-17 03:35:42,2011-01-17 17:53:42,Deliver Goods Services
+Case17,Release Purchase Order,2011-01-18 01:45:42,2011-01-18 01:46:42,Release Purchase Order
+Case17,Approve Purchase Order for payment,2011-01-18 21:06:42,2011-01-18 21:07:42,Approve Purchase Order for payment
+Case17,Send Invoice,2011-01-19 05:20:42,2011-01-19 05:20:42,Send Invoice
+Case17,Release Supplier's Invoice,2011-01-19 19:34:42,2011-01-19 19:41:42,Release Supplier's Invoice
+Case17,Authorize Supplier's Invoice payment,2011-01-19 19:41:42,2011-01-19 19:41:42,Authorize Supplier's Invoice payment
+Case17,Pay Invoice,2011-01-19 20:17:42,2011-01-19 20:28:42,Pay Invoice
+Case17,End,2011-01-19 20:28:42,2011-01-19 20:28:42,End
+Case18,Start,2011-01-07 01:54:37,2011-01-07 01:54:37,Create Purchase Requisition
+Case18,Create Purchase Requisition,2011-01-07 01:54:37,2011-01-07 02:36:37,Create Purchase Requisition
+Case18,Create Request for Quotation,2011-01-07 06:13:37,2011-01-07 06:21:37,Create Request for Quotation
+Case18,Analyze Request for Quotation,2011-01-25 21:52:37,2011-01-25 22:09:37,Analyze Request for Quotation
+Case18,Send Request for Quotation to Supplier,2011-01-26 00:12:37,2011-01-26 00:28:37,Send Request for Quotation to Supplier
+Case18,Create Quotation comparison Map,2011-01-26 00:59:37,2011-01-26 03:03:37,Create Quotation comparison Map
+Case18,Analyze Quotation Comparison Map,2011-01-26 09:44:37,2011-01-26 10:13:37,Analyze Quotation Comparison Map
+Case18,Choose best option,2011-01-26 10:13:37,2011-01-26 10:13:37,Choose best option
+Case18,Settle Conditions With Supplier,2011-01-26 12:37:37,2011-01-27 02:12:37,Settle Conditions With Supplier
+Case18,Create Purchase Order,2011-01-28 00:29:37,2011-01-28 00:36:37,Create Purchase Order
+Case18,Confirm Purchase Order,2011-01-29 01:32:37,2011-01-29 01:43:37,Confirm Purchase Order
+Case18,Deliver Goods Services,2011-01-29 21:59:37,2011-01-30 22:58:37,Deliver Goods Services
+Case18,Release Purchase Order,2011-01-31 06:02:37,2011-01-31 06:03:37,Release Purchase Order
+Case18,Approve Purchase Order for payment,2011-02-01 05:12:37,2011-02-01 05:13:37,Approve Purchase Order for payment
+Case18,Send Invoice,2011-02-01 15:23:37,2011-02-01 15:23:37,Send Invoice
+Case18,Release Supplier's Invoice,2011-02-02 05:38:37,2011-02-02 05:42:37,Release Supplier's Invoice
+Case18,Authorize Supplier's Invoice payment,2011-02-02 05:42:37,2011-02-02 05:42:37,Authorize Supplier's Invoice payment
+Case18,Pay Invoice,2011-02-02 06:41:37,2011-02-02 06:51:37,Pay Invoice
+Case18,End,2011-02-02 06:51:37,2011-02-02 06:51:37,End
+Case19,Start,2011-01-07 02:06:45,2011-01-07 02:06:45,Create Purchase Requisition
+Case19,Create Purchase Requisition,2011-01-07 02:06:45,2011-01-07 02:40:45,Create Purchase Requisition
+Case19,Create Request for Quotation,2011-01-07 07:10:45,2011-01-07 07:21:45,Create Request for Quotation
+Case19,Analyze Request for Quotation,2011-01-07 17:49:45,2011-01-07 17:49:45,Analyze Request for Quotation
+Case19,Amend Request for Quotation,2011-01-07 18:30:45,2011-01-07 18:37:45,Amend Request for Quotation
+Case19,Analyze Request for Quotation,2011-02-07 04:35:45,2011-02-07 05:03:45,Analyze Request for Quotation
+Case19,End,2011-02-07 05:03:45,2011-02-07 05:03:45,End
+Case20,Start,2011-01-07 04:53:13,2011-01-07 04:53:13,Create Purchase Requisition
+Case20,Create Purchase Requisition,2011-01-07 04:53:13,2011-01-07 05:27:13,Create Purchase Requisition
+Case20,Create Request for Quotation,2011-01-07 08:30:13,2011-01-07 08:38:13,Create Request for Quotation
+Case20,Analyze Request for Quotation,2011-01-07 12:26:13,2011-01-07 12:48:13,Analyze Request for Quotation
+Case20,Amend Request for Quotation,2011-01-07 13:37:13,2011-01-07 13:48:13,Amend Request for Quotation
+Case20,Analyze Request for Quotation,2011-02-19 05:27:13,2011-02-19 05:46:13,Analyze Request for Quotation
+Case20,Send Request for Quotation to Supplier,2011-02-20 23:13:13,2011-02-20 23:37:13,Send Request for Quotation to Supplier
+Case20,Create Quotation comparison Map,2011-02-21 00:12:13,2011-02-21 02:20:13,Create Quotation comparison Map
+Case20,Analyze Quotation Comparison Map,2011-02-21 08:55:13,2011-02-21 09:18:13,Analyze Quotation Comparison Map
+Case20,Choose best option,2011-02-21 09:18:13,2011-02-21 09:18:13,Choose best option
+Case20,Settle Conditions With Supplier,2011-02-22 03:42:13,2011-02-22 14:32:13,Settle Conditions With Supplier
+Case20,Create Purchase Order,2011-02-22 23:33:13,2011-02-22 23:45:13,Create Purchase Order
+Case20,Confirm Purchase Order,2011-02-24 11:01:13,2011-02-24 11:25:13,Confirm Purchase Order
+Case20,Deliver Goods Services,2011-02-26 01:17:13,2011-02-27 08:01:13,Deliver Goods Services
+Case20,Release Purchase Order,2011-02-27 15:51:13,2011-02-27 15:52:13,Release Purchase Order
+Case20,Approve Purchase Order for payment,2011-02-28 04:24:13,2011-02-28 04:25:13,Approve Purchase Order for payment
+Case20,Send Invoice,2011-03-01 14:35:13,2011-03-01 14:35:13,Send Invoice
+Case20,Release Supplier's Invoice,2011-03-02 04:48:13,2011-03-02 04:51:13,Release Supplier's Invoice
+Case20,Authorize Supplier's Invoice payment,2011-03-02 04:53:13,2011-03-02 04:53:13,Authorize Supplier's Invoice payment
+Case20,Pay Invoice,2011-03-02 05:36:13,2011-03-02 05:45:13,Pay Invoice
+Case20,End,2011-03-02 05:45:13,2011-03-02 05:45:13,End
+Case21,Start,2011-01-07 05:57:47,2011-01-07 05:57:47,Create Purchase Requisition
+Case21,Create Purchase Requisition,2011-01-07 05:57:47,2011-01-07 06:20:47,Create Purchase Requisition
+Case21,Analyze Purchase Requisition,2011-01-07 18:00:47,2011-01-07 18:09:47,Analyze Purchase Requisition
+Case21,Create Request for Quotation,2011-01-07 18:15:47,2011-01-07 18:18:47,Create Request for Quotation
+Case21,Analyze Request for Quotation,2011-01-11 15:20:47,2011-01-11 15:36:47,Analyze Request for Quotation
+Case21,Send Request for Quotation to Supplier,2011-01-12 08:16:47,2011-01-12 08:35:47,Send Request for Quotation to Supplier
+Case21,Create Quotation comparison Map,2011-01-12 17:59:47,2011-01-12 21:08:47,Create Quotation comparison Map
+Case21,Analyze Quotation Comparison Map,2011-01-13 03:36:47,2011-01-13 04:00:47,Analyze Quotation Comparison Map
+Case21,Choose best option,2011-01-13 04:00:47,2011-01-13 04:00:47,Choose best option
+Case21,Settle Conditions With Supplier,2011-01-13 19:00:47,2011-01-14 00:47:47,Settle Conditions With Supplier
+Case21,Create Purchase Order,2011-01-14 10:48:47,2011-01-14 10:58:47,Create Purchase Order
+Case21,Confirm Purchase Order,2011-01-15 20:07:47,2011-01-15 20:28:47,Confirm Purchase Order
+Case21,Deliver Goods Services,2011-01-16 04:55:47,2011-01-17 14:13:47,Deliver Goods Services
+Case21,Release Purchase Order,2011-01-17 21:58:47,2011-01-17 21:59:47,Release Purchase Order
+Case21,Settle Dispute With Supplier,2011-01-18 04:48:47,2011-01-18 13:31:47,Settle Dispute With Supplier
+Case21,Release Purchase Order,2011-01-18 20:44:47,2011-01-18 20:45:47,Release Purchase Order
+Case21,Approve Purchase Order for payment,2011-01-19 20:11:47,2011-01-19 20:12:47,Approve Purchase Order for payment
+Case21,Send Invoice,2011-01-21 03:24:47,2011-01-21 03:24:47,Send Invoice
+Case21,Release Supplier's Invoice,2011-01-21 17:43:47,2011-01-21 17:46:47,Release Supplier's Invoice
+Case21,Authorize Supplier's Invoice payment,2011-01-21 17:46:47,2011-01-21 17:46:47,Authorize Supplier's Invoice payment
+Case21,Pay Invoice,2011-01-21 18:31:47,2011-01-21 18:40:47,Pay Invoice
+Case21,End,2011-01-21 18:40:47,2011-01-21 18:40:47,End
+Case22,Start,2011-01-07 06:57:37,2011-01-07 06:57:37,Create Purchase Requisition
+Case22,Create Purchase Requisition,2011-01-07 06:57:37,2011-01-07 07:06:37,Create Purchase Requisition
+Case22,Create Request for Quotation,2011-01-07 14:18:37,2011-01-07 14:28:37,Create Request for Quotation
+Case22,Analyze Request for Quotation,2011-01-08 07:44:37,2011-01-08 08:04:37,Analyze Request for Quotation
+Case22,Amend Request for Quotation,2011-01-08 08:57:37,2011-01-08 09:06:37,Amend Request for Quotation
+Case22,Analyze Request for Quotation,2011-01-10 09:26:37,2011-01-10 09:45:37,Analyze Request for Quotation
+Case22,End,2011-01-10 09:45:37,2011-01-10 09:45:37,End
+Case23,Start,2011-01-07 07:10:28,2011-01-07 07:10:28,Create Purchase Requisition
+Case23,Create Purchase Requisition,2011-01-07 07:10:28,2011-01-07 07:45:28,Create Purchase Requisition
+Case23,Analyze Purchase Requisition,2011-01-08 01:24:28,2011-01-08 01:31:28,Analyze Purchase Requisition
+Case23,Create Request for Quotation,2011-01-08 01:39:28,2011-01-08 01:40:28,Create Request for Quotation
+Case23,Analyze Request for Quotation,2011-01-14 12:19:28,2011-01-14 12:35:28,Analyze Request for Quotation
+Case23,Send Request for Quotation to Supplier,2011-01-14 18:18:28,2011-01-14 18:45:28,Send Request for Quotation to Supplier
+Case23,Create Quotation comparison Map,2011-01-15 09:15:28,2011-01-15 10:40:28,Create Quotation comparison Map
+Case23,Analyze Quotation Comparison Map,2011-01-15 17:13:28,2011-01-15 17:34:28,Analyze Quotation Comparison Map
+Case23,Choose best option,2011-01-15 17:34:28,2011-01-15 17:34:28,Choose best option
+Case23,Settle Conditions With Supplier,2011-01-16 20:25:28,2011-01-17 06:58:28,Settle Conditions With Supplier
+Case23,Create Purchase Order,2011-01-17 12:07:28,2011-01-17 12:19:28,Create Purchase Order
+Case23,Confirm Purchase Order,2011-01-18 07:08:28,2011-01-18 07:35:28,Confirm Purchase Order
+Case23,Deliver Goods Services,2011-01-18 22:12:28,2011-01-20 08:44:28,Deliver Goods Services
+Case23,Release Purchase Order,2011-01-20 16:16:28,2011-01-20 16:17:28,Release Purchase Order
+Case23,Approve Purchase Order for payment,2011-01-21 01:37:28,2011-01-21 01:38:28,Approve Purchase Order for payment
+Case23,Send Invoice,2011-01-21 07:36:28,2011-01-21 07:36:28,Send Invoice
+Case23,Release Supplier's Invoice,2011-01-21 21:54:28,2011-01-21 21:56:28,Release Supplier's Invoice
+Case23,Authorize Supplier's Invoice payment,2011-01-21 21:56:28,2011-01-21 21:56:28,Authorize Supplier's Invoice payment
+Case23,Pay Invoice,2011-01-21 22:09:28,2011-01-21 22:15:28,Pay Invoice
+Case23,End,2011-01-21 22:15:28,2011-01-21 22:15:28,End
+Case24,Start,2011-01-01 14:20:49,2011-01-01 14:20:49,Create Purchase Requisition
+Case24,Create Purchase Requisition,2011-01-01 14:20:49,2011-01-01 15:05:49,Create Purchase Requisition
+Case24,Analyze Purchase Requisition,2011-01-02 14:18:49,2011-01-02 14:22:49,Analyze Purchase Requisition
+Case24,End,2011-01-02 14:22:49,2011-01-02 14:22:49,End
+Case25,Start,2011-01-07 09:19:34,2011-01-07 09:19:34,Create Purchase Requisition
+Case25,Create Purchase Requisition,2011-01-07 09:19:34,2011-01-07 09:50:35,Create Purchase Requisition
+Case25,Create Request for Quotation,2011-01-07 13:01:35,2011-01-07 13:08:35,Create Request for Quotation
+Case25,Analyze Request for Quotation,2011-01-12 20:34:35,2011-01-12 20:51:35,Analyze Request for Quotation
+Case25,Amend Request for Quotation,2011-01-12 21:32:35,2011-01-12 21:50:35,Amend Request for Quotation
+Case25,Analyze Request for Quotation,2011-03-13 17:37:35,2011-03-13 17:58:35,Analyze Request for Quotation
+Case25,Send Request for Quotation to Supplier,2011-03-14 22:57:35,2011-03-14 23:21:35,Send Request for Quotation to Supplier
+Case25,Create Quotation comparison Map,2011-03-15 06:27:35,2011-03-15 09:02:35,Create Quotation comparison Map
+Case25,Analyze Quotation Comparison Map,2011-03-15 15:47:35,2011-03-15 16:18:35,Analyze Quotation Comparison Map
+Case25,Choose best option,2011-03-15 16:18:35,2011-03-15 16:18:35,Choose best option
+Case25,Settle Conditions With Supplier,2011-03-17 17:54:35,2011-03-18 03:45:35,Settle Conditions With Supplier
+Case25,Create Purchase Order,2011-03-18 23:01:35,2011-03-18 23:11:35,Create Purchase Order
+Case25,Confirm Purchase Order,2011-03-21 21:45:35,2011-03-21 22:08:35,Confirm Purchase Order
+Case25,Deliver Goods Services,2011-03-22 04:36:35,2011-03-23 04:25:35,Deliver Goods Services
+Case25,Release Purchase Order,2011-03-23 12:33:35,2011-03-23 12:34:35,Release Purchase Order
+Case25,Settle Dispute With Supplier,2011-03-23 18:45:35,2011-03-24 03:48:35,Settle Dispute With Supplier
+Case25,Release Purchase Order,2011-03-24 11:01:35,2011-03-24 11:02:35,Release Purchase Order
+Case25,Approve Purchase Order for payment,2011-03-24 18:58:35,2011-03-24 18:59:35,Approve Purchase Order for payment
+Case25,Send Invoice,2011-03-25 10:19:35,2011-03-25 10:19:35,Send Invoice
+Case25,Release Supplier's Invoice,2011-03-26 00:45:35,2011-03-26 00:52:35,Release Supplier's Invoice
+Case25,Authorize Supplier's Invoice payment,2011-03-26 00:52:35,2011-03-26 00:52:35,Authorize Supplier's Invoice payment
+Case25,Pay Invoice,2011-03-26 01:16:35,2011-03-26 01:29:35,Pay Invoice
+Case25,End,2011-03-26 01:29:35,2011-03-26 01:29:35,End
+Case26,Start,2011-01-07 10:18:54,2011-01-07 10:18:54,Create Purchase Requisition
+Case26,Create Purchase Requisition,2011-01-07 10:18:54,2011-01-07 11:05:54,Create Purchase Requisition
+Case26,Analyze Purchase Requisition,2011-01-07 23:28:54,2011-01-07 23:36:54,Analyze Purchase Requisition
+Case26,Create Request for Quotation,2011-01-07 23:42:54,2011-01-07 23:44:54,Create Request for Quotation
+Case26,Analyze Request for Quotation,2011-01-13 01:53:54,2011-01-13 02:09:54,Analyze Request for Quotation
+Case26,Send Request for Quotation to Supplier,2011-01-14 23:58:54,2011-01-15 00:14:54,Send Request for Quotation to Supplier
+Case26,Create Quotation comparison Map,2011-01-15 01:01:54,2011-01-15 05:55:54,Create Quotation comparison Map
+Case26,Analyze Quotation Comparison Map,2011-01-15 12:25:54,2011-01-15 12:44:54,Analyze Quotation Comparison Map
+Case26,Choose best option,2011-01-15 12:44:54,2011-01-15 12:44:54,Choose best option
+Case26,Settle Conditions With Supplier,2011-01-17 07:49:54,2011-01-17 13:53:54,Settle Conditions With Supplier
+Case26,Create Purchase Order,2011-01-18 05:19:54,2011-01-18 05:31:54,Create Purchase Order
+Case26,Confirm Purchase Order,2011-01-20 10:50:54,2011-01-20 11:23:54,Confirm Purchase Order
+Case26,Deliver Goods Services,2011-01-22 02:27:54,2011-01-23 01:42:54,Deliver Goods Services
+Case26,Release Purchase Order,2011-01-23 08:50:54,2011-01-23 08:51:54,Release Purchase Order
+Case26,Approve Purchase Order for payment,2011-01-23 16:21:54,2011-01-23 16:22:54,Approve Purchase Order for payment
+Case26,Send Invoice,2011-01-24 11:07:54,2011-01-24 11:07:54,Send Invoice
+Case26,Release Supplier's Invoice,2011-01-25 01:31:54,2011-01-25 01:37:54,Release Supplier's Invoice
+Case26,Authorize Supplier's Invoice payment,2011-01-25 01:37:54,2011-01-25 01:37:54,Authorize Supplier's Invoice payment
+Case26,Pay Invoice,2011-01-25 02:24:54,2011-01-25 02:35:54,Pay Invoice
+Case26,End,2011-01-25 02:35:54,2011-01-25 02:35:54,End
+Case27,Start,2011-01-07 11:14:21,2011-01-07 11:14:21,Create Purchase Requisition
+Case27,Create Purchase Requisition,2011-01-07 11:14:21,2011-01-07 12:00:21,Create Purchase Requisition
+Case27,Analyze Purchase Requisition,2011-01-08 10:00:21,2011-01-08 10:05:21,Analyze Purchase Requisition
+Case27,Create Request for Quotation,2011-01-08 10:08:21,2011-01-08 10:10:21,Create Request for Quotation
+Case27,Analyze Request for Quotation,2011-01-09 00:25:21,2011-01-09 00:36:21,Analyze Request for Quotation
+Case27,Amend Request for Quotation,2011-01-09 01:23:21,2011-01-09 01:32:21,Amend Request for Quotation
+Case27,Analyze Request for Quotation,2011-01-13 08:31:21,2011-01-13 08:44:21,Analyze Request for Quotation
+Case27,End,2011-01-13 08:44:21,2011-01-13 08:44:21,End
+Case28,Start,2011-01-07 13:03:04,2011-01-07 13:03:04,Create Purchase Requisition
+Case28,Create Purchase Requisition,2011-01-07 13:03:04,2011-01-07 13:57:04,Create Purchase Requisition
+Case28,Analyze Purchase Requisition,2011-01-08 01:16:04,2011-01-08 01:20:04,Analyze Purchase Requisition
+Case28,Create Request for Quotation,2011-01-08 01:26:04,2011-01-08 01:28:04,Create Request for Quotation
+Case28,Analyze Request for Quotation,2011-01-13 10:07:04,2011-01-13 10:40:04,Analyze Request for Quotation
+Case28,End,2011-01-13 10:40:04,2011-01-13 10:40:04,End
+Case29,Start,2011-01-07 14:51:33,2011-01-07 14:51:33,Create Purchase Requisition
+Case29,Create Purchase Requisition,2011-01-07 14:51:33,2011-01-07 15:14:33,Create Purchase Requisition
+Case29,Analyze Purchase Requisition,2011-01-08 08:19:33,2011-01-08 08:24:33,Analyze Purchase Requisition
+Case29,Create Request for Quotation,2011-01-08 08:31:33,2011-01-08 08:33:33,Create Request for Quotation
+Case29,Analyze Request for Quotation,2011-01-10 14:24:33,2011-01-10 14:54:33,Analyze Request for Quotation
+Case29,Send Request for Quotation to Supplier,2011-01-10 20:44:33,2011-01-10 21:04:33,Send Request for Quotation to Supplier
+Case29,Create Quotation comparison Map,2011-01-10 22:00:33,2011-01-11 03:03:33,Create Quotation comparison Map
+Case29,Analyze Quotation Comparison Map,2011-01-11 09:44:33,2011-01-11 10:11:33,Analyze Quotation Comparison Map
+Case29,Choose best option,2011-01-11 10:11:33,2011-01-11 10:11:33,Choose best option
+Case29,Settle Conditions With Supplier,2011-01-11 12:25:33,2011-01-11 17:32:33,Settle Conditions With Supplier
+Case29,Create Purchase Order,2011-01-12 01:37:33,2011-01-12 01:46:33,Create Purchase Order
+Case29,Confirm Purchase Order,2011-01-13 01:33:33,2011-01-13 01:39:33,Confirm Purchase Order
+Case29,Deliver Goods Services,2011-01-14 05:38:33,2011-01-14 19:34:33,Deliver Goods Services
+Case29,Release Purchase Order,2011-01-15 03:02:33,2011-01-15 03:03:33,Release Purchase Order
+Case29,Approve Purchase Order for payment,2011-01-15 15:51:34,2011-01-15 15:52:34,Approve Purchase Order for payment
+Case29,Send Invoice,2011-01-15 22:51:34,2011-01-15 22:51:34,Send Invoice
+Case29,Release Supplier's Invoice,2011-01-16 13:10:34,2011-01-16 13:15:34,Release Supplier's Invoice
+Case29,Settle Dispute With Supplier,2011-01-16 13:26:34,2011-01-16 13:42:34,Settle Dispute With Supplier
+Case29,Authorize Supplier's Invoice payment,2011-01-16 13:42:34,2011-01-16 13:42:34,Authorize Supplier's Invoice payment
+Case29,Pay Invoice,2011-01-16 14:48:34,2011-01-16 15:02:34,Pay Invoice
+Case29,End,2011-01-16 15:02:34,2011-01-16 15:02:34,End
+Case30,Start,2011-01-07 15:24:12,2011-01-07 15:24:12,Create Purchase Requisition
+Case30,Create Purchase Requisition,2011-01-07 15:24:12,2011-01-07 15:46:12,Create Purchase Requisition
+Case30,Create Request for Quotation,2011-01-07 23:30:12,2011-01-07 23:39:12,Create Request for Quotation
+Case30,Analyze Request for Quotation,2011-01-08 23:27:12,2011-01-08 23:51:12,Analyze Request for Quotation
+Case30,End,2011-01-08 23:51:12,2011-01-08 23:51:12,End
+Case31,Start,2011-01-07 16:25:44,2011-01-07 16:25:44,Create Purchase Requisition
+Case31,Create Purchase Requisition,2011-01-07 16:25:44,2011-01-07 16:58:44,Create Purchase Requisition
+Case31,Create Request for Quotation,2011-01-07 22:44:44,2011-01-07 22:54:44,Create Request for Quotation
+Case31,Analyze Request for Quotation,2011-02-21 18:15:44,2011-02-21 18:46:44,Analyze Request for Quotation
+Case31,End,2011-02-21 18:46:44,2011-02-21 18:46:44,End
+Case32,Start,2011-01-07 17:10:39,2011-01-07 17:10:39,Create Purchase Requisition
+Case32,Create Purchase Requisition,2011-01-07 17:10:39,2011-01-07 17:58:39,Create Purchase Requisition
+Case32,Create Request for Quotation,2011-01-07 18:08:39,2011-01-07 18:18:39,Create Request for Quotation
+Case32,Analyze Request for Quotation,2011-01-11 04:12:39,2011-01-11 04:40:39,Analyze Request for Quotation
+Case32,Amend Request for Quotation,2011-01-11 05:37:38,2011-01-11 05:52:38,Amend Request for Quotation
+Case32,Analyze Request for Quotation,2011-02-03 16:12:38,2011-02-03 16:34:38,Analyze Request for Quotation
+Case32,Amend Request for Quotation,2011-02-03 17:21:38,2011-02-03 17:31:38,Amend Request for Quotation
+Case32,Analyze Request for Quotation,2011-02-03 23:26:38,2011-02-04 00:00:38,Analyze Request for Quotation
+Case32,Amend Request for Quotation,2011-02-04 00:51:38,2011-02-04 01:16:38,Amend Request for Quotation
+Case32,Analyze Request for Quotation,2011-03-02 19:52:38,2011-03-02 20:26:38,Analyze Request for Quotation
+Case32,Send Request for Quotation to Supplier,2011-03-03 09:18:38,2011-03-03 09:44:38,Send Request for Quotation to Supplier
+Case32,Create Quotation comparison Map,2011-03-03 15:36:38,2011-03-03 19:28:38,Create Quotation comparison Map
+Case32,Analyze Quotation Comparison Map,2011-03-04 02:17:38,2011-03-04 02:27:38,Analyze Quotation Comparison Map
+Case32,Choose best option,2011-03-04 02:27:38,2011-03-04 02:27:38,Choose best option
+Case32,Settle Conditions With Supplier,2011-03-04 04:51:38,2011-03-04 17:06:38,Settle Conditions With Supplier
+Case32,Create Purchase Order,2011-03-05 02:19:38,2011-03-05 02:28:38,Create Purchase Order
+Case32,Confirm Purchase Order,2011-03-05 12:39:38,2011-03-05 12:55:38,Confirm Purchase Order
+Case32,Deliver Goods Services,2011-03-08 11:31:38,2011-03-09 14:32:38,Deliver Goods Services
+Case32,Release Purchase Order,2011-03-09 22:17:38,2011-03-09 22:18:38,Release Purchase Order
+Case32,Approve Purchase Order for payment,2011-03-10 01:58:38,2011-03-10 01:59:38,Approve Purchase Order for payment
+Case32,Send Invoice,2011-03-10 08:14:38,2011-03-10 08:14:38,Send Invoice
+Case32,Release Supplier's Invoice,2011-03-10 22:37:38,2011-03-10 22:44:38,Release Supplier's Invoice
+Case32,Authorize Supplier's Invoice payment,2011-03-10 22:44:38,2011-03-10 22:44:38,Authorize Supplier's Invoice payment
+Case32,Pay Invoice,2011-03-10 22:55:38,2011-03-10 23:00:38,Pay Invoice
+Case32,End,2011-03-10 23:00:38,2011-03-10 23:00:38,End
+Case33,Start,2011-01-07 18:13:46,2011-01-07 18:13:46,Create Purchase Requisition
+Case33,Create Purchase Requisition,2011-01-07 18:13:46,2011-01-07 19:05:46,Create Purchase Requisition
+Case33,Analyze Purchase Requisition,2011-01-08 17:05:46,2011-01-08 17:10:46,Analyze Purchase Requisition
+Case33,Create Request for Quotation,2011-01-08 17:14:46,2011-01-08 17:17:46,Create Request for Quotation
+Case33,Analyze Request for Quotation,2011-01-15 04:36:46,2011-01-15 05:06:46,Analyze Request for Quotation
+Case33,Send Request for Quotation to Supplier,2011-01-15 22:49:46,2011-01-15 23:01:46,Send Request for Quotation to Supplier
+Case33,Create Quotation comparison Map,2011-01-15 23:07:46,2011-01-16 01:44:46,Create Quotation comparison Map
+Case33,Analyze Quotation Comparison Map,2011-01-16 08:10:46,2011-01-16 08:36:46,Analyze Quotation Comparison Map
+Case33,Choose best option,2011-01-16 08:36:46,2011-01-16 08:36:46,Choose best option
+Case33,Settle Conditions With Supplier,2011-01-16 13:27:46,2011-01-16 20:58:46,Settle Conditions With Supplier
+Case33,Create Purchase Order,2011-01-16 21:52:46,2011-01-16 22:03:46,Create Purchase Order
+Case33,Confirm Purchase Order,2011-01-27 20:01:46,2011-01-27 20:24:46,Confirm Purchase Order
+Case33,Deliver Goods Services,2011-01-29 09:19:46,2011-01-29 16:20:46,Deliver Goods Services
+Case33,Release Purchase Order,2011-01-29 23:50:46,2011-01-29 23:51:46,Release Purchase Order
+Case33,Approve Purchase Order for payment,2011-01-30 06:54:46,2011-01-30 06:55:46,Approve Purchase Order for payment
+Case33,Send Invoice,2011-01-30 16:18:46,2011-01-30 16:18:46,Send Invoice
+Case33,Release Supplier's Invoice,2011-01-31 06:25:46,2011-01-31 06:28:46,Release Supplier's Invoice
+Case33,Authorize Supplier's Invoice payment,2011-01-31 06:28:46,2011-01-31 06:28:46,Authorize Supplier's Invoice payment
+Case33,Pay Invoice,2011-01-31 06:50:46,2011-01-31 07:03:46,Pay Invoice
+Case33,End,2011-01-31 07:03:46,2011-01-31 07:03:46,End
+Case34,Start,2011-01-07 19:03:36,2011-01-07 19:03:36,Create Purchase Requisition
+Case34,Create Purchase Requisition,2011-01-07 19:03:36,2011-01-07 19:13:36,Create Purchase Requisition
+Case34,Analyze Purchase Requisition,2011-01-08 15:38:36,2011-01-08 15:45:36,Analyze Purchase Requisition
+Case34,Create Request for Quotation,2011-01-08 15:51:36,2011-01-08 15:53:36,Create Request for Quotation
+Case34,Analyze Request for Quotation,2011-01-09 21:27:36,2011-01-09 21:59:36,Analyze Request for Quotation
+Case34,Amend Request for Quotation,2011-01-09 22:49:36,2011-01-09 22:55:36,Amend Request for Quotation
+Case34,Analyze Request for Quotation,2011-01-24 22:36:36,2011-01-24 22:51:36,Analyze Request for Quotation
+Case34,End,2011-01-24 22:51:36,2011-01-24 22:51:36,End
+Case35,Start,2011-01-01 16:38:25,2011-01-01 16:38:25,Create Purchase Requisition
+Case35,Create Purchase Requisition,2011-01-01 16:38:25,2011-01-01 16:48:25,Create Purchase Requisition
+Case35,Analyze Purchase Requisition,2011-01-02 13:45:25,2011-01-02 13:51:25,Analyze Purchase Requisition
+Case35,End,2011-01-02 13:51:25,2011-01-02 13:51:25,End
+Case36,Start,2011-01-07 20:56:10,2011-01-07 20:56:10,Create Purchase Requisition
+Case36,Create Purchase Requisition,2011-01-07 20:56:10,2011-01-07 21:33:10,Create Purchase Requisition
+Case36,Analyze Purchase Requisition,2011-01-08 10:31:10,2011-01-08 10:36:10,Analyze Purchase Requisition
+Case36,Create Request for Quotation,2011-01-08 10:42:10,2011-01-08 10:44:10,Create Request for Quotation
+Case36,Analyze Request for Quotation,2011-01-08 11:52:10,2011-01-08 12:03:10,Analyze Request for Quotation
+Case36,Send Request for Quotation to Supplier,2011-01-08 13:58:10,2011-01-08 14:13:10,Send Request for Quotation to Supplier
+Case36,Create Quotation comparison Map,2011-01-08 21:46:10,2011-01-09 00:53:10,Create Quotation comparison Map
+Case36,Analyze Quotation Comparison Map,2011-01-09 07:50:10,2011-01-09 08:10:10,Analyze Quotation Comparison Map
+Case36,Choose best option,2011-01-09 08:10:10,2011-01-09 08:10:10,Choose best option
+Case36,Settle Conditions With Supplier,2011-01-10 00:11:10,2011-01-10 06:11:10,Settle Conditions With Supplier
+Case36,Create Purchase Order,2011-01-11 03:10:10,2011-01-11 03:21:10,Create Purchase Order
+Case36,Confirm Purchase Order,2011-01-11 13:22:10,2011-01-11 13:57:10,Confirm Purchase Order
+Case36,Deliver Goods Services,2011-01-13 12:09:10,2011-01-15 06:42:10,Deliver Goods Services
+Case36,Release Purchase Order,2011-01-15 13:40:10,2011-01-15 13:41:10,Release Purchase Order
+Case36,Approve Purchase Order for payment,2011-01-15 16:05:10,2011-01-15 16:06:10,Approve Purchase Order for payment
+Case36,Send Invoice,2011-01-16 09:06:10,2011-01-16 09:06:10,Send Invoice
+Case36,Release Supplier's Invoice,2011-01-16 23:33:10,2011-01-16 23:36:10,Release Supplier's Invoice
+Case36,Authorize Supplier's Invoice payment,2011-01-16 23:36:10,2011-01-16 23:36:10,Authorize Supplier's Invoice payment
+Case36,Pay Invoice,2011-01-16 23:49:10,2011-01-16 23:56:10,Pay Invoice
+Case36,End,2011-01-16 23:56:10,2011-01-16 23:56:10,End
+Case37,Start,2011-01-07 22:21:26,2011-01-07 22:21:26,Create Purchase Requisition
+Case37,Create Purchase Requisition,2011-01-07 22:21:26,2011-01-07 22:26:26,Create Purchase Requisition
+Case37,Analyze Purchase Requisition,2011-01-08 12:14:26,2011-01-08 12:21:26,Analyze Purchase Requisition
+Case37,Create Request for Quotation,2011-01-08 12:29:26,2011-01-08 12:31:26,Create Request for Quotation
+Case37,Analyze Request for Quotation,2011-01-08 16:15:26,2011-01-08 16:38:26,Analyze Request for Quotation
+Case37,Send Request for Quotation to Supplier,2011-01-09 01:17:26,2011-01-09 01:44:26,Send Request for Quotation to Supplier
+Case37,Create Quotation comparison Map,2011-01-09 02:12:26,2011-01-09 03:00:26,Create Quotation comparison Map
+Case37,Analyze Quotation Comparison Map,2011-01-09 10:07:26,2011-01-09 10:41:26,Analyze Quotation Comparison Map
+Case37,Choose best option,2011-01-09 10:41:26,2011-01-09 10:41:26,Choose best option
+Case37,Settle Conditions With Supplier,2011-01-09 20:42:26,2011-01-10 04:13:26,Settle Conditions With Supplier
+Case37,Create Purchase Order,2011-01-10 07:47:26,2011-01-10 07:56:26,Create Purchase Order
+Case37,Confirm Purchase Order,2011-01-12 14:05:26,2011-01-12 14:15:26,Confirm Purchase Order
+Case37,Deliver Goods Services,2011-01-14 02:57:26,2011-01-15 20:37:26,Deliver Goods Services
+Case37,Release Purchase Order,2011-01-16 03:54:26,2011-01-16 03:55:26,Release Purchase Order
+Case37,Approve Purchase Order for payment,2011-01-16 15:33:26,2011-01-16 15:34:26,Approve Purchase Order for payment
+Case37,Send Invoice,2011-01-18 06:33:26,2011-01-18 06:33:26,Send Invoice
+Case37,Release Supplier's Invoice,2011-01-18 20:54:26,2011-01-18 20:59:26,Release Supplier's Invoice
+Case37,Authorize Supplier's Invoice payment,2011-01-18 20:59:26,2011-01-18 20:59:26,Authorize Supplier's Invoice payment
+Case37,Pay Invoice,2011-01-18 21:21:26,2011-01-18 21:35:26,Pay Invoice
+Case37,End,2011-01-18 21:35:26,2011-01-18 21:35:26,End
+Case38,Start,2011-01-08 00:27:55,2011-01-08 00:27:55,Create Purchase Requisition
+Case38,Create Purchase Requisition,2011-01-08 00:27:55,2011-01-08 00:49:55,Create Purchase Requisition
+Case38,Analyze Purchase Requisition,2011-01-08 15:41:55,2011-01-08 15:47:55,Analyze Purchase Requisition
+Case38,Create Request for Quotation,2011-01-08 15:52:55,2011-01-08 15:54:55,Create Request for Quotation
+Case38,Analyze Request for Quotation,2011-01-09 04:40:55,2011-01-09 05:07:55,Analyze Request for Quotation
+Case38,Amend Request for Quotation,2011-01-09 05:54:55,2011-01-09 06:01:55,Amend Request for Quotation
+Case38,Analyze Request for Quotation,2011-01-09 07:23:55,2011-01-09 07:56:55,Analyze Request for Quotation
+Case38,End,2011-01-09 07:56:55,2011-01-09 07:56:55,End
+Case39,Start,2011-01-08 01:54:58,2011-01-08 01:54:58,Create Purchase Requisition
+Case39,Create Purchase Requisition,2011-01-08 01:54:58,2011-01-08 02:13:58,Create Purchase Requisition
+Case39,Create Request for Quotation,2011-01-08 03:21:58,2011-01-08 03:31:58,Create Request for Quotation
+Case39,Analyze Request for Quotation,2011-01-08 23:28:58,2011-01-08 23:55:58,Analyze Request for Quotation
+Case39,Send Request for Quotation to Supplier,2011-01-09 10:23:58,2011-01-09 10:50:58,Send Request for Quotation to Supplier
+Case39,Create Quotation comparison Map,2011-01-10 11:56:58,2011-01-10 16:32:58,Create Quotation comparison Map
+Case39,Analyze Quotation Comparison Map,2011-01-10 22:36:58,2011-01-10 23:05:58,Analyze Quotation Comparison Map
+Case39,Choose best option,2011-01-10 23:05:58,2011-01-10 23:05:58,Choose best option
+Case39,Settle Conditions With Supplier,2011-01-12 07:43:58,2011-01-12 16:46:58,Settle Conditions With Supplier
+Case39,Create Purchase Order,2011-01-13 10:26:58,2011-01-13 10:33:58,Create Purchase Order
+Case39,Confirm Purchase Order,2011-01-14 01:10:58,2011-01-14 01:15:58,Confirm Purchase Order
+Case39,Deliver Goods Services,2011-01-15 13:27:58,2011-01-16 16:44:58,Deliver Goods Services
+Case39,Release Purchase Order,2011-01-17 00:38:58,2011-01-17 00:39:58,Release Purchase Order
+Case39,Approve Purchase Order for payment,2011-01-17 08:21:58,2011-01-17 08:22:58,Approve Purchase Order for payment
+Case39,Send Invoice,2011-01-19 08:55:58,2011-01-19 08:55:58,Send Invoice
+Case39,Release Supplier's Invoice,2011-01-19 23:15:58,2011-01-19 23:19:58,Release Supplier's Invoice
+Case39,Settle Dispute With Supplier,2011-01-19 23:43:58,2011-01-20 00:00:58,Settle Dispute With Supplier
+Case39,Authorize Supplier's Invoice payment,2011-01-20 00:00:58,2011-01-20 00:00:58,Authorize Supplier's Invoice payment
+Case39,Pay Invoice,2011-01-20 00:11:58,2011-01-20 00:23:58,Pay Invoice
+Case39,End,2011-01-20 00:23:58,2011-01-20 00:23:58,End
+Case40,Start,2011-01-08 02:48:39,2011-01-08 02:48:39,Create Purchase Requisition
+Case40,Create Purchase Requisition,2011-01-08 02:48:39,2011-01-08 03:18:39,Create Purchase Requisition
+Case40,Analyze Purchase Requisition,2011-01-08 14:23:39,2011-01-08 14:30:39,Analyze Purchase Requisition
+Case40,Create Request for Quotation,2011-01-08 14:36:39,2011-01-08 14:38:39,Create Request for Quotation
+Case40,Analyze Request for Quotation,2011-01-09 04:34:39,2011-01-09 05:03:39,Analyze Request for Quotation
+Case40,Amend Request for Quotation,2011-01-09 06:00:39,2011-01-09 06:08:39,Amend Request for Quotation
+Case40,Analyze Request for Quotation,2011-01-11 07:57:39,2011-01-11 08:34:39,Analyze Request for Quotation
+Case40,Amend Request for Quotation,2011-01-11 09:30:39,2011-01-11 09:38:39,Amend Request for Quotation
+Case40,Analyze Request for Quotation,2011-02-12 14:56:39,2011-02-12 15:36:39,Analyze Request for Quotation
+Case40,Send Request for Quotation to Supplier,2011-02-14 04:02:39,2011-02-14 04:25:39,Send Request for Quotation to Supplier
+Case40,Create Quotation comparison Map,2011-02-14 06:32:39,2011-02-14 08:06:39,Create Quotation comparison Map
+Case40,Analyze Quotation Comparison Map,2011-02-14 14:31:39,2011-02-14 14:54:39,Analyze Quotation Comparison Map
+Case40,Choose best option,2011-02-14 14:54:39,2011-02-14 14:54:39,Choose best option
+Case40,Settle Conditions With Supplier,2011-02-15 04:47:39,2011-02-15 10:18:39,Settle Conditions With Supplier
+Case40,Create Purchase Order,2011-02-15 20:05:39,2011-02-15 20:14:39,Create Purchase Order
+Case40,Confirm Purchase Order,2011-02-18 09:22:39,2011-02-18 09:30:39,Confirm Purchase Order
+Case40,Deliver Goods Services,2011-03-05 19:11:39,2011-03-06 05:16:39,Deliver Goods Services
+Case40,Release Purchase Order,2011-03-06 12:28:39,2011-03-06 12:29:39,Release Purchase Order
+Case40,Approve Purchase Order for payment,2011-03-07 01:18:39,2011-03-07 01:19:39,Approve Purchase Order for payment
+Case40,Send Invoice,2011-03-08 09:58:39,2011-03-08 09:58:39,Send Invoice
+Case40,Release Supplier's Invoice,2011-03-09 00:13:39,2011-03-09 00:19:39,Release Supplier's Invoice
+Case40,Authorize Supplier's Invoice payment,2011-03-09 00:19:39,2011-03-09 00:19:39,Authorize Supplier's Invoice payment
+Case40,Pay Invoice,2011-03-09 01:18:39,2011-03-09 01:27:39,Pay Invoice
+Case40,End,2011-03-09 01:27:39,2011-03-09 01:27:39,End
+Case41,Start,2011-01-08 04:35:49,2011-01-08 04:35:49,Create Purchase Requisition
+Case41,Create Purchase Requisition,2011-01-08 04:35:49,2011-01-08 04:45:49,Create Purchase Requisition
+Case41,Create Request for Quotation,2011-01-08 05:27:49,2011-01-08 05:34:49,Create Request for Quotation
+Case41,Analyze Request for Quotation,2011-01-12 00:17:49,2011-01-12 00:47:49,Analyze Request for Quotation
+Case41,Amend Request for Quotation,2011-01-12 01:44:49,2011-01-12 01:54:49,Amend Request for Quotation
+Case41,Analyze Request for Quotation,2011-01-15 23:41:49,2011-01-16 00:00:49,Analyze Request for Quotation
+Case41,Amend Request for Quotation,2011-01-16 00:44:49,2011-01-16 00:54:49,Amend Request for Quotation
+Case41,Analyze Request for Quotation,2011-01-16 16:59:49,2011-01-16 17:07:49,Analyze Request for Quotation
+Case41,Amend Request for Quotation,2011-01-16 17:54:49,2011-01-16 18:03:49,Amend Request for Quotation
+Case41,Analyze Request for Quotation,2011-01-30 07:03:49,2011-01-30 07:31:49,Analyze Request for Quotation
+Case41,Amend Request for Quotation,2011-01-30 08:20:49,2011-01-30 08:30:49,Amend Request for Quotation
+Case41,Analyze Request for Quotation,2011-01-30 21:56:49,2011-01-30 22:04:49,Analyze Request for Quotation
+Case41,Amend Request for Quotation,2011-01-30 22:53:49,2011-01-30 23:00:49,Amend Request for Quotation
+Case41,Analyze Request for Quotation,2011-02-07 07:50:49,2011-02-07 08:05:49,Analyze Request for Quotation
+Case41,Send Request for Quotation to Supplier,2011-02-07 20:57:49,2011-02-07 21:21:49,Send Request for Quotation to Supplier
+Case41,Create Quotation comparison Map,2011-02-09 00:59:49,2011-02-09 02:34:49,Create Quotation comparison Map
+Case41,Analyze Quotation Comparison Map,2011-02-09 09:23:49,2011-02-09 09:31:49,Analyze Quotation Comparison Map
+Case41,Choose best option,2011-02-09 09:31:49,2011-02-09 09:31:49,Choose best option
+Case41,Settle Conditions With Supplier,2011-02-09 20:52:49,2011-02-10 05:54:49,Settle Conditions With Supplier
+Case41,Create Purchase Order,2011-02-10 09:37:49,2011-02-10 09:49:49,Create Purchase Order
+Case41,Confirm Purchase Order,2011-02-11 05:42:49,2011-02-11 05:55:49,Confirm Purchase Order
+Case41,Deliver Goods Services,2011-02-12 14:18:49,2011-02-14 01:36:49,Deliver Goods Services
+Case41,Release Purchase Order,2011-02-14 08:51:49,2011-02-14 08:52:49,Release Purchase Order
+Case41,Approve Purchase Order for payment,2011-02-16 01:35:49,2011-02-16 01:36:49,Approve Purchase Order for payment
+Case41,Send Invoice,2011-02-16 18:12:49,2011-02-16 18:12:49,Send Invoice
+Case41,Release Supplier's Invoice,2011-02-17 08:33:49,2011-02-17 08:35:49,Release Supplier's Invoice
+Case41,Authorize Supplier's Invoice payment,2011-02-17 08:35:49,2011-02-17 08:35:49,Authorize Supplier's Invoice payment
+Case41,Pay Invoice,2011-02-17 09:28:49,2011-02-17 09:39:49,Pay Invoice
+Case41,End,2011-02-17 09:39:49,2011-02-17 09:39:49,End
+Case42,Start,2011-01-08 05:08:10,2011-01-08 05:08:10,Create Purchase Requisition
+Case42,Create Purchase Requisition,2011-01-08 05:08:10,2011-01-08 05:31:10,Create Purchase Requisition
+Case42,Create Request for Quotation,2011-01-08 11:09:10,2011-01-08 11:16:10,Create Request for Quotation
+Case42,Analyze Request for Quotation,2011-01-10 10:07:10,2011-01-10 10:29:10,Analyze Request for Quotation
+Case42,End,2011-01-10 10:29:10,2011-01-10 10:29:10,End
+Case43,Start,2011-01-08 07:14:50,2011-01-08 07:14:50,Create Purchase Requisition
+Case43,Create Purchase Requisition,2011-01-08 07:14:50,2011-01-08 07:48:50,Create Purchase Requisition
+Case43,Analyze Purchase Requisition,2011-01-09 06:33:50,2011-01-09 06:37:50,Analyze Purchase Requisition
+Case43,Create Request for Quotation,2011-01-09 06:42:50,2011-01-09 06:44:50,Create Request for Quotation
+Case43,Analyze Request for Quotation,2011-01-09 08:09:50,2011-01-09 08:42:50,Analyze Request for Quotation
+Case43,Amend Request for Quotation,2011-01-10 00:31:50,2011-01-10 00:43:50,Amend Request for Quotation
+Case43,Analyze Request for Quotation,2011-01-11 05:48:51,2011-01-11 06:10:51,Analyze Request for Quotation
+Case43,Send Request for Quotation to Supplier,2011-01-12 06:30:51,2011-01-12 06:46:51,Send Request for Quotation to Supplier
+Case43,Create Quotation comparison Map,2011-01-12 07:46:51,2011-01-12 13:47:51,Create Quotation comparison Map
+Case43,Analyze Quotation Comparison Map,2011-01-12 21:00:51,2011-01-12 21:10:51,Analyze Quotation Comparison Map
+Case43,Choose best option,2011-01-12 21:10:51,2011-01-12 21:10:51,Choose best option
+Case43,Settle Conditions With Supplier,2011-01-13 00:26:51,2011-01-13 12:43:51,Settle Conditions With Supplier
+Case43,Create Purchase Order,2011-01-13 13:16:51,2011-01-13 13:25:51,Create Purchase Order
+Case43,Confirm Purchase Order,2011-01-15 05:59:51,2011-01-15 06:12:51,Confirm Purchase Order
+Case43,Deliver Goods Services,2011-01-15 15:32:51,2011-01-16 20:47:51,Deliver Goods Services
+Case43,Release Purchase Order,2011-01-17 04:20:51,2011-01-17 04:21:51,Release Purchase Order
+Case43,Approve Purchase Order for payment,2011-01-17 12:34:51,2011-01-17 12:35:51,Approve Purchase Order for payment
+Case43,Send Invoice,2011-01-17 19:03:51,2011-01-17 19:03:51,Send Invoice
+Case43,Release Supplier's Invoice,2011-01-18 09:20:51,2011-01-18 09:26:51,Release Supplier's Invoice
+Case43,Authorize Supplier's Invoice payment,2011-01-18 09:26:51,2011-01-18 09:26:51,Authorize Supplier's Invoice payment
+Case43,Pay Invoice,2011-01-18 09:44:51,2011-01-18 09:57:51,Pay Invoice
+Case43,End,2011-01-18 09:57:51,2011-01-18 09:57:51,End
+Case44,Start,2011-01-08 08:14:11,2011-01-08 08:14:11,Create Purchase Requisition
+Case44,Create Purchase Requisition,2011-01-08 08:14:11,2011-01-08 09:10:11,Create Purchase Requisition
+Case44,Analyze Purchase Requisition,2011-01-09 08:49:11,2011-01-09 08:56:11,Analyze Purchase Requisition
+Case44,Create Request for Quotation,2011-01-09 09:02:11,2011-01-09 09:04:11,Create Request for Quotation
+Case44,Analyze Request for Quotation,2011-01-17 09:32:11,2011-01-17 10:20:11,Analyze Request for Quotation
+Case44,Send Request for Quotation to Supplier,2011-01-18 14:04:11,2011-01-18 14:34:11,Send Request for Quotation to Supplier
+Case44,Create Quotation comparison Map,2011-01-18 15:22:11,2011-01-18 19:29:11,Create Quotation comparison Map
+Case44,Analyze Quotation Comparison Map,2011-01-19 01:41:11,2011-01-19 02:10:11,Analyze Quotation Comparison Map
+Case44,Choose best option,2011-01-19 02:10:11,2011-01-19 02:10:11,Choose best option
+Case44,Settle Conditions With Supplier,2011-01-19 04:12:11,2011-01-19 10:16:11,Settle Conditions With Supplier
+Case44,Create Purchase Order,2011-01-19 19:59:11,2011-01-19 20:07:11,Create Purchase Order
+Case44,Confirm Purchase Order,2011-01-21 09:26:11,2011-01-21 09:51:11,Confirm Purchase Order
+Case44,Deliver Goods Services,2011-01-22 22:03:11,2011-01-24 06:58:11,Deliver Goods Services
+Case44,Release Purchase Order,2011-01-24 14:49:11,2011-01-24 14:50:11,Release Purchase Order
+Case44,Approve Purchase Order for payment,2011-01-25 19:57:11,2011-01-25 19:58:11,Approve Purchase Order for payment
+Case44,Send Invoice,2011-01-26 23:37:11,2011-01-26 23:37:11,Send Invoice
+Case44,Release Supplier's Invoice,2011-01-27 14:03:11,2011-01-27 14:08:11,Release Supplier's Invoice
+Case44,Authorize Supplier's Invoice payment,2011-01-27 14:08:11,2011-01-27 14:08:11,Authorize Supplier's Invoice payment
+Case44,Pay Invoice,2011-01-27 15:12:11,2011-01-27 15:24:11,Pay Invoice
+Case44,End,2011-01-27 15:24:11,2011-01-27 15:24:11,End
+Case45,Start,2011-01-08 09:25:41,2011-01-08 09:25:41,Create Purchase Requisition
+Case45,Create Purchase Requisition,2011-01-08 09:25:41,2011-01-08 10:12:41,Create Purchase Requisition
+Case45,Analyze Purchase Requisition,2011-01-08 23:48:41,2011-01-08 23:52:41,Analyze Purchase Requisition
+Case45,End,2011-01-08 23:52:41,2011-01-08 23:52:41,End
+Case46,Start,2011-01-01 17:51:51,2011-01-01 17:51:51,Create Purchase Requisition
+Case46,Create Purchase Requisition,2011-01-01 17:51:51,2011-01-01 18:22:51,Create Purchase Requisition
+Case46,Analyze Purchase Requisition,2011-01-02 18:11:51,2011-01-02 18:19:51,Analyze Purchase Requisition
+Case46,Create Request for Quotation,2011-01-02 18:24:51,2011-01-02 18:25:51,Create Request for Quotation
+Case46,Analyze Request for Quotation,2011-02-02 18:49:51,2011-02-02 19:08:51,Analyze Request for Quotation
+Case46,End,2011-02-02 19:08:51,2011-02-02 19:08:51,End
+Case47,Start,2011-01-08 10:50:24,2011-01-08 10:50:24,Create Purchase Requisition
+Case47,Create Purchase Requisition,2011-01-08 10:50:24,2011-01-08 11:32:24,Create Purchase Requisition
+Case47,Analyze Purchase Requisition,2011-01-09 07:10:24,2011-01-09 07:15:24,Analyze Purchase Requisition
+Case47,Create Request for Quotation,2011-01-09 07:23:24,2011-01-09 07:25:24,Create Request for Quotation
+Case47,Analyze Request for Quotation,2011-01-12 15:13:24,2011-01-12 15:23:24,Analyze Request for Quotation
+Case47,Amend Request for Quotation,2011-01-12 16:19:24,2011-01-12 16:31:24,Amend Request for Quotation
+Case47,Analyze Request for Quotation,2011-01-16 20:38:24,2011-01-16 21:05:24,Analyze Request for Quotation
+Case47,Amend Request for Quotation,2011-01-17 13:15:24,2011-01-17 13:21:24,Amend Request for Quotation
+Case47,Analyze Request for Quotation,2011-01-17 15:47:24,2011-01-17 16:09:24,Analyze Request for Quotation
+Case47,Amend Request for Quotation,2011-01-17 16:52:24,2011-01-17 17:17:24,Amend Request for Quotation
+Case47,Analyze Request for Quotation,2011-01-17 18:17:24,2011-01-17 18:27:24,Analyze Request for Quotation
+Case47,Send Request for Quotation to Supplier,2011-01-18 03:42:24,2011-01-18 03:56:24,Send Request for Quotation to Supplier
+Case47,Create Quotation comparison Map,2011-01-18 08:52:24,2011-01-18 14:56:24,Create Quotation comparison Map
+Case47,Analyze Quotation Comparison Map,2011-01-18 21:38:24,2011-01-18 21:57:24,Analyze Quotation Comparison Map
+Case47,Choose best option,2011-01-18 21:57:24,2011-01-18 21:57:24,Choose best option
+Case47,Settle Conditions With Supplier,2011-01-19 07:58:24,2011-01-19 15:54:24,Settle Conditions With Supplier
+Case47,Create Purchase Order,2011-01-19 21:54:24,2011-01-19 22:05:24,Create Purchase Order
+Case47,Confirm Purchase Order,2011-01-22 23:44:24,2011-01-23 00:06:24,Confirm Purchase Order
+Case47,Deliver Goods Services,2011-01-23 08:13:24,2011-01-24 23:06:24,Deliver Goods Services
+Case47,Release Purchase Order,2011-01-25 06:15:24,2011-01-25 06:16:24,Release Purchase Order
+Case47,Approve Purchase Order for payment,2011-01-25 21:04:24,2011-01-25 21:05:24,Approve Purchase Order for payment
+Case47,Send Invoice,2011-01-26 07:40:24,2011-01-26 07:40:24,Send Invoice
+Case47,Release Supplier's Invoice,2011-01-26 21:58:24,2011-01-26 22:01:24,Release Supplier's Invoice
+Case47,Settle Dispute With Supplier,2011-01-26 22:46:24,2011-01-26 23:09:24,Settle Dispute With Supplier
+Case47,Authorize Supplier's Invoice payment,2011-01-26 23:09:24,2011-01-26 23:09:24,Authorize Supplier's Invoice payment
+Case47,Pay Invoice,2011-01-26 23:48:24,2011-01-26 23:57:24,Pay Invoice
+Case47,End,2011-01-26 23:57:24,2011-01-26 23:57:24,End
+Case48,Start,2011-01-08 11:20:59,2011-01-08 11:20:59,Create Purchase Requisition
+Case48,Create Purchase Requisition,2011-01-08 11:20:59,2011-01-08 12:14:59,Create Purchase Requisition
+Case48,Analyze Purchase Requisition,2011-01-09 02:33:59,2011-01-09 02:42:59,Analyze Purchase Requisition
+Case48,Create Request for Quotation,2011-01-09 02:49:59,2011-01-09 02:50:59,Create Request for Quotation
+Case48,Analyze Request for Quotation,2011-01-10 17:54:59,2011-01-10 18:11:59,Analyze Request for Quotation
+Case48,Send Request for Quotation to Supplier,2011-01-11 01:08:59,2011-01-11 01:37:59,Send Request for Quotation to Supplier
+Case48,Create Quotation comparison Map,2011-01-11 06:50:59,2011-01-11 10:35:00,Create Quotation comparison Map
+Case48,Analyze Quotation Comparison Map,2011-01-11 17:07:00,2011-01-11 17:34:00,Analyze Quotation Comparison Map
+Case48,Choose best option,2011-01-11 17:34:00,2011-01-11 17:34:00,Choose best option
+Case48,Settle Conditions With Supplier,2011-01-11 20:20:00,2011-01-12 10:05:00,Settle Conditions With Supplier
+Case48,Create Purchase Order,2011-01-12 16:21:01,2011-01-12 16:27:01,Create Purchase Order
+Case48,Confirm Purchase Order,2011-01-14 09:49:01,2011-01-14 10:16:01,Confirm Purchase Order
+Case48,Deliver Goods Services,2011-01-15 07:20:01,2011-01-15 19:18:01,Deliver Goods Services
+Case48,Release Purchase Order,2011-01-16 03:09:01,2011-01-16 03:10:01,Release Purchase Order
+Case48,Settle Dispute With Supplier,2011-01-16 12:28:01,2011-01-16 21:11:01,Settle Dispute With Supplier
+Case48,Release Purchase Order,2011-01-17 04:19:01,2011-01-17 04:20:01,Release Purchase Order
+Case48,Approve Purchase Order for payment,2011-01-18 07:41:01,2011-01-18 07:42:01,Approve Purchase Order for payment
+Case48,Send Invoice,2011-01-18 17:56:01,2011-01-18 17:56:01,Send Invoice
+Case48,Release Supplier's Invoice,2011-01-19 08:26:01,2011-01-19 08:29:01,Release Supplier's Invoice
+Case48,Authorize Supplier's Invoice payment,2011-01-19 08:29:01,2011-01-19 08:29:01,Authorize Supplier's Invoice payment
+Case48,Pay Invoice,2011-01-19 09:22:01,2011-01-19 09:31:01,Pay Invoice
+Case48,End,2011-01-19 09:31:01,2011-01-19 09:31:01,End
+Case49,Start,2011-01-08 13:21:04,2011-01-08 13:21:04,Create Purchase Requisition
+Case49,Create Purchase Requisition,2011-01-08 13:21:04,2011-01-08 13:29:04,Create Purchase Requisition
+Case49,Analyze Purchase Requisition,2011-01-09 02:08:04,2011-01-09 02:12:04,Analyze Purchase Requisition
+Case49,Create Request for Quotation,2011-01-09 02:16:04,2011-01-09 02:18:04,Create Request for Quotation
+Case49,Analyze Request for Quotation,2011-01-12 22:47:04,2011-01-12 23:22:04,Analyze Request for Quotation
+Case49,Amend Request for Quotation,2011-01-13 00:16:04,2011-01-13 00:23:04,Amend Request for Quotation
+Case49,Analyze Request for Quotation,2011-01-23 16:40:04,2011-01-23 17:03:04,Analyze Request for Quotation
+Case49,Send Request for Quotation to Supplier,2011-01-25 02:43:04,2011-01-25 02:55:04,Send Request for Quotation to Supplier
+Case49,Create Quotation comparison Map,2011-01-25 06:29:04,2011-01-25 09:56:04,Create Quotation comparison Map
+Case49,Analyze Quotation Comparison Map,2011-01-25 16:24:04,2011-01-25 16:32:04,Analyze Quotation Comparison Map
+Case49,Choose best option,2011-01-25 16:32:04,2011-01-25 16:32:04,Choose best option
+Case49,Settle Conditions With Supplier,2011-01-25 20:18:04,2011-01-26 10:39:04,Settle Conditions With Supplier
+Case49,Create Purchase Order,2011-01-26 20:17:04,2011-01-26 20:26:04,Create Purchase Order
+Case49,Confirm Purchase Order,2011-01-29 08:07:04,2011-01-29 08:28:04,Confirm Purchase Order
+Case49,Deliver Goods Services,2011-01-30 10:03:04,2011-01-31 02:30:04,Deliver Goods Services
+Case49,Release Purchase Order,2011-01-31 10:41:04,2011-01-31 10:42:04,Release Purchase Order
+Case49,Approve Purchase Order for payment,2011-01-31 23:30:04,2011-01-31 23:31:04,Approve Purchase Order for payment
+Case49,Send Invoice,2011-02-05 15:50:04,2011-02-05 15:50:04,Send Invoice
+Case49,Release Supplier's Invoice,2011-02-06 06:17:04,2011-02-06 06:22:04,Release Supplier's Invoice
+Case49,Authorize Supplier's Invoice payment,2011-02-06 06:22:04,2011-02-06 06:22:04,Authorize Supplier's Invoice payment
+Case49,Pay Invoice,2011-02-06 06:36:04,2011-02-06 06:48:04,Pay Invoice
+Case49,End,2011-02-06 06:48:04,2011-02-06 06:48:04,End
+Case50,Start,2011-01-08 14:44:03,2011-01-08 14:44:03,Create Purchase Requisition
+Case50,Create Purchase Requisition,2011-01-08 14:44:03,2011-01-08 15:12:03,Create Purchase Requisition
+Case50,Analyze Purchase Requisition,2011-01-09 05:50:03,2011-01-09 05:58:02,Analyze Purchase Requisition
+Case50,End,2011-01-09 05:58:02,2011-01-09 05:58:02,End
+Case51,Start,2011-01-08 15:45:31,2011-01-08 15:45:31,Create Purchase Requisition
+Case51,Create Purchase Requisition,2011-01-08 15:45:31,2011-01-08 16:33:31,Create Purchase Requisition
+Case51,Analyze Purchase Requisition,2011-01-09 02:29:31,2011-01-09 02:35:31,Analyze Purchase Requisition
+Case51,End,2011-01-09 02:35:31,2011-01-09 02:35:31,End
+Case52,Start,2011-01-08 17:52:59,2011-01-08 17:52:59,Create Purchase Requisition
+Case52,Create Purchase Requisition,2011-01-08 17:52:59,2011-01-08 18:30:59,Create Purchase Requisition
+Case52,Create Request for Quotation,2011-01-09 01:17:59,2011-01-09 01:28:59,Create Request for Quotation
+Case52,Analyze Request for Quotation,2011-01-11 08:32:59,2011-01-11 09:02:59,Analyze Request for Quotation
+Case52,Amend Request for Quotation,2011-01-11 09:56:59,2011-01-11 10:06:59,Amend Request for Quotation
+Case52,Analyze Request for Quotation,2011-01-11 12:14:59,2011-01-11 12:19:59,Analyze Request for Quotation
+Case52,Amend Request for Quotation,2011-01-11 13:07:59,2011-01-11 13:23:59,Amend Request for Quotation
+Case52,Analyze Request for Quotation,2011-01-12 14:39:59,2011-01-12 15:04:59,Analyze Request for Quotation
+Case52,Amend Request for Quotation,2011-01-12 15:54:59,2011-01-12 16:08:59,Amend Request for Quotation
+Case52,Analyze Request for Quotation,2011-01-25 22:29:59,2011-01-25 22:58:59,Analyze Request for Quotation
+Case52,Send Request for Quotation to Supplier,2011-01-26 03:57:59,2011-01-26 04:10:59,Send Request for Quotation to Supplier
+Case52,Create Quotation comparison Map,2011-01-26 08:57:59,2011-01-26 10:01:59,Create Quotation comparison Map
+Case52,Analyze Quotation Comparison Map,2011-01-26 16:44:59,2011-01-26 17:02:59,Analyze Quotation Comparison Map
+Case52,Choose best option,2011-01-26 17:02:59,2011-01-26 17:02:59,Choose best option
+Case52,Settle Conditions With Supplier,2011-01-29 13:19:59,2011-01-29 18:05:59,Settle Conditions With Supplier
+Case52,Create Purchase Order,2011-01-31 02:29:59,2011-01-31 02:39:59,Create Purchase Order
+Case52,Confirm Purchase Order,2011-02-03 04:16:59,2011-02-03 04:50:59,Confirm Purchase Order
+Case52,Deliver Goods Services,2011-02-04 19:05:59,2011-02-05 17:13:59,Deliver Goods Services
+Case52,Release Purchase Order,2011-02-06 01:03:59,2011-02-06 01:04:59,Release Purchase Order
+Case52,Approve Purchase Order for payment,2011-02-06 04:43:59,2011-02-06 04:44:59,Approve Purchase Order for payment
+Case52,Send Invoice,2011-02-08 02:03:59,2011-02-08 02:03:59,Send Invoice
+Case52,Release Supplier's Invoice,2011-02-08 16:14:59,2011-02-08 16:17:59,Release Supplier's Invoice
+Case52,Settle Dispute With Supplier,2011-02-08 17:06:59,2011-02-08 17:26:59,Settle Dispute With Supplier
+Case52,Authorize Supplier's Invoice payment,2011-02-08 17:26:59,2011-02-08 17:26:59,Authorize Supplier's Invoice payment
+Case52,Pay Invoice,2011-02-08 17:49:59,2011-02-08 18:01:59,Pay Invoice
+Case52,End,2011-02-08 18:01:59,2011-02-08 18:01:59,End
+Case53,Start,2011-01-08 18:18:23,2011-01-08 18:18:23,Create Purchase Requisition
+Case53,Create Purchase Requisition,2011-01-08 18:18:23,2011-01-08 18:56:23,Create Purchase Requisition
+Case53,Analyze Purchase Requisition,2011-01-09 05:09:23,2011-01-09 05:16:23,Analyze Purchase Requisition
+Case53,Create Request for Quotation,2011-01-09 05:21:23,2011-01-09 05:23:23,Create Request for Quotation
+Case53,Analyze Request for Quotation,2011-01-10 20:05:23,2011-01-10 20:28:23,Analyze Request for Quotation
+Case53,End,2011-01-10 20:28:23,2011-01-10 20:28:23,End
+Case54,Start,2011-01-08 19:06:35,2011-01-08 19:06:35,Create Purchase Requisition
+Case54,Create Purchase Requisition,2011-01-08 19:06:35,2011-01-08 19:36:35,Create Purchase Requisition
+Case54,Analyze Purchase Requisition,2011-01-09 19:44:35,2011-01-09 19:51:35,Analyze Purchase Requisition
+Case54,Create Request for Quotation,2011-01-09 19:55:35,2011-01-09 19:56:35,Create Request for Quotation
+Case54,Analyze Request for Quotation,2011-01-10 12:29:35,2011-01-10 12:47:35,Analyze Request for Quotation
+Case54,Amend Request for Quotation,2011-01-11 04:51:35,2011-01-11 05:05:35,Amend Request for Quotation
+Case54,Analyze Request for Quotation,2011-01-20 20:27:35,2011-01-20 20:51:35,Analyze Request for Quotation
+Case54,Amend Request for Quotation,2011-01-20 21:38:35,2011-01-20 21:43:35,Amend Request for Quotation
+Case54,Analyze Request for Quotation,2011-02-04 09:59:35,2011-02-04 10:36:35,Analyze Request for Quotation
+Case54,End,2011-02-04 10:36:35,2011-02-04 10:36:35,End
+Case55,Start,2011-01-08 21:56:20,2011-01-08 21:56:20,Create Purchase Requisition
+Case55,Create Purchase Requisition,2011-01-08 21:56:20,2011-01-08 22:13:20,Create Purchase Requisition
+Case55,Analyze Purchase Requisition,2011-01-09 13:13:20,2011-01-09 13:21:20,Analyze Purchase Requisition
+Case55,Create Request for Quotation,2011-01-09 13:26:20,2011-01-09 13:27:20,Create Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-11 14:50:20,2011-01-11 15:05:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-11 15:49:20,2011-01-11 16:01:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-12 00:31:20,2011-01-12 00:49:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-12 01:36:20,2011-01-12 01:43:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-13 02:59:20,2011-01-13 03:19:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-13 04:05:20,2011-01-13 04:12:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-13 11:39:20,2011-01-13 12:03:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-13 12:53:20,2011-01-13 13:04:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-14 01:57:20,2011-01-14 02:14:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-14 02:59:20,2011-01-14 03:11:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-29 16:00:20,2011-01-29 16:18:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-29 17:06:20,2011-01-29 17:16:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-01-29 23:53:20,2011-01-30 00:19:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-01-30 01:09:20,2011-01-30 01:17:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-02-13 15:41:20,2011-02-13 16:15:20,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-02-13 17:08:20,2011-02-13 17:14:20,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-03-09 15:35:20,2011-03-09 16:00:21,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-03-09 16:52:21,2011-03-09 17:00:21,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-03-20 11:04:21,2011-03-20 11:37:21,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-03-20 12:18:21,2011-03-20 12:32:21,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-03-20 13:37:21,2011-03-20 13:51:21,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-03-20 14:41:21,2011-03-20 14:46:21,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-04-16 04:02:21,2011-04-16 04:30:21,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-04-16 05:22:21,2011-04-16 05:35:21,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-05-14 02:20:21,2011-05-14 02:46:21,Analyze Request for Quotation
+Case55,Amend Request for Quotation,2011-05-14 03:36:21,2011-05-14 04:02:21,Amend Request for Quotation
+Case55,Analyze Request for Quotation,2011-06-06 11:18:21,2011-06-06 11:43:21,Analyze Request for Quotation
+Case55,Send Request for Quotation to Supplier,2011-06-06 16:54:21,2011-06-06 17:19:21,Send Request for Quotation to Supplier
+Case55,Create Quotation comparison Map,2011-06-06 21:50:21,2011-06-07 01:34:21,Create Quotation comparison Map
+Case55,Analyze Quotation Comparison Map,2011-06-07 08:05:21,2011-06-07 08:14:21,Analyze Quotation Comparison Map
+Case55,Choose best option,2011-06-07 08:14:21,2011-06-07 08:14:21,Choose best option
+Case55,Settle Conditions With Supplier,2011-06-07 15:29:21,2011-06-07 22:49:21,Settle Conditions With Supplier
+Case55,Create Purchase Order,2011-06-08 00:44:21,2011-06-08 00:55:21,Create Purchase Order
+Case55,Confirm Purchase Order,2011-06-08 12:54:21,2011-06-08 13:23:21,Confirm Purchase Order
+Case55,Deliver Goods Services,2011-06-10 11:35:21,2011-06-11 13:29:21,Deliver Goods Services
+Case55,Release Purchase Order,2011-06-11 21:06:21,2011-06-11 21:07:21,Release Purchase Order
+Case55,Approve Purchase Order for payment,2011-06-12 12:27:21,2011-06-12 12:28:21,Approve Purchase Order for payment
+Case55,Send Invoice,2011-06-13 03:12:21,2011-06-13 03:12:21,Send Invoice
+Case55,Release Supplier's Invoice,2011-06-13 17:38:21,2011-06-13 17:41:21,Release Supplier's Invoice
+Case55,Authorize Supplier's Invoice payment,2011-06-13 17:41:21,2011-06-13 17:41:21,Authorize Supplier's Invoice payment
+Case55,Pay Invoice,2011-06-13 18:27:21,2011-06-13 18:31:21,Pay Invoice
+Case55,End,2011-06-13 18:31:21,2011-06-13 18:31:21,End
+Case56,Start,2011-01-08 22:33:05,2011-01-08 22:33:05,Create Purchase Requisition
+Case56,Create Purchase Requisition,2011-01-08 22:33:05,2011-01-08 22:46:05,Create Purchase Requisition
+Case56,Analyze Purchase Requisition,2011-01-09 20:13:05,2011-01-09 20:17:05,Analyze Purchase Requisition
+Case56,Create Request for Quotation,2011-01-09 20:22:05,2011-01-09 20:23:05,Create Request for Quotation
+Case56,Analyze Request for Quotation,2011-01-12 07:08:05,2011-01-12 07:34:05,Analyze Request for Quotation
+Case56,End,2011-01-12 07:34:05,2011-01-12 07:34:05,End
+Case57,Start,2011-01-01 18:34:04,2011-01-01 18:34:04,Create Purchase Requisition
+Case57,Create Purchase Requisition,2011-01-01 18:34:04,2011-01-01 19:26:04,Create Purchase Requisition
+Case57,Analyze Purchase Requisition,2011-01-02 04:53:04,2011-01-02 05:00:04,Analyze Purchase Requisition
+Case57,Create Request for Quotation,2011-01-02 05:04:04,2011-01-02 05:07:04,Create Request for Quotation
+Case57,Analyze Request for Quotation,2011-01-03 01:27:04,2011-01-03 01:58:04,Analyze Request for Quotation
+Case57,Amend Request for Quotation,2011-01-03 02:42:04,2011-01-03 03:09:04,Amend Request for Quotation
+Case57,Analyze Request for Quotation,2011-01-03 04:31:04,2011-01-03 05:01:04,Analyze Request for Quotation
+Case57,Send Request for Quotation to Supplier,2011-01-03 17:29:04,2011-01-03 18:03:04,Send Request for Quotation to Supplier
+Case57,Create Quotation comparison Map,2011-01-03 23:16:04,2011-01-04 00:32:04,Create Quotation comparison Map
+Case57,Analyze Quotation Comparison Map,2011-01-04 07:21:04,2011-01-04 07:29:04,Analyze Quotation Comparison Map
+Case57,Choose best option,2011-01-04 07:29:04,2011-01-04 07:29:04,Choose best option
+Case57,Settle Conditions With Supplier,2011-01-04 10:58:04,2011-01-05 00:43:04,Settle Conditions With Supplier
+Case57,Create Purchase Order,2011-01-05 02:54:04,2011-01-05 03:02:04,Create Purchase Order
+Case57,Confirm Purchase Order,2011-01-05 09:50:04,2011-01-05 09:59:04,Confirm Purchase Order
+Case57,Deliver Goods Services,2011-01-06 22:00:04,2011-01-08 02:47:04,Deliver Goods Services
+Case57,Release Purchase Order,2011-01-08 10:37:04,2011-01-08 10:38:04,Release Purchase Order
+Case57,Approve Purchase Order for payment,2011-01-08 19:55:04,2011-01-08 19:56:04,Approve Purchase Order for payment
+Case57,Send Invoice,2011-01-13 13:18:04,2011-01-13 13:18:04,Send Invoice
+Case57,Release Supplier's Invoice,2011-01-14 03:33:04,2011-01-14 03:36:04,Release Supplier's Invoice
+Case57,Authorize Supplier's Invoice payment,2011-01-14 03:36:04,2011-01-14 03:36:04,Authorize Supplier's Invoice payment
+Case57,Pay Invoice,2011-01-14 04:37:04,2011-01-14 04:50:04,Pay Invoice
+Case57,End,2011-01-14 04:50:04,2011-01-14 04:50:04,End
+Case58,Start,2011-01-09 00:53:28,2011-01-09 00:53:28,Create Purchase Requisition
+Case58,Create Purchase Requisition,2011-01-09 00:53:28,2011-01-09 01:43:28,Create Purchase Requisition
+Case58,Create Request for Quotation,2011-01-09 04:07:28,2011-01-09 04:19:28,Create Request for Quotation
+Case58,Analyze Request for Quotation,2011-01-09 22:24:28,2011-01-09 22:59:28,Analyze Request for Quotation
+Case58,Amend Request for Quotation,2011-01-09 23:44:28,2011-01-09 23:49:28,Amend Request for Quotation
+Case58,Analyze Request for Quotation,2011-01-14 06:48:28,2011-01-14 07:12:28,Analyze Request for Quotation
+Case58,End,2011-01-14 07:12:28,2011-01-14 07:12:28,End
+Case59,Start,2011-01-09 01:44:19,2011-01-09 01:44:19,Create Purchase Requisition
+Case59,Create Purchase Requisition,2011-01-09 01:44:19,2011-01-09 02:17:19,Create Purchase Requisition
+Case59,Analyze Purchase Requisition,2011-01-10 02:58:19,2011-01-10 03:05:19,Analyze Purchase Requisition
+Case59,Create Request for Quotation,2011-01-10 03:10:19,2011-01-10 03:12:19,Create Request for Quotation
+Case59,Analyze Request for Quotation,2011-01-10 04:02:19,2011-01-10 04:23:19,Analyze Request for Quotation
+Case59,Amend Request for Quotation,2011-01-10 05:15:19,2011-01-10 05:22:19,Amend Request for Quotation
+Case59,Analyze Request for Quotation,2011-01-10 15:49:19,2011-01-10 16:27:19,Analyze Request for Quotation
+Case59,Amend Request for Quotation,2011-01-10 17:03:19,2011-01-10 17:13:19,Amend Request for Quotation
+Case59,Analyze Request for Quotation,2011-01-28 06:52:19,2011-01-28 07:26:19,Analyze Request for Quotation
+Case59,Amend Request for Quotation,2011-01-28 08:22:19,2011-01-28 08:30:19,Amend Request for Quotation
+Case59,Analyze Request for Quotation,2011-01-28 12:34:19,2011-01-28 13:01:19,Analyze Request for Quotation
+Case59,Amend Request for Quotation,2011-01-29 04:49:19,2011-01-29 04:55:19,Amend Request for Quotation
+Case59,Analyze Request for Quotation,2011-01-30 22:50:19,2011-01-30 23:20:19,Analyze Request for Quotation
+Case59,Send Request for Quotation to Supplier,2011-01-31 12:29:19,2011-01-31 12:54:19,Send Request for Quotation to Supplier
+Case59,Create Quotation comparison Map,2011-01-31 22:30:19,2011-02-01 01:48:19,Create Quotation comparison Map
+Case59,Analyze Quotation Comparison Map,2011-02-01 08:23:19,2011-02-01 08:29:19,Analyze Quotation Comparison Map
+Case59,Choose best option,2011-02-01 08:29:19,2011-02-01 08:29:19,Choose best option
+Case59,Settle Conditions With Supplier,2011-02-01 14:54:19,2011-02-02 03:27:19,Settle Conditions With Supplier
+Case59,Create Purchase Order,2011-02-02 05:59:19,2011-02-02 06:07:19,Create Purchase Order
+Case59,Confirm Purchase Order,2011-02-04 07:38:19,2011-02-04 08:12:19,Confirm Purchase Order
+Case59,Deliver Goods Services,2011-02-04 13:42:19,2011-02-05 14:30:19,Deliver Goods Services
+Case59,Release Purchase Order,2011-02-05 22:17:19,2011-02-05 22:18:19,Release Purchase Order
+Case59,Approve Purchase Order for payment,2011-02-06 04:15:19,2011-02-06 04:16:19,Approve Purchase Order for payment
+Case59,Send Invoice,2011-02-15 08:54:19,2011-02-15 08:54:19,Send Invoice
+Case59,Release Supplier's Invoice,2011-02-15 23:25:19,2011-02-15 23:30:19,Release Supplier's Invoice
+Case59,Authorize Supplier's Invoice payment,2011-02-15 23:32:19,2011-02-15 23:32:19,Authorize Supplier's Invoice payment
+Case59,Pay Invoice,2011-02-16 00:03:19,2011-02-16 00:10:19,Pay Invoice
+Case59,End,2011-02-16 00:10:19,2011-02-16 00:10:19,End
+Case60,Start,2011-01-09 02:17:48,2011-01-09 02:17:48,Create Purchase Requisition
+Case60,Create Purchase Requisition,2011-01-09 02:17:48,2011-01-09 03:08:48,Create Purchase Requisition
+Case60,Analyze Purchase Requisition,2011-01-09 23:02:48,2011-01-09 23:06:48,Analyze Purchase Requisition
+Case60,Create Request for Quotation,2011-01-09 23:13:48,2011-01-09 23:16:48,Create Request for Quotation
+Case60,Analyze Request for Quotation,2011-04-08 12:40:48,2011-04-08 13:02:48,Analyze Request for Quotation
+Case60,Amend Request for Quotation,2011-04-08 13:51:48,2011-04-08 13:58:48,Amend Request for Quotation
+Case60,Analyze Request for Quotation,2011-05-05 04:08:48,2011-05-05 04:38:48,Analyze Request for Quotation
+Case60,Send Request for Quotation to Supplier,2011-05-05 06:53:48,2011-05-05 07:11:48,Send Request for Quotation to Supplier
+Case60,Create Quotation comparison Map,2011-05-05 12:00:48,2011-05-05 14:39:48,Create Quotation comparison Map
+Case60,Analyze Quotation Comparison Map,2011-05-05 21:45:48,2011-05-05 21:51:48,Analyze Quotation Comparison Map
+Case60,Choose best option,2011-05-05 21:51:48,2011-05-05 21:51:48,Choose best option
+Case60,Settle Conditions With Supplier,2011-05-05 23:27:48,2011-05-06 11:31:48,Settle Conditions With Supplier
+Case60,Create Purchase Order,2011-05-07 00:38:48,2011-05-07 00:45:48,Create Purchase Order
+Case60,Confirm Purchase Order,2011-05-07 06:03:49,2011-05-07 06:18:49,Confirm Purchase Order
+Case60,Deliver Goods Services,2011-05-08 01:55:49,2011-05-08 22:17:49,Deliver Goods Services
+Case60,Release Purchase Order,2011-05-09 06:35:49,2011-05-09 06:36:49,Release Purchase Order
+Case60,Approve Purchase Order for payment,2011-05-09 15:29:50,2011-05-09 15:30:50,Approve Purchase Order for payment
+Case60,Send Invoice,2011-05-13 23:23:50,2011-05-13 23:23:50,Send Invoice
+Case60,Release Supplier's Invoice,2011-05-14 13:36:50,2011-05-14 13:43:50,Release Supplier's Invoice
+Case60,Authorize Supplier's Invoice payment,2011-05-14 13:43:50,2011-05-14 13:43:50,Authorize Supplier's Invoice payment
+Case60,Pay Invoice,2011-05-14 14:42:50,2011-05-14 14:52:50,Pay Invoice
+Case60,End,2011-05-14 14:52:50,2011-05-14 14:52:50,End
+Case61,Start,2011-01-09 04:25:16,2011-01-09 04:25:16,Create Purchase Requisition
+Case61,Create Purchase Requisition,2011-01-09 04:25:16,2011-01-09 04:45:16,Create Purchase Requisition
+Case61,Analyze Purchase Requisition,2011-01-09 20:50:16,2011-01-09 20:55:16,Analyze Purchase Requisition
+Case61,Create Request for Quotation,2011-01-09 20:59:16,2011-01-09 21:01:16,Create Request for Quotation
+Case61,Analyze Request for Quotation,2011-02-17 17:53:16,2011-02-17 18:16:16,Analyze Request for Quotation
+Case61,End,2011-02-17 18:16:16,2011-02-17 18:16:16,End
+Case62,Start,2011-01-09 06:23:46,2011-01-09 06:23:46,Create Purchase Requisition
+Case62,Create Purchase Requisition,2011-01-09 06:23:46,2011-01-09 06:52:46,Create Purchase Requisition
+Case62,Analyze Purchase Requisition,2011-01-10 06:49:46,2011-01-10 06:53:46,Analyze Purchase Requisition
+Case62,Create Request for Quotation,2011-01-10 06:57:46,2011-01-10 06:58:46,Create Request for Quotation
+Case62,Analyze Request for Quotation,2011-01-12 06:53:46,2011-01-12 07:20:46,Analyze Request for Quotation
+Case62,Amend Request for Quotation,2011-01-12 08:07:46,2011-01-12 08:12:46,Amend Request for Quotation
+Case62,Analyze Request for Quotation,2011-01-12 17:57:46,2011-01-12 18:38:46,Analyze Request for Quotation
+Case62,Send Request for Quotation to Supplier,2011-01-13 18:55:46,2011-01-13 19:21:46,Send Request for Quotation to Supplier
+Case62,Create Quotation comparison Map,2011-01-14 04:57:46,2011-01-14 08:50:46,Create Quotation comparison Map
+Case62,Analyze Quotation Comparison Map,2011-01-14 16:12:46,2011-01-14 16:45:46,Analyze Quotation Comparison Map
+Case62,Choose best option,2011-01-14 16:45:46,2011-01-14 16:45:46,Choose best option
+Case62,Settle Conditions With Supplier,2011-01-14 19:32:46,2011-01-15 02:10:46,Settle Conditions With Supplier
+Case62,Create Purchase Order,2011-01-15 05:04:46,2011-01-15 05:11:46,Create Purchase Order
+Case62,Confirm Purchase Order,2011-01-15 19:52:46,2011-01-15 20:20:46,Confirm Purchase Order
+Case62,Deliver Goods Services,2011-01-16 22:13:46,2011-01-17 23:42:46,Deliver Goods Services
+Case62,Release Purchase Order,2011-01-18 07:19:46,2011-01-18 07:20:46,Release Purchase Order
+Case62,Approve Purchase Order for payment,2011-01-18 16:37:46,2011-01-18 16:38:46,Approve Purchase Order for payment
+Case62,Send Invoice,2011-01-19 00:40:46,2011-01-19 00:40:46,Send Invoice
+Case62,Release Supplier's Invoice,2011-01-19 15:11:46,2011-01-19 15:14:46,Release Supplier's Invoice
+Case62,Authorize Supplier's Invoice payment,2011-01-19 15:22:46,2011-01-19 15:22:46,Authorize Supplier's Invoice payment
+Case62,Pay Invoice,2011-01-19 16:25:46,2011-01-19 16:30:46,Pay Invoice
+Case62,End,2011-01-19 16:30:46,2011-01-19 16:30:46,End
+Case63,Start,2011-01-09 07:55:33,2011-01-09 07:55:33,Create Purchase Requisition
+Case63,Create Purchase Requisition,2011-01-09 07:55:33,2011-01-09 08:16:33,Create Purchase Requisition
+Case63,Analyze Purchase Requisition,2011-01-10 03:34:33,2011-01-10 03:39:33,Analyze Purchase Requisition
+Case63,Create Request for Quotation,2011-01-10 03:43:33,2011-01-10 03:44:33,Create Request for Quotation
+Case63,Analyze Request for Quotation,2011-01-10 21:22:33,2011-01-10 21:32:33,Analyze Request for Quotation
+Case63,Amend Request for Quotation,2011-01-10 22:32:33,2011-01-10 22:47:33,Amend Request for Quotation
+Case63,Analyze Request for Quotation,2011-01-13 05:14:33,2011-01-13 05:20:33,Analyze Request for Quotation
+Case63,Send Request for Quotation to Supplier,2011-01-13 13:49:33,2011-01-13 14:09:33,Send Request for Quotation to Supplier
+Case63,Create Quotation comparison Map,2011-01-13 19:23:33,2011-01-13 23:16:33,Create Quotation comparison Map
+Case63,Analyze Quotation Comparison Map,2011-01-14 06:09:33,2011-01-14 06:26:33,Analyze Quotation Comparison Map
+Case63,Choose best option,2011-01-14 06:26:33,2011-01-14 06:26:33,Choose best option
+Case63,Settle Conditions With Supplier,2011-01-14 17:36:33,2011-01-14 21:49:33,Settle Conditions With Supplier
+Case63,Create Purchase Order,2011-01-16 21:02:33,2011-01-16 21:15:33,Create Purchase Order
+Case63,Confirm Purchase Order,2011-01-17 02:43:33,2011-01-17 02:54:33,Confirm Purchase Order
+Case63,Deliver Goods Services,2011-01-18 05:43:33,2011-01-19 00:46:33,Deliver Goods Services
+Case63,Release Purchase Order,2011-01-19 07:57:33,2011-01-19 07:58:33,Release Purchase Order
+Case63,Approve Purchase Order for payment,2011-01-19 14:20:33,2011-01-19 14:21:33,Approve Purchase Order for payment
+Case63,Send Invoice,2011-01-19 20:12:33,2011-01-19 20:12:33,Send Invoice
+Case63,Release Supplier's Invoice,2011-01-20 10:34:33,2011-01-20 10:41:33,Release Supplier's Invoice
+Case63,Authorize Supplier's Invoice payment,2011-01-20 10:41:33,2011-01-20 10:41:33,Authorize Supplier's Invoice payment
+Case63,Pay Invoice,2011-01-20 11:43:33,2011-01-20 11:53:33,Pay Invoice
+Case63,End,2011-01-20 11:53:33,2011-01-20 11:53:33,End
+Case64,Start,2011-01-09 08:17:02,2011-01-09 08:17:02,Create Purchase Requisition
+Case64,Create Purchase Requisition,2011-01-09 08:17:02,2011-01-09 08:35:02,Create Purchase Requisition
+Case64,Create Request for Quotation,2011-01-09 16:25:02,2011-01-09 16:31:02,Create Request for Quotation
+Case64,Analyze Request for Quotation,2011-01-18 09:09:02,2011-01-18 09:25:02,Analyze Request for Quotation
+Case64,Amend Request for Quotation,2011-01-18 10:12:02,2011-01-18 10:19:02,Amend Request for Quotation
+Case64,Analyze Request for Quotation,2011-01-29 17:51:02,2011-01-29 18:12:02,Analyze Request for Quotation
+Case64,Amend Request for Quotation,2011-01-29 18:48:02,2011-01-29 19:03:02,Amend Request for Quotation
+Case64,Analyze Request for Quotation,2011-02-19 01:07:02,2011-02-19 01:48:02,Analyze Request for Quotation
+Case64,Send Request for Quotation to Supplier,2011-02-20 16:46:02,2011-02-20 17:12:02,Send Request for Quotation to Supplier
+Case64,Create Quotation comparison Map,2011-02-20 18:32:02,2011-02-20 19:20:02,Create Quotation comparison Map
+Case64,Analyze Quotation Comparison Map,2011-02-21 01:57:02,2011-02-21 02:28:02,Analyze Quotation Comparison Map
+Case64,Choose best option,2011-02-21 02:28:02,2011-02-21 02:28:02,Choose best option
+Case64,Settle Conditions With Supplier,2011-02-21 06:59:02,2011-02-21 10:58:02,Settle Conditions With Supplier
+Case64,Create Purchase Order,2011-02-21 11:52:02,2011-02-21 12:04:02,Create Purchase Order
+Case64,Confirm Purchase Order,2011-02-22 20:03:02,2011-02-22 20:16:02,Confirm Purchase Order
+Case64,Deliver Goods Services,2011-02-23 05:53:02,2011-02-23 20:25:02,Deliver Goods Services
+Case64,Release Purchase Order,2011-02-24 04:06:02,2011-02-24 04:07:02,Release Purchase Order
+Case64,Approve Purchase Order for payment,2011-02-25 00:41:02,2011-02-25 00:42:02,Approve Purchase Order for payment
+Case64,Send Invoice,2011-02-28 02:17:02,2011-02-28 02:17:02,Send Invoice
+Case64,Release Supplier's Invoice,2011-02-28 16:43:02,2011-02-28 16:47:02,Release Supplier's Invoice
+Case64,Authorize Supplier's Invoice payment,2011-02-28 16:47:02,2011-02-28 16:47:02,Authorize Supplier's Invoice payment
+Case64,Pay Invoice,2011-02-28 17:31:02,2011-02-28 17:38:02,Pay Invoice
+Case64,End,2011-02-28 17:38:02,2011-02-28 17:38:02,End
+Case65,Start,2011-01-09 09:52:49,2011-01-09 09:52:49,Create Purchase Requisition
+Case65,Create Purchase Requisition,2011-01-09 09:52:49,2011-01-09 10:30:49,Create Purchase Requisition
+Case65,Analyze Purchase Requisition,2011-01-10 11:25:49,2011-01-10 11:30:49,Analyze Purchase Requisition
+Case65,Create Request for Quotation,2011-01-10 11:37:49,2011-01-10 11:39:49,Create Request for Quotation
+Case65,Analyze Request for Quotation,2011-01-11 19:17:49,2011-01-11 19:59:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-01-11 20:42:49,2011-01-11 20:48:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-01-19 00:19:49,2011-01-19 00:44:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-01-19 01:37:49,2011-01-19 01:50:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-01-19 20:56:49,2011-01-19 21:13:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-01-19 22:05:49,2011-01-19 22:13:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-01-20 00:21:49,2011-01-20 00:55:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-01-20 17:00:49,2011-01-20 17:06:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-02-06 07:19:49,2011-02-06 07:56:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-02-06 08:45:49,2011-02-06 08:58:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-02-14 16:31:49,2011-02-14 16:59:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-02-14 17:51:49,2011-02-14 18:11:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-03-05 23:41:49,2011-03-05 23:49:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-03-06 00:40:49,2011-03-06 00:49:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-04-02 19:48:49,2011-04-02 20:20:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-04-02 21:08:49,2011-04-02 21:20:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-04-04 04:43:49,2011-04-04 05:02:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-04-04 05:59:49,2011-04-04 06:08:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-04-11 04:20:49,2011-04-11 04:44:49,Analyze Request for Quotation
+Case65,Amend Request for Quotation,2011-04-11 05:41:49,2011-04-11 05:54:49,Amend Request for Quotation
+Case65,Analyze Request for Quotation,2011-04-17 18:49:49,2011-04-17 19:05:49,Analyze Request for Quotation
+Case65,Send Request for Quotation to Supplier,2011-04-18 22:35:49,2011-04-18 22:59:49,Send Request for Quotation to Supplier
+Case65,Create Quotation comparison Map,2011-04-18 23:23:49,2011-04-19 03:11:49,Create Quotation comparison Map
+Case65,Analyze Quotation Comparison Map,2011-04-19 09:59:49,2011-04-19 10:09:49,Analyze Quotation Comparison Map
+Case65,Choose best option,2011-04-19 10:09:49,2011-04-19 10:09:49,Choose best option
+Case65,Settle Conditions With Supplier,2011-04-19 20:41:49,2011-04-20 06:22:49,Settle Conditions With Supplier
+Case65,Create Purchase Order,2011-04-20 12:04:49,2011-04-20 12:10:49,Create Purchase Order
+Case65,Confirm Purchase Order,2011-04-20 20:47:49,2011-04-20 21:15:49,Confirm Purchase Order
+Case65,Deliver Goods Services,2011-04-22 02:51:49,2011-04-22 18:15:49,Deliver Goods Services
+Case65,Release Purchase Order,2011-04-23 02:02:49,2011-04-23 02:03:49,Release Purchase Order
+Case65,Approve Purchase Order for payment,2011-04-23 10:03:49,2011-04-23 10:04:49,Approve Purchase Order for payment
+Case65,Send Invoice,2011-04-25 04:32:49,2011-04-25 04:32:49,Send Invoice
+Case65,Release Supplier's Invoice,2011-04-25 18:47:49,2011-04-25 18:50:49,Release Supplier's Invoice
+Case65,Authorize Supplier's Invoice payment,2011-04-25 18:50:49,2011-04-25 18:50:49,Authorize Supplier's Invoice payment
+Case65,Pay Invoice,2011-04-25 19:49:49,2011-04-25 20:02:49,Pay Invoice
+Case65,End,2011-04-25 20:02:49,2011-04-25 20:02:49,End
+Case66,Start,2011-01-09 10:47:22,2011-01-09 10:47:22,Create Purchase Requisition
+Case66,Create Purchase Requisition,2011-01-09 10:47:22,2011-01-09 10:57:22,Create Purchase Requisition
+Case66,Create Request for Quotation,2011-01-09 11:07:22,2011-01-09 11:19:22,Create Request for Quotation
+Case66,Analyze Request for Quotation,2011-01-14 06:12:22,2011-01-14 06:21:22,Analyze Request for Quotation
+Case66,Send Request for Quotation to Supplier,2011-01-15 00:22:22,2011-01-15 00:41:22,Send Request for Quotation to Supplier
+Case66,Create Quotation comparison Map,2011-01-15 01:35:22,2011-01-15 04:39:22,Create Quotation comparison Map
+Case66,Analyze Quotation Comparison Map,2011-01-15 11:06:22,2011-01-15 11:35:22,Analyze Quotation Comparison Map
+Case66,Choose best option,2011-01-15 11:35:22,2011-01-15 11:35:22,Choose best option
+Case66,Settle Conditions With Supplier,2011-01-16 04:57:22,2011-01-16 16:39:22,Settle Conditions With Supplier
+Case66,Create Purchase Order,2011-01-16 17:07:22,2011-01-16 17:17:22,Create Purchase Order
+Case66,Confirm Purchase Order,2011-01-16 23:36:22,2011-01-17 00:09:22,Confirm Purchase Order
+Case66,Deliver Goods Services,2011-01-18 23:15:22,2011-01-19 23:30:22,Deliver Goods Services
+Case66,Release Purchase Order,2011-01-20 07:22:22,2011-01-20 07:23:22,Release Purchase Order
+Case66,Approve Purchase Order for payment,2011-01-20 13:39:22,2011-01-20 13:40:22,Approve Purchase Order for payment
+Case66,Send Invoice,2011-01-21 18:29:22,2011-01-21 18:29:22,Send Invoice
+Case66,Release Supplier's Invoice,2011-01-22 08:52:22,2011-01-22 08:55:22,Release Supplier's Invoice
+Case66,Authorize Supplier's Invoice payment,2011-01-22 08:55:22,2011-01-22 08:55:22,Authorize Supplier's Invoice payment
+Case66,Pay Invoice,2011-01-22 09:11:22,2011-01-22 09:15:22,Pay Invoice
+Case66,End,2011-01-22 09:15:22,2011-01-22 09:15:22,End
+Case67,Start,2011-01-09 11:54:10,2011-01-09 11:54:10,Create Purchase Requisition
+Case67,Create Purchase Requisition,2011-01-09 11:54:10,2011-01-09 12:14:10,Create Purchase Requisition
+Case67,Create Request for Quotation,2011-01-09 19:08:10,2011-01-09 19:20:10,Create Request for Quotation
+Case67,Analyze Request for Quotation,2011-01-11 18:41:10,2011-01-11 19:05:10,Analyze Request for Quotation
+Case67,Amend Request for Quotation,2011-01-11 19:52:10,2011-01-11 20:02:10,Amend Request for Quotation
+Case67,Analyze Request for Quotation,2011-01-17 09:51:10,2011-01-17 10:03:10,Analyze Request for Quotation
+Case67,Send Request for Quotation to Supplier,2011-01-17 11:03:10,2011-01-17 11:28:10,Send Request for Quotation to Supplier
+Case67,Create Quotation comparison Map,2011-01-17 19:04:10,2011-01-17 20:38:10,Create Quotation comparison Map
+Case67,Analyze Quotation Comparison Map,2011-01-18 03:57:10,2011-01-18 04:08:10,Analyze Quotation Comparison Map
+Case67,Choose best option,2011-01-18 04:08:10,2011-01-18 04:08:10,Choose best option
+Case67,Settle Conditions With Supplier,2011-01-18 06:00:10,2011-01-18 17:41:10,Settle Conditions With Supplier
+Case67,Create Purchase Order,2011-01-18 23:55:10,2011-01-19 00:06:10,Create Purchase Order
+Case67,Confirm Purchase Order,2011-01-28 06:35:10,2011-01-28 06:40:10,Confirm Purchase Order
+Case67,Deliver Goods Services,2011-01-29 21:55:10,2011-01-30 16:24:10,Deliver Goods Services
+Case67,Release Purchase Order,2011-01-31 00:38:10,2011-01-31 00:39:10,Release Purchase Order
+Case67,Approve Purchase Order for payment,2011-01-31 04:53:10,2011-01-31 04:54:10,Approve Purchase Order for payment
+Case67,Send Invoice,2011-02-01 01:31:10,2011-02-01 01:31:10,Send Invoice
+Case67,Release Supplier's Invoice,2011-02-01 15:52:10,2011-02-01 15:56:10,Release Supplier's Invoice
+Case67,Authorize Supplier's Invoice payment,2011-02-01 15:56:10,2011-02-01 15:56:10,Authorize Supplier's Invoice payment
+Case67,Pay Invoice,2011-02-01 16:22:10,2011-02-01 16:28:10,Pay Invoice
+Case67,End,2011-02-01 16:28:10,2011-02-01 16:28:10,End
+Case68,Start,2011-01-01 19:55:02,2011-01-01 19:55:02,Create Purchase Requisition
+Case68,Create Purchase Requisition,2011-01-01 19:55:02,2011-01-01 20:23:02,Create Purchase Requisition
+Case68,Analyze Purchase Requisition,2011-01-02 19:07:02,2011-01-02 19:15:02,Analyze Purchase Requisition
+Case68,Create Request for Quotation,2011-01-02 19:19:02,2011-01-02 19:22:02,Create Request for Quotation
+Case68,Analyze Request for Quotation,2011-01-05 14:29:02,2011-01-05 14:40:02,Analyze Request for Quotation
+Case68,Amend Request for Quotation,2011-01-05 15:35:02,2011-01-05 15:40:02,Amend Request for Quotation
+Case68,Analyze Request for Quotation,2011-01-30 19:41:02,2011-01-30 20:05:02,Analyze Request for Quotation
+Case68,Amend Request for Quotation,2011-01-30 20:54:02,2011-01-30 21:05:02,Amend Request for Quotation
+Case68,Analyze Request for Quotation,2011-02-01 12:45:02,2011-02-01 13:23:02,Analyze Request for Quotation
+Case68,End,2011-02-01 13:23:02,2011-02-01 13:23:02,End
+Case69,Start,2011-01-09 12:01:23,2011-01-09 12:01:23,Create Purchase Requisition
+Case69,Create Purchase Requisition,2011-01-09 12:01:23,2011-01-09 12:46:23,Create Purchase Requisition
+Case69,Analyze Purchase Requisition,2011-01-09 23:34:23,2011-01-09 23:42:23,Analyze Purchase Requisition
+Case69,End,2011-01-09 23:42:23,2011-01-09 23:42:23,End
+Case70,Start,2011-01-09 13:35:19,2011-01-09 13:35:19,Create Purchase Requisition
+Case70,Create Purchase Requisition,2011-01-09 13:35:19,2011-01-09 14:00:19,Create Purchase Requisition
+Case70,Create Request for Quotation,2011-01-09 19:08:19,2011-01-09 19:17:19,Create Request for Quotation
+Case70,Analyze Request for Quotation,2011-01-25 00:52:19,2011-01-25 01:13:19,Analyze Request for Quotation
+Case70,Amend Request for Quotation,2011-01-25 02:06:19,2011-01-25 02:17:19,Amend Request for Quotation
+Case70,Analyze Request for Quotation,2011-01-25 03:19:19,2011-01-25 03:31:19,Analyze Request for Quotation
+Case70,Amend Request for Quotation,2011-01-25 04:17:19,2011-01-25 04:23:19,Amend Request for Quotation
+Case70,Analyze Request for Quotation,2011-01-25 14:08:19,2011-01-25 14:28:19,Analyze Request for Quotation
+Case70,Send Request for Quotation to Supplier,2011-01-25 21:52:19,2011-01-25 22:20:19,Send Request for Quotation to Supplier
+Case70,Create Quotation comparison Map,2011-01-25 23:06:19,2011-01-25 23:47:19,Create Quotation comparison Map
+Case70,Analyze Quotation Comparison Map,2011-01-26 06:33:19,2011-01-26 06:59:19,Analyze Quotation Comparison Map
+Case70,Choose best option,2011-01-26 06:59:19,2011-01-26 06:59:19,Choose best option
+Case70,Settle Conditions With Supplier,2011-01-28 09:27:19,2011-01-28 18:30:19,Settle Conditions With Supplier
+Case70,Create Purchase Order,2011-01-28 22:52:19,2011-01-28 23:03:19,Create Purchase Order
+Case70,Confirm Purchase Order,2011-01-29 03:08:19,2011-01-29 03:20:19,Confirm Purchase Order
+Case70,Deliver Goods Services,2011-01-29 20:27:20,2011-01-30 12:56:20,Deliver Goods Services
+Case70,Release Purchase Order,2011-01-30 20:08:20,2011-01-30 20:09:20,Release Purchase Order
+Case70,Approve Purchase Order for payment,2011-01-31 18:11:20,2011-01-31 18:12:20,Approve Purchase Order for payment
+Case70,Send Invoice,2011-02-02 23:43:20,2011-02-02 23:43:20,Send Invoice
+Case70,Release Supplier's Invoice,2011-02-03 13:57:20,2011-02-03 14:03:20,Release Supplier's Invoice
+Case70,Settle Dispute With Supplier,2011-02-03 14:34:20,2011-02-03 14:59:21,Settle Dispute With Supplier
+Case70,Authorize Supplier's Invoice payment,2011-02-03 14:59:21,2011-02-03 14:59:21,Authorize Supplier's Invoice payment
+Case70,Pay Invoice,2011-02-03 16:01:21,2011-02-03 16:08:21,Pay Invoice
+Case70,End,2011-02-03 16:08:21,2011-02-03 16:08:21,End
+Case71,Start,2011-01-09 14:13:23,2011-01-09 14:13:23,Create Purchase Requisition
+Case71,Create Purchase Requisition,2011-01-09 14:13:23,2011-01-09 14:56:23,Create Purchase Requisition
+Case71,Analyze Purchase Requisition,2011-01-10 12:15:23,2011-01-10 12:20:23,Analyze Purchase Requisition
+Case71,Create Request for Quotation,2011-01-10 12:27:23,2011-01-10 12:29:23,Create Request for Quotation
+Case71,Analyze Request for Quotation,2011-01-16 13:59:23,2011-01-16 14:14:23,Analyze Request for Quotation
+Case71,Amend Request for Quotation,2011-01-16 14:58:23,2011-01-16 15:12:23,Amend Request for Quotation
+Case71,Analyze Request for Quotation,2011-01-16 15:44:23,2011-01-16 16:18:23,Analyze Request for Quotation
+Case71,Send Request for Quotation to Supplier,2011-01-17 06:23:23,2011-01-17 06:30:23,Send Request for Quotation to Supplier
+Case71,Create Quotation comparison Map,2011-01-17 11:14:23,2011-01-17 12:57:23,Create Quotation comparison Map
+Case71,Analyze Quotation Comparison Map,2011-01-17 19:11:23,2011-01-17 19:28:23,Analyze Quotation Comparison Map
+Case71,Choose best option,2011-01-17 19:28:23,2011-01-17 19:28:23,Choose best option
+Case71,Settle Conditions With Supplier,2011-01-17 21:27:23,2011-01-18 02:34:23,Settle Conditions With Supplier
+Case71,Create Purchase Order,2011-01-18 10:19:23,2011-01-18 10:29:23,Create Purchase Order
+Case71,Confirm Purchase Order,2011-01-19 01:06:23,2011-01-19 01:15:23,Confirm Purchase Order
+Case71,Deliver Goods Services,2011-01-26 04:55:23,2011-01-26 19:36:23,Deliver Goods Services
+Case71,Release Purchase Order,2011-01-27 03:24:23,2011-01-27 03:25:23,Release Purchase Order
+Case71,Approve Purchase Order for payment,2011-01-27 16:15:23,2011-01-27 16:16:23,Approve Purchase Order for payment
+Case71,Send Invoice,2011-02-01 18:58:23,2011-02-01 18:58:23,Send Invoice
+Case71,Release Supplier's Invoice,2011-02-02 09:22:23,2011-02-02 09:25:23,Release Supplier's Invoice
+Case71,Authorize Supplier's Invoice payment,2011-02-02 10:19:23,2011-02-02 10:19:23,Authorize Supplier's Invoice payment
+Case71,Pay Invoice,2011-02-02 10:25:23,2011-02-02 10:35:23,Pay Invoice
+Case71,End,2011-02-02 10:35:23,2011-02-02 10:35:23,End
+Case72,Start,2011-01-09 15:50:47,2011-01-09 15:50:47,Create Purchase Requisition
+Case72,Create Purchase Requisition,2011-01-09 15:50:47,2011-01-09 16:39:47,Create Purchase Requisition
+Case72,Analyze Purchase Requisition,2011-01-10 07:36:47,2011-01-10 07:43:47,Analyze Purchase Requisition
+Case72,End,2011-01-10 07:43:47,2011-01-10 07:43:47,End
+Case73,Start,2011-01-09 16:14:52,2011-01-09 16:14:52,Create Purchase Requisition
+Case73,Create Purchase Requisition,2011-01-09 16:14:52,2011-01-09 16:44:52,Create Purchase Requisition
+Case73,Analyze Purchase Requisition,2011-01-10 04:31:52,2011-01-10 04:38:52,Analyze Purchase Requisition
+Case73,End,2011-01-10 04:38:52,2011-01-10 04:38:52,End
+Case74,Start,2011-01-09 17:03:33,2011-01-09 17:03:33,Create Purchase Requisition
+Case74,Create Purchase Requisition,2011-01-09 17:03:33,2011-01-09 17:23:33,Create Purchase Requisition
+Case74,Analyze Purchase Requisition,2011-01-10 14:16:33,2011-01-10 14:24:33,Analyze Purchase Requisition
+Case74,Create Request for Quotation,2011-01-10 14:31:33,2011-01-10 14:33:33,Create Request for Quotation
+Case74,Analyze Request for Quotation,2011-01-11 04:13:33,2011-01-11 04:41:33,Analyze Request for Quotation
+Case74,Send Request for Quotation to Supplier,2011-01-11 15:35:33,2011-01-11 15:48:33,Send Request for Quotation to Supplier
+Case74,Create Quotation comparison Map,2011-01-11 17:13:33,2011-01-11 18:03:33,Create Quotation comparison Map
+Case74,Analyze Quotation Comparison Map,2011-01-12 00:51:33,2011-01-12 01:02:33,Analyze Quotation Comparison Map
+Case74,Choose best option,2011-01-12 01:02:33,2011-01-12 01:02:33,Choose best option
+Case74,Settle Conditions With Supplier,2011-01-12 11:39:33,2011-01-12 18:46:33,Settle Conditions With Supplier
+Case74,Create Purchase Order,2011-01-13 08:51:33,2011-01-13 09:03:33,Create Purchase Order
+Case74,Confirm Purchase Order,2011-01-13 18:26:33,2011-01-13 18:56:33,Confirm Purchase Order
+Case74,Deliver Goods Services,2011-01-14 21:22:33,2011-01-16 17:43:33,Deliver Goods Services
+Case74,Release Purchase Order,2011-01-17 01:32:33,2011-01-17 01:33:33,Release Purchase Order
+Case74,Approve Purchase Order for payment,2011-01-17 16:11:33,2011-01-17 16:12:33,Approve Purchase Order for payment
+Case74,Send Invoice,2011-01-21 10:20:33,2011-01-21 10:20:33,Send Invoice
+Case74,Release Supplier's Invoice,2011-01-22 00:37:33,2011-01-22 00:42:33,Release Supplier's Invoice
+Case74,Authorize Supplier's Invoice payment,2011-01-22 00:42:33,2011-01-22 00:42:33,Authorize Supplier's Invoice payment
+Case74,Pay Invoice,2011-01-22 01:06:33,2011-01-22 01:15:33,Pay Invoice
+Case74,End,2011-01-22 01:15:33,2011-01-22 01:15:33,End
+Case75,Start,2011-01-09 19:52:56,2011-01-09 19:52:56,Create Purchase Requisition
+Case75,Create Purchase Requisition,2011-01-09 19:52:56,2011-01-09 20:42:56,Create Purchase Requisition
+Case75,Analyze Purchase Requisition,2011-01-10 10:57:56,2011-01-10 11:03:56,Analyze Purchase Requisition
+Case75,Create Request for Quotation,2011-01-10 11:11:56,2011-01-10 11:13:56,Create Request for Quotation
+Case75,Analyze Request for Quotation,2011-01-11 20:37:56,2011-01-11 21:03:56,Analyze Request for Quotation
+Case75,Amend Request for Quotation,2011-01-11 21:55:56,2011-01-11 22:00:56,Amend Request for Quotation
+Case75,Analyze Request for Quotation,2011-02-09 22:54:56,2011-02-09 23:08:56,Analyze Request for Quotation
+Case75,Send Request for Quotation to Supplier,2011-02-10 05:12:56,2011-02-10 05:21:56,Send Request for Quotation to Supplier
+Case75,Create Quotation comparison Map,2011-02-10 09:02:56,2011-02-10 10:30:56,Create Quotation comparison Map
+Case75,Analyze Quotation Comparison Map,2011-02-10 16:53:56,2011-02-10 17:00:56,Analyze Quotation Comparison Map
+Case75,Choose best option,2011-02-10 17:00:56,2011-02-10 17:00:56,Choose best option
+Case75,Settle Conditions With Supplier,2011-02-11 06:12:56,2011-02-11 20:04:56,Settle Conditions With Supplier
+Case75,Create Purchase Order,2011-02-12 09:55:56,2011-02-12 10:06:56,Create Purchase Order
+Case75,Confirm Purchase Order,2011-02-12 19:25:56,2011-02-12 19:50:56,Confirm Purchase Order
+Case75,Deliver Goods Services,2011-02-13 01:44:56,2011-02-13 08:00:56,Deliver Goods Services
+Case75,Release Purchase Order,2011-02-13 15:24:56,2011-02-13 15:25:56,Release Purchase Order
+Case75,Approve Purchase Order for payment,2011-02-14 09:44:56,2011-02-14 09:45:56,Approve Purchase Order for payment
+Case75,Send Invoice,2011-02-14 16:36:56,2011-02-14 16:36:56,Send Invoice
+Case75,Release Supplier's Invoice,2011-02-15 07:01:56,2011-02-15 07:07:56,Release Supplier's Invoice
+Case75,Authorize Supplier's Invoice payment,2011-02-15 07:07:56,2011-02-15 07:07:56,Authorize Supplier's Invoice payment
+Case75,Pay Invoice,2011-02-15 07:41:56,2011-02-15 07:54:56,Pay Invoice
+Case75,End,2011-02-15 07:54:56,2011-02-15 07:54:56,End
+Case76,Start,2011-01-09 20:23:43,2011-01-09 20:23:43,Create Purchase Requisition
+Case76,Create Purchase Requisition,2011-01-09 20:23:43,2011-01-09 20:31:43,Create Purchase Requisition
+Case76,Analyze Purchase Requisition,2011-01-10 06:16:43,2011-01-10 06:22:43,Analyze Purchase Requisition
+Case76,Create Request for Quotation,2011-01-10 06:30:43,2011-01-10 06:32:43,Create Request for Quotation
+Case76,Analyze Request for Quotation,2011-01-14 18:48:43,2011-01-14 19:27:43,Analyze Request for Quotation
+Case76,Amend Request for Quotation,2011-01-14 20:23:43,2011-01-14 20:36:43,Amend Request for Quotation
+Case76,Analyze Request for Quotation,2011-01-17 03:03:43,2011-01-17 03:40:43,Analyze Request for Quotation
+Case76,Send Request for Quotation to Supplier,2011-01-17 12:40:43,2011-01-17 13:08:43,Send Request for Quotation to Supplier
+Case76,Create Quotation comparison Map,2011-01-17 14:44:43,2011-01-17 19:23:43,Create Quotation comparison Map
+Case76,Analyze Quotation Comparison Map,2011-01-18 02:13:43,2011-01-18 02:35:43,Analyze Quotation Comparison Map
+Case76,Choose best option,2011-01-18 02:35:43,2011-01-18 02:35:43,Choose best option
+Case76,Settle Conditions With Supplier,2011-01-18 04:27:43,2011-01-18 09:58:43,Settle Conditions With Supplier
+Case76,Create Purchase Order,2011-01-18 17:43:43,2011-01-18 17:54:43,Create Purchase Order
+Case76,Confirm Purchase Order,2011-01-19 10:51:43,2011-01-19 11:05:43,Confirm Purchase Order
+Case76,Deliver Goods Services,2011-01-20 08:43:43,2011-01-20 16:37:43,Deliver Goods Services
+Case76,Release Purchase Order,2011-01-21 00:16:43,2011-01-21 00:17:43,Release Purchase Order
+Case76,Approve Purchase Order for payment,2011-01-21 10:13:43,2011-01-21 10:14:43,Approve Purchase Order for payment
+Case76,Send Invoice,2011-01-23 18:41:43,2011-01-23 18:41:43,Send Invoice
+Case76,Release Supplier's Invoice,2011-01-24 08:55:43,2011-01-24 08:58:43,Release Supplier's Invoice
+Case76,Authorize Supplier's Invoice payment,2011-01-24 08:58:43,2011-01-24 08:58:43,Authorize Supplier's Invoice payment
+Case76,Pay Invoice,2011-01-24 09:35:43,2011-01-24 09:43:43,Pay Invoice
+Case76,End,2011-01-24 09:43:43,2011-01-24 09:43:43,End
+Case77,Start,2011-01-09 21:14:05,2011-01-09 21:14:05,Create Purchase Requisition
+Case77,Create Purchase Requisition,2011-01-09 21:14:05,2011-01-09 21:49:05,Create Purchase Requisition
+Case77,Create Request for Quotation,2011-01-10 02:09:05,2011-01-10 02:20:05,Create Request for Quotation
+Case77,Analyze Request for Quotation,2011-01-12 09:26:05,2011-01-12 09:50:05,Analyze Request for Quotation
+Case77,Amend Request for Quotation,2011-01-12 10:38:05,2011-01-12 10:53:05,Amend Request for Quotation
+Case77,Analyze Request for Quotation,2011-01-14 15:52:05,2011-01-14 16:27:05,Analyze Request for Quotation
+Case77,Amend Request for Quotation,2011-01-14 17:21:05,2011-01-14 17:32:05,Amend Request for Quotation
+Case77,Analyze Request for Quotation,2011-02-07 01:47:05,2011-02-07 02:15:05,Analyze Request for Quotation
+Case77,Amend Request for Quotation,2011-02-07 03:04:05,2011-02-07 03:13:05,Amend Request for Quotation
+Case77,Analyze Request for Quotation,2011-02-07 10:33:05,2011-02-07 11:06:05,Analyze Request for Quotation
+Case77,Amend Request for Quotation,2011-02-07 11:51:05,2011-02-07 12:04:05,Amend Request for Quotation
+Case77,Analyze Request for Quotation,2011-02-07 13:44:05,2011-02-07 14:19:05,Analyze Request for Quotation
+Case77,Amend Request for Quotation,2011-02-07 15:11:05,2011-02-07 15:18:05,Amend Request for Quotation
+Case77,Analyze Request for Quotation,2011-03-15 18:33:05,2011-03-15 18:55:05,Analyze Request for Quotation
+Case77,Send Request for Quotation to Supplier,2011-03-16 07:23:05,2011-03-16 07:51:05,Send Request for Quotation to Supplier
+Case77,Create Quotation comparison Map,2011-03-16 08:37:05,2011-03-16 10:55:05,Create Quotation comparison Map
+Case77,Analyze Quotation Comparison Map,2011-03-16 17:10:05,2011-03-16 17:32:05,Analyze Quotation Comparison Map
+Case77,Choose best option,2011-03-16 17:32:05,2011-03-16 17:32:05,Choose best option
+Case77,Settle Conditions With Supplier,2011-03-16 20:00:05,2011-03-17 01:44:05,Settle Conditions With Supplier
+Case77,Create Purchase Order,2011-03-17 06:31:05,2011-03-17 06:39:05,Create Purchase Order
+Case77,Confirm Purchase Order,2011-03-17 16:35:05,2011-03-17 16:53:05,Confirm Purchase Order
+Case77,Deliver Goods Services,2011-03-18 00:31:05,2011-03-18 06:45:05,Deliver Goods Services
+Case77,Release Purchase Order,2011-03-18 13:58:05,2011-03-18 13:59:05,Release Purchase Order
+Case77,Approve Purchase Order for payment,2011-03-18 23:42:05,2011-03-18 23:43:05,Approve Purchase Order for payment
+Case77,Send Invoice,2011-03-19 17:52:05,2011-03-19 17:52:05,Send Invoice
+Case77,Release Supplier's Invoice,2011-03-20 09:16:05,2011-03-20 09:19:05,Release Supplier's Invoice
+Case77,Authorize Supplier's Invoice payment,2011-03-20 09:19:05,2011-03-20 09:19:05,Authorize Supplier's Invoice payment
+Case77,Pay Invoice,2011-03-20 09:49:05,2011-03-20 10:02:05,Pay Invoice
+Case77,End,2011-03-20 10:02:05,2011-03-20 10:02:05,End
+Case78,Start,2011-01-09 22:48:43,2011-01-09 22:48:43,Create Purchase Requisition
+Case78,Create Purchase Requisition,2011-01-09 22:48:43,2011-01-09 23:23:43,Create Purchase Requisition
+Case78,Create Request for Quotation,2011-01-10 07:38:43,2011-01-10 07:46:43,Create Request for Quotation
+Case78,Analyze Request for Quotation,2011-01-10 09:57:43,2011-01-10 10:31:43,Analyze Request for Quotation
+Case78,Amend Request for Quotation,2011-01-10 11:20:43,2011-01-10 11:28:43,Amend Request for Quotation
+Case78,Analyze Request for Quotation,2011-01-12 18:08:43,2011-01-12 18:41:43,Analyze Request for Quotation
+Case78,Amend Request for Quotation,2011-01-12 19:36:43,2011-01-12 19:49:43,Amend Request for Quotation
+Case78,Analyze Request for Quotation,2011-02-13 04:13:43,2011-02-13 04:37:43,Analyze Request for Quotation
+Case78,Amend Request for Quotation,2011-02-13 05:29:43,2011-02-13 05:36:43,Amend Request for Quotation
+Case78,Analyze Request for Quotation,2011-02-22 00:19:43,2011-02-22 00:27:43,Analyze Request for Quotation
+Case78,Amend Request for Quotation,2011-02-22 01:17:43,2011-02-22 01:24:43,Amend Request for Quotation
+Case78,Analyze Request for Quotation,2011-02-22 04:51:43,2011-02-22 05:23:43,Analyze Request for Quotation
+Case78,Send Request for Quotation to Supplier,2011-02-23 02:21:43,2011-02-23 02:46:43,Send Request for Quotation to Supplier
+Case78,Create Quotation comparison Map,2011-02-23 14:46:43,2011-02-23 16:08:43,Create Quotation comparison Map
+Case78,Analyze Quotation Comparison Map,2011-02-23 22:20:43,2011-02-23 22:34:43,Analyze Quotation Comparison Map
+Case78,Choose best option,2011-02-23 22:34:43,2011-02-23 22:34:43,Choose best option
+Case78,Settle Conditions With Supplier,2011-02-24 13:45:43,2011-02-24 19:32:43,Settle Conditions With Supplier
+Case78,Create Purchase Order,2011-02-25 05:33:43,2011-02-25 05:44:43,Create Purchase Order
+Case78,Confirm Purchase Order,2011-02-25 18:52:43,2011-02-25 19:24:43,Confirm Purchase Order
+Case78,Deliver Goods Services,2011-02-27 01:12:43,2011-02-27 18:11:43,Deliver Goods Services
+Case78,Release Purchase Order,2011-02-28 02:04:43,2011-02-28 02:05:43,Release Purchase Order
+Case78,Approve Purchase Order for payment,2011-02-28 19:38:43,2011-02-28 19:39:43,Approve Purchase Order for payment
+Case78,Send Invoice,2011-03-01 19:50:43,2011-03-01 19:50:43,Send Invoice
+Case78,Release Supplier's Invoice,2011-03-02 10:11:43,2011-03-02 10:18:43,Release Supplier's Invoice
+Case78,Settle Dispute With Supplier,2011-03-02 11:12:43,2011-03-02 11:43:43,Settle Dispute With Supplier
+Case78,Authorize Supplier's Invoice payment,2011-03-02 11:43:43,2011-03-02 11:43:43,Authorize Supplier's Invoice payment
+Case78,Pay Invoice,2011-03-02 12:38:43,2011-03-02 12:48:43,Pay Invoice
+Case78,End,2011-03-02 12:48:43,2011-03-02 12:48:43,End
+Case79,Start,2011-01-01 20:14:28,2011-01-01 20:14:28,Create Purchase Requisition
+Case79,Create Purchase Requisition,2011-01-01 20:14:28,2011-01-01 20:21:28,Create Purchase Requisition
+Case79,Create Request for Quotation,2011-01-02 01:55:28,2011-01-02 02:03:28,Create Request for Quotation
+Case79,Analyze Request for Quotation,2011-01-04 06:13:28,2011-01-04 06:30:28,Analyze Request for Quotation
+Case79,Send Request for Quotation to Supplier,2011-01-05 04:00:28,2011-01-05 04:20:28,Send Request for Quotation to Supplier
+Case79,Create Quotation comparison Map,2011-01-05 09:11:28,2011-01-05 12:48:28,Create Quotation comparison Map
+Case79,Analyze Quotation Comparison Map,2011-01-05 19:34:28,2011-01-05 19:57:28,Analyze Quotation Comparison Map
+Case79,Choose best option,2011-01-05 19:57:28,2011-01-05 19:57:28,Choose best option
+Case79,Settle Conditions With Supplier,2011-01-06 01:10:28,2011-01-06 15:40:28,Settle Conditions With Supplier
+Case79,Create Purchase Order,2011-01-07 10:39:28,2011-01-07 10:50:28,Create Purchase Order
+Case79,Confirm Purchase Order,2011-01-07 20:46:28,2011-01-07 21:20:28,Confirm Purchase Order
+Case79,Deliver Goods Services,2011-01-10 20:27:28,2011-01-11 09:16:28,Deliver Goods Services
+Case79,Release Purchase Order,2011-01-11 17:08:28,2011-01-11 17:09:28,Release Purchase Order
+Case79,Approve Purchase Order for payment,2011-01-12 01:22:28,2011-01-12 01:23:28,Approve Purchase Order for payment
+Case79,Send Invoice,2011-01-12 09:01:28,2011-01-12 09:01:28,Send Invoice
+Case79,Release Supplier's Invoice,2011-01-12 23:23:28,2011-01-12 23:30:28,Release Supplier's Invoice
+Case79,Authorize Supplier's Invoice payment,2011-01-12 23:30:28,2011-01-12 23:30:28,Authorize Supplier's Invoice payment
+Case79,Pay Invoice,2011-01-12 23:40:28,2011-01-12 23:47:28,Pay Invoice
+Case79,End,2011-01-12 23:47:28,2011-01-12 23:47:28,End
+Case80,Start,2011-01-09 23:53:16,2011-01-09 23:53:16,Create Purchase Requisition
+Case80,Create Purchase Requisition,2011-01-09 23:53:16,2011-01-10 00:34:16,Create Purchase Requisition
+Case80,Analyze Purchase Requisition,2011-01-10 12:47:16,2011-01-10 12:51:16,Analyze Purchase Requisition
+Case80,Create Request for Quotation,2011-01-10 12:59:16,2011-01-10 13:00:16,Create Request for Quotation
+Case80,Analyze Request for Quotation,2011-01-16 04:22:16,2011-01-16 04:27:16,Analyze Request for Quotation
+Case80,Amend Request for Quotation,2011-01-16 05:23:16,2011-01-16 05:30:16,Amend Request for Quotation
+Case80,Analyze Request for Quotation,2011-01-16 09:58:16,2011-01-16 10:20:16,Analyze Request for Quotation
+Case80,End,2011-01-16 10:20:16,2011-01-16 10:20:16,End
+Case81,Start,2011-01-10 01:09:30,2011-01-10 01:09:30,Create Purchase Requisition
+Case81,Create Purchase Requisition,2011-01-10 01:09:30,2011-01-10 01:54:30,Create Purchase Requisition
+Case81,Create Request for Quotation,2011-01-10 08:55:30,2011-01-10 09:03:30,Create Request for Quotation
+Case81,Analyze Request for Quotation,2011-01-12 12:09:30,2011-01-12 12:37:30,Analyze Request for Quotation
+Case81,Send Request for Quotation to Supplier,2011-01-12 21:57:30,2011-01-12 22:00:30,Send Request for Quotation to Supplier
+Case81,Create Quotation comparison Map,2011-01-13 22:01:30,2011-01-14 03:50:30,Create Quotation comparison Map
+Case81,Analyze Quotation Comparison Map,2011-01-14 10:37:30,2011-01-14 11:11:30,Analyze Quotation Comparison Map
+Case81,Choose best option,2011-01-14 11:11:30,2011-01-14 11:11:30,Choose best option
+Case81,Settle Conditions With Supplier,2011-01-14 16:29:30,2011-01-15 04:44:30,Settle Conditions With Supplier
+Case81,Create Purchase Order,2011-01-15 09:09:30,2011-01-15 09:22:30,Create Purchase Order
+Case81,Confirm Purchase Order,2011-01-21 06:44:30,2011-01-21 07:11:30,Confirm Purchase Order
+Case81,Deliver Goods Services,2011-01-21 18:24:30,2011-01-21 21:27:30,Deliver Goods Services
+Case81,Release Purchase Order,2011-01-22 05:06:30,2011-01-22 05:07:30,Release Purchase Order
+Case81,Approve Purchase Order for payment,2011-01-22 17:54:30,2011-01-22 17:55:30,Approve Purchase Order for payment
+Case81,Send Invoice,2011-01-23 08:36:30,2011-01-23 08:36:30,Send Invoice
+Case81,Release Supplier's Invoice,2011-01-23 23:07:30,2011-01-23 23:12:30,Release Supplier's Invoice
+Case81,Authorize Supplier's Invoice payment,2011-01-23 23:12:30,2011-01-23 23:12:30,Authorize Supplier's Invoice payment
+Case81,Pay Invoice,2011-01-24 00:02:30,2011-01-24 00:14:30,Pay Invoice
+Case81,End,2011-01-24 00:14:30,2011-01-24 00:14:30,End
+Case82,Start,2011-01-10 02:55:58,2011-01-10 02:55:58,Create Purchase Requisition
+Case82,Create Purchase Requisition,2011-01-10 02:55:58,2011-01-10 03:10:58,Create Purchase Requisition
+Case82,Create Request for Quotation,2011-01-10 10:09:58,2011-01-10 10:21:58,Create Request for Quotation
+Case82,Analyze Request for Quotation,2011-01-12 19:42:58,2011-01-12 20:06:58,Analyze Request for Quotation
+Case82,Send Request for Quotation to Supplier,2011-01-13 13:04:58,2011-01-13 13:23:58,Send Request for Quotation to Supplier
+Case82,Create Quotation comparison Map,2011-01-13 14:58:58,2011-01-13 17:57:58,Create Quotation comparison Map
+Case82,Analyze Quotation Comparison Map,2011-01-14 00:39:58,2011-01-14 00:55:58,Analyze Quotation Comparison Map
+Case82,Choose best option,2011-01-14 00:55:58,2011-01-14 00:55:58,Choose best option
+Case82,Settle Conditions With Supplier,2011-01-14 04:46:58,2011-01-14 08:59:58,Settle Conditions With Supplier
+Case82,Create Purchase Order,2011-01-15 04:08:58,2011-01-15 04:15:58,Create Purchase Order
+Case82,Confirm Purchase Order,2011-01-20 10:59:58,2011-01-20 11:25:58,Confirm Purchase Order
+Case82,Deliver Goods Services,2011-01-20 21:29:58,2011-01-22 04:54:58,Deliver Goods Services
+Case82,Release Purchase Order,2011-01-22 12:24:58,2011-01-22 12:25:58,Release Purchase Order
+Case82,Approve Purchase Order for payment,2011-01-22 19:59:58,2011-01-22 20:00:58,Approve Purchase Order for payment
+Case82,Send Invoice,2011-01-23 02:40:58,2011-01-23 02:40:58,Send Invoice
+Case82,Release Supplier's Invoice,2011-01-23 17:06:58,2011-01-23 17:09:58,Release Supplier's Invoice
+Case82,Settle Dispute With Supplier,2011-01-23 17:40:58,2011-01-23 18:11:58,Settle Dispute With Supplier
+Case82,Authorize Supplier's Invoice payment,2011-01-23 18:11:58,2011-01-23 18:11:58,Authorize Supplier's Invoice payment
+Case82,Pay Invoice,2011-01-23 18:23:58,2011-01-23 18:37:58,Pay Invoice
+Case82,End,2011-01-23 18:37:58,2011-01-23 18:37:58,End
+Case83,Start,2011-01-10 03:36:18,2011-01-10 03:36:18,Create Purchase Requisition
+Case83,Create Purchase Requisition,2011-01-10 03:36:18,2011-01-10 04:10:18,Create Purchase Requisition
+Case83,Create Request for Quotation,2011-01-10 12:25:18,2011-01-10 12:34:18,Create Request for Quotation
+Case83,Analyze Request for Quotation,2011-01-16 03:56:18,2011-01-16 04:19:18,Analyze Request for Quotation
+Case83,End,2011-01-16 04:19:18,2011-01-16 04:19:18,End
+Case84,Start,2011-01-10 04:26:13,2011-01-10 04:26:13,Create Purchase Requisition
+Case84,Create Purchase Requisition,2011-01-10 04:26:13,2011-01-10 04:40:13,Create Purchase Requisition
+Case84,Analyze Purchase Requisition,2011-01-10 17:52:13,2011-01-10 17:56:13,Analyze Purchase Requisition
+Case84,Create Request for Quotation,2011-01-10 18:04:13,2011-01-10 18:07:13,Create Request for Quotation
+Case84,Analyze Request for Quotation,2011-01-10 21:35:13,2011-01-10 21:56:13,Analyze Request for Quotation
+Case84,Amend Request for Quotation,2011-01-10 22:40:13,2011-01-10 22:51:13,Amend Request for Quotation
+Case84,Analyze Request for Quotation,2011-01-11 01:20:13,2011-01-11 01:40:13,Analyze Request for Quotation
+Case84,Amend Request for Quotation,2011-01-11 02:25:13,2011-01-11 02:38:13,Amend Request for Quotation
+Case84,Analyze Request for Quotation,2011-02-05 12:01:13,2011-02-05 12:06:13,Analyze Request for Quotation
+Case84,Amend Request for Quotation,2011-02-05 12:54:13,2011-02-05 13:08:13,Amend Request for Quotation
+Case84,Analyze Request for Quotation,2011-02-05 14:17:13,2011-02-05 14:36:13,Analyze Request for Quotation
+Case84,Send Request for Quotation to Supplier,2011-02-06 11:27:13,2011-02-06 11:41:13,Send Request for Quotation to Supplier
+Case84,Create Quotation comparison Map,2011-02-06 16:45:14,2011-02-06 22:38:14,Create Quotation comparison Map
+Case84,Analyze Quotation Comparison Map,2011-02-07 05:07:14,2011-02-07 05:30:14,Analyze Quotation Comparison Map
+Case84,Choose best option,2011-02-07 05:30:14,2011-02-07 05:30:14,Choose best option
+Case84,Settle Conditions With Supplier,2011-02-07 16:13:14,2011-02-08 04:17:14,Settle Conditions With Supplier
+Case84,Create Purchase Order,2011-02-08 16:06:14,2011-02-08 16:16:14,Create Purchase Order
+Case84,Confirm Purchase Order,2011-02-08 21:10:14,2011-02-08 21:19:14,Confirm Purchase Order
+Case84,Deliver Goods Services,2011-02-10 19:31:14,2011-02-11 12:07:14,Deliver Goods Services
+Case84,Release Purchase Order,2011-02-11 19:55:14,2011-02-11 19:56:14,Release Purchase Order
+Case84,Approve Purchase Order for payment,2011-02-12 00:01:14,2011-02-12 00:02:14,Approve Purchase Order for payment
+Case84,Send Invoice,2011-02-12 08:15:14,2011-02-12 08:15:14,Send Invoice
+Case84,Release Supplier's Invoice,2011-02-12 22:37:14,2011-02-12 22:40:14,Release Supplier's Invoice
+Case84,Settle Dispute With Supplier,2011-02-12 23:19:14,2011-02-12 23:35:14,Settle Dispute With Supplier
+Case84,Authorize Supplier's Invoice payment,2011-02-12 23:35:14,2011-02-12 23:35:14,Authorize Supplier's Invoice payment
+Case84,Pay Invoice,2011-02-13 00:33:14,2011-02-13 00:40:14,Pay Invoice
+Case84,End,2011-02-13 00:40:14,2011-02-13 00:40:14,End
+Case85,Start,2011-01-10 05:09:56,2011-01-10 05:09:56,Create Purchase Requisition
+Case85,Create Purchase Requisition,2011-01-10 05:09:56,2011-01-10 05:22:56,Create Purchase Requisition
+Case85,Analyze Purchase Requisition,2011-01-10 17:15:56,2011-01-10 17:21:56,Analyze Purchase Requisition
+Case85,Create Request for Quotation,2011-01-10 17:25:56,2011-01-10 17:26:56,Create Request for Quotation
+Case85,Analyze Request for Quotation,2011-01-10 18:18:56,2011-01-10 18:41:56,Analyze Request for Quotation
+Case85,End,2011-01-10 18:41:56,2011-01-10 18:41:56,End
+Case86,Start,2011-01-10 06:51:45,2011-01-10 06:51:45,Create Purchase Requisition
+Case86,Create Purchase Requisition,2011-01-10 06:51:45,2011-01-10 07:41:45,Create Purchase Requisition
+Case86,Create Request for Quotation,2011-01-10 10:12:45,2011-01-10 10:23:45,Create Request for Quotation
+Case86,Analyze Request for Quotation,2011-01-13 05:41:45,2011-01-13 06:02:45,Analyze Request for Quotation
+Case86,Send Request for Quotation to Supplier,2011-01-13 20:14:45,2011-01-13 20:35:45,Send Request for Quotation to Supplier
+Case86,Create Quotation comparison Map,2011-01-13 21:01:45,2011-01-13 21:43:45,Create Quotation comparison Map
+Case86,Analyze Quotation Comparison Map,2011-01-14 04:47:45,2011-01-14 05:07:45,Analyze Quotation Comparison Map
+Case86,Choose best option,2011-01-14 05:07:45,2011-01-14 05:07:45,Choose best option
+Case86,Settle Conditions With Supplier,2011-01-15 02:18:45,2011-01-15 08:23:45,Settle Conditions With Supplier
+Case86,Create Purchase Order,2011-01-15 14:08:45,2011-01-15 14:14:45,Create Purchase Order
+Case86,Confirm Purchase Order,2011-01-16 08:45:45,2011-01-16 09:05:45,Confirm Purchase Order
+Case86,Deliver Goods Services,2011-01-16 23:28:45,2011-01-18 00:19:45,Deliver Goods Services
+Case86,Release Purchase Order,2011-01-18 07:53:45,2011-01-18 07:54:45,Release Purchase Order
+Case86,Approve Purchase Order for payment,2011-01-18 17:03:45,2011-01-18 17:04:45,Approve Purchase Order for payment
+Case86,Send Invoice,2011-01-30 05:51:45,2011-01-30 05:51:45,Send Invoice
+Case86,Release Supplier's Invoice,2011-01-30 20:23:45,2011-01-30 20:25:45,Release Supplier's Invoice
+Case86,Authorize Supplier's Invoice payment,2011-01-30 20:25:45,2011-01-30 20:25:45,Authorize Supplier's Invoice payment
+Case86,Pay Invoice,2011-01-30 21:03:45,2011-01-30 21:10:45,Pay Invoice
+Case86,End,2011-01-30 21:10:45,2011-01-30 21:10:45,End
+Case87,Start,2011-01-10 07:18:28,2011-01-10 07:18:28,Create Purchase Requisition
+Case87,Create Purchase Requisition,2011-01-10 07:18:28,2011-01-10 07:35:28,Create Purchase Requisition
+Case87,Analyze Purchase Requisition,2011-01-11 00:11:28,2011-01-11 00:18:28,Analyze Purchase Requisition
+Case87,Create Request for Quotation,2011-01-11 00:21:28,2011-01-11 00:23:28,Create Request for Quotation
+Case87,Analyze Request for Quotation,2011-01-12 09:26:28,2011-01-12 09:46:28,Analyze Request for Quotation
+Case87,Amend Request for Quotation,2011-01-12 10:38:28,2011-01-12 10:45:28,Amend Request for Quotation
+Case87,Analyze Request for Quotation,2011-01-13 01:26:28,2011-01-13 01:32:28,Analyze Request for Quotation
+Case87,Send Request for Quotation to Supplier,2011-01-13 03:49:28,2011-01-13 04:05:28,Send Request for Quotation to Supplier
+Case87,Create Quotation comparison Map,2011-01-13 12:36:28,2011-01-13 17:53:28,Create Quotation comparison Map
+Case87,Analyze Quotation Comparison Map,2011-01-14 00:33:28,2011-01-14 01:07:28,Analyze Quotation Comparison Map
+Case87,Choose best option,2011-01-14 01:07:28,2011-01-14 01:07:28,Choose best option
+Case87,Settle Conditions With Supplier,2011-01-15 16:55:28,2011-01-15 23:38:28,Settle Conditions With Supplier
+Case87,Create Purchase Order,2011-01-16 01:41:28,2011-01-16 01:48:28,Create Purchase Order
+Case87,Confirm Purchase Order,2011-01-18 16:57:28,2011-01-18 17:08:28,Confirm Purchase Order
+Case87,Deliver Goods Services,2011-01-20 06:48:28,2011-01-21 03:49:28,Deliver Goods Services
+Case87,Release Purchase Order,2011-01-21 11:39:28,2011-01-21 11:40:28,Release Purchase Order
+Case87,Approve Purchase Order for payment,2011-01-22 04:56:28,2011-01-22 04:57:28,Approve Purchase Order for payment
+Case87,Send Invoice,2011-01-24 12:00:28,2011-01-24 12:00:28,Send Invoice
+Case87,Release Supplier's Invoice,2011-01-25 02:16:28,2011-01-25 02:19:28,Release Supplier's Invoice
+Case87,Authorize Supplier's Invoice payment,2011-01-25 02:19:28,2011-01-25 02:19:28,Authorize Supplier's Invoice payment
+Case87,Pay Invoice,2011-01-25 03:10:28,2011-01-25 03:21:28,Pay Invoice
+Case87,End,2011-01-25 03:21:28,2011-01-25 03:21:28,End
+Case88,Start,2011-01-10 08:29:04,2011-01-10 08:29:04,Create Purchase Requisition
+Case88,Create Purchase Requisition,2011-01-10 08:29:04,2011-01-10 08:35:04,Create Purchase Requisition
+Case88,Create Request for Quotation,2011-01-10 13:15:04,2011-01-10 13:26:04,Create Request for Quotation
+Case88,Analyze Request for Quotation,2011-01-11 16:32:04,2011-01-11 16:44:04,Analyze Request for Quotation
+Case88,Amend Request for Quotation,2011-01-11 17:20:04,2011-01-11 17:32:04,Amend Request for Quotation
+Case88,Analyze Request for Quotation,2011-01-11 18:30:04,2011-01-11 19:03:04,Analyze Request for Quotation
+Case88,Amend Request for Quotation,2011-01-12 10:59:04,2011-01-12 11:25:04,Amend Request for Quotation
+Case88,Analyze Request for Quotation,2011-01-16 08:04:04,2011-01-16 08:24:04,Analyze Request for Quotation
+Case88,Amend Request for Quotation,2011-01-16 09:15:04,2011-01-16 09:29:04,Amend Request for Quotation
+Case88,Analyze Request for Quotation,2011-01-17 17:48:04,2011-01-17 18:07:04,Analyze Request for Quotation
+Case88,Send Request for Quotation to Supplier,2011-01-18 03:22:04,2011-01-18 03:57:04,Send Request for Quotation to Supplier
+Case88,Create Quotation comparison Map,2011-01-18 04:34:04,2011-01-18 06:02:04,Create Quotation comparison Map
+Case88,Analyze Quotation Comparison Map,2011-01-18 12:25:04,2011-01-18 12:33:04,Analyze Quotation Comparison Map
+Case88,Choose best option,2011-01-18 12:33:04,2011-01-18 12:33:04,Choose best option
+Case88,Settle Conditions With Supplier,2011-01-18 17:24:04,2011-01-19 05:56:04,Settle Conditions With Supplier
+Case88,Create Purchase Order,2011-01-19 08:36:04,2011-01-19 08:46:04,Create Purchase Order
+Case88,Confirm Purchase Order,2011-01-20 16:15:04,2011-01-20 16:24:04,Confirm Purchase Order
+Case88,Deliver Goods Services,2011-01-20 22:52:04,2011-01-22 22:47:04,Deliver Goods Services
+Case88,Release Purchase Order,2011-01-23 06:07:04,2011-01-23 06:08:04,Release Purchase Order
+Case88,Approve Purchase Order for payment,2011-01-23 12:36:04,2011-01-23 12:37:04,Approve Purchase Order for payment
+Case88,Send Invoice,2011-01-23 18:52:04,2011-01-23 18:52:04,Send Invoice
+Case88,Release Supplier's Invoice,2011-01-24 09:14:04,2011-01-24 09:17:04,Release Supplier's Invoice
+Case88,Settle Dispute With Supplier,2011-01-24 09:34:04,2011-01-24 09:54:04,Settle Dispute With Supplier
+Case88,Authorize Supplier's Invoice payment,2011-01-24 09:54:04,2011-01-24 09:54:04,Authorize Supplier's Invoice payment
+Case88,Pay Invoice,2011-01-24 10:56:04,2011-01-24 11:08:04,Pay Invoice
+Case88,End,2011-01-24 11:08:04,2011-01-24 11:08:04,End
+Case89,Start,2011-01-10 09:52:08,2011-01-10 09:52:08,Create Purchase Requisition
+Case89,Create Purchase Requisition,2011-01-10 09:52:08,2011-01-10 10:00:08,Create Purchase Requisition
+Case89,Analyze Purchase Requisition,2011-01-11 09:49:08,2011-01-11 09:53:08,Analyze Purchase Requisition
+Case89,Create Request for Quotation,2011-01-11 09:58:08,2011-01-11 09:59:07,Create Request for Quotation
+Case89,Analyze Request for Quotation,2011-01-12 00:02:07,2011-01-12 00:14:07,Analyze Request for Quotation
+Case89,Send Request for Quotation to Supplier,2011-01-12 21:58:07,2011-01-12 22:17:07,Send Request for Quotation to Supplier
+Case89,Create Quotation comparison Map,2011-01-13 02:09:07,2011-01-13 05:21:07,Create Quotation comparison Map
+Case89,Analyze Quotation Comparison Map,2011-01-13 11:56:07,2011-01-13 12:13:07,Analyze Quotation Comparison Map
+Case89,Choose best option,2011-01-13 12:13:07,2011-01-13 12:13:07,Choose best option
+Case89,Settle Conditions With Supplier,2011-01-13 17:33:07,2011-01-14 00:19:07,Settle Conditions With Supplier
+Case89,Create Purchase Order,2011-01-14 02:22:07,2011-01-14 02:32:07,Create Purchase Order
+Case89,Confirm Purchase Order,2011-01-16 01:52:07,2011-01-16 02:05:07,Confirm Purchase Order
+Case89,Deliver Goods Services,2011-01-17 14:29:07,2011-01-18 03:42:07,Deliver Goods Services
+Case89,Release Purchase Order,2011-01-18 11:05:07,2011-01-18 11:06:07,Release Purchase Order
+Case89,Approve Purchase Order for payment,2011-01-18 21:36:07,2011-01-18 21:37:07,Approve Purchase Order for payment
+Case89,Send Invoice,2011-01-19 04:09:07,2011-01-19 04:09:07,Send Invoice
+Case89,Release Supplier's Invoice,2011-01-19 18:28:07,2011-01-19 18:35:07,Release Supplier's Invoice
+Case89,Authorize Supplier's Invoice payment,2011-01-19 18:35:07,2011-01-19 18:35:07,Authorize Supplier's Invoice payment
+Case89,Pay Invoice,2011-01-19 19:08:07,2011-01-19 19:14:07,Pay Invoice
+Case89,End,2011-01-19 19:14:07,2011-01-19 19:14:07,End
+Case90,Start,2011-01-01 21:25:56,2011-01-01 21:25:56,Create Purchase Requisition
+Case90,Create Purchase Requisition,2011-01-01 21:25:56,2011-01-01 22:02:56,Create Purchase Requisition
+Case90,Create Request for Quotation,2011-01-02 06:14:56,2011-01-02 06:23:56,Create Request for Quotation
+Case90,Analyze Request for Quotation,2011-01-02 12:31:56,2011-01-02 12:52:56,Analyze Request for Quotation
+Case90,Send Request for Quotation to Supplier,2011-01-03 12:45:56,2011-01-03 13:24:56,Send Request for Quotation to Supplier
+Case90,Create Quotation comparison Map,2011-01-03 15:05:56,2011-01-03 16:33:56,Create Quotation comparison Map
+Case90,Analyze Quotation Comparison Map,2011-01-03 22:53:56,2011-01-03 23:11:56,Analyze Quotation Comparison Map
+Case90,Choose best option,2011-01-03 23:11:56,2011-01-03 23:11:56,Choose best option
+Case90,Settle Conditions With Supplier,2011-01-04 08:57:56,2011-01-04 20:06:56,Settle Conditions With Supplier
+Case90,Create Purchase Order,2011-01-05 01:50:56,2011-01-05 02:00:56,Create Purchase Order
+Case90,Confirm Purchase Order,2011-01-05 09:31:56,2011-01-05 09:39:56,Confirm Purchase Order
+Case90,Deliver Goods Services,2011-01-07 16:09:56,2011-01-09 04:47:56,Deliver Goods Services
+Case90,Release Purchase Order,2011-01-09 12:48:56,2011-01-09 12:49:56,Release Purchase Order
+Case90,Approve Purchase Order for payment,2011-01-09 22:43:56,2011-01-09 22:44:56,Approve Purchase Order for payment
+Case90,Send Invoice,2011-01-10 04:30:56,2011-01-10 04:30:56,Send Invoice
+Case90,Release Supplier's Invoice,2011-01-10 18:43:56,2011-01-10 18:47:56,Release Supplier's Invoice
+Case90,Authorize Supplier's Invoice payment,2011-01-10 18:47:56,2011-01-10 18:47:56,Authorize Supplier's Invoice payment
+Case90,Pay Invoice,2011-01-10 19:34:56,2011-01-10 19:46:56,Pay Invoice
+Case90,End,2011-01-10 19:46:56,2011-01-10 19:46:56,End
+Case91,Start,2011-01-10 10:10:31,2011-01-10 10:10:31,Create Purchase Requisition
+Case91,Create Purchase Requisition,2011-01-10 10:10:31,2011-01-10 10:56:31,Create Purchase Requisition
+Case91,Create Request for Quotation,2011-01-10 14:14:31,2011-01-10 14:22:31,Create Request for Quotation
+Case91,Analyze Request for Quotation,2011-03-20 14:37:31,2011-03-20 15:04:31,Analyze Request for Quotation
+Case91,Amend Request for Quotation,2011-03-20 15:53:31,2011-03-20 16:04:31,Amend Request for Quotation
+Case91,Analyze Request for Quotation,2011-03-20 19:26:31,2011-03-20 19:54:31,Analyze Request for Quotation
+Case91,Amend Request for Quotation,2011-03-20 20:50:31,2011-03-20 20:55:31,Amend Request for Quotation
+Case91,Analyze Request for Quotation,2011-03-21 06:35:31,2011-03-21 06:47:31,Analyze Request for Quotation
+Case91,Amend Request for Quotation,2011-03-21 07:29:31,2011-03-21 07:35:31,Amend Request for Quotation
+Case91,Analyze Request for Quotation,2011-03-21 08:46:31,2011-03-21 09:01:31,Analyze Request for Quotation
+Case91,Send Request for Quotation to Supplier,2011-03-21 11:16:31,2011-03-21 11:46:31,Send Request for Quotation to Supplier
+Case91,Create Quotation comparison Map,2011-03-21 12:06:31,2011-03-21 15:58:31,Create Quotation comparison Map
+Case91,Analyze Quotation Comparison Map,2011-03-21 22:37:31,2011-03-21 23:01:31,Analyze Quotation Comparison Map
+Case91,Choose best option,2011-03-21 23:01:31,2011-03-21 23:01:31,Choose best option
+Case91,Settle Conditions With Supplier,2011-03-23 18:51:31,2011-03-24 03:14:31,Settle Conditions With Supplier
+Case91,Create Purchase Order,2011-03-24 06:08:31,2011-03-24 06:20:31,Create Purchase Order
+Case91,Confirm Purchase Order,2011-03-24 14:36:31,2011-03-24 14:56:31,Confirm Purchase Order
+Case91,Deliver Goods Services,2011-03-26 09:13:31,2011-03-26 15:16:31,Deliver Goods Services
+Case91,Release Purchase Order,2011-03-26 22:56:31,2011-03-26 22:57:31,Release Purchase Order
+Case91,Approve Purchase Order for payment,2011-03-27 06:55:31,2011-03-27 06:56:31,Approve Purchase Order for payment
+Case91,Send Invoice,2011-03-27 16:42:31,2011-03-27 16:42:31,Send Invoice
+Case91,Release Supplier's Invoice,2011-03-28 07:06:31,2011-03-28 07:11:31,Release Supplier's Invoice
+Case91,Authorize Supplier's Invoice payment,2011-03-28 07:11:31,2011-03-28 07:11:31,Authorize Supplier's Invoice payment
+Case91,Pay Invoice,2011-03-28 08:31:31,2011-03-28 08:36:31,Pay Invoice
+Case91,End,2011-03-28 08:36:31,2011-03-28 08:36:31,End
+Case92,Start,2011-01-10 11:42:56,2011-01-10 11:42:56,Create Purchase Requisition
+Case92,Create Purchase Requisition,2011-01-10 11:42:56,2011-01-10 11:58:56,Create Purchase Requisition
+Case92,Analyze Purchase Requisition,2011-01-11 10:31:56,2011-01-11 10:38:56,Analyze Purchase Requisition
+Case92,Create Request for Quotation,2011-01-11 10:43:56,2011-01-11 10:44:56,Create Request for Quotation
+Case92,Analyze Request for Quotation,2011-01-12 04:48:57,2011-01-12 04:54:57,Analyze Request for Quotation
+Case92,Send Request for Quotation to Supplier,2011-01-12 09:31:57,2011-01-12 10:04:57,Send Request for Quotation to Supplier
+Case92,Create Quotation comparison Map,2011-01-12 11:24:57,2011-01-12 12:02:57,Create Quotation comparison Map
+Case92,Analyze Quotation Comparison Map,2011-01-12 18:42:57,2011-01-12 19:12:57,Analyze Quotation Comparison Map
+Case92,Choose best option,2011-01-12 19:12:57,2011-01-12 19:12:57,Choose best option
+Case92,Settle Conditions With Supplier,2011-01-13 05:09:57,2011-01-13 12:34:57,Settle Conditions With Supplier
+Case92,Create Purchase Order,2011-01-13 13:55:57,2011-01-13 14:07:57,Create Purchase Order
+Case92,Confirm Purchase Order,2011-01-15 18:57:57,2011-01-15 19:12:57,Confirm Purchase Order
+Case92,Deliver Goods Services,2011-01-25 12:44:57,2011-01-27 05:00:57,Deliver Goods Services
+Case92,Release Purchase Order,2011-01-27 12:32:57,2011-01-27 12:33:57,Release Purchase Order
+Case92,Approve Purchase Order for payment,2011-01-27 20:59:57,2011-01-27 21:00:57,Approve Purchase Order for payment
+Case92,Send Invoice,2011-01-29 09:48:57,2011-01-29 09:48:57,Send Invoice
+Case92,Release Supplier's Invoice,2011-01-29 23:57:57,2011-01-30 00:02:57,Release Supplier's Invoice
+Case92,Authorize Supplier's Invoice payment,2011-01-30 00:02:57,2011-01-30 00:02:57,Authorize Supplier's Invoice payment
+Case92,Pay Invoice,2011-01-30 00:22:57,2011-01-30 00:33:57,Pay Invoice
+Case92,End,2011-01-30 00:33:57,2011-01-30 00:33:57,End
+Case93,Start,2011-01-10 13:49:03,2011-01-10 13:49:03,Create Purchase Requisition
+Case93,Create Purchase Requisition,2011-01-10 13:49:03,2011-01-10 14:38:03,Create Purchase Requisition
+Case93,Analyze Purchase Requisition,2011-01-11 05:39:03,2011-01-11 05:44:03,Analyze Purchase Requisition
+Case93,Create Request for Quotation,2011-01-11 05:51:03,2011-01-11 05:53:03,Create Request for Quotation
+Case93,Analyze Request for Quotation,2011-01-13 06:37:03,2011-01-13 07:10:03,Analyze Request for Quotation
+Case93,End,2011-01-13 07:10:03,2011-01-13 07:10:03,End
+Case94,Start,2011-01-10 15:22:02,2011-01-10 15:22:02,Create Purchase Requisition
+Case94,Create Purchase Requisition,2011-01-10 15:22:02,2011-01-10 15:59:01,Create Purchase Requisition
+Case94,Create Request for Quotation,2011-01-10 18:59:01,2011-01-10 19:11:01,Create Request for Quotation
+Case94,Analyze Request for Quotation,2011-01-11 11:11:01,2011-01-11 11:22:01,Analyze Request for Quotation
+Case94,Send Request for Quotation to Supplier,2011-01-13 01:00:01,2011-01-13 01:26:01,Send Request for Quotation to Supplier
+Case94,Create Quotation comparison Map,2011-01-13 19:42:01,2011-01-13 20:35:01,Create Quotation comparison Map
+Case94,Analyze Quotation Comparison Map,2011-01-14 03:32:01,2011-01-14 03:58:01,Analyze Quotation Comparison Map
+Case94,Choose best option,2011-01-14 03:58:01,2011-01-14 03:58:01,Choose best option
+Case94,Settle Conditions With Supplier,2011-01-14 06:50:01,2011-01-14 15:04:01,Settle Conditions With Supplier
+Case94,Create Purchase Order,2011-01-14 19:25:01,2011-01-14 19:38:01,Create Purchase Order
+Case94,Confirm Purchase Order,2011-01-16 00:27:01,2011-01-16 00:43:01,Confirm Purchase Order
+Case94,Deliver Goods Services,2011-01-18 21:31:01,2011-01-19 04:22:01,Deliver Goods Services
+Case94,Release Purchase Order,2011-01-19 11:47:01,2011-01-19 11:48:01,Release Purchase Order
+Case94,Approve Purchase Order for payment,2011-01-19 19:18:01,2011-01-19 19:19:01,Approve Purchase Order for payment
+Case94,Send Invoice,2011-01-23 16:02:01,2011-01-23 16:02:01,Send Invoice
+Case94,Release Supplier's Invoice,2011-01-24 06:21:01,2011-01-24 06:26:01,Release Supplier's Invoice
+Case94,Authorize Supplier's Invoice payment,2011-01-24 06:46:01,2011-01-24 06:46:01,Authorize Supplier's Invoice payment
+Case94,Pay Invoice,2011-01-24 06:54:01,2011-01-24 07:00:01,Pay Invoice
+Case94,End,2011-01-24 07:00:01,2011-01-24 07:00:01,End
+Case95,Start,2011-01-10 16:45:05,2011-01-10 16:45:05,Create Purchase Requisition
+Case95,Create Purchase Requisition,2011-01-10 16:45:05,2011-01-10 17:06:05,Create Purchase Requisition
+Case95,Create Request for Quotation,2011-01-11 00:52:05,2011-01-11 01:05:05,Create Request for Quotation
+Case95,Analyze Request for Quotation,2011-01-12 12:50:05,2011-01-12 13:23:05,Analyze Request for Quotation
+Case95,Send Request for Quotation to Supplier,2011-01-14 10:44:05,2011-01-14 11:11:05,Send Request for Quotation to Supplier
+Case95,Create Quotation comparison Map,2011-01-14 13:53:05,2011-01-14 19:45:05,Create Quotation comparison Map
+Case95,Analyze Quotation Comparison Map,2011-01-15 02:11:05,2011-01-15 02:42:05,Analyze Quotation Comparison Map
+Case95,Choose best option,2011-01-15 02:42:05,2011-01-15 02:42:05,Choose best option
+Case95,Settle Conditions With Supplier,2011-01-15 09:33:05,2011-01-15 17:15:05,Settle Conditions With Supplier
+Case95,Create Purchase Order,2011-01-16 15:32:05,2011-01-16 15:38:05,Create Purchase Order
+Case95,Confirm Purchase Order,2011-01-17 02:37:05,2011-01-17 02:46:05,Confirm Purchase Order
+Case95,Deliver Goods Services,2011-01-18 01:52:05,2011-01-19 23:52:05,Deliver Goods Services
+Case95,Release Purchase Order,2011-01-20 07:14:05,2011-01-20 07:15:05,Release Purchase Order
+Case95,Approve Purchase Order for payment,2011-01-20 23:31:05,2011-01-20 23:32:05,Approve Purchase Order for payment
+Case95,Send Invoice,2011-01-21 21:21:05,2011-01-21 21:21:05,Send Invoice
+Case95,Release Supplier's Invoice,2011-01-22 11:43:05,2011-01-22 11:47:05,Release Supplier's Invoice
+Case95,Authorize Supplier's Invoice payment,2011-01-22 11:47:05,2011-01-22 11:47:05,Authorize Supplier's Invoice payment
+Case95,Pay Invoice,2011-01-22 12:53:05,2011-01-22 13:02:05,Pay Invoice
+Case95,End,2011-01-22 13:02:05,2011-01-22 13:02:05,End
+Case96,Start,2011-01-10 17:20:46,2011-01-10 17:20:46,Create Purchase Requisition
+Case96,Create Purchase Requisition,2011-01-10 17:20:46,2011-01-10 18:13:46,Create Purchase Requisition
+Case96,Create Request for Quotation,2011-01-11 00:55:46,2011-01-11 01:07:46,Create Request for Quotation
+Case96,Analyze Request for Quotation,2011-01-13 06:58:46,2011-01-13 07:35:46,Analyze Request for Quotation
+Case96,Amend Request for Quotation,2011-01-13 08:28:46,2011-01-13 08:42:46,Amend Request for Quotation
+Case96,Analyze Request for Quotation,2011-01-13 09:48:46,2011-01-13 10:15:46,Analyze Request for Quotation
+Case96,Amend Request for Quotation,2011-01-13 11:16:46,2011-01-13 11:22:46,Amend Request for Quotation
+Case96,Analyze Request for Quotation,2011-01-14 21:23:46,2011-01-14 21:54:46,Analyze Request for Quotation
+Case96,Amend Request for Quotation,2011-01-14 22:53:46,2011-01-14 23:06:46,Amend Request for Quotation
+Case96,Analyze Request for Quotation,2011-01-16 03:30:46,2011-01-16 03:35:46,Analyze Request for Quotation
+Case96,Amend Request for Quotation,2011-01-16 19:18:46,2011-01-16 19:29:46,Amend Request for Quotation
+Case96,Analyze Request for Quotation,2011-01-16 20:48:46,2011-01-16 21:15:46,Analyze Request for Quotation
+Case96,Amend Request for Quotation,2011-01-17 13:15:46,2011-01-17 13:29:46,Amend Request for Quotation
+Case96,Analyze Request for Quotation,2011-02-09 23:49:46,2011-02-10 00:17:46,Analyze Request for Quotation
+Case96,End,2011-02-10 00:17:46,2011-02-10 00:17:46,End
+Case97,Start,2011-01-10 18:22:53,2011-01-10 18:22:53,Create Purchase Requisition
+Case97,Create Purchase Requisition,2011-01-10 18:22:53,2011-01-10 18:28:53,Create Purchase Requisition
+Case97,Create Request for Quotation,2011-01-10 22:01:53,2011-01-10 22:13:53,Create Request for Quotation
+Case97,Analyze Request for Quotation,2011-01-13 23:52:53,2011-01-14 00:09:53,Analyze Request for Quotation
+Case97,Send Request for Quotation to Supplier,2011-01-15 01:17:53,2011-01-15 01:34:53,Send Request for Quotation to Supplier
+Case97,Create Quotation comparison Map,2011-01-15 21:02:53,2011-01-16 00:41:53,Create Quotation comparison Map
+Case97,Analyze Quotation Comparison Map,2011-01-16 07:35:53,2011-01-16 08:00:53,Analyze Quotation Comparison Map
+Case97,Choose best option,2011-01-16 08:00:53,2011-01-16 08:00:53,Choose best option
+Case97,Settle Conditions With Supplier,2011-01-16 23:00:53,2011-01-17 05:38:53,Settle Conditions With Supplier
+Case97,Create Purchase Order,2011-01-17 21:19:53,2011-01-17 21:29:53,Create Purchase Order
+Case97,Confirm Purchase Order,2011-01-18 19:30:53,2011-01-18 20:03:53,Confirm Purchase Order
+Case97,Deliver Goods Services,2011-01-24 04:31:53,2011-01-24 14:36:53,Deliver Goods Services
+Case97,Release Purchase Order,2011-01-24 22:28:53,2011-01-24 22:29:53,Release Purchase Order
+Case97,Approve Purchase Order for payment,2011-01-25 08:43:53,2011-01-25 08:44:53,Approve Purchase Order for payment
+Case97,Send Invoice,2011-01-28 19:14:53,2011-01-28 19:14:53,Send Invoice
+Case97,Release Supplier's Invoice,2011-01-29 09:29:53,2011-01-29 09:32:53,Release Supplier's Invoice
+Case97,Authorize Supplier's Invoice payment,2011-01-29 09:32:53,2011-01-29 09:32:53,Authorize Supplier's Invoice payment
+Case97,Pay Invoice,2011-01-29 10:25:53,2011-01-29 10:32:53,Pay Invoice
+Case97,End,2011-01-29 10:32:53,2011-01-29 10:32:53,End
+Case98,Start,2011-01-10 19:40:18,2011-01-10 19:40:18,Create Purchase Requisition
+Case98,Create Purchase Requisition,2011-01-10 19:40:18,2011-01-10 19:59:18,Create Purchase Requisition
+Case98,Analyze Purchase Requisition,2011-01-11 11:55:18,2011-01-11 12:04:18,Analyze Purchase Requisition
+Case98,Create Request for Quotation,2011-01-11 12:12:18,2011-01-11 12:14:18,Create Request for Quotation
+Case98,Analyze Request for Quotation,2011-01-17 09:13:18,2011-01-17 09:47:18,Analyze Request for Quotation
+Case98,Amend Request for Quotation,2011-01-17 10:35:18,2011-01-17 10:47:18,Amend Request for Quotation
+Case98,Analyze Request for Quotation,2011-01-19 04:19:18,2011-01-19 04:50:18,Analyze Request for Quotation
+Case98,End,2011-01-19 04:50:18,2011-01-19 04:50:18,End
+Case99,Start,2011-01-10 20:54:27,2011-01-10 20:54:27,Create Purchase Requisition
+Case99,Create Purchase Requisition,2011-01-10 20:54:27,2011-01-10 21:16:27,Create Purchase Requisition
+Case99,Analyze Purchase Requisition,2011-01-11 19:46:27,2011-01-11 19:53:27,Analyze Purchase Requisition
+Case99,Create Request for Quotation,2011-01-11 20:00:27,2011-01-11 20:02:27,Create Request for Quotation
+Case99,Analyze Request for Quotation,2011-01-14 03:26:27,2011-01-14 04:03:27,Analyze Request for Quotation
+Case99,End,2011-01-14 04:03:27,2011-01-14 04:03:27,End
+Case100,Start,2011-01-10 21:18:20,2011-01-10 21:18:20,Create Purchase Requisition
+Case100,Create Purchase Requisition,2011-01-10 21:18:20,2011-01-10 21:47:20,Create Purchase Requisition
+Case100,Analyze Purchase Requisition,2011-01-11 09:54:20,2011-01-11 09:58:20,Analyze Purchase Requisition
+Case100,Create Request for Quotation,2011-01-11 10:03:20,2011-01-11 10:05:19,Create Request for Quotation
+Case100,Analyze Request for Quotation,2011-01-17 00:36:19,2011-01-17 00:42:19,Analyze Request for Quotation
+Case100,Send Request for Quotation to Supplier,2011-01-17 07:26:19,2011-01-17 07:50:19,Send Request for Quotation to Supplier
+Case100,Create Quotation comparison Map,2011-01-17 09:30:19,2011-01-17 12:42:19,Create Quotation comparison Map
+Case100,Analyze Quotation Comparison Map,2011-01-17 19:08:19,2011-01-17 19:17:19,Analyze Quotation Comparison Map
+Case100,Choose best option,2011-01-17 19:17:19,2011-01-17 19:17:19,Choose best option
+Case100,Settle Conditions With Supplier,2011-01-18 09:39:19,2011-01-19 00:00:19,Settle Conditions With Supplier
+Case100,Create Purchase Order,2011-01-19 02:23:19,2011-01-19 02:30:19,Create Purchase Order
+Case100,Confirm Purchase Order,2011-01-20 15:49:19,2011-01-20 16:00:19,Confirm Purchase Order
+Case100,Deliver Goods Services,2011-01-21 15:57:19,2011-01-22 10:26:19,Deliver Goods Services
+Case100,Release Purchase Order,2011-01-22 17:55:19,2011-01-22 17:56:19,Release Purchase Order
+Case100,Approve Purchase Order for payment,2011-01-23 09:16:19,2011-01-23 09:17:19,Approve Purchase Order for payment
+Case100,Send Invoice,2011-01-30 23:31:19,2011-01-30 23:31:19,Send Invoice
+Case100,Release Supplier's Invoice,2011-01-31 13:53:19,2011-01-31 13:59:19,Release Supplier's Invoice
+Case100,Authorize Supplier's Invoice payment,2011-01-31 13:59:19,2011-01-31 13:59:19,Authorize Supplier's Invoice payment
+Case100,Pay Invoice,2011-01-31 14:10:19,2011-01-31 14:16:19,Pay Invoice
+Case100,End,2011-01-31 14:16:19,2011-01-31 14:16:19,End
+Case101,Start,2011-01-01 22:14:46,2011-01-01 22:14:46,Create Purchase Requisition
+Case101,Create Purchase Requisition,2011-01-01 22:14:46,2011-01-01 22:21:46,Create Purchase Requisition
+Case101,Create Request for Quotation,2011-01-02 03:27:46,2011-01-02 03:35:46,Create Request for Quotation
+Case101,Analyze Request for Quotation,2011-01-05 17:19:46,2011-01-05 17:43:46,Analyze Request for Quotation
+Case101,Send Request for Quotation to Supplier,2011-01-05 23:47:46,2011-01-06 00:21:46,Send Request for Quotation to Supplier
+Case101,Create Quotation comparison Map,2011-01-06 04:37:46,2011-01-06 05:23:46,Create Quotation comparison Map
+Case101,Analyze Quotation Comparison Map,2011-01-06 12:18:46,2011-01-06 12:30:46,Analyze Quotation Comparison Map
+Case101,Choose best option,2011-01-06 12:30:46,2011-01-06 12:30:46,Choose best option
+Case101,Settle Conditions With Supplier,2011-01-08 07:35:46,2011-01-08 16:45:46,Settle Conditions With Supplier
+Case101,Create Purchase Order,2011-01-08 17:51:46,2011-01-08 18:02:46,Create Purchase Order
+Case101,Confirm Purchase Order,2011-01-08 22:01:46,2011-01-08 22:23:46,Confirm Purchase Order
+Case101,Deliver Goods Services,2011-01-09 10:20:46,2011-01-11 10:09:46,Deliver Goods Services
+Case101,Release Purchase Order,2011-01-11 17:41:46,2011-01-11 17:42:46,Release Purchase Order
+Case101,Approve Purchase Order for payment,2011-01-12 23:27:46,2011-01-12 23:28:46,Approve Purchase Order for payment
+Case101,Send Invoice,2011-01-14 04:17:46,2011-01-14 04:17:46,Send Invoice
+Case101,Release Supplier's Invoice,2011-01-14 18:44:46,2011-01-14 18:51:46,Release Supplier's Invoice
+Case101,Settle Dispute With Supplier,2011-01-14 19:28:46,2011-01-14 19:49:46,Settle Dispute With Supplier
+Case101,Authorize Supplier's Invoice payment,2011-01-14 19:49:46,2011-01-14 19:49:46,Authorize Supplier's Invoice payment
+Case101,Pay Invoice,2011-01-14 20:50:46,2011-01-14 21:01:46,Pay Invoice
+Case101,End,2011-01-14 21:01:46,2011-01-14 21:01:46,End
+Case102,Start,2011-01-10 22:25:35,2011-01-10 22:25:35,Create Purchase Requisition
+Case102,Create Purchase Requisition,2011-01-10 22:25:35,2011-01-10 22:42:35,Create Purchase Requisition
+Case102,Analyze Purchase Requisition,2011-01-11 23:04:35,2011-01-11 23:10:35,Analyze Purchase Requisition
+Case102,End,2011-01-11 23:10:35,2011-01-11 23:10:35,End
+Case103,Start,2011-01-10 23:43:18,2011-01-10 23:43:18,Create Purchase Requisition
+Case103,Create Purchase Requisition,2011-01-10 23:43:18,2011-01-11 00:30:18,Create Purchase Requisition
+Case103,Create Request for Quotation,2011-01-11 04:27:18,2011-01-11 04:39:18,Create Request for Quotation
+Case103,Analyze Request for Quotation,2011-01-14 00:58:18,2011-01-14 01:22:18,Analyze Request for Quotation
+Case103,End,2011-01-14 01:22:18,2011-01-14 01:22:18,End
+Case104,Start,2011-01-11 00:45:53,2011-01-11 00:45:53,Create Purchase Requisition
+Case104,Create Purchase Requisition,2011-01-11 00:45:53,2011-01-11 01:04:53,Create Purchase Requisition
+Case104,Create Request for Quotation,2011-01-11 08:42:53,2011-01-11 08:53:53,Create Request for Quotation
+Case104,Analyze Request for Quotation,2011-01-14 06:18:53,2011-01-14 06:41:53,Analyze Request for Quotation
+Case104,Amend Request for Quotation,2011-01-14 07:29:53,2011-01-14 07:42:53,Amend Request for Quotation
+Case104,Analyze Request for Quotation,2011-01-14 08:49:53,2011-01-14 09:08:53,Analyze Request for Quotation
+Case104,End,2011-01-14 09:08:53,2011-01-14 09:08:53,End
+Case105,Start,2011-01-11 01:15:49,2011-01-11 01:15:49,Create Purchase Requisition
+Case105,Create Purchase Requisition,2011-01-11 01:15:49,2011-01-11 01:45:49,Create Purchase Requisition
+Case105,Create Request for Quotation,2011-01-11 04:47:49,2011-01-11 04:56:49,Create Request for Quotation
+Case105,Analyze Request for Quotation,2011-01-12 04:44:49,2011-01-12 05:09:49,Analyze Request for Quotation
+Case105,End,2011-01-12 05:09:49,2011-01-12 05:09:49,End
+Case106,Start,2011-01-11 02:36:55,2011-01-11 02:36:55,Create Purchase Requisition
+Case106,Create Purchase Requisition,2011-01-11 02:36:55,2011-01-11 02:55:55,Create Purchase Requisition
+Case106,Analyze Purchase Requisition,2011-01-11 17:09:55,2011-01-11 17:13:55,Analyze Purchase Requisition
+Case106,End,2011-01-11 17:13:55,2011-01-11 17:13:55,End
+Case107,Start,2011-01-11 03:08:55,2011-01-11 03:08:55,Create Purchase Requisition
+Case107,Create Purchase Requisition,2011-01-11 03:08:55,2011-01-11 03:26:55,Create Purchase Requisition
+Case107,Create Request for Quotation,2011-01-11 03:38:55,2011-01-11 03:51:55,Create Request for Quotation
+Case107,Analyze Request for Quotation,2011-01-15 01:02:55,2011-01-15 01:30:55,Analyze Request for Quotation
+Case107,Send Request for Quotation to Supplier,2011-01-15 17:47:55,2011-01-15 18:04:55,Send Request for Quotation to Supplier
+Case107,Create Quotation comparison Map,2011-01-15 18:34:55,2011-01-15 23:45:55,Create Quotation comparison Map
+Case107,Analyze Quotation Comparison Map,2011-01-16 06:58:55,2011-01-16 07:30:55,Analyze Quotation Comparison Map
+Case107,Choose best option,2011-01-16 07:30:55,2011-01-16 07:30:55,Choose best option
+Case107,Settle Conditions With Supplier,2011-01-18 04:09:55,2011-01-18 16:50:55,Settle Conditions With Supplier
+Case107,Create Purchase Order,2011-01-20 01:18:55,2011-01-20 01:26:55,Create Purchase Order
+Case107,Confirm Purchase Order,2011-01-21 23:26:55,2011-01-21 23:34:55,Confirm Purchase Order
+Case107,Deliver Goods Services,2011-01-23 07:57:55,2011-01-23 16:54:55,Deliver Goods Services
+Case107,Release Purchase Order,2011-01-24 00:55:55,2011-01-24 00:56:55,Release Purchase Order
+Case107,Approve Purchase Order for payment,2011-01-24 07:53:55,2011-01-24 07:54:55,Approve Purchase Order for payment
+Case107,Send Invoice,2011-01-25 01:35:55,2011-01-25 01:35:55,Send Invoice
+Case107,Release Supplier's Invoice,2011-01-25 15:48:55,2011-01-25 15:53:55,Release Supplier's Invoice
+Case107,Authorize Supplier's Invoice payment,2011-01-25 15:53:55,2011-01-25 15:53:55,Authorize Supplier's Invoice payment
+Case107,Pay Invoice,2011-01-25 16:10:55,2011-01-25 16:16:55,Pay Invoice
+Case107,End,2011-01-25 16:16:55,2011-01-25 16:16:55,End
+Case108,Start,2011-01-11 06:44:32,2011-01-11 06:44:32,Create Purchase Requisition
+Case108,Create Purchase Requisition,2011-01-11 06:44:32,2011-01-11 07:40:32,Create Purchase Requisition
+Case108,Create Request for Quotation,2011-01-11 08:31:32,2011-01-11 08:39:33,Create Request for Quotation
+Case108,Analyze Request for Quotation,2011-01-12 14:55:33,2011-01-12 15:08:33,Analyze Request for Quotation
+Case108,Amend Request for Quotation,2011-01-12 16:03:33,2011-01-12 16:11:33,Amend Request for Quotation
+Case108,Analyze Request for Quotation,2011-02-04 14:13:33,2011-02-04 14:37:33,Analyze Request for Quotation
+Case108,Amend Request for Quotation,2011-02-04 15:29:33,2011-02-04 15:43:33,Amend Request for Quotation
+Case108,Analyze Request for Quotation,2011-02-17 22:04:33,2011-02-17 22:28:33,Analyze Request for Quotation
+Case108,Amend Request for Quotation,2011-02-18 14:20:33,2011-02-18 14:28:33,Amend Request for Quotation
+Case108,Analyze Request for Quotation,2011-02-24 10:36:33,2011-02-24 11:00:33,Analyze Request for Quotation
+Case108,Send Request for Quotation to Supplier,2011-02-26 09:12:33,2011-02-26 09:42:33,Send Request for Quotation to Supplier
+Case108,Create Quotation comparison Map,2011-02-26 10:28:33,2011-02-26 13:26:33,Create Quotation comparison Map
+Case108,Analyze Quotation Comparison Map,2011-02-26 20:35:33,2011-02-26 20:42:33,Analyze Quotation Comparison Map
+Case108,Choose best option,2011-02-26 20:42:33,2011-02-26 20:42:33,Choose best option
+Case108,Settle Conditions With Supplier,2011-02-27 06:54:33,2011-02-27 13:01:33,Settle Conditions With Supplier
+Case108,Create Purchase Order,2011-02-28 04:58:33,2011-02-28 05:10:33,Create Purchase Order
+Case108,Confirm Purchase Order,2011-03-02 18:18:33,2011-03-02 18:30:33,Confirm Purchase Order
+Case108,Deliver Goods Services,2011-03-05 19:39:33,2011-03-05 22:42:33,Deliver Goods Services
+Case108,Release Purchase Order,2011-03-06 06:27:33,2011-03-06 06:28:33,Release Purchase Order
+Case108,Approve Purchase Order for payment,2011-03-06 16:23:33,2011-03-06 16:24:33,Approve Purchase Order for payment
+Case108,Send Invoice,2011-03-08 06:42:33,2011-03-08 06:42:33,Send Invoice
+Case108,Release Supplier's Invoice,2011-03-08 20:51:33,2011-03-08 20:54:33,Release Supplier's Invoice
+Case108,Authorize Supplier's Invoice payment,2011-03-08 20:54:33,2011-03-08 20:54:33,Authorize Supplier's Invoice payment
+Case108,Pay Invoice,2011-03-08 21:47:33,2011-03-08 21:54:33,Pay Invoice
+Case108,End,2011-03-08 21:54:33,2011-03-08 21:54:33,End
+Case109,Start,2011-01-11 07:16:19,2011-01-11 07:16:19,Create Purchase Requisition
+Case109,Create Purchase Requisition,2011-01-11 07:16:19,2011-01-11 07:47:19,Create Purchase Requisition
+Case109,Analyze Purchase Requisition,2011-01-11 20:45:19,2011-01-11 20:50:19,Analyze Purchase Requisition
+Case109,Create Request for Quotation,2011-01-11 20:55:19,2011-01-11 20:57:19,Create Request for Quotation
+Case109,Analyze Request for Quotation,2011-01-12 16:09:19,2011-01-12 16:28:19,Analyze Request for Quotation
+Case109,End,2011-01-12 16:28:19,2011-01-12 16:28:19,End
+Case110,Start,2011-01-11 08:57:36,2011-01-11 08:57:36,Create Purchase Requisition
+Case110,Create Purchase Requisition,2011-01-11 08:57:36,2011-01-11 09:29:36,Create Purchase Requisition
+Case110,Analyze Purchase Requisition,2011-01-12 04:51:36,2011-01-12 04:59:36,Analyze Purchase Requisition
+Case110,Create Request for Quotation,2011-01-12 05:03:36,2011-01-12 05:05:36,Create Request for Quotation
+Case110,Analyze Request for Quotation,2011-01-21 03:48:36,2011-01-21 04:20:36,Analyze Request for Quotation
+Case110,End,2011-01-21 04:20:36,2011-01-21 04:20:36,End
+Case111,Start,2011-01-11 09:08:06,2011-01-11 09:08:06,Create Purchase Requisition
+Case111,Create Purchase Requisition,2011-01-11 09:08:06,2011-01-11 09:39:06,Create Purchase Requisition
+Case111,Analyze Purchase Requisition,2011-01-12 08:09:06,2011-01-12 08:14:06,Analyze Purchase Requisition
+Case111,Create Request for Quotation,2011-01-12 08:20:06,2011-01-12 08:22:06,Create Request for Quotation
+Case111,Analyze Request for Quotation,2011-02-19 02:44:06,2011-02-19 03:10:06,Analyze Request for Quotation
+Case111,Amend Request for Quotation,2011-02-19 03:48:06,2011-02-19 04:12:06,Amend Request for Quotation
+Case111,Analyze Request for Quotation,2011-02-19 14:11:06,2011-02-19 14:36:06,Analyze Request for Quotation
+Case111,Amend Request for Quotation,2011-02-19 15:28:06,2011-02-19 15:35:06,Amend Request for Quotation
+Case111,Analyze Request for Quotation,2011-02-19 18:57:06,2011-02-19 19:27:06,Analyze Request for Quotation
+Case111,End,2011-02-19 19:27:06,2011-02-19 19:27:06,End
+Case112,Start,2011-01-01 02:43:40,2011-01-01 02:43:40,Create Purchase Requisition
+Case112,Create Purchase Requisition,2011-01-01 02:43:40,2011-01-01 03:15:40,Create Purchase Requisition
+Case112,Analyze Purchase Requisition,2011-01-01 18:04:40,2011-01-01 18:10:40,Analyze Purchase Requisition
+Case112,Create Request for Quotation,2011-01-01 18:13:40,2011-01-01 18:16:40,Create Request for Quotation
+Case112,Analyze Request for Quotation,2011-01-03 01:54:40,2011-01-03 02:16:40,Analyze Request for Quotation
+Case112,Send Request for Quotation to Supplier,2011-01-03 16:33:40,2011-01-03 17:03:40,Send Request for Quotation to Supplier
+Case112,Create Quotation comparison Map,2011-01-04 08:42:40,2011-01-04 10:29:40,Create Quotation comparison Map
+Case112,Analyze Quotation Comparison Map,2011-01-04 17:05:40,2011-01-04 17:27:40,Analyze Quotation Comparison Map
+Case112,Choose best option,2011-01-04 17:27:40,2011-01-04 17:27:40,Choose best option
+Case112,Settle Conditions With Supplier,2011-01-04 20:37:40,2011-01-05 02:20:40,Settle Conditions With Supplier
+Case112,Create Purchase Order,2011-01-05 07:07:40,2011-01-05 07:17:40,Create Purchase Order
+Case112,Confirm Purchase Order,2011-01-08 05:51:40,2011-01-08 06:11:40,Confirm Purchase Order
+Case112,Deliver Goods Services,2011-01-09 08:04:40,2011-01-09 23:45:40,Deliver Goods Services
+Case112,Release Purchase Order,2011-01-10 07:15:40,2011-01-10 07:16:40,Release Purchase Order
+Case112,Approve Purchase Order for payment,2011-01-10 13:44:40,2011-01-10 13:45:40,Approve Purchase Order for payment
+Case112,Send Invoice,2011-01-11 02:59:40,2011-01-11 02:59:40,Send Invoice
+Case112,Release Supplier's Invoice,2011-01-11 17:23:40,2011-01-11 17:27:40,Release Supplier's Invoice
+Case112,Authorize Supplier's Invoice payment,2011-01-11 17:27:40,2011-01-11 17:27:40,Authorize Supplier's Invoice payment
+Case112,Pay Invoice,2011-01-11 18:13:40,2011-01-11 18:19:40,Pay Invoice
+Case112,End,2011-01-11 18:19:40,2011-01-11 18:19:40,End
+Case113,Start,2011-01-01 23:01:27,2011-01-01 23:01:27,Create Purchase Requisition
+Case113,Create Purchase Requisition,2011-01-01 23:01:27,2011-01-01 23:20:27,Create Purchase Requisition
+Case113,Analyze Purchase Requisition,2011-01-02 11:43:27,2011-01-02 11:50:27,Analyze Purchase Requisition
+Case113,Create Request for Quotation,2011-01-02 11:57:27,2011-01-02 11:58:27,Create Request for Quotation
+Case113,Analyze Request for Quotation,2011-01-13 13:23:27,2011-01-13 13:58:27,Analyze Request for Quotation
+Case113,Amend Request for Quotation,2011-01-13 14:47:27,2011-01-13 15:03:27,Amend Request for Quotation
+Case113,Analyze Request for Quotation,2011-01-24 09:26:27,2011-01-24 09:45:27,Analyze Request for Quotation
+Case113,Amend Request for Quotation,2011-01-24 10:34:27,2011-01-24 10:45:27,Amend Request for Quotation
+Case113,Analyze Request for Quotation,2011-01-24 13:45:27,2011-01-24 13:52:27,Analyze Request for Quotation
+Case113,Send Request for Quotation to Supplier,2011-01-25 02:31:27,2011-01-25 02:42:27,Send Request for Quotation to Supplier
+Case113,Create Quotation comparison Map,2011-01-25 04:13:27,2011-01-25 10:04:27,Create Quotation comparison Map
+Case113,Analyze Quotation Comparison Map,2011-01-25 17:02:27,2011-01-25 17:30:27,Analyze Quotation Comparison Map
+Case113,Choose best option,2011-01-25 17:30:27,2011-01-25 17:30:27,Choose best option
+Case113,Settle Conditions With Supplier,2011-01-25 20:17:27,2011-01-26 03:59:27,Settle Conditions With Supplier
+Case113,Create Purchase Order,2011-01-26 05:13:27,2011-01-26 05:25:27,Create Purchase Order
+Case113,Confirm Purchase Order,2011-01-26 09:44:27,2011-01-26 09:52:26,Confirm Purchase Order
+Case113,Deliver Goods Services,2011-01-27 10:27:26,2011-01-28 07:44:26,Deliver Goods Services
+Case113,Release Purchase Order,2011-01-28 16:04:26,2011-01-28 16:05:26,Release Purchase Order
+Case113,Settle Dispute With Supplier,2011-01-29 00:19:26,2011-01-29 09:47:26,Settle Dispute With Supplier
+Case113,Release Purchase Order,2011-01-29 16:55:26,2011-01-29 16:56:26,Release Purchase Order
+Case113,Approve Purchase Order for payment,2011-01-30 00:03:26,2011-01-30 00:04:26,Approve Purchase Order for payment
+Case113,Send Invoice,2011-01-30 10:32:26,2011-01-30 10:32:26,Send Invoice
+Case113,Release Supplier's Invoice,2011-01-31 00:54:26,2011-01-31 01:00:26,Release Supplier's Invoice
+Case113,Authorize Supplier's Invoice payment,2011-01-31 01:00:26,2011-01-31 01:00:26,Authorize Supplier's Invoice payment
+Case113,Pay Invoice,2011-01-31 01:05:26,2011-01-31 01:10:26,Pay Invoice
+Case113,End,2011-01-31 01:10:26,2011-01-31 01:10:26,End
+Case114,Start,2011-01-11 10:49:25,2011-01-11 10:49:25,Create Purchase Requisition
+Case114,Create Purchase Requisition,2011-01-11 10:49:25,2011-01-11 10:55:25,Create Purchase Requisition
+Case114,Analyze Purchase Requisition,2011-01-12 06:34:25,2011-01-12 06:39:25,Analyze Purchase Requisition
+Case114,Create Request for Quotation,2011-01-12 06:43:25,2011-01-12 06:45:25,Create Request for Quotation
+Case114,Analyze Request for Quotation,2011-01-16 00:14:25,2011-01-16 00:35:25,Analyze Request for Quotation
+Case114,Send Request for Quotation to Supplier,2011-01-16 06:08:25,2011-01-16 06:37:25,Send Request for Quotation to Supplier
+Case114,Create Quotation comparison Map,2011-01-16 07:23:25,2011-01-16 09:41:25,Create Quotation comparison Map
+Case114,Analyze Quotation Comparison Map,2011-01-16 16:23:25,2011-01-16 16:45:25,Analyze Quotation Comparison Map
+Case114,Choose best option,2011-01-16 16:45:25,2011-01-16 16:45:25,Choose best option
+Case114,Settle Conditions With Supplier,2011-01-16 22:16:25,2011-01-17 02:44:25,Settle Conditions With Supplier
+Case114,Create Purchase Order,2011-01-17 12:11:25,2011-01-17 12:18:25,Create Purchase Order
+Case114,Confirm Purchase Order,2011-01-18 14:27:25,2011-01-18 14:45:25,Confirm Purchase Order
+Case114,Deliver Goods Services,2011-01-20 19:20:25,2011-01-22 04:26:25,Deliver Goods Services
+Case114,Release Purchase Order,2011-01-22 12:00:25,2011-01-22 12:01:25,Release Purchase Order
+Case114,Approve Purchase Order for payment,2011-01-23 08:26:25,2011-01-23 08:27:25,Approve Purchase Order for payment
+Case114,Send Invoice,2011-01-24 13:45:25,2011-01-24 13:45:25,Send Invoice
+Case114,Release Supplier's Invoice,2011-01-25 04:04:25,2011-01-25 04:07:25,Release Supplier's Invoice
+Case114,Authorize Supplier's Invoice payment,2011-01-25 04:07:25,2011-01-25 04:07:25,Authorize Supplier's Invoice payment
+Case114,Pay Invoice,2011-01-25 04:36:25,2011-01-25 04:46:25,Pay Invoice
+Case114,End,2011-01-25 04:46:25,2011-01-25 04:46:25,End
+Case115,Start,2011-01-11 11:26:08,2011-01-11 11:26:08,Create Purchase Requisition
+Case115,Create Purchase Requisition,2011-01-11 11:26:08,2011-01-11 12:08:08,Create Purchase Requisition
+Case115,Analyze Purchase Requisition,2011-01-12 07:33:08,2011-01-12 07:42:08,Analyze Purchase Requisition
+Case115,Create Request for Quotation,2011-01-12 07:48:08,2011-01-12 07:50:08,Create Request for Quotation
+Case115,Analyze Request for Quotation,2011-01-13 12:22:08,2011-01-13 12:50:08,Analyze Request for Quotation
+Case115,Amend Request for Quotation,2011-01-13 13:49:08,2011-01-13 13:57:08,Amend Request for Quotation
+Case115,Analyze Request for Quotation,2011-01-13 23:42:08,2011-01-14 00:03:08,Analyze Request for Quotation
+Case115,Amend Request for Quotation,2011-01-14 00:50:08,2011-01-14 00:59:08,Amend Request for Quotation
+Case115,Analyze Request for Quotation,2011-01-19 15:46:08,2011-01-19 16:10:08,Analyze Request for Quotation
+Case115,Send Request for Quotation to Supplier,2011-01-20 13:01:08,2011-01-20 13:26:08,Send Request for Quotation to Supplier
+Case115,Create Quotation comparison Map,2011-01-21 02:05:08,2011-01-21 05:42:08,Create Quotation comparison Map
+Case115,Analyze Quotation Comparison Map,2011-01-21 12:11:08,2011-01-21 12:22:08,Analyze Quotation Comparison Map
+Case115,Choose best option,2011-01-21 12:22:08,2011-01-21 12:22:08,Choose best option
+Case115,Settle Conditions With Supplier,2011-01-22 06:16:08,2011-01-22 17:50:08,Settle Conditions With Supplier
+Case115,Create Purchase Order,2011-01-22 20:44:08,2011-01-22 20:54:08,Create Purchase Order
+Case115,Confirm Purchase Order,2011-01-24 18:54:08,2011-01-24 19:22:08,Confirm Purchase Order
+Case115,Deliver Goods Services,2011-02-14 06:15:08,2011-02-14 22:10:08,Deliver Goods Services
+Case115,Release Purchase Order,2011-02-15 06:06:08,2011-02-15 06:07:08,Release Purchase Order
+Case115,Approve Purchase Order for payment,2011-02-15 12:03:08,2011-02-15 12:04:08,Approve Purchase Order for payment
+Case115,Send Invoice,2011-02-17 15:31:08,2011-02-17 15:31:08,Send Invoice
+Case115,Release Supplier's Invoice,2011-02-18 05:58:08,2011-02-18 06:01:08,Release Supplier's Invoice
+Case115,Authorize Supplier's Invoice payment,2011-02-18 06:01:08,2011-02-18 06:01:08,Authorize Supplier's Invoice payment
+Case115,Pay Invoice,2011-02-18 07:04:08,2011-02-18 07:11:08,Pay Invoice
+Case115,End,2011-02-18 07:11:08,2011-02-18 07:11:08,End
+Case116,Start,2011-01-11 12:51:16,2011-01-11 12:51:16,Create Purchase Requisition
+Case116,Create Purchase Requisition,2011-01-11 12:51:16,2011-01-11 13:07:16,Create Purchase Requisition
+Case116,Analyze Purchase Requisition,2011-01-12 05:43:16,2011-01-12 05:49:16,Analyze Purchase Requisition
+Case116,End,2011-01-12 05:49:16,2011-01-12 05:49:16,End
+Case117,Start,2011-01-11 13:14:53,2011-01-11 13:14:53,Create Purchase Requisition
+Case117,Create Purchase Requisition,2011-01-11 13:14:53,2011-01-11 14:10:53,Create Purchase Requisition
+Case117,Create Request for Quotation,2011-01-11 14:45:53,2011-01-11 14:54:53,Create Request for Quotation
+Case117,Analyze Request for Quotation,2011-01-11 21:15:53,2011-01-11 22:03:53,Analyze Request for Quotation
+Case117,Send Request for Quotation to Supplier,2011-01-12 04:20:53,2011-01-12 04:48:53,Send Request for Quotation to Supplier
+Case117,Create Quotation comparison Map,2011-01-12 12:08:53,2011-01-12 13:05:53,Create Quotation comparison Map
+Case117,Analyze Quotation Comparison Map,2011-01-12 19:19:53,2011-01-12 19:26:53,Analyze Quotation Comparison Map
+Case117,Choose best option,2011-01-12 19:26:53,2011-01-12 19:26:53,Choose best option
+Case117,Settle Conditions With Supplier,2011-01-13 00:10:53,2011-01-13 12:18:53,Settle Conditions With Supplier
+Case117,Create Purchase Order,2011-01-13 14:18:53,2011-01-13 14:25:53,Create Purchase Order
+Case117,Confirm Purchase Order,2011-01-13 22:22:53,2011-01-13 22:28:53,Confirm Purchase Order
+Case117,Deliver Goods Services,2011-01-15 03:51:53,2011-01-16 15:54:53,Deliver Goods Services
+Case117,Release Purchase Order,2011-01-16 23:50:53,2011-01-16 23:51:53,Release Purchase Order
+Case117,Approve Purchase Order for payment,2011-01-17 12:29:53,2011-01-17 12:30:53,Approve Purchase Order for payment
+Case117,Send Invoice,2011-01-17 18:50:53,2011-01-17 18:50:53,Send Invoice
+Case117,Release Supplier's Invoice,2011-01-18 09:26:53,2011-01-18 09:29:53,Release Supplier's Invoice
+Case117,Authorize Supplier's Invoice payment,2011-01-18 09:29:53,2011-01-18 09:29:53,Authorize Supplier's Invoice payment
+Case117,Pay Invoice,2011-01-18 10:19:53,2011-01-18 10:24:53,Pay Invoice
+Case117,End,2011-01-18 10:24:53,2011-01-18 10:24:53,End
+Case118,Start,2011-01-11 14:33:48,2011-01-11 14:33:48,Create Purchase Requisition
+Case118,Create Purchase Requisition,2011-01-11 14:33:48,2011-01-11 15:21:48,Create Purchase Requisition
+Case118,Create Request for Quotation,2011-01-11 16:17:48,2011-01-11 16:26:48,Create Request for Quotation
+Case118,Analyze Request for Quotation,2011-01-11 20:10:48,2011-01-11 20:31:48,Analyze Request for Quotation
+Case118,End,2011-01-11 20:31:48,2011-01-11 20:31:48,End
+Case119,Start,2011-01-11 15:04:47,2011-01-11 15:04:47,Create Purchase Requisition
+Case119,Create Purchase Requisition,2011-01-11 15:04:47,2011-01-11 15:50:47,Create Purchase Requisition
+Case119,Create Request for Quotation,2011-01-11 18:14:47,2011-01-11 18:22:47,Create Request for Quotation
+Case119,Analyze Request for Quotation,2011-01-11 19:26:47,2011-01-11 19:32:47,Analyze Request for Quotation
+Case119,Send Request for Quotation to Supplier,2011-01-11 21:00:47,2011-01-11 21:29:47,Send Request for Quotation to Supplier
+Case119,Create Quotation comparison Map,2011-01-11 21:49:47,2011-01-12 01:43:47,Create Quotation comparison Map
+Case119,Analyze Quotation Comparison Map,2011-01-12 08:20:47,2011-01-12 08:49:47,Analyze Quotation Comparison Map
+Case119,Choose best option,2011-01-12 08:49:47,2011-01-12 08:49:47,Choose best option
+Case119,Settle Conditions With Supplier,2011-01-12 19:40:47,2011-01-12 23:59:47,Settle Conditions With Supplier
+Case119,Create Purchase Order,2011-01-13 04:21:47,2011-01-13 04:32:47,Create Purchase Order
+Case119,Confirm Purchase Order,2011-01-14 00:26:47,2011-01-14 00:32:47,Confirm Purchase Order
+Case119,Deliver Goods Services,2011-01-14 16:24:47,2011-01-15 00:12:47,Deliver Goods Services
+Case119,Release Purchase Order,2011-01-15 07:38:47,2011-01-15 07:39:47,Release Purchase Order
+Case119,Settle Dispute With Supplier,2011-01-15 12:21:47,2011-01-15 21:47:47,Settle Dispute With Supplier
+Case119,Release Purchase Order,2011-01-16 05:09:47,2011-01-16 05:10:47,Release Purchase Order
+Case119,Approve Purchase Order for payment,2011-01-16 13:03:47,2011-01-16 13:04:47,Approve Purchase Order for payment
+Case119,Send Invoice,2011-01-17 04:08:47,2011-01-17 04:08:47,Send Invoice
+Case119,Release Supplier's Invoice,2011-01-17 18:21:47,2011-01-17 18:25:47,Release Supplier's Invoice
+Case119,Authorize Supplier's Invoice payment,2011-01-17 18:25:47,2011-01-17 18:25:47,Authorize Supplier's Invoice payment
+Case119,Pay Invoice,2011-01-17 18:46:47,2011-01-17 18:53:47,Pay Invoice
+Case119,End,2011-01-17 18:53:47,2011-01-17 18:53:47,End
+Case120,Start,2011-01-11 16:21:41,2011-01-11 16:21:41,Create Purchase Requisition
+Case120,Create Purchase Requisition,2011-01-11 16:21:41,2011-01-11 16:28:41,Create Purchase Requisition
+Case120,Analyze Purchase Requisition,2011-01-12 04:12:41,2011-01-12 04:20:41,Analyze Purchase Requisition
+Case120,Create Request for Quotation,2011-01-12 04:26:41,2011-01-12 04:29:41,Create Request for Quotation
+Case120,Analyze Request for Quotation,2011-01-16 16:45:41,2011-01-16 17:15:41,Analyze Request for Quotation
+Case120,Send Request for Quotation to Supplier,2011-01-18 13:40:41,2011-01-18 14:20:41,Send Request for Quotation to Supplier
+Case120,Create Quotation comparison Map,2011-01-18 14:59:41,2011-01-18 20:39:41,Create Quotation comparison Map
+Case120,Analyze Quotation Comparison Map,2011-01-19 02:56:41,2011-01-19 03:10:41,Analyze Quotation Comparison Map
+Case120,Choose best option,2011-01-19 03:10:41,2011-01-19 03:10:41,Choose best option
+Case120,Settle Conditions With Supplier,2011-01-19 06:54:41,2011-01-19 21:10:41,Settle Conditions With Supplier
+Case120,Create Purchase Order,2011-01-19 22:04:41,2011-01-19 22:13:41,Create Purchase Order
+Case120,Confirm Purchase Order,2011-01-20 06:17:41,2011-01-20 06:29:41,Confirm Purchase Order
+Case120,Deliver Goods Services,2011-01-21 18:08:41,2011-01-22 06:29:41,Deliver Goods Services
+Case120,Release Purchase Order,2011-01-22 14:10:41,2011-01-22 14:11:41,Release Purchase Order
+Case120,Approve Purchase Order for payment,2011-01-23 01:45:41,2011-01-23 01:46:41,Approve Purchase Order for payment
+Case120,Send Invoice,2011-01-23 08:45:41,2011-01-23 08:45:41,Send Invoice
+Case120,Release Supplier's Invoice,2011-01-23 23:16:41,2011-01-23 23:18:41,Release Supplier's Invoice
+Case120,Settle Dispute With Supplier,2011-01-24 00:04:41,2011-01-24 00:21:41,Settle Dispute With Supplier
+Case120,Authorize Supplier's Invoice payment,2011-01-24 00:21:41,2011-01-24 00:21:41,Authorize Supplier's Invoice payment
+Case120,Pay Invoice,2011-01-24 01:05:41,2011-01-24 01:10:41,Pay Invoice
+Case120,End,2011-01-24 01:10:41,2011-01-24 01:10:41,End
+Case121,Start,2011-01-11 17:16:26,2011-01-11 17:16:26,Create Purchase Requisition
+Case121,Create Purchase Requisition,2011-01-11 17:16:26,2011-01-11 17:54:26,Create Purchase Requisition
+Case121,Analyze Purchase Requisition,2011-01-12 06:44:26,2011-01-12 06:52:26,Analyze Purchase Requisition
+Case121,Create Request for Quotation,2011-01-12 06:56:26,2011-01-12 06:58:26,Create Request for Quotation
+Case121,Analyze Request for Quotation,2011-01-13 21:08:26,2011-01-13 21:38:26,Analyze Request for Quotation
+Case121,Amend Request for Quotation,2011-01-13 22:29:26,2011-01-13 22:36:26,Amend Request for Quotation
+Case121,Analyze Request for Quotation,2011-01-16 03:31:26,2011-01-16 04:01:26,Analyze Request for Quotation
+Case121,Amend Request for Quotation,2011-01-16 04:57:26,2011-01-16 05:02:26,Amend Request for Quotation
+Case121,Analyze Request for Quotation,2011-01-26 12:25:26,2011-01-26 13:02:26,Analyze Request for Quotation
+Case121,Amend Request for Quotation,2011-01-26 13:55:26,2011-01-26 14:00:26,Amend Request for Quotation
+Case121,Analyze Request for Quotation,2011-02-18 06:57:26,2011-02-18 07:17:26,Analyze Request for Quotation
+Case121,Amend Request for Quotation,2011-02-18 08:04:26,2011-02-18 08:18:26,Amend Request for Quotation
+Case121,Analyze Request for Quotation,2011-02-18 08:50:26,2011-02-18 09:14:26,Analyze Request for Quotation
+Case121,Send Request for Quotation to Supplier,2011-02-18 23:00:26,2011-02-18 23:18:26,Send Request for Quotation to Supplier
+Case121,Create Quotation comparison Map,2011-02-20 06:27:26,2011-02-20 09:54:26,Create Quotation comparison Map
+Case121,Analyze Quotation Comparison Map,2011-02-20 17:01:26,2011-02-20 17:15:26,Analyze Quotation Comparison Map
+Case121,Choose best option,2011-02-20 17:15:26,2011-02-20 17:15:26,Choose best option
+Case121,Settle Conditions With Supplier,2011-02-21 17:37:26,2011-02-22 05:17:26,Settle Conditions With Supplier
+Case121,Create Purchase Order,2011-02-22 06:21:26,2011-02-22 06:31:26,Create Purchase Order
+Case121,Confirm Purchase Order,2011-02-23 14:00:26,2011-02-23 14:33:26,Confirm Purchase Order
+Case121,Deliver Goods Services,2011-03-04 15:43:26,2011-03-05 07:25:26,Deliver Goods Services
+Case121,Release Purchase Order,2011-03-05 14:36:26,2011-03-05 14:37:26,Release Purchase Order
+Case121,Approve Purchase Order for payment,2011-03-06 01:00:26,2011-03-06 01:01:26,Approve Purchase Order for payment
+Case121,Send Invoice,2011-03-06 10:52:26,2011-03-06 10:52:26,Send Invoice
+Case121,Release Supplier's Invoice,2011-03-07 01:14:26,2011-03-07 01:18:26,Release Supplier's Invoice
+Case121,Authorize Supplier's Invoice payment,2011-03-07 01:18:26,2011-03-07 01:18:26,Authorize Supplier's Invoice payment
+Case121,Pay Invoice,2011-03-07 01:37:26,2011-03-07 01:46:26,Pay Invoice
+Case121,End,2011-03-07 01:46:26,2011-03-07 01:46:26,End
+Case122,Start,2011-01-11 18:36:58,2011-01-11 18:36:58,Create Purchase Requisition
+Case122,Create Purchase Requisition,2011-01-11 18:36:58,2011-01-11 19:25:58,Create Purchase Requisition
+Case122,Analyze Purchase Requisition,2011-01-12 18:00:58,2011-01-12 18:05:58,Analyze Purchase Requisition
+Case122,Create Request for Quotation,2011-01-12 18:10:58,2011-01-12 18:13:58,Create Request for Quotation
+Case122,Analyze Request for Quotation,2011-01-15 20:49:58,2011-01-15 21:12:58,Analyze Request for Quotation
+Case122,Amend Request for Quotation,2011-01-15 22:05:58,2011-01-15 22:27:58,Amend Request for Quotation
+Case122,Analyze Request for Quotation,2011-01-19 04:25:58,2011-01-19 04:55:58,Analyze Request for Quotation
+Case122,End,2011-01-19 04:55:58,2011-01-19 04:55:58,End

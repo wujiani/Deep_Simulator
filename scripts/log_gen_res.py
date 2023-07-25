@@ -83,8 +83,8 @@ def main(experiment_name, import_file, id_column, act_column, time_column, resou
             number = np.array(list(counter.values()))
             prob = np.round(np.divide(number, tol_events), 10)
             tasks_re_prob[each[0]] = dict(zip(counter.keys(), prob))
-        with open(os.path.join(output_folder, f'tasks_re_prob_{file_name}.json'), "w") as f:
-            json.dump(tasks_re_prob, f)
+        # with open(os.path.join(output_folder, f'tasks_re_prob_{file_name}.json'), "w") as f:
+        #     json.dump(tasks_re_prob, f)
 
     all_acts_under_re = [each_[1] for each in dict_re_caseids_tasks.items() for each_ in each[1]]
 
