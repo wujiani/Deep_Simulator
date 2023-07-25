@@ -21,7 +21,8 @@ warnings.filterwarnings("ignore")
 @click.option('--time-column', default='time:timestamp', type=str)
 @click.option('--resource-column', default='user', type=str)
 @click.option('--state-column', default='lifecycle:transition', type=str)
-def main(experiment_name, import_file, simulator_output, embedding_matrix, id_column, act_column, time_column, resource_column, state_column):
+@click.option('--suffix', default=0, type=int)
+def main(experiment_name, import_file, simulator_output, embedding_matrix, id_column, act_column, time_column, resource_column, state_column, suffix):
     # get the start time of each generated trace
     ia_df = pd.read_csv(simulator_output)
 

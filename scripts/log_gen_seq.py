@@ -5,6 +5,8 @@ from collections import Counter
 import click
 import warnings
 import sys
+import json
+import datetime
 
 from log_gen_seq_utils import *
 warnings.filterwarnings("ignore")
@@ -20,11 +22,15 @@ warnings.filterwarnings("ignore")
 @click.option('--state-column', default='lifecycle:transition', type=str)
 @click.option('--method', default='prefix', type=str)
 @click.option('--num', default=2, type=int)
-def main(experiment_name, import_file, import_test_file, id_column, act_column, time_column, resource_column, state_column, method, num):
+@click.option('--suffix', default=0, type=int)
+def main(experiment_name, import_file, import_test_file, id_column, act_column, time_column, resource_column, state_column, method, num, suffix):
 
     dirStr, ext = os.path.splitext(import_file)
     file_name = dirStr.split("\\")[-1]
     print(file_name)
+
+    output_folder = f'example_outputs\{experiment_name}'
+    os.makedirs(output_folder, exist_ok=True)
 
     # info of test data, here we just need the amount of generated traces(len_case), so len_case can be anything else that we defined
     data_test = pm4py.convert_to_dataframe(pm4py.read.read_xes(import_test_file))
@@ -160,14 +166,23 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
     if_sub_group=False
     sub_traces = get_sub_traces(all_seq, method, num, if_sub_group)
     final_data = get_transition(sub_traces)
-    sequence_prob = {}   # dictionary: keys: all the seq1,
-    #                                  values(dictionary): the next events(keys) and the probabilities(values)
-    for each in final_data.items():
-        counter = Counter(each[1])
-        tol_events = len(each[1])
-        number = np.array(list(counter.values()))
-        prob = np.round(np.divide(number, tol_events), 10)
-        sequence_prob[each[0]] = dict(zip(counter.keys(), prob))
+    if os.path.exists(os.path.join(output_folder, f'sequence_prob_{file_name}.json')):
+        print('found sequence probability')
+        with open(os.path.join(output_folder, f'sequence_prob_{file_name}.json')) as json_file:
+            sequence_prob = json.load(json_file)
+    else:
+        sequence_prob = {}   # dictionary: keys: all the seq1,
+        #                                  values(dictionary): the next events(keys) and the probabilities(values)
+        for each in final_data.items():
+            counter = Counter(each[1])
+            tol_events = len(each[1])
+            number = np.array(list(counter.values()))
+            prob = np.round(np.divide(number, tol_events), 10)
+            sequence_prob[each[0]] = dict(zip(counter.keys(), prob))
+
+        with open(os.path.join(output_folder, f'sequence_prob_{file_name}.json'), "w") as f:
+            json.dump(sequence_prob, f)
+
 
     first_parallels = {}  # record the first events happens simultaneously in the parallel
     # dict_sub_parallel = {}
@@ -274,6 +289,8 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
                 my_prob[each[0]][each_sub_para[0]][each_[0]] = dict(zip(counter.keys(), prob))
                 # the key is sequence start with first event in the sub parallel under the name of parallism, then under the name of sub_parallel, then under the first event
                 # and value is its probability
+    with open(os.path.join(output_folder, f'my_prob_{file_name}.json'), "w") as f:
+        json.dump(my_prob, f)
 
     gen_number = len_case #
     # gen_number = 160
@@ -372,9 +389,9 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
     dddf['resource'] = dddf['act']
     print(f'final new data with info: {dddf}')
 
-    output_folder = f'example_outputs\{experiment_name}'
-    os.makedirs(output_folder, exist_ok=True)
-    dddf.to_csv(os.path.join(output_folder, f'gen_seq_{file_name}.csv'))
+
+    # fileName = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+    dddf.to_csv(os.path.join(output_folder, f'gen_seq_{file_name}_{suffix}.csv'))
     # g.to_csv(os.path.join(f'example_outputs\{experiment_name}', f'gen_seq_time_{file_name}.csv'), index=False)
 
 if __name__ == "__main__":
