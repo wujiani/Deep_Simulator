@@ -181,8 +181,8 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
             prob = np.round(np.divide(number, tol_events), 10)
             sequence_prob[each[0]] = dict(zip(counter.keys(), prob))
 
-        with open(os.path.join(output_folder, f'sequence_prob_{file_name}.json'), "w") as f:
-            json.dump(sequence_prob, f)
+        # with open(os.path.join(output_folder, f'sequence_prob_{file_name}.json'), "w") as f:
+        #     json.dump(sequence_prob, f)
 
 
     first_parallels = {}  # record the first events happens simultaneously in the parallel
@@ -297,8 +297,8 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
                     my_prob[each[0]][each_sub_para[0]][each_[0]] = dict(zip(counter.keys(), prob))
                     # the key is sequence start with first event in the sub parallel under the name of parallism, then under the name of sub_parallel, then under the first event
                     # and value is its probability
-        with open(os.path.join(output_folder, f'my_prob_{file_name}.json'), "w") as f:
-            json.dump(my_prob, f)
+        # with open(os.path.join(output_folder, f'my_prob_{file_name}.json'), "w") as f:
+        #     json.dump(my_prob, f)
 
     gen_number = len_case #
     # gen_number = 160
