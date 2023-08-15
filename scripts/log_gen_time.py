@@ -8,7 +8,7 @@ import click
 import sys
 
 from log_gen_time_utils import *
-import json
+import pickle
 
 warnings.filterwarnings("ignore")
 
@@ -133,14 +133,14 @@ def main(experiment_name, import_file, simulator_output, embedding_matrix, id_co
     process_data_use = copy.deepcopy(process_data)
     waiting_data_use = copy.deepcopy(waiting_data)
 
-    if os.path.exists(os.path.join(output_folder, f'dict_time_{file_name}.json')):
-        if os.path.exists(os.path.join(output_folder, f'dict_kde_{file_name}.json')):
+    if os.path.exists(os.path.join(output_folder, f'dict_time_{file_name}.pkl')):
+        if os.path.exists(os.path.join(output_folder, f'dict_kde_{file_name}.pkl')):
             print('found dict time')
             print('found dict kde')
-            with open(os.path.join(output_folder, f'dict_time_{file_name}.json')) as json_file:
-                dict_time = json.load(json_file)
-            with open(os.path.join(output_folder, f'dict_kde_{file_name}.json')) as json_file:
-                dict_kde = json.load(json_file)
+            with open(os.path.join(output_folder, f'dict_time_{file_name}.pkl'), "rb") as pkl_file:
+                dict_time = pickle.load(pkl_file)
+            with open(os.path.join(output_folder, f'dict_kde_{file_name}.pkl'), "rb") as pkl_file:
+                dict_kde = pickle.load(pkl_file)
 
     else:
 
@@ -191,10 +191,10 @@ def main(experiment_name, import_file, simulator_output, embedding_matrix, id_co
                 kde = KernelDensity(kernel='gaussian', bandwidth=0.2).fit(data)
                 dict_kde['wait'][each[0]] = kde
 
-        # with open(os.path.join(output_folder, f'dict_time_{file_name}.json'), "w") as f:
-        #     json.dump(dict_time, f)
-        # with open(os.path.join(output_folder, f'dict_kde_{file_name}.json'), "w") as f:
-        #     json.dump(dict_kde, f)
+        with open(os.path.join(output_folder, f'dict_time_{file_name}.pkl'), "wb") as f:
+            pickle.dump(dict_time, f)
+        with open(os.path.join(output_folder, f'dict_kde_{file_name}.pkl'), "wb") as f:
+            pickle.dump(dict_kde, f)
 
     # the generated sequence
     gen_df = pd.read_csv(os.path.join(output_folder, f'gen_seq_{file_name}_{suffix}.csv'))

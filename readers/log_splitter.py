@@ -39,27 +39,17 @@ class LogSplitter(object):
 
     def _timeline_contained(self, size: float, one_timestamp: bool) -> None:
 
-        # num_events = int(np.round(len(self.log)*(1 - size)))
+        grouped = self.log.groupby('caseid')['start_timestamp'].min().reset_index()
+        # Sort the grouped dataframe by 'start_timestamp'
+        sorted_grouped = grouped.sort_values(by='start_timestamp')
+        # Calculate the number of cases to consider (80% of the total)
+        total_cases = len(sorted_grouped)
+        cases_to_select = int(0.8 * total_cases)
+        # Select the first 80% of caseids and store them in a list
+        caseid_train_list = sorted_grouped['caseid'][:cases_to_select].tolist()
 
-        # df_train = self.log.iloc[num_events:]
-        # df_test = self.log.iloc[:num_events]
-
-        # # Incomplete final traces
-        # df_train = df_train.sort_values(by=['caseid', 'pos_trace'],
-        #                                 ascending=True)
-        # inc_traces = pd.DataFrame(df_train.groupby('caseid')
-        #                           .last()
-        #                           .reset_index())
-        # inc_traces = inc_traces[inc_traces.pos_trace != inc_traces.trace_len]
-        # inc_traces = inc_traces['caseid'].to_list()
-
-
-
-        caseid_list = list(self.log['caseid'].unique())
-        len_case = len(caseid_list)
-        random_case = random.sample(caseid_list, round(len_case * (1-size)))
-        df_test = self.log[self.log['caseid'].isin(random_case)]
-        df_train = self.log[~self.log['caseid'].isin(random_case)]
+        df_test = self.log[self.log['caseid'].isin(caseid_train_list)]
+        df_train = self.log[~self.log['caseid'].isin(caseid_train_list)]
 
         df_test = (df_test
                    .sort_values(['caseid','pos_trace'], ascending=True)
@@ -68,17 +58,8 @@ class LogSplitter(object):
                     .sort_values(['caseid','pos_trace'], ascending=True)
                     .reset_index(drop=True))
 
-        # # Drop incomplete traces
-        # df_test = df_test[~df_test.caseid.isin(inc_traces)]
         df_test = df_test.drop(columns=['trace_len', 'pos_trace'])
         df_train = df_train.drop(columns=['trace_len', 'pos_trace'])
-        # key = 'end_timestamp' if one_timestamp else 'start_timestamp'
-        # df_test = (df_test
-        #            .sort_values(key, ascending=True)
-        #            .reset_index(drop=True).to_dict('records'))
-        # df_train = (df_train
-        #             .sort_values(key, ascending=True)
-        #             .reset_index(drop=True).to_dict('records'))
         return df_train, df_test
 
     def _timeline_trace(self, size: float, one_timestamp: bool) -> None:

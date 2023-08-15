@@ -5,7 +5,7 @@ from collections import Counter
 import click
 import warnings
 import sys
-import json
+import pickle
 import datetime
 
 from log_gen_seq_utils import *
@@ -167,10 +167,10 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
     if_sub_group=False
     sub_traces = get_sub_traces(all_seq, method, num, if_sub_group)
     final_data = get_transition(sub_traces)
-    if os.path.exists(os.path.join(output_folder, f'sequence_prob_{file_name}.json')):
+    if os.path.exists(os.path.join(output_folder, f'sequence_prob_{file_name}.pkl')):
         print('found sequence probability')
-        with open(os.path.join(output_folder, f'sequence_prob_{file_name}.json')) as json_file:
-            sequence_prob = json.load(json_file)
+        with open(os.path.join(output_folder, f'sequence_prob_{file_name}.pkl'), "rb") as pkl_file:
+            sequence_prob = pickle.load(pkl_file)
     else:
         sequence_prob = {}   # dictionary: keys: all the seq1,
         #                                  values(dictionary): the next events(keys) and the probabilities(values)
@@ -181,8 +181,8 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
             prob = np.round(np.divide(number, tol_events), 10)
             sequence_prob[each[0]] = dict(zip(counter.keys(), prob))
 
-        # with open(os.path.join(output_folder, f'sequence_prob_{file_name}.json'), "w") as f:
-        #     json.dump(sequence_prob, f)
+        with open(os.path.join(output_folder, f'sequence_prob_{file_name}.pkl'), "wb") as f:
+            pickle.dump(sequence_prob, f)
 
 
     first_parallels = {}  # record the first events happens simultaneously in the parallel
@@ -256,10 +256,10 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
                     all_sub_para[each_tuple][each_sub_tuple[0]][each_seq[0]] = temp   # record the seuqences start with the first event in the sub_parallel,
                                                                                     #the key is the parallel name and sub_key is the name of sub_parallel and (sub_)sub_key is the start event in the sub_parallel
 
-    if os.path.exists(os.path.join(output_folder, f'my_prob_{file_name}.json')):
+    if os.path.exists(os.path.join(output_folder, f'my_prob_{file_name}.pkl')):
         print('found my probability')
-        with open(os.path.join(output_folder, f'my_prob_{file_name}.json')) as json_file:
-            my_prob = json.load(json_file)
+        with open(os.path.join(output_folder, f'my_prob_{file_name}.pkl'), "rb") as pkl_file:
+            my_prob = pickle.load(pkl_file)
     else:
 
         my_prob = {}  # dictionary stores probabilities
@@ -297,8 +297,8 @@ def main(experiment_name, import_file, import_test_file, id_column, act_column, 
                     my_prob[each[0]][each_sub_para[0]][each_[0]] = dict(zip(counter.keys(), prob))
                     # the key is sequence start with first event in the sub parallel under the name of parallism, then under the name of sub_parallel, then under the first event
                     # and value is its probability
-        # with open(os.path.join(output_folder, f'my_prob_{file_name}.json'), "w") as f:
-        #     json.dump(my_prob, f)
+        with open(os.path.join(output_folder, f'my_prob_{file_name}.pkl'), "wb") as f:
+            pickle.dump(my_prob, f)
 
     gen_number = len_case #
     # gen_number = 160
