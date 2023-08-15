@@ -48,8 +48,8 @@ class LogSplitter(object):
         # Select the first 80% of caseids and store them in a list
         caseid_train_list = sorted_grouped['caseid'][:cases_to_select].tolist()
 
-        df_test = self.log[self.log['caseid'].isin(caseid_train_list)]
-        df_train = self.log[~self.log['caseid'].isin(caseid_train_list)]
+        df_train = self.log[self.log['caseid'].isin(caseid_train_list)]
+        df_test = self.log[~self.log['caseid'].isin(caseid_train_list)]
 
         df_test = (df_test
                    .sort_values(['caseid','pos_trace'], ascending=True)

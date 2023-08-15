@@ -47,7 +47,7 @@ class DeepSimulator():
         self.is_safe = self._read_inputs(
             log_time=exec_times, is_safe=self.is_safe)
         # modify number of instances in the model
-        num_inst = len(self.log_test.caseid.unique())
+        num_inst = len(self.log_train.caseid.unique()) if self.parms['train_size_generation'] else len(self.log_test.caseid.unique())
         # get minimum date
         start_time = (self.log_test.start_timestamp.min().strftime("%Y-%m-%dT%H:%M:%S.%f+00:00"))
         print('############ Structure optimization ############')
