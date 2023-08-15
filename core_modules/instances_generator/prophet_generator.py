@@ -21,9 +21,18 @@ import utils.support as sup
 import logging
 logger = logging.getLogger('fbprophet.plot')
 logger.setLevel(logging.CRITICAL)
-from fbprophet import Prophet
-from fbprophet.serialize import model_to_json, model_from_json
-from fbprophet.diagnostics import cross_validation, performance_metrics
+
+try:
+    from fbprophet import Prophet
+    from fbprophet.serialize import model_to_json, model_from_json
+    from fbprophet.diagnostics import cross_validation, performance_metrics
+except ImportError:
+    try:
+        from prophet import Prophet
+        from prophet.serialize import model_to_json, model_from_json
+        from prophet.diagnostics import cross_validation, performance_metrics
+    except ImportError:
+        raise ImportError("Neither 'fbprophet' nor 'prophet' module found.")
 
 from numpy.random import triangular as triang
 
