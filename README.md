@@ -1,6 +1,7 @@
 ## Jiani
 ### Environment
 To execute this code you just need to install Anaconda or Conda in your system, then execute pip install -r requirement.txt.
+py3.10 or py3.8 required, java 8 required
 ### Baseline model outputs
 First, run the **DeepSimulator** code to get the baseline generated event log, as well as the embedding matrix of the activities.
 Since we use the same generated arrival times for each trace as the DeepSimulator and the embedding matrix to compute the nearest activities, we need the output of the baseline model.
